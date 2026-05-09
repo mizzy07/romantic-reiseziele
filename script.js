@@ -135,9 +135,12 @@ const destinations = [
 
 const grid = document.querySelector("#destinationGrid");
 const compareList = document.querySelector("#compareList");
+const drawerCount = document.querySelector("#drawerCount");
+const drawerThumbs = document.querySelector("#drawerThumbs");
+const drawerTable = document.querySelector("#drawerTable");
 const matchCount = document.querySelector("#matchCount");
 const spotlight = document.querySelector("#spotlight");
-const liked = new Set();
+const liked = new Set(["Griechenland", "Japan", "Zanzibar"]);
 let currentFilter = "all";
 
 function renderCards() {
@@ -191,6 +194,21 @@ function updateSpotlight(destination) {
 
 function renderComparison() {
   const picks = destinations.filter((destination) => liked.has(destination.name));
+  drawerCount.textContent = String(picks.length);
+  drawerThumbs.innerHTML = picks.slice(0, 3).map((destination) => `
+    <figure>
+      <img src="${destination.image}" alt="${destination.name}">
+      <figcaption>${destination.name}</figcaption>
+    </figure>
+  `).join("");
+  drawerTable.innerHTML = picks.slice(0, 3).map((destination) => `
+    <div>
+      <span>${destination.name}</span>
+      <strong>${destination.season}</strong>
+      <small>${destination.activities.slice(0, 2).join(" · ")}</small>
+    </div>
+  `).join("") || `<p>Noch keine Favoriten gewählt.</p>`;
+
   if (!picks.length) {
     compareList.innerHTML = `<div class="empty-state">Noch keine Favoriten. Klick auf die Herzen bei den Zielen, die euch sofort anlächeln.</div>`;
     return;

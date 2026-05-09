@@ -8,25 +8,46 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="Zur Startansicht">
+    <div class="app-shell">
+      <aside class="side-rail" aria-label="App Navigation">
+        <a class="brand side-brand" href="#top" aria-label="Zur Startansicht">
+          <span class="script-logo">Our Next<br />Adventure</span>
+          <span class="heart-line">♡</span>
+        </a>
+        <nav class="side-nav" aria-label="Seitennavigation">
+          <a class="is-active" href="#top">Entdecken</a>
+          <a href="#ziele">Ziele</a>
+          <a href="#vergleich">Vergleich</a>
+          <a href="#plan">Plan</a>
+          <a href="#erlebnisse">Erlebnisse</a>
+        </nav>
+        <div class="side-note">
+          <span>Planung für</span>
+          <strong>unsere perfekte Auszeit</strong>
+          <small>August bis Mitte September</small>
+        </div>
+      </aside>
+
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Zur Startansicht">
         <span class="brand-mark">R</span>
         <span>Romance Picker</span>
-      </a>
-      <nav aria-label="Seitennavigation">
-        <a href="#ziele">Ziele</a>
-        <a href="#vergleich">Vergleich</a>
-        <a href="#plan">Plan</a>
-      </nav>
-    </header>
+        </a>
+        <nav aria-label="Seitennavigation">
+          <a href="#ziele">Ziele</a>
+          <a href="#vergleich">Vergleich</a>
+          <a href="#plan">Plan</a>
+        </nav>
+      </header>
 
-    <main id="top">
+      <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <h1>Wohin fliegen wir als nächstes, mein Herz?</h1>
+          <button class="surprise-pill" id="surpriseMe" type="button">Überrasch mich</button>
+          <h1>Where shall we go next, my love?</h1>
           <p>
-            Eine interaktive Auswahl für romantische Strandtage, kleine Abenteuer,
-            Safari-Gefühl, gutes Essen und ein Honeymoon-Gefühl im August oder September.
+            Such dir den Ort aus, an dem wir Strandabende, kleine Abenteuer,
+            gutes Essen und Erinnerungen sammeln.
           </p>
           <div class="love-note" aria-label="Persönliche Einladung">
             <span>Für uns zwei</span>
@@ -34,12 +55,7 @@
           </div>
           <div class="hero-actions">
             <a class="primary-action" href="#ziele">Ziele entdecken</a>
-            <button class="ghost-action" id="surpriseMe" type="button">Überrasch mich</button>
-          </div>
-          <div class="memory-strip" aria-label="Reisemomente">
-            <img alt="Romantischer Strand" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=520&q=82" />
-            <img alt="Griechischer Sonnenuntergang" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=520&q=82" />
-            <img alt="Zanzibar Strand" src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=520&q=82" />
+            <a class="ghost-action" href="#vergleich">Favoriten ansehen</a>
           </div>
         </div>
 
@@ -65,15 +81,29 @@
             </div>
           </div>
           <div class="spotlight" id="spotlight">
-            <img alt="" src="https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=1100&q=82" />
+            <img alt="" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1400&q=82" />
             <div>
               <span>Aktueller Favorit</span>
-              <strong>Japan</strong>
-              <p>Tempel, Onsen, Stadtlichter und ein paar Tage Inselgefühl auf Okinawa.</p>
+              <strong>Griechenland</strong>
+              <p>Sonnenuntergänge, klares Wasser, Tavernen und Inselgefühl ohne viel Stress.</p>
             </div>
           </div>
         </aside>
       </section>
+
+      <aside class="compare-drawer" aria-label="Favoritenvergleich">
+        <div class="drawer-head">
+          <strong>Vergleich</strong>
+          <span id="drawerCount">0</span>
+        </div>
+        <div class="drawer-thumbs" id="drawerThumbs"></div>
+        <div class="drawer-tabs">
+          <span class="is-active">Überblick</span>
+          <span>Details</span>
+        </div>
+        <div class="drawer-table" id="drawerTable"></div>
+        <a class="drawer-action" href="#vergleich">Voll vergleichen</a>
+      </aside>
 
       <section class="intro-band" aria-label="Was euch erwartet">
         <div>
@@ -90,7 +120,7 @@
         </div>
       </section>
 
-      <section class="section-head" id="ziele">
+      <section class="section-head destinations-head" id="ziele">
         <h2>Die schönsten Kandidaten</h2>
         <p>
           Bali bleibt bewusst draußen. Dafür sind ein paar romantische Juwelen dabei,
@@ -99,6 +129,19 @@
       </section>
 
       <section class="destination-grid" id="destinationGrid" aria-live="polite"></section>
+
+      <section class="experience-board" id="erlebnisse">
+        <div class="section-head compact">
+          <h2>Erlebnisse, die zu uns passen</h2>
+          <p>Ein paar Momente, die aus der Reise mehr machen als nur Hotel und Strand.</p>
+        </div>
+        <div class="experience-grid">
+          <article><img alt="" src="https://images.unsplash.com/photo-1517840933437-c41356892b35?auto=format&fit=crop&w=700&q=82"><strong>Reiten am Strand</strong><span>Für Punta Cana, Kap Verde oder Marokko</span></article>
+          <article><img alt="" src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=700&q=82"><strong>Safari oder Day Tour</strong><span>Für Zanzibar oder Sri Lanka</span></article>
+          <article><img alt="" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=700&q=82"><strong>Schnorcheln</strong><span>Für Ägypten, Thailand oder Zanzibar</span></article>
+          <article><img alt="" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=82"><strong>Sunset Drive</strong><span>Für Madeira, Griechenland oder Albanien</span></article>
+        </div>
+      </section>
 
       <section class="comparison" id="vergleich">
         <div class="section-head compact">
@@ -139,12 +182,13 @@
           </article>
         </div>
       </section>
-    </main>
+      </main>
 
-    <footer>
-      <span>Gemacht als kleine romantische Entscheidungshilfe für euch zwei.</span>
-      <span>Beste Reisezeit bitte vor der Buchung noch einmal live prüfen.</span>
-    </footer>
+      <footer>
+        <span>Gemacht als kleine romantische Entscheidungshilfe für euch zwei.</span>
+        <span>Beste Reisezeit bitte vor der Buchung noch einmal live prüfen.</span>
+      </footer>
+    </div>
 
     <script src="./script.js"></script>
   </body>
