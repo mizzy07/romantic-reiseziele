@@ -24,7 +24,7 @@ const destinations = [
   {
     name: "Punta Cana",
     region: "Dominikanische Republik",
-    image: "https://images.unsplash.com/photo-1584555613483-3f8f5f49d0a2?auto=format&fit=crop&w=1200&q=82",
+    image: "./assets/destinations/punta-cana.jpg",
     season: "August bis Mitte September: tropisch, warm, flexibel planen",
     flight: "lang",
     score: "8.8",
@@ -68,7 +68,7 @@ const destinations = [
   {
     name: "Albanische Riviera",
     region: "Ksamil, Himare, Saranda",
-    image: "https://images.unsplash.com/photo-1590130665626-05e2353f9124?auto=format&fit=crop&w=1200&q=82",
+    image: "./assets/destinations/albania-riviera.jpg",
     season: "Ende August bis Mitte September: stark",
     flight: "kurz",
     score: "9.0",
@@ -112,7 +112,7 @@ const destinations = [
   {
     name: "Ägypten Red Sea",
     region: "Marsa Alam, El Gouna",
-    image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=82",
+    image: "./assets/destinations/egypt-red-sea.jpg",
     season: "September: warmes Meer, sehr sonnig",
     flight: "kurz",
     score: "8.5",
@@ -123,7 +123,7 @@ const destinations = [
   {
     name: "Marokko",
     region: "Marrakesch, Essaouira, Agafay",
-    image: "https://images.unsplash.com/photo-1539020140153-e8c237112e53?auto=format&fit=crop&w=1200&q=82",
+    image: "./assets/destinations/morocco.jpg",
     season: "September: besser als Hochsommer",
     flight: "kurz",
     score: "8.8",
@@ -152,7 +152,7 @@ function renderCards() {
     article.className = `destination-card${isVisible ? "" : " is-hidden"}`;
     article.innerHTML = `
       <div class="card-image">
-        <img src="${destination.image}" alt="${destination.name} romantisches Reiseziel" loading="${index < 3 ? "eager" : "lazy"}">
+        <img src="${destination.image}" alt="${destination.name} romantisches Reiseziel" loading="${index < 3 ? "eager" : "lazy"}" onerror="this.closest('.card-image').classList.add('image-failed')">
         <button class="heart${liked.has(destination.name) ? " is-liked" : ""}" type="button" aria-label="${destination.name} merken" data-like="${destination.name}">♥</button>
       </div>
       <div class="card-body">
@@ -180,7 +180,7 @@ function renderCards() {
 
 function updateSpotlight(destination) {
   spotlight.innerHTML = `
-    <img alt="" src="${destination.image}">
+    <img alt="" src="${destination.image}" onerror="this.closest('.spotlight').classList.add('image-failed')">
     <div>
       <span>Aktueller Favorit</span>
       <strong>${destination.name}</strong>
