@@ -8,7 +8,10 @@ const destinations = [
     score: "9.1",
     tags: ["abenteuer", "luxuswert"],
     pitch: "Tempel, Onsen, Kirschblüten und als Finale ein paar ruhige Strandtage auf Okinawa.",
-    activities: ["Onsen-Spa", "Food-Tour", "Tempelwalk", "Okinawa-Strand"]
+    activities: ["Onsen-Spa", "Food-Tour", "Tempelwalk", "Okinawa-Strand"],
+    mustDo: ["Private Onsen-Nacht", "Kyoto bei Sonnenaufgang", "Okinawa-Inselhopping"],
+    romance: "Magisch, elegant, anders als alles Normale",
+    thrill: "Stadtlichter, Tempel, Food, Inselabschluss"
   },
   {
     name: "Thailand",
@@ -19,7 +22,10 @@ const destinations = [
     score: "9.5",
     tags: ["strand", "abenteuer", "luxuswert"],
     pitch: "Viel Honeymoon-Gefühl: Strand, Spa, Bootstage, Nachtmärkte und Elefanten-Schutzgebiet.",
-    activities: ["Private Longtail-Bootstour", "Couple Spa", "Schnorcheln", "Streetfood"]
+    activities: ["Private Longtail-Bootstour", "Couple Spa", "Schnorcheln", "Streetfood"],
+    mustDo: ["Private Bootstour", "Dschungel-Wasserfall", "Nachtmarkt-Date"],
+    romance: "Warm, verspielt, sinnlich und sehr vielseitig",
+    thrill: "Inseln, Scooter, Thai Food, Wasserfälle"
   },
   {
     name: "Punta Cana",
@@ -30,7 +36,10 @@ const destinations = [
     score: "8.8",
     tags: ["strand", "luxuswert"],
     pitch: "All-inclusive, türkises Wasser, weicher Sand und sehr unkompliziert, wenn Erholung das Hauptziel ist.",
-    activities: ["Sunset-Dinner", "Katamaran", "Reiten am Strand", "Spa"]
+    activities: ["Sunset-Dinner", "Katamaran", "Reiten am Strand", "Spa"],
+    mustDo: ["Reiten am Strand", "Saona Island", "Katamaran bei Sunset"],
+    romance: "Tropisch, weich, sorglos und sehr honeymoonig",
+    thrill: "Boot, Musik, Strandritte, Karibik-Wasser"
   },
   {
     name: "Zanzibar",
@@ -41,7 +50,10 @@ const destinations = [
     score: "9.3",
     tags: ["strand", "abenteuer", "luxuswert"],
     pitch: "Weiße Strände, Gewürzinsel-Vibes, Stone Town und optional Safari auf dem Festland.",
-    activities: ["Spice Tour", "Safari-Daytrip", "Dhow Sunset", "Schnorcheln"]
+    activities: ["Spice Tour", "Safari-Daytrip", "Dhow Sunset", "Schnorcheln"],
+    mustDo: ["Dhow Sunset Cruise", "Stone Town", "Spice Tour + Safari Blue"],
+    romance: "Exotisch, warm, würzig und besonders",
+    thrill: "Safari-Gefühl, Gewürze, Dhow, Mnemba-Schnorcheln"
   },
   {
     name: "Paris",
@@ -52,7 +64,10 @@ const destinations = [
     score: "8.6",
     tags: ["kurzflug"],
     pitch: "Klassische Romantik mit Boutique-Hotel, Seine, Kunst, Patisserie und vielleicht Champagne als Extra.",
-    activities: ["Seine-Abendfahrt", "Montmartre", "Fine Dining", "Museumstag"]
+    activities: ["Seine-Abendfahrt", "Montmartre", "Fine Dining", "Museumstag"],
+    mustDo: ["Seine bei Nacht", "Montmartre-Date", "Champagne-Abend"],
+    romance: "Klassisch, elegant, filmisch",
+    thrill: "Kunst, Rooftops, Patisserie, Nachtspaziergänge"
   },
   {
     name: "Griechenland",
@@ -63,7 +78,10 @@ const destinations = [
     score: "9.2",
     tags: ["strand", "kurzflug", "luxuswert"],
     pitch: "Sonnenuntergänge, Inselhopping, klares Wasser und romantische Tavernen ohne Santorini-Premium.",
-    activities: ["Bootstag", "Altstadtbummel", "Beach Club", "Sonnenuntergang"]
+    activities: ["Bootstag", "Altstadtbummel", "Beach Club", "Sonnenuntergang"],
+    mustDo: ["Bootstag zu Buchten", "Sunset-Taverne", "Naxos oder Kreta Roadtrip"],
+    romance: "Sonnenuntergang, Meer, weiße Häuser, Tavernen",
+    thrill: "Inselhopping, Beach Clubs, kleine Dörfer"
   },
   {
     name: "Albanische Riviera",
@@ -74,7 +92,10 @@ const destinations = [
     score: "9.0",
     tags: ["strand", "kurzflug", "luxuswert"],
     pitch: "Klares Wasser, Buchten, Roadtrip-Gefühl und eine noch etwas geheimere Alternative zu vielen Mittelmeerinseln.",
-    activities: ["Buchten-Roadtrip", "Boot", "Seafood", "Ksamil-Strand"]
+    activities: ["Buchten-Roadtrip", "Boot", "Seafood", "Ksamil-Strand"],
+    mustDo: ["Ksamil-Buchten", "Himare Roadtrip", "Seafood am Wasser"],
+    romance: "Jung, wild, sonnig und überraschend schön",
+    thrill: "Roadtrip, Buchtenjagd, klares Wasser"
   },
   {
     name: "Kap Verde",
@@ -85,7 +106,10 @@ const destinations = [
     score: "8.7",
     tags: ["strand", "luxuswert"],
     pitch: "Viel Sonne, lange Strände, gute Pauschalangebote und entspannte Resorts ohne Fernost-Fluglänge.",
-    activities: ["Quad-Tour", "Reiten", "Stranddinner", "Schildkröten-Saison"]
+    activities: ["Quad-Tour", "Reiten", "Stranddinner", "Schildkröten-Saison"],
+    mustDo: ["Quad durch Dünen", "Reiten am Meer", "Schildkröten-Nacht"],
+    romance: "Weite, Sonne, lange Strandtage",
+    thrill: "Dünen, Wind, Quad, Schildkröten"
   },
   {
     name: "Madeira",
@@ -96,7 +120,10 @@ const destinations = [
     score: "8.9",
     tags: ["abenteuer", "kurzflug", "luxuswert"],
     pitch: "Nicht der klassische Sandstrand, aber unfassbar schön: Klippen, Naturpools, Walbeobachtung und Boutique-Hotels.",
-    activities: ["Walbeobachtung", "Naturpools", "Levada-Walk", "Sunset-Drive"]
+    activities: ["Walbeobachtung", "Naturpools", "Levada-Walk", "Sunset-Drive"],
+    mustDo: ["Walbeobachtung", "Naturpools", "Sunset Drive"],
+    romance: "Dramatisch, grün, luxuriös natürlich",
+    thrill: "Klippen, Meer, Wanderungen, Naturpools"
   },
   {
     name: "Sri Lanka",
@@ -107,7 +134,10 @@ const destinations = [
     score: "9.4",
     tags: ["strand", "abenteuer", "luxuswert"],
     pitch: "Strand, Teeberge, Zugfahrt und Safari in einem Trip. Sehr romantisch, aber abwechslungsreicher als reiner Resorturlaub.",
-    activities: ["Safari", "Teeplantagen", "Zugfahrt", "Surfstrand"]
+    activities: ["Safari", "Teeplantagen", "Zugfahrt", "Surfstrand"],
+    mustDo: ["Yala Safari", "Zugfahrt durch Teeberge", "Ostküsten-Strand"],
+    romance: "Abenteuerlich, weich, grün und wild",
+    thrill: "Safari, Zug, Teeberge, Surfstrände"
   },
   {
     name: "Ägypten Red Sea",
@@ -118,7 +148,10 @@ const destinations = [
     score: "8.5",
     tags: ["strand", "kurzflug", "luxuswert"],
     pitch: "Kurzer Flug, tolle Resorts, Hausriffe, warme Abende und mit Glück Delfine oder Wüstentour.",
-    activities: ["Schnorcheln", "Wüstendinner", "Spa", "Bootsausflug"]
+    activities: ["Schnorcheln", "Wüstendinner", "Spa", "Bootsausflug"],
+    mustDo: ["Hausriff-Schnorcheln", "Wüstendinner", "Boot zu Delfinen"],
+    romance: "Warm, einfach, Meer direkt vor der Tür",
+    thrill: "Korallen, Wüste, Boot, Sternenhimmel"
   },
   {
     name: "Marokko",
@@ -129,7 +162,10 @@ const destinations = [
     score: "8.8",
     tags: ["abenteuer", "kurzflug", "luxuswert"],
     pitch: "Riads, Hammam, Wüste, Reiten am Atlantik und orientalische Abende mit kurzer Anreise.",
-    activities: ["Hammam", "Agafay-Dinner", "Reiten", "Souks"]
+    activities: ["Hammam", "Agafay-Dinner", "Reiten", "Souks"],
+    mustDo: ["Riad-Nacht", "Agafay-Wüstendinner", "Reiten am Atlantik"],
+    romance: "Orientalisch, duftend, intensiv",
+    thrill: "Souks, Hammam, Wüste, Pferde"
   }
 ];
 
@@ -138,10 +174,16 @@ const compareList = document.querySelector("#compareList");
 const drawerCount = document.querySelector("#drawerCount");
 const drawerThumbs = document.querySelector("#drawerThumbs");
 const drawerTable = document.querySelector("#drawerTable");
+const previewName = document.querySelector("#previewName");
+const miniPlan = document.querySelector("#miniPlan");
+const mustdoList = document.querySelector("#mustdoList");
+const vibeCard = document.querySelector("#vibeCard");
+const shortlistItems = document.querySelector("#shortlistItems");
 const matchCount = document.querySelector("#matchCount");
 const spotlight = document.querySelector("#spotlight");
 const liked = new Set(["Griechenland", "Japan", "Zanzibar"]);
 let currentFilter = "all";
+let activeDestination = destinations.find((destination) => destination.name === "Griechenland") || destinations[0];
 
 function renderCards() {
   grid.innerHTML = "";
@@ -174,11 +216,18 @@ function renderCards() {
       </div>
     `;
 
-    article.addEventListener("mouseenter", () => updateSpotlight(destination));
+    article.addEventListener("mouseenter", () => setActiveDestination(destination));
+    article.addEventListener("focusin", () => setActiveDestination(destination));
     grid.appendChild(article);
   });
 
   matchCount.textContent = `${visible} Treffer`;
+}
+
+function setActiveDestination(destination) {
+  activeDestination = destination;
+  updateSpotlight(destination);
+  renderPreview(destination);
 }
 
 function updateSpotlight(destination) {
@@ -188,6 +237,27 @@ function updateSpotlight(destination) {
       <span>Aktueller Favorit</span>
       <strong>${destination.name}</strong>
       <p>${destination.pitch}</p>
+    </div>
+  `;
+}
+
+function renderPreview(destination) {
+  previewName.textContent = destination.name;
+  miniPlan.innerHTML = `
+    <div><span>Tag 1</span><strong>Ankommen</strong><p>${destination.region}</p></div>
+    <div><span>Tag 2-3</span><strong>Romantik</strong><p>${destination.romance}</p></div>
+    <div><span>Tag 4-6</span><strong>Action</strong><p>${destination.thrill}</p></div>
+    <div><span>Finale</span><strong>Lieblingsmoment</strong><p>${destination.mustDo[0]}</p></div>
+  `;
+  mustdoList.innerHTML = destination.mustDo.map((item, index) => `
+    <div><span>0${index + 1}</span><strong>${item}</strong></div>
+  `).join("");
+  vibeCard.innerHTML = `
+    <img src="${destination.image}" alt="${destination.name}">
+    <div>
+      <strong>${destination.name}</strong>
+      <p>${destination.pitch}</p>
+      <span>${destination.activities.join(" · ")}</span>
     </div>
   `;
 }
@@ -208,6 +278,13 @@ function renderComparison() {
       <small>${destination.activities.slice(0, 2).join(" · ")}</small>
     </div>
   `).join("") || `<p>Noch keine Favoriten gewählt.</p>`;
+  shortlistItems.innerHTML = picks.slice(0, 4).map((destination) => `
+    <button type="button" data-jump="${destination.name}">
+      <img src="${destination.image}" alt="">
+      <span>${destination.name}</span>
+      <strong>♥</strong>
+    </button>
+  `).join("") || `<span class="shortlist-empty">Noch keine Favoriten</span>`;
 
   if (!picks.length) {
     compareList.innerHTML = `<div class="empty-state">Noch keine Favoriten. Klick auf die Herzen bei den Zielen, die euch sofort anlächeln.</div>`;
@@ -233,6 +310,14 @@ document.querySelectorAll(".chip").forEach((button) => {
 });
 
 document.addEventListener("click", (event) => {
+  const jump = event.target.closest("[data-jump]");
+  if (jump) {
+    const destination = destinations.find((item) => item.name === jump.dataset.jump);
+    if (destination) setActiveDestination(destination);
+    document.querySelector("#top").scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+
   const button = event.target.closest("[data-like]");
   if (!button) return;
   const name = button.dataset.like;
@@ -248,9 +333,10 @@ document.addEventListener("click", (event) => {
 document.querySelector("#surpriseMe").addEventListener("click", () => {
   const pool = destinations.filter((destination) => currentFilter === "all" || destination.tags.includes(currentFilter));
   const destination = pool[Math.floor(Math.random() * pool.length)];
-  updateSpotlight(destination);
+  setActiveDestination(destination);
   document.querySelector("#ziele").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 renderCards();
 renderComparison();
+renderPreview(activeDestination);
