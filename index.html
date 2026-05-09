@@ -1,226 +1,341 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unser nächstes romantisches Reiseziel</title>
-    <link rel="preconnect" href="https://images.unsplash.com" />
+    <title>For Maryem ♥ — Our Next Adventure</title>
+    <meta name="description" content="A little love letter from Mika to Maryem. Pick our next adventure together." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ef4444'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="app-shell">
+      <!-- LEFT SIDEBAR -->
       <aside class="side-rail" aria-label="App Navigation">
-        <a class="brand side-brand" href="#top" aria-label="Zur Startansicht">
+        <a class="brand" href="#top" aria-label="Home">
           <span class="script-logo">Our Next<br />Adventure</span>
-          <span class="heart-line">♡</span>
+          <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
         </a>
-        <nav class="side-nav" aria-label="Seitennavigation">
-          <a class="is-active" href="#top">Entdecken</a>
-          <a href="#ziele">Ziele</a>
-          <a href="#vergleich">Vergleich</a>
-          <a href="#plan">Plan</a>
-          <a href="#erlebnisse">Erlebnisse</a>
+        <nav class="side-nav" aria-label="Main Navigation">
+          <a class="is-active" href="#explore">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            Explore
+          </a>
+          <a href="#destinations">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Destinations
+          </a>
+          <a href="#compare">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+            Compare
+          </a>
+          <a href="#itineraries">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Itineraries
+          </a>
+          <a href="#budget">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            Budget
+          </a>
+          <a href="#activities">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            Activities
+          </a>
+          <a href="#shortlist" class="nav-with-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            Shortlist
+            <span class="badge">3</span>
+          </a>
+          <a href="#votes">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+            Votes
+          </a>
+          <a href="#notes">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Notes
+          </a>
         </nav>
-        <div class="side-note">
-          <span>Planung für</span>
-          <strong>unsere perfekte Auszeit</strong>
-          <small>August bis Mitte September</small>
+        
+        <div class="user-profile">
+          <div class="avatars">
+            <span class="initial-avatar" aria-label="Mika">M</span>
+            <span class="initial-avatar avatar-overlap" aria-label="Maryem">M</span>
+          </div>
+          <div class="profile-text">
+            <span>Mika &amp; Maryem</span>
+            <strong>our next chapter <svg class="inline-heart" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></strong>
+          </div>
+        </div>
+
+        <div class="budget-summary">
+          <span class="budget-label">TOTAL BUDGET</span>
+          <strong class="budget-amount">€5,000</strong>
+          <span class="budget-sub">for 2 people</span>
+          
+          <div class="budget-bar">
+            <div class="budget-progress" style="width: 65%;"></div>
+          </div>
+          
+          <div class="budget-details">
+            <span><strong>€3,250</strong> spent (est.)</span>
+            <span><strong>€1,750</strong> left</span>
+          </div>
+          
+          <button class="budget-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg>
+            Budget breakdown
+          </button>
         </div>
       </aside>
 
-      <header class="topbar">
-        <a class="brand" href="#top" aria-label="Zur Startansicht">
-        <span class="brand-mark">R</span>
-        <span>Romance Picker</span>
-        </a>
-        <nav aria-label="Seitennavigation">
-          <a href="#ziele">Ziele</a>
-          <a href="#vergleich">Vergleich</a>
-          <a href="#plan">Plan</a>
-        </nav>
-      </header>
-
+      <!-- MAIN CONTENT -->
       <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <button class="surprise-pill" id="surpriseMe" type="button">Überrasch mich</button>
-          <h1>Where shall we go next, my love?</h1>
-          <p>
-            Such dir den Ort aus, an dem wir Strandabende, kleine Abenteuer,
-            gutes Essen und Erinnerungen sammeln.
-          </p>
-          <div class="love-note" aria-label="Persönliche Einladung">
-            <span>Für uns zwei</span>
-            <strong>Such dir aus, wo wir Erinnerungen sammeln.</strong>
+        <header class="mobile-header">
+          <span class="script-logo">Our Next Adventure</span>
+          <button class="mobile-menu-btn" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+        </header>
+        
+        <section class="hero">
+          <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1900&q=84" alt="Santorini">
+            <div class="hero-overlay"></div>
           </div>
-          <div class="hero-actions">
-            <a class="primary-action" href="#ziele">Ziele entdecken</a>
-            <a class="ghost-action" href="#vergleich">Favoriten ansehen</a>
-          </div>
-        </div>
-
-        <aside class="decision-panel" aria-label="Interaktiver Reisefilter">
-          <div class="panel-head">
-            <span>Reise-Kompass</span>
-            <strong id="matchCount">12 Treffer</strong>
-          </div>
-          <div class="filter-group" aria-label="Reise-Vibe filtern">
-            <button class="chip is-active" data-filter="all" type="button">Alle</button>
-            <button class="chip" data-filter="strand" type="button">Traumstrand</button>
-            <button class="chip" data-filter="abenteuer" type="button">Abenteuer</button>
-            <button class="chip" data-filter="kurzflug" type="button">Kürzerer Flug</button>
-            <button class="chip" data-filter="luxuswert" type="button">Besonders schön</button>
-          </div>
-          <div class="season-meter">
-            <div>
-              <span>Reisezeit</span>
-              <strong>August bis Mitte September</strong>
-            </div>
-            <div class="meter-track" aria-hidden="true">
-              <span style="width: 82%"></span>
+          
+          <button class="surprise-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            Surprise me
+          </button>
+          
+          <div class="hero-content">
+            <span class="hero-eyebrow">A little something for you, Maryem <span class="heart-text">♥</span></span>
+            <h1>Where shall we go next,<br/>my love? <svg class="inline-heart-large" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></h1>
+            <p>I picked twelve places I&rsquo;d love to wake up next to you. Choose the one that makes your heart skip — and we go.</p>
+            <div class="hero-avatars">
+              <div class="avatars">
+                <span class="initial-avatar" aria-label="Mika">M</span>
+                <span class="initial-avatar avatar-overlap" aria-label="Maryem">M</span>
+              </div>
+              <span>Mika &amp; Maryem &middot; it&rsquo;s our turn to dream <span class="heart-text">♥</span></span>
             </div>
           </div>
-          <div class="spotlight" id="spotlight">
-            <img alt="" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1400&q=82" />
-            <div>
-              <span>Aktueller Favorit</span>
-              <strong>Griechenland</strong>
-              <p>Sonnenuntergänge, klares Wasser, Tavernen und Inselgefühl ohne viel Stress.</p>
+
+          <div class="hero-filters-wrapper">
+            <div class="filter-panels">
+              <div class="filter-panel">
+                <div class="panel-header">VIBE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                <div class="filter-options scrollable-options" id="vibeFilters">
+                  <button class="filter-btn is-active" data-filter="all"><span class="icon">All<br>vibes</span></button>
+                  <button class="filter-btn" data-filter="luxuswert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><span>Romantic</span></button>
+                  <button class="filter-btn" data-filter="strand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg><span>Relaxing</span></button>
+                  <button class="filter-btn" data-filter="abenteuer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg><span>Adventure</span></button>
+                  <button class="filter-btn" data-filter="culture"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h4l3-9 5 18 3-9h5"></path></svg><span>Culture</span></button>
+                  <button class="filter-btn" data-filter="nature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-12a8 8 0 1 0-16 0c0 8 8 12 8 12z"></path><path d="M12 18v4"></path></svg><span>Nature</span></button>
+                  <button class="filter-btn" data-filter="luxuswert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3l-3 6 9 12 9-12-3-6z"></path><path d="M3 9h18"></path><path d="M12 3v18"></path></svg><span>Luxury</span></button>
+                </div>
+              </div>
+              
+              <div class="filter-panel">
+                <div class="panel-header">BUDGET (for 2) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                <div class="filter-options">
+                  <button class="filter-btn"><span>€2k</span></button>
+                  <button class="filter-btn"><span>€3k</span></button>
+                  <button class="filter-btn"><span>€4k</span></button>
+                  <button class="filter-btn is-active"><span>€5k</span></button>
+                  <button class="filter-btn"><span>€5k+</span></button>
+                </div>
+              </div>
+
+              <div class="filter-panel">
+                <div class="panel-header">FLIGHT LENGTH <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                <div class="filter-options">
+                  <button class="filter-btn is-active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>Any</span></button>
+                  <button class="filter-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>0-6h</span></button>
+                  <button class="filter-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>6-10h</span></button>
+                  <button class="filter-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>10h+</span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-destination-summary" id="heroSummary">
+              <!-- JS Populated -->
             </div>
           </div>
-        </aside>
-      </section>
+        </section>
 
-      <aside class="compare-drawer" aria-label="Favoritenvergleich">
-        <div class="drawer-head">
-          <strong>Vergleich</strong>
-          <span id="drawerCount">0</span>
-        </div>
-        <div class="drawer-thumbs" id="drawerThumbs"></div>
-        <div class="drawer-tabs">
-          <span class="is-active">Überblick</span>
-          <span>Details</span>
-        </div>
-        <div class="drawer-table" id="drawerTable"></div>
-        <a class="drawer-action" href="#vergleich">Voll vergleichen</a>
-      </aside>
-
-      <section class="intro-band" aria-label="Was euch erwartet">
-        <div>
-          <strong>Romantisch</strong>
-          <span>Sonnenuntergänge, Spa, Dinner am Wasser</span>
-        </div>
-        <div>
-          <strong>Spielerisch</strong>
-          <span>Bootstage, Schnorcheln, Reiten, Altstadtbummel</span>
-        </div>
-        <div>
-          <strong>Sommerbereit</strong>
-          <span>Passend für August bis Mitte September</span>
-        </div>
-      </section>
-
-      <section class="section-head destinations-head" id="ziele">
-        <h2>Pick your paradise</h2>
-        <p>
-          Bali bleibt bewusst draußen. Dafür sind ein paar romantische Juwelen dabei,
-          die Strand, Romantik und Erlebnisse stark kombinieren.
-        </p>
-      </section>
-
-      <section class="destination-grid" id="destinationGrid" aria-live="polite"></section>
-
-      <section class="dashboard-row" aria-label="Reisevorschau">
-        <article class="itinerary-preview">
-          <div class="module-head">
-            <h2>Itinerary Preview</h2>
-            <span id="previewName">Griechenland</span>
+        <section class="love-note">
+          <div class="love-note-inner">
+            <span class="love-note-label">A note from Mika <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+            <p>Habibti, this little app is your gift. Every place here is one I&rsquo;d love to share with you &mdash; tap the hearts you like, vote on a favourite, and the rest is on me. I just want to see you smile somewhere new.</p>
+            <span class="love-note-sign">&mdash; Mika, your husband</span>
           </div>
-          <div class="mini-plan" id="miniPlan"></div>
-        </article>
-        <article class="mustdo-preview">
-          <div class="module-head">
-            <h2>Must-do Highlights</h2>
-            <span>Romantisch + aufregend</span>
+        </section>
+
+        <section class="destinations-section">
+          <div class="section-header">
+            <h2>Pick your paradise</h2>
+            <span class="section-sub">Hover a card for the full vibe &middot; tap the heart to add it to our shortlist</span>
           </div>
-          <div class="mustdo-list" id="mustdoList"></div>
-        </article>
-        <article class="vibe-preview">
-          <div class="module-head">
-            <h2>Warum es knallt</h2>
-            <span>Gefühl der Reise</span>
+          <div class="destination-carousel" id="destinationCarousel">
+            <!-- Populated by JS -->
           </div>
-          <div class="vibe-card" id="vibeCard"></div>
-        </article>
-      </section>
+        </section>
 
-      <section class="experience-board" id="erlebnisse">
-        <div class="section-head compact">
-          <h2>Erlebnisse, die zu uns passen</h2>
-          <p>Ein paar Momente, die aus der Reise mehr machen als nur Hotel und Strand.</p>
-        </div>
-        <div class="experience-grid">
-          <article><img alt="" src="https://images.unsplash.com/photo-1517840933437-c41356892b35?auto=format&fit=crop&w=700&q=82"><strong>Reiten am Strand</strong><span>Für Punta Cana, Kap Verde oder Marokko</span></article>
-          <article><img alt="" src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=700&q=82"><strong>Safari oder Day Tour</strong><span>Für Zanzibar oder Sri Lanka</span></article>
-          <article><img alt="" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=700&q=82"><strong>Schnorcheln</strong><span>Für Ägypten, Thailand oder Zanzibar</span></article>
-          <article><img alt="" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=82"><strong>Sunset Drive</strong><span>Für Madeira, Griechenland oder Albanien</span></article>
-        </div>
-      </section>
+        <section class="dashboard-grid">
+          <!-- Itinerary Preview -->
+          <article class="dashboard-card itinerary-card">
+            <div class="card-header">
+              <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Itinerary preview</h3>
+              <div class="dropdown">
+                <span id="itineraryDropdownName">Greece / Crete <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              </div>
+            </div>
+            <div class="itinerary-content">
+              <div class="day-tabs" id="itineraryTabs">
+                <button class="day-tab is-active"><strong>Day 1</strong><span>Arrival & settle in</span></button>
+                <button class="day-tab"><strong>Day 2-3</strong><span>Romance</span></button>
+                <button class="day-tab"><strong>Day 4-6</strong><span>Action</span></button>
+                <button class="day-tab"><strong>Finale</strong><span>Leisure & farewell</span></button>
+              </div>
+              <div class="day-details" id="itineraryDetails">
+                <!-- JS Populated -->
+              </div>
+            </div>
+          </article>
 
-      <section class="comparison" id="vergleich">
-        <div class="section-head compact">
-          <h2>Favoriten vergleichen</h2>
-          <p>Herzen anklicken, dann sieht man sofort, was für euch am besten passt.</p>
-        </div>
-        <div class="compare-list" id="compareList"></div>
-      </section>
+          <!-- Budget Comparison -->
+          <article class="dashboard-card budget-card">
+            <div class="card-header">
+              <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Budget comparison</h3>
+              <span class="header-note">for 2 people</span>
+            </div>
+            <div class="chart-container">
+              <div class="y-axis">
+                <span>€5,000</span>
+                <span>€4,000</span>
+                <span>€3,000</span>
+                <span>€2,000</span>
+                <span>€1,000</span>
+                <span>€0</span>
+              </div>
+              <div class="bars" id="budgetBars">
+                <!-- JS Populated -->
+              </div>
+              <div class="chart-legend">
+                <div><span class="legend-color" style="background: #4b89c3;"></span> Flights</div>
+                <div><span class="legend-color" style="background: #4ba88c;"></span> Stay (7 nights)</div>
+                <div><span class="legend-color" style="background: #eab34e;"></span> Activities</div>
+                <div><span class="legend-color" style="background: #e36a5c;"></span> Food</div>
+              </div>
+            </div>
+            <div class="budget-alert">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+              <div>
+                <strong>All three fit within your €5,000 budget for 2 people.</strong>
+                <p>Tweak your dates, stays or activities to save more.</p>
+              </div>
+            </div>
+          </article>
 
-      <section class="planner" id="plan">
-        <div class="planner-copy">
-          <h2>Perfekter Honeymoon-Plan</h2>
-          <p>
-            Ideal wäre 7 bis 10 Nächte, ein schönes Hotel und 2 bis 4 besondere Ausflüge,
-            die in Erinnerung bleiben.
-          </p>
-        </div>
-        <div class="timeline">
-          <article>
-            <span>Tag 1-2</span>
-            <strong>Ankommen und runterfahren</strong>
-            <p>Meerblick, Spa, langer Strandspaziergang, kein voller Tourplan.</p>
+          <!-- Find perfect experience -->
+          <article class="dashboard-card experiences-card">
+            <div class="card-header">
+              <h3>Find your perfect experience</h3>
+              <button class="outline-btn">Match my vibe</button>
+            </div>
+            <div class="experiences-grid">
+              <div class="experience-item">
+                <img src="https://images.unsplash.com/photo-1517840933437-c41356892b35?auto=format&fit=crop&w=400&q=80" alt="Horseback riding">
+                <div class="exp-info">
+                  <h4>Horseback riding</h4>
+                  <div class="match-row">
+                    <span>Great match</span>
+                    <span class="match-badge">86%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-item">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Romantic beach">
+                <div class="exp-info">
+                  <h4>Romantic beach</h4>
+                  <div class="match-row">
+                    <span>Evening</span>
+                    <span class="match-badge">94%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-item">
+                <img src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=400&q=80" alt="Safari">
+                <div class="exp-info">
+                  <h4>Safari / day tours</h4>
+                  <div class="match-row">
+                    <span>Great match</span>
+                    <span class="match-badge">82%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-item">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=400&q=80" alt="Snorkeling">
+                <div class="exp-info">
+                  <h4>Snorkeling</h4>
+                  <div class="match-row">
+                    <span>Great match</span>
+                    <span class="match-badge">82%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </article>
-          <article>
-            <span>Tag 3-5</span>
-            <strong>Ein großes Erlebnis</strong>
-            <p>Safari, Reitausflug, Bootstag, Schnorcheln oder private Food-Tour.</p>
-          </article>
-          <article>
-            <span>Tag 6-8</span>
-            <strong>Romantik pur</strong>
-            <p>Sunset-Dinner, Fotos, Altstadt, Beach Club oder eine kleine Insel.</p>
-          </article>
-          <article>
-            <span>Finale</span>
-            <strong>Ein Lieblingsmoment</strong>
-            <p>Das Ziel gewinnt, bei dem ihr beide am meisten lächeln müsst.</p>
-          </article>
-        </div>
-      </section>
+        </section>
+
       </main>
 
-      <section class="bottom-shortlist" aria-label="Shortlist">
-        <div>
-          <strong>Unsere Shortlist</strong>
-          <span>Favoriten antippen und gemeinsam entscheiden</span>
+      <!-- BOTTOM STICKY BAR -->
+      <section class="bottom-sticky-bar">
+        <div class="shortlist-header">
+          <strong>Your shortlist <span class="badge" id="shortlistBadge">3</span></strong>
+          <span>Vote for our top pick!</span>
         </div>
-        <div class="shortlist-items" id="shortlistItems"></div>
-        <a href="#vergleich">Final wählen</a>
+        <div class="shortlist-candidates" id="shortlistCandidates">
+          <!-- Populated by JS -->
+        </div>
+        <button class="decide-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <div class="btn-text">
+            <strong>Help us decide!</strong>
+            <span>Vote for your favorite destination</span>
+          </div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
       </section>
 
-      <footer>
-        <span>Gemacht als kleine romantische Entscheidungshilfe für euch zwei.</span>
-        <span>Beste Reisezeit bitte vor der Buchung noch einmal live prüfen.</span>
-      </footer>
+      <!-- RIGHT SIDEBAR (COMPARE) -->
+      <aside class="right-drawer">
+        <div class="drawer-header">
+          <h2>COMPARE <span class="badge" id="compareBadge">3</span></h2>
+          <button class="clear-btn">Clear all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+        </div>
+        
+        <div class="compare-thumbs" id="compareThumbs">
+          <!-- JS -->
+        </div>
+
+        <div class="drawer-tabs">
+          <button class="tab is-active">Overview</button>
+          <button class="tab">Details</button>
+        </div>
+
+        <div class="compare-table" id="compareTable">
+          <!-- JS -->
+        </div>
+
+        <button class="view-full-btn">
+          View full comparison <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"></path><line x1="12" y1="3" x2="12" y2="21"></line></svg>
+        </button>
+      </aside>
+
     </div>
 
     <script src="./script.js"></script>
