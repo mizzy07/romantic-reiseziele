@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unser nächstes romantisches Reiseziel</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Zur Startansicht">
+        <span class="brand-mark">R</span>
+        <span>Romance Picker</span>
+      </a>
+      <nav aria-label="Seitennavigation">
+        <a href="#ziele">Ziele</a>
+        <a href="#vergleich">Vergleich</a>
+        <a href="#plan">Plan</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Wohin fliegen wir als nächstes, mein Herz?</h1>
+          <p>
+            Eine interaktive Auswahl für romantische Strandtage, kleine Abenteuer,
+            Safari-Gefühl, gutes Essen und ein Honeymoon-Gefühl im August oder September.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#ziele">Ziele entdecken</a>
+            <button class="ghost-action" id="surpriseMe" type="button">Überrasch mich</button>
+          </div>
+        </div>
+
+        <aside class="decision-panel" aria-label="Interaktiver Reisefilter">
+          <div class="panel-head">
+            <span>Reise-Kompass</span>
+            <strong id="matchCount">12 Treffer</strong>
+          </div>
+          <div class="filter-group" aria-label="Reise-Vibe filtern">
+            <button class="chip is-active" data-filter="all" type="button">Alle</button>
+            <button class="chip" data-filter="strand" type="button">Traumstrand</button>
+            <button class="chip" data-filter="abenteuer" type="button">Abenteuer</button>
+            <button class="chip" data-filter="kurzflug" type="button">Kürzerer Flug</button>
+            <button class="chip" data-filter="luxuswert" type="button">Besonders schön</button>
+          </div>
+          <div class="season-meter">
+            <div>
+              <span>Reisezeit</span>
+              <strong>August bis Mitte September</strong>
+            </div>
+            <div class="meter-track" aria-hidden="true">
+              <span style="width: 82%"></span>
+            </div>
+          </div>
+          <div class="spotlight" id="spotlight">
+            <img alt="" src="https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=1100&q=82" />
+            <div>
+              <span>Aktueller Favorit</span>
+              <strong>Japan</strong>
+              <p>Tempel, Onsen, Stadtlichter und ein paar Tage Inselgefühl auf Okinawa.</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="intro-band" aria-label="Was euch erwartet">
+        <div>
+          <strong>Romantisch</strong>
+          <span>Sonnenuntergänge, Spa, Dinner am Wasser</span>
+        </div>
+        <div>
+          <strong>Spielerisch</strong>
+          <span>Bootstage, Schnorcheln, Reiten, Altstadtbummel</span>
+        </div>
+        <div>
+          <strong>Sommerbereit</strong>
+          <span>Passend für August bis Mitte September</span>
+        </div>
+      </section>
+
+      <section class="section-head" id="ziele">
+        <h2>Die schönsten Kandidaten</h2>
+        <p>
+          Bali bleibt bewusst draußen. Dafür sind ein paar romantische Juwelen dabei,
+          die Strand, Romantik und Erlebnisse stark kombinieren.
+        </p>
+      </section>
+
+      <section class="destination-grid" id="destinationGrid" aria-live="polite"></section>
+
+      <section class="comparison" id="vergleich">
+        <div class="section-head compact">
+          <h2>Favoriten vergleichen</h2>
+          <p>Herzen anklicken, dann sieht man sofort, was für euch am besten passt.</p>
+        </div>
+        <div class="compare-list" id="compareList"></div>
+      </section>
+
+      <section class="planner" id="plan">
+        <div class="planner-copy">
+          <h2>Perfekter Honeymoon-Plan</h2>
+          <p>
+            Ideal wäre 7 bis 10 Nächte, ein schönes Hotel und 2 bis 4 besondere Ausflüge,
+            die in Erinnerung bleiben.
+          </p>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>Tag 1-2</span>
+            <strong>Ankommen und runterfahren</strong>
+            <p>Meerblick, Spa, langer Strandspaziergang, kein voller Tourplan.</p>
+          </article>
+          <article>
+            <span>Tag 3-5</span>
+            <strong>Ein großes Erlebnis</strong>
+            <p>Safari, Reitausflug, Bootstag, Schnorcheln oder private Food-Tour.</p>
+          </article>
+          <article>
+            <span>Tag 6-8</span>
+            <strong>Romantik pur</strong>
+            <p>Sunset-Dinner, Fotos, Altstadt, Beach Club oder eine kleine Insel.</p>
+          </article>
+          <article>
+            <span>Finale</span>
+            <strong>Ein Lieblingsmoment</strong>
+            <p>Das Ziel gewinnt, bei dem ihr beide am meisten lächeln müsst.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Gemacht als kleine romantische Entscheidungshilfe für euch zwei.</span>
+      <span>Beste Reisezeit bitte vor der Buchung noch einmal live prüfen.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
