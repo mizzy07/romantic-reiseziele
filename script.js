@@ -217,6 +217,294 @@
         ['Nachts', 'Glas-Dach-Chalet, Milchstraße']
       ],
       mapBlurb: 'Ende der Welt. Anfang von uns. (Diesmal mit Bergen.)'
+    },
+
+    /* ===== UNSER HÖCHSTES ZIEL ===== */
+    { id: 'mekka', name: 'Mekka & Medina · Umrah', country: 'Saudi-Arabien', region: 'NAH-OST', vibe: ['culture','luxuswert'], flight: 'medium',
+      tagline: 'Unser höchstes Ziel — Hand in Hand vor der Kaaba.',
+      summary: 'Tawaf gemeinsam, Sa\'i zwischen Safa und Marwa, Du\'a in Madinah Sharif. Inschallah eines Tages — wir beide, bekleidet in Weiß, vor dem Haus Allahs.',
+      flightTime: '5h von Frankfurt', bestTime: 'Ramadan oder Außerhalb Hajj', mood: 'Heilig & demütig',
+      hearts: 5, image: IMG('1542521148-51306e7ffc1e'),
+      moodLines: [
+        ['Aufwachen', 'In Mekka — der Adhan weckt uns leise'],
+        ['Tagsüber', 'Tawaf siebenmal um die Kaaba, Sa\'i, Du\'a'],
+        ['Abends', 'Madinah Sharif — Salam an den Propheten ﷺ in der Rawda'],
+        ['Nachts', 'Sterne über der Kaaba, deine Hand in meiner']
+      ],
+      mapBlurb: 'Bāraka Llāhu laka — Allah segne uns. Inschallah hier, gemeinsam.'
+    },
+
+    /* ===== HEIMREISE ===== */
+    { id: 'heimreise', name: 'Heimreise · Bagdad & Kandahar', country: 'Irak & Afghanistan', region: 'WURZELN', vibe: ['culture','abenteuer'], flight: 'medium',
+      tagline: 'Wo unsere Eltern angefangen haben — wir bringen sie stolz nach Hause, durch uns.',
+      summary: 'Ich zeig dir Kandahar, du zeigst mir Bagdad. Tee mit unseren Großmüttern, alte Häuser, das Land, in dem unsere Wurzeln stehen. Eine Reise, die uns ganz macht.',
+      flightTime: '7h via Doha / Istanbul', bestTime: 'Frühjahr / Herbst', mood: 'Tief & verbunden',
+      hearts: 5, image: IMG('1624140930663-c6075007b7fd'),
+      moodLines: [
+        ['Aufwachen', 'Tee mit Kardamom in Kandahar oder Bagdad'],
+        ['Tagsüber', 'Familienhäuser, alte Gassen, Geschichten der Eltern'],
+        ['Abends', 'Lammkebab, Reis mit Safran, alte Lieder'],
+        ['Nachts', 'Sterne über zwei Heimaten, eine gemeinsame Geschichte']
+      ],
+      mapBlurb: 'Du in Bagdad, ich in Kandahar — und wir, in der Mitte, eine ganze Welt.'
+    },
+
+    /* ===== KARIBIK ===== */
+    { id: 'puntacana', name: 'Punta Cana', country: 'Dominikanische Republik', region: 'KARIBIK', vibe: ['strand','luxuswert'], flight: 'long',
+      tagline: 'Türkis, weicher Sand, dein Lachen am Pool.',
+      summary: 'Reiten am Strand, Saona Island, Sonnenuntergang auf einem Catamaran. Unkompliziert wie wir, wenn keiner zuschaut.',
+      flightTime: '10h von Frankfurt', bestTime: 'Dezember – April', mood: 'Tropisch & sorglos',
+      hearts: 4, image: IMG('1509783561732-390c7d0b1661'),
+      moodLines: [
+        ['Aufwachen', 'Resort am Meer, Welcome-Drink, Sand zwischen den Zehen'],
+        ['Tagsüber', 'Saona Island — Boot, Inseln, Schwimmen'],
+        ['Abends', 'Reiten am Strand bei Sunset, Spa danach'],
+        ['Nachts', 'Catamaran-Sunset, Champagner, Sterne']
+      ],
+      mapBlurb: 'Karibik — wo das Meer dich umarmt wie ich.'
+    },
+
+    { id: 'saintlucia', name: 'Saint Lucia', country: 'Karibik', region: 'KARIBIK', vibe: ['strand','luxuswert','nature'], flight: 'long',
+      tagline: 'Die zwei Pitons, ein Pool unter dem Berg, du in Weiß.',
+      summary: 'Eine Klippen-Villa zwischen Gros Piton und Petit Piton, privater Strand, Sulphur Springs Spa, Boots-Tour zur Marigot Bay.',
+      flightTime: '11h via London', bestTime: 'Dezember – April', mood: 'Dramatisch & ruhig',
+      hearts: 5, image: IMG('1605288132419-1aa5e25475b2'),
+      moodLines: [
+        ['Aufwachen', 'Pool-Villa mit Blick auf die Pitons'],
+        ['Tagsüber', 'Boots-Tour zur Marigot Bay, Tauchen'],
+        ['Abends', 'Sulphur Springs Spa — heißes Wasser, Schwefel, Massage'],
+        ['Nachts', 'Sternenhimmel zwischen den Pitons, du in meinem Pulli']
+      ],
+      mapBlurb: 'Zwei Pitons, zwei Herzen, ein Versprechen.'
+    },
+
+    { id: 'cartagena', name: 'Cartagena', country: 'Kolumbien', region: 'AMERIKA', vibe: ['culture','strand','luxuswert'], flight: 'long',
+      tagline: 'Bunte Mauern, Karibik, du tanzt in der Altstadt.',
+      summary: 'Spanische Kolonialstadt am Meer, Plaza Santo Domingo, Salsa, Boot zu den Rosario-Inseln. Fasziniert dein Herz.',
+      flightTime: '12h via Miami', bestTime: 'Dezember – April', mood: 'Bunt & verspielt',
+      hearts: 4, image: IMG('1533518280131-f16fb5540413'),
+      moodLines: [
+        ['Aufwachen', 'Boutique-Hotel in der Altstadt, bunter Innenhof'],
+        ['Tagsüber', 'Spaziergang auf der Stadtmauer, Plaza San Diego'],
+        ['Abends', 'Café del Mar bei Sunset, Salsa-Bar'],
+        ['Nachts', 'Pferdekutsche durch die alten Gassen']
+      ],
+      mapBlurb: 'Hier wird sogar das Schweigen tanzen wollen.'
+    },
+
+    /* ===== SÜDAMERIKA ===== */
+    { id: 'rio', name: 'Rio de Janeiro & Iguazu', country: 'Brasilien', region: 'AMERIKA', vibe: ['culture','strand','nature','abenteuer'], flight: 'long',
+      tagline: 'Christo Redentor, Strand, Samba — dann die größten Wasserfälle der Welt.',
+      summary: 'Copacabana, Pão de Açúcar, Christo bei Sonnenaufgang. Dann Flug zu den Iguazu-Fällen — die Erde brüllt unter uns.',
+      flightTime: '12h von Frankfurt', bestTime: 'April – Oktober', mood: 'Lebendig & episch',
+      hearts: 5, image: IMG('1513648197777-861864c16509'),
+      moodLines: [
+        ['Aufwachen', 'Copacabana — das Meer atmet vor dem Fenster'],
+        ['Tagsüber', 'Christo bei Sonnenaufgang, Pão de Açúcar bei Sonnenuntergang'],
+        ['Abends', 'Churrascaria, Caipirinha, Samba'],
+        ['Nachts', 'Iguazu — die Erde brüllt, wir staunen']
+      ],
+      mapBlurb: 'Brasilien tanzt in dir — und ich tanze mit dir.'
+    },
+
+    { id: 'patagonien', name: 'Patagonien', country: 'Chile & Argentinien', region: 'AMERIKA', vibe: ['nature','abenteuer','luxuswert'], flight: 'long',
+      tagline: 'Granit-Türme, Gletscher, Stille so groß wie wir uns fühlen.',
+      summary: 'Torres del Paine, Perito Moreno Gletscher, Lodge mit Kamin am Ende der Welt. Wandern, schweigen, küssen.',
+      flightTime: '18h via Madrid', bestTime: 'November – März', mood: 'Episch & still',
+      hearts: 5, image: IMG('1510939859912-0e7e5904c400'),
+      moodLines: [
+        ['Aufwachen', 'Lodge in Torres del Paine, Berge im Fenster'],
+        ['Tagsüber', 'Wanderung zum Mirador Las Torres'],
+        ['Abends', 'Kamin, Mate-Tee, Sterne im Wind'],
+        ['Nachts', 'Stille — die größte, die du je gehört hast']
+      ],
+      mapBlurb: 'Hier ist die Welt nackt — und wir auch.'
+    },
+
+    { id: 'machupicchu', name: 'Machu Picchu & Sacred Valley', country: 'Peru', region: 'AMERIKA', vibe: ['culture','nature','abenteuer'], flight: 'long',
+      tagline: 'Wolken, Inka-Steine, du in einem Poncho.',
+      summary: 'Sacred Valley, Cusco-Altstadt, mit dem Hiram-Bingham-Zug nach Aguas Calientes, Sonnenaufgang über den Ruinen.',
+      flightTime: '15h via Lima', bestTime: 'Mai – September', mood: 'Mystisch & hoch',
+      hearts: 5, image: IMG('1526392060635-9d6019884377'),
+      moodLines: [
+        ['Aufwachen', 'Sacred Valley Lodge, Lamas vor dem Fenster'],
+        ['Tagsüber', 'Cusco-Altstadt, Markt von Pisac'],
+        ['Abends', 'Pisco Sour, peruanisches Ceviche'],
+        ['Nachts', 'Sonnenaufgang über Machu Picchu, Wolken brechen auf']
+      ],
+      mapBlurb: 'Wenn alte Steine reden, sagen sie deinen Namen.'
+    },
+
+    /* ===== USA & HAWAII ===== */
+    { id: 'nyc', name: 'New York City', country: 'USA', region: 'AMERIKA', vibe: ['culture','luxuswert'], flight: 'long',
+      tagline: 'Skyline, Brunch, ein Spaziergang über die Brooklyn Bridge.',
+      summary: 'Hotel in SoHo, Central Park bei Sonnenuntergang, Broadway-Show, Top of the Rock, Bagels in einem winzigen Deli.',
+      flightTime: '8h von Frankfurt', bestTime: 'April – Juni / September – November', mood: 'Elektrisch & unsterblich',
+      hearts: 4, image: IMG('1485409088362-2cedbda60383'),
+      moodLines: [
+        ['Aufwachen', 'SoHo, Coffee in einem winzigen Café'],
+        ['Tagsüber', 'Central Park, MoMA, 5th Avenue'],
+        ['Abends', 'Top of the Rock — die Skyline für dich'],
+        ['Nachts', 'Broadway-Show, dann eine Pizza-Slice um 2 Uhr']
+      ],
+      mapBlurb: 'New York wartet — auf den Moment, in dem du sagst „wow".'
+    },
+
+    { id: 'hawaii', name: 'Hawaii · Maui', country: 'USA', region: 'OZEAN', vibe: ['strand','nature','luxuswert'], flight: 'long',
+      tagline: 'Aloha, Lei aus Plumeria, Vulkane und schwarzer Sand.',
+      summary: 'Road to Hana, Haleakala-Sonnenaufgang, schwimmen mit Schildkröten, Lūʻau am Strand. Hawaii ist die zarteste Insel der Welt.',
+      flightTime: '20h via LAX', bestTime: 'April – Oktober', mood: 'Sanft & üppig',
+      hearts: 5, image: IMG('1542259009477-d625272157b7'),
+      moodLines: [
+        ['Aufwachen', 'Beach-Bungalow in Wailea, Plumeria-Duft'],
+        ['Tagsüber', 'Road to Hana — Wasserfälle, schwarze Strände'],
+        ['Abends', 'Lūʻau am Strand, Lei für dich'],
+        ['Nachts', 'Haleakala-Sonnenaufgang über den Wolken']
+      ],
+      mapBlurb: 'Aloha heißt: Hallo. Liebe. Und Auf Wiedersehen. Drei Worte, eine Insel.'
+    },
+
+    /* ===== ASIEN ===== */
+    { id: 'thailand', name: 'Thailand · Krabi & Koh Lanta', country: 'Thailand', region: 'ASIEN', vibe: ['strand','abenteuer'], flight: 'long',
+      tagline: 'Honeymoon-Stimmung — weiße Strände, Longtail-Boote, Spa.',
+      summary: 'Krabi mit den Kalksteinklippen, Boots-Tour zu Phi Phi, Couple-Spa, Streetfood am Nachtmarkt. Thailand ist süß wie du.',
+      flightTime: '11h via Bangkok', bestTime: 'November – April', mood: 'Warm & spielerisch',
+      hearts: 4, image: IMG('1591357629414-80dce3b78d2b'),
+      moodLines: [
+        ['Aufwachen', 'Beach-Resort in Krabi, Vögel statt Wecker'],
+        ['Tagsüber', 'Privates Longtail-Boot zu versteckten Buchten'],
+        ['Abends', 'Couple-Spa, dann Sunset-Drinks'],
+        ['Nachts', 'Streetfood am Nachtmarkt, deine Hand in meiner']
+      ],
+      mapBlurb: 'Thailand schmeckt nach Mango und du nach allem, was zählt.'
+    },
+
+    { id: 'sansibar', name: 'Sansibar', country: 'Tansania', region: 'AFRIKA', vibe: ['strand','abenteuer','luxuswert'], flight: 'long',
+      tagline: 'Gewürze, weiße Strände, Dhow im Sonnenuntergang.',
+      summary: 'Stone Town, Spice-Tour, Schnorcheln in Mnemba Atoll, Dhow bei Sunset, optional Safari-Daytrip nach Selous.',
+      flightTime: '10h via Doha', bestTime: 'Juni – Oktober', mood: 'Exotisch & duftend',
+      hearts: 5, image: IMG('1574622858722-df7d9efe1cce'),
+      moodLines: [
+        ['Aufwachen', 'Beach-Lodge in Nungwi, Indischer Ozean'],
+        ['Tagsüber', 'Stone Town — Gewürze, Türen, alte Geschichten'],
+        ['Abends', 'Dhow im Sunset, Champagner'],
+        ['Nachts', 'Mini-Safari-Tag — Löwen, Elefanten']
+      ],
+      mapBlurb: 'Wo die Gewürze duften, atmet das Herz tiefer.'
+    },
+
+    { id: 'srilanka', name: 'Sri Lanka · Ella & Mirissa', country: 'Sri Lanka', region: 'ASIEN', vibe: ['culture','nature','abenteuer'], flight: 'long',
+      tagline: 'Tee-Hügel, Nine Arches Bridge, Surfen in Mirissa.',
+      summary: 'Galle Old Town, Tea-Train Kandy → Ella, Safari Yala (Leoparden!), Surf-Lesson in Mirissa, Kokoswasser am Strand.',
+      flightTime: '12h via Doha', bestTime: 'Dezember – März', mood: 'Lush & soulful',
+      hearts: 4, image: IMG('1566296314736-6eaac1ca0cb9'),
+      moodLines: [
+        ['Aufwachen', 'Tee-Lodge in Ella, Berge im Nebel'],
+        ['Tagsüber', 'Tea-Train Kandy → Ella — Wind im Haar'],
+        ['Abends', 'Galle Fort — koloniale Mauern, Sunset'],
+        ['Nachts', 'Mirissa — Surfen, Strand, Kokos']
+      ],
+      mapBlurb: 'Der Zug fährt langsam genug, dass man verlieben kann.'
+    },
+
+    { id: 'kerala', name: 'Kerala · Backwaters', country: 'Indien', region: 'ASIEN', vibe: ['nature','culture','luxuswert'], flight: 'long',
+      tagline: 'Hausboot in den Backwaters, Ayurveda-Massage, Tee-Hügel.',
+      summary: 'Privates Hausboot in Alleppey, Ayurveda-Spa in Munnar zwischen Tee-Plantagen, Strand-Tag in Varkala. „Gods own country".',
+      flightTime: '11h via Doha', bestTime: 'September – März', mood: 'Sanft & heilend',
+      hearts: 4, image: IMG('1506461883276-594a12b11cf3'),
+      moodLines: [
+        ['Aufwachen', 'Hausboot in Alleppey, Wasser still wie ein Spiegel'],
+        ['Tagsüber', 'Backwaters — Palmen, Reisfelder, Stille'],
+        ['Abends', 'Ayurveda-Massage zu zweit, Kerzenduft'],
+        ['Nachts', 'Tee-Hügel von Munnar, Wolken im Tal']
+      ],
+      mapBlurb: 'Hier heilt jeder Tag eine Sache, von der wir nicht wussten, dass sie weh tat.'
+    },
+
+    { id: 'samarkand', name: 'Samarkand & Bukhara', country: 'Usbekistan', region: 'ASIEN', vibe: ['culture','luxuswert'], flight: 'medium',
+      tagline: 'Seidenstraße — blaue Kuppeln, Karawansereien, alte Romantik.',
+      summary: 'Registan-Platz in Samarkand, alte Karawansereien in Bukhara, Plov und Granatapfel-Tee, Kupfer-Souk. Tausendundeine Nacht, real.',
+      flightTime: '6h von Frankfurt', bestTime: 'April – Juni / September – Oktober', mood: 'Königlich & poetisch',
+      hearts: 5, image: IMG('1569660927079-11d20952e3fa'),
+      moodLines: [
+        ['Aufwachen', 'Boutique-Riad nahe dem Registan'],
+        ['Tagsüber', 'Registan-Platz, Bibi-Khanym-Moschee'],
+        ['Abends', 'Plov, Granatapfel-Saft, Live-Musik'],
+        ['Nachts', 'Karawanserei-Hotel in Bukhara, Innenhof, Sterne']
+      ],
+      mapBlurb: 'Auf der Seidenstraße haben Liebende seit Jahrhunderten Tee getrunken — wir sind die Nächsten.'
+    },
+
+    /* ===== OZEANIEN ===== */
+    { id: 'sydney', name: 'Sydney & Great Barrier Reef', country: 'Australien', region: 'OZEAN', vibe: ['culture','strand','nature'], flight: 'long',
+      tagline: 'Opera House, Bondi Beach — dann Korallen, die leuchten.',
+      summary: 'Sydney mit Opera House und Harbour Bridge, Bondi-Brunch, Flug nach Cairns, Schnorcheln am Great Barrier Reef.',
+      flightTime: '22h via Singapur', bestTime: 'September – November', mood: 'Sonnig & leicht',
+      hearts: 4, image: IMG('1494948141550-221698c089c2'),
+      moodLines: [
+        ['Aufwachen', 'Hotel mit Harbour-Blick, Frühstück mit Seemöwen'],
+        ['Tagsüber', 'Opera House Tour, Royal Botanic Garden'],
+        ['Abends', 'Bondi Beach Sunset, Fish & Chips'],
+        ['Nachts', 'Cairns — Schnorcheln am Riff, Korallen wie Sterne']
+      ],
+      mapBlurb: 'Down under sind wir oben — über dem Riff, über uns.'
+    },
+
+    /* ===== EUROPA ===== */
+    { id: 'cinque', name: 'Cinque Terre & Toskana', country: 'Italien', region: 'EUROPA', vibe: ['culture','strand','nature'], flight: 'short',
+      tagline: 'Bunte Häuser am Fels, dann Hügel, Wein und Pasta.',
+      summary: 'Manarola-Sonnenuntergang, Wandern zwischen den fünf Dörfern, dann Toskana — Florenz, Siena, ein Weingut bei San Gimignano.',
+      flightTime: '2h von München', bestTime: 'Mai – Juni / September', mood: 'Sonnig & klassisch',
+      hearts: 5, image: IMG('1490650191633-406b47bf6e25'),
+      moodLines: [
+        ['Aufwachen', 'B&B in Manarola, Meer im Fenster'],
+        ['Tagsüber', 'Wanderung Vernazza → Monterosso'],
+        ['Abends', 'Pasta al Pesto, Vermentino, Sunset'],
+        ['Nachts', 'Toskana — Weingut, Kamin, Cantucci & Vin Santo']
+      ],
+      mapBlurb: 'In der Toskana wird die Zeit langsam — wie wir auf einem Sonntagmorgen.'
+    },
+
+    { id: 'provence', name: 'Provence & Côte d\'Azur', country: 'Frankreich', region: 'EUROPA', vibe: ['culture','nature','luxuswert'], flight: 'short',
+      tagline: 'Lavendelfelder, Mistral, Champagner an der Cote d\'Azur.',
+      summary: 'Lavendel von Valensole im Juli, Aix-en-Provence, dann nach Nizza und Saint-Tropez für Côte d\'Azur Glamour.',
+      flightTime: '1.5h von München', bestTime: 'Juni – August (Lavendel)', mood: 'Duftend & elegant',
+      hearts: 5, image: IMG('1530086540-e7a924de9fa9'),
+      moodLines: [
+        ['Aufwachen', 'Mas in der Provence, Lavendel im Hof'],
+        ['Tagsüber', 'Lavendelfelder, alte Marktstädte'],
+        ['Abends', 'Aix-en-Provence, Café auf dem Cours Mirabeau'],
+        ['Nachts', 'Cote d\'Azur — Yacht-Abend in Saint-Tropez']
+      ],
+      mapBlurb: 'Riech die Provence, riech mich, riech uns.'
+    },
+
+    { id: 'kappadokien', name: 'Kappadokien', country: 'Türkei', region: 'NAH-OST', vibe: ['nature','culture','abenteuer'], flight: 'medium',
+      tagline: 'Heißluftballons über märchenhaften Felslandschaften.',
+      summary: 'Cave-Hotel in Göreme, Heißluftballon bei Sonnenaufgang, Ihlara-Tal Wanderung, Türkisches Bad. Wie ein Kindheitstraum.',
+      flightTime: '4h von München', bestTime: 'April – Juni / September – November', mood: 'Surreal & magisch',
+      hearts: 5, image: IMG('1609932937042-56e6bdd7a41b'),
+      moodLines: [
+        ['Aufwachen', 'Cave-Suite in Göreme, Felsen über uns'],
+        ['Tagsüber', 'Heißluftballon-Fahrt bei Sonnenaufgang'],
+        ['Abends', 'Türkisches Bad, dann Mezze-Dinner'],
+        ['Nachts', 'Sterne über den Feenkaminen']
+      ],
+      mapBlurb: 'Wenn die Ballons aufsteigen, hebt sich auch dein Lächeln.'
+    },
+
+    { id: 'schweiz', name: 'Schweiz · Jungfrau & Luzern', country: 'Schweiz', region: 'EUROPA', vibe: ['nature','luxuswert','abenteuer'], flight: 'short',
+      tagline: 'Berge wie Postkarten, Schokolade, eine Zugfahrt zur Spitze.',
+      summary: 'Luzern mit Pilatus-Berg, Jungfraujoch — „Top of Europe", Zermatt mit Matterhorn-Blick. Schweizer Schokolade an jedem Halt.',
+      flightTime: '1h von München', bestTime: 'Juni – September / Dezember (Schnee)', mood: 'Klar & majestätisch',
+      hearts: 4, image: IMG('1556556391-594f26418080'),
+      moodLines: [
+        ['Aufwachen', 'Hotel am Vierwaldstättersee, Berge im Spiegel'],
+        ['Tagsüber', 'Jungfraujoch — Zug zur Spitze, Eispalast'],
+        ['Abends', 'Käsefondue, Glühwein, Kamin'],
+        ['Nachts', 'Zermatt — Matterhorn glüht im Sonnenuntergang']
+      ],
+      mapBlurb: 'Hier oben sind wir näher am Himmel — und an uns.'
     }
   ];
 
@@ -284,6 +572,59 @@
       days: [
         { day: 'Tag 1–6', place: 'Seychellen', title: 'Indischer Ozean', desc: 'La Digue mit dem Fahrrad, Anse Source d\'Argent, Schildkröten.' },
         { day: 'Tag 7–14', place: 'Bora Bora', title: 'Pazifischer Traum', desc: 'Über-Wasser-Bungalow, Mount Otemanu, privater Motu-Dinner.' }
+      ]
+    },
+    {
+      id: 'route-pilger',
+      title: 'Unsere heilige Reise',
+      subtitle: '14 Tage · Mekka → Medina → Heimreise',
+      blurb: 'Unser höchstes Ziel — Umrah gemeinsam, dann zu unseren Wurzeln. Bagdad, Kandahar. Inschallah eines Tages.',
+      stops: ['mekka','heimreise'],
+      image: IMG('1542521148-51306e7ffc1e'),
+      days: [
+        { day: 'Tag 1–4', place: 'Mekka', title: 'Tawaf und Sa\'i', desc: 'Umrah gemeinsam — siebenmal um die Kaaba, Sa\'i zwischen Safa und Marwa, Du\'a für unser Leben.' },
+        { day: 'Tag 5–7', place: 'Medina', title: 'Madinah Sharif', desc: 'Salam an den Propheten ﷺ in der Rawda. Stille. Frieden. Dankbarkeit.' },
+        { day: 'Tag 8–11', place: 'Bagdad', title: 'Deine Wurzeln', desc: 'Du zeigst mir deine Stadt — den Tigris, alte Familienhäuser, deine Mama im Mittelpunkt.' },
+        { day: 'Tag 12–14', place: 'Kandahar', title: 'Meine Wurzeln', desc: 'Ich zeige dir meine — Tee mit Kardamom, Granatapfel, das Land meiner Eltern.' }
+      ]
+    },
+    {
+      id: 'route-lateinamerika',
+      title: 'Lateinamerikanische Liebe',
+      subtitle: '17 Tage · Cartagena → Rio → Patagonien → Machu Picchu',
+      blurb: 'Karibik, dann Samba, dann Stille zwischen Granit-Türmen, dann ein Sonnenaufgang über alten Steinen.',
+      stops: ['cartagena','rio','patagonien','machupicchu'],
+      image: IMG('1513648197777-861864c16509'),
+      days: [
+        { day: 'Tag 1–4', place: 'Cartagena', title: 'Karibische Romantik', desc: 'Bunte Mauern, Salsa, Boot zu den Rosario-Inseln.' },
+        { day: 'Tag 5–8', place: 'Rio de Janeiro', title: 'Christo & Iguazu', desc: 'Christo Redentor, Pão de Açúcar, dann Flug zu den Iguazu-Fällen.' },
+        { day: 'Tag 9–13', place: 'Patagonien', title: 'Stille der Anden', desc: 'Torres del Paine Lodge, Wandern, Gletscher, Sterne.' },
+        { day: 'Tag 14–17', place: 'Machu Picchu', title: 'Inka-Steine', desc: 'Sacred Valley, Hiram Bingham Zug, Sonnenaufgang über Machu Picchu.' }
+      ]
+    },
+    {
+      id: 'route-asien-romantik',
+      title: 'Asiatische Sanftheit',
+      subtitle: '15 Tage · Kerala → Sri Lanka → Bali',
+      blurb: 'Hausboot, Tee-Train, Reisterrassen — drei Welten, ein langsamer Atem.',
+      stops: ['kerala','srilanka','bali'],
+      image: IMG('1506461883276-594a12b11cf3'),
+      days: [
+        { day: 'Tag 1–5', place: 'Kerala', title: 'Backwaters & Tee', desc: 'Hausboot in Alleppey, Ayurveda in Munnar, Tee-Hügel.' },
+        { day: 'Tag 6–10', place: 'Sri Lanka', title: 'Tea-Train & Strand', desc: 'Galle, Tea-Train Kandy → Ella, Safari Yala, Mirissa Beach.' },
+        { day: 'Tag 11–15', place: 'Bali', title: 'Grünes Schließen', desc: 'Ubud-Pool-Villa, Reisterrassen, Tempel, Spa für zwei.' }
+      ]
+    },
+    {
+      id: 'route-amerika-traum',
+      title: 'Großer Amerika-Traum',
+      subtitle: '12 Tage · NYC → Hawaii',
+      blurb: 'Skyline und dann Aloha. Brunch in Manhattan, Lei in Maui — die ganze Spannweite.',
+      stops: ['nyc','hawaii'],
+      image: IMG('1485409088362-2cedbda60383'),
+      days: [
+        { day: 'Tag 1–5', place: 'New York', title: 'Skyline-Tage', desc: 'SoHo, Central Park, Top of the Rock, Broadway.' },
+        { day: 'Tag 6–12', place: 'Hawaii · Maui', title: 'Aloha-Tage', desc: 'Beach-Bungalow, Road to Hana, Haleakala-Sunrise, Lūʻau.' }
       ]
     }
   ];
