@@ -509,17 +509,31 @@
 
     /* ===== SKANDINAVIEN — Familie & Romantik ===== */
     { id: 'malmoe', name: 'Malmö · bei deiner Familie', country: 'Schweden', region: 'SKANDINAVIEN', vibe: ['culture','luxuswert'], flight: 'short',
-      tagline: 'Fünf Tage bei Oma, Onkel, Tante und deinen Cousins — Familie ist Heimat.',
-      summary: 'Spaziergang am Hafen, Fika in alten Cafés, Familienessen bei deiner Oma — die irakische Seite, die dich groß gemacht hat. Und ich darf endlich alle kennenlernen.',
+      tagline: 'Fünf Tage bei Oma, Onkel, Tante, Noor, Saif, Yousef & den zwei zuckersüßen Kindern.',
+      summary: 'Familienzeit bei deiner Lieblings-Cousine Noor & Monir (auch Kandahar-Pashtune wie ich!), bei Saif und Yousef. Spaziergang am Hafen, Fika, Familienessen bei Oma — die irakische Seite, die dich groß gemacht hat.',
       flightTime: '2h von München', bestTime: 'Mai – September', mood: 'Familiär & warm',
       hearts: 5, image: IMG('1539696511453-ed701e370daf'),
       moodLines: [
-        ['Aufwachen', 'Boutique-Hotel oder bei deiner Tante, Kaffee am Tisch'],
-        ['Tagsüber', 'Pildammsparken, Hafenpromenade, Lilla Torg'],
-        ['Abends', 'Familienessen — irakischer Reis, Lammkebab, Geschichten'],
-        ['Nachts', 'Cousin-Talk bis spät, dein Lachen mit Familie']
+        ['Aufwachen', 'Bei Noor & Monir, Kaffee mit Karim für die Kinder'],
+        ['Tagsüber', 'Pildammsparken, Hafenpromenade, Lilla Torg mit Saif & Yousef'],
+        ['Abends', 'Familienessen — irakischer Reis, paschtunischer Lammkebab, Geschichten'],
+        ['Nachts', 'Balkon-Talk mit Noor & Monir — wie damals, vor unserer Verlobung']
       ],
       mapBlurb: 'Familie ist die Sprache, in der du am schönsten klingst, Habibti.'
+    },
+
+    { id: 'berlin', name: 'Berlin · bei Hajar', country: 'Deutschland', region: 'EUROPA', vibe: ['culture','fun','luxuswert'], flight: 'short',
+      tagline: 'Bei deiner Lieblings-Cousine Hajar — Mauerpark, Brunch, Familie.',
+      summary: 'Wochenende bei Hajar — Boutique-Hotel oder bei ihr, Spaziergang Mauerpark, Brunch in Mitte, Brandenburger Tor, Spree-Boot, abends Hajars Wohnzimmer mit Tee.',
+      flightTime: '1h von München (oder Zug)', bestTime: 'Mai – September / Dezember (X-Mas)', mood: 'Lebendig & familiär',
+      hearts: 4, image: IMG('1560969184-10fe8719e047'),
+      moodLines: [
+        ['Aufwachen', 'Boutique-Hotel in Mitte oder bei Hajar, Brunch-Pläne'],
+        ['Tagsüber', 'Mauerpark Karaoke, East Side Gallery, Spreeufer'],
+        ['Abends', 'Familien-Dinner mit Hajar, Späti-Talk auf der Bank'],
+        ['Nachts', 'Sky Bar im Park Inn, Berlin-Skyline für dich']
+      ],
+      mapBlurb: 'Hajar in Berlin ist Familie auf Distanz — aber nicht im Herzen.'
     },
 
     { id: 'kopenhagen', name: 'Kopenhagen', country: 'Dänemark', region: 'SKANDINAVIEN', vibe: ['culture','luxuswert','strand'], flight: 'short',
@@ -927,7 +941,7 @@
     { id: 'l5', pin: 'Brief 05 · Kandahar zu Bagdad', title: 'Zwei Städte, ein Herz', body: 'Aus Kandahar zu dir nach Bagdad — Kilometer waren nichts. Sprache war nichts. Krieg war nichts. Du hast gewonnen, bevor ich es wusste. Ich liebe dich auf Paschtu, auf Arabisch, auf Deutsch — auf jeder Sprache, die du jemals lernen wirst.', sign: '— Mika, dein Janem' },
     { id: 'l6', pin: 'Brief 06 · Heute', title: 'Heute, jetzt', body: 'Such dir den Ort aus. Ich kümmere mich um den Rest. Du musst nichts machen außer dein Herz öffnen. Diese App ist mein Brief an dich. Lies sie, wenn du willst. Aber denk dran: das Schönste in jeder Stadt bist du.', sign: '— ich, der Glückliche, dein Mika' },
 
-    { id: 'l7', featured: true, pin: 'Brief 07 · 10.01.2026', title: 'Verlobung im Schnee', body: 'Mein Herz, an unserem Verlobungstag bin ich mit Sommerreifen durch hohen Schnee gefahren — weil ich keinen einzigen Moment ohne dich verpassen wollte. Auf der Hinfahrt zum Saal bist du komplett crashout gegangen, weil der DJ nicht auf seinen Platz spielen wollte. Du hast geweint, geschrien, alles war chaotisch — und ich hab nur eins gedacht: „Alhamdulillah, dass diese Frau meine wird." Jeder Moment der Panik war ein Beweis: du nimmst es ernst, du willst alles perfekt — für UNS. Habibti, an dem Tag hab ich mich nicht nur mit dir verlobt. Ich hab mich mit jeder Version von dir verlobt. Mit der lachenden, der weinenden, der wütenden, der schlafenden. Mit allen.', sign: '— Mika, dein Verlobter durch jeden Sturm' },
+    { id: 'l7', featured: true, pin: 'Brief 07 · Nikkah 10.01.2026', title: 'Verlobung & Nikkah in Penzberg', body: 'Mein Herz, am 10.01.2026 in der Moschee in Penzberg haben wir vor Allah Nikkah gemacht. Vor unseren Familien, vor Zeugen, vor dem Imam. Ich bin mit Sommerreifen durch hohen Schnee gefahren — weil ich keinen einzigen Moment ohne dich verpassen wollte. Auf der Hinfahrt zum Saal bist du komplett crashout gegangen, weil der DJ nicht auf seinen Platz spielen wollte. Du hast geweint, geschrien, alles war chaotisch — und ich hab nur eins gedacht: „Alhamdulillah, dass diese Frau meine wird." Jeder Moment der Panik war ein Beweis: du nimmst es ernst, du willst alles perfekt — für UNS. Habibti, an dem Tag hab ich mich nicht nur mit dir verlobt. Ich hab mich mit jeder Version von dir verlobt. Mit der lachenden, der weinenden, der wütenden, der schlafenden. Mit allen. „Bāraka Llāhu laka wa jama\'a baynakumā fī khayr" — Allah hat es über uns ausgesprochen.', sign: '— Mika, dein Mann durch jeden Sturm, durch jede Sommerreifen-Fahrt' },
 
     { id: 'l8', featured: true, pin: 'Brief 08 · Stunden, die wie Minuten waren', title: 'Das Frühstück, das wir nie gegessen haben', body: 'Erinnerst du dich an das Frühstück, bei dem wir vergessen haben zu essen? Drei, vier Stunden lang haben wir über den Islam geredet. Über Allah. Über die Welt. Über Bagdad und Kandahar. Über unsere Eltern, unsere Träume, unsere Ängste. Der Tee wurde kalt, das Brot trocken — uns war es egal. „Wa ja\'ala baynakum mawaddatan wa raḥmah" sagt der Quran (Sure 30:21) — Und Er hat zwischen euch Liebe und Barmherzigkeit gelegt. An dem Morgen hab ich verstanden, was das heißt. Mit dir kann ich über alles reden, was wichtig ist. Und auch über alles, was nicht wichtig ist. Beides ist gleich heilig.', sign: '— dein Mika, der dir lieber zuhört als isst' },
 
@@ -943,7 +957,9 @@
 
     { id: 'l14', pin: 'Brief 14 · Geographie', title: 'Bagdad ↔ Kandahar ↔ München', body: 'Meine Eltern aus Kandahar. Deine aus Bagdad. Tausende Kilometer zwischen unseren Wurzeln — und doch hat das Schicksal uns in dieselbe deutsche Straße gelegt. Wir sind beide München-Kinder. Wir sind beide Migrationskinder. Wir sind beide das Ergebnis von Eltern, die alles riskiert haben, damit wir es leichter haben. Und unsere Liebe ist die Antwort darauf. Sie ist Bagdad und Kandahar, gemischt mit Münchner Regen. Sie ist Arabisch und Paschtu, gesprochen mit bayerischem Akzent. Habibti, wir sind eine Geschichte, die zwei Großmütter in Tränen erzählen werden. Und ich bin stolz, jeden Tag mit dir an dieser Geschichte zu schreiben.', sign: '— Mika, dein Münchner Pashtune für deine irakische Königin' },
 
-    { id: 'l15', featured: true, pin: 'Brief 15 · Tiefe Dankbarkeit', title: 'Du hast nie losgelassen', body: 'Habibti, etwas, das ich dir nicht oft genug sage: Danke. Danke, dass du unsere Liebe nie losgelassen hast. Auch wenn ich kämpfen musste mit mir. Auch wenn die Welt grau wurde. Auch wenn ich selbst zweifelte — du hast geglaubt. Immer. Wie ein Anker, der sich nicht bewegt, wenn das Schiff schaukelt. Manche Frauen verlieren den Glauben, wenn der Mann stolpert. Du bist anderer Stoff. Du hast mich gehalten, wenn ich nicht halten konnte. Du hast unsere Geschichte weitergeschrieben, wenn ich vergessen hatte, wie das Buch heißt. „Idhā aḥabba aḥadukum akhāhu fal-yu\'limhu" — wenn du jemanden liebst, sag\'s ihm. Maryem, ich sag\'s dir jetzt: Ich danke dir. Für jede Nacht, in der du an uns geglaubt hast, als ich es nicht konnte. Für jeden Morgen, an dem du mich angeschaut hast, als wäre nichts gewesen. Für jede einzelne Sekunde, in der du gewählt hast, zu bleiben. Allah hat dich mir geschickt — aber DU hast dich entschieden, zu bleiben. Das ist das größere Geschenk.', sign: '— Mika, ewig dankbar dass du mich nie losgelassen hast' }
+    { id: 'l15', featured: true, pin: 'Brief 15 · Trotz aller', title: 'Du hast nie losgelassen', body: 'Habibti, etwas, das ich dir nicht oft genug sage: Danke. Wir beide haben nie an UNS gezweifelt — keine Sekunde. Aber die Welt um uns hat\'s versucht. Manche haben Auge gemacht, manche haben uns nicht gegönnt, manche haben hinter unserem Rücken geredet. Du hast es einfach ignoriert. Du hast deinen Kopf zu mir gewendet, immer wieder, egal wer was sagte. Das ist der größte Beweis von Liebe, den eine Frau geben kann — nicht in den Anker zu beißen, wenn der Sturm kommt, sondern den Kompass auf dieselbe Richtung zu halten. Wir sind nicht zusammen weil es leicht war. Wir sind zusammen weil wir entschieden haben, dass nichts von außen es brechen darf. Und am 10.01.2026, in der Moschee in Penzberg, vor Allah und unseren Familien — haben wir es allen gezeigt. Was Allah zusammenbringt, kann kein Mensch trennen. Du hast nie losgelassen. Ich auch nicht. Wir haben gewonnen, Galbi.', sign: '— Mika, dankbar dass du nie losgelassen hast trotz aller, die wollten' },
+
+    { id: 'l16', featured: true, pin: 'Brief 16 · Balkon-Wunsch', title: 'Auf dem Balkon, vor unserer Verlobung', body: 'Erinnerst du dich? Wir saßen auf dem Balkon mit Noor und Monir. Sie verheiratet, zwei zuckersüße Kinder, beide stolz und in Liebe. Monir aus Kandahar — wie ich. Noor aus Schweden — deine Cousine, deine Person. Wir haben zugehört, haben geträumt: „Inschallah genauso, eines Tages — verheiratet, zwei oder mehr Kinder, ein Leben das aussieht wie ihres." Damals waren wir noch nicht mal verlobt. Heute sind wir es — vor Allah in der Moschee in Penzberg. Was damals ein Wunsch auf einem Balkon war, ist jetzt eine echte Geschichte. Inschallah kommen die Kinder als Nächstes — und wir werden für sie das, was Noor und Monir für uns waren: ein Vorbild. Hajar in Berlin, Noor in Malmö, Saif und Yousef — deine Cousins sind unsere zweite Familie, und ich nehme jeden einzeln an die Hand. Ein paar Balkon-Worte, ein paar Jahre, eine ganze Welt umgedreht.', sign: '— Mika, der den Wunsch nicht vergessen hat' }
   ];
 
   /* === PETNAMES (Arabisch · Paschtu · Bollywood — mit deutscher Übersetzung) === */
