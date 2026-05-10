@@ -574,7 +574,7 @@ main {
   color: var(--paper);
 }
 .hero-eyebrow {
-  display: inline-flex; align-items: center; gap: 8px;
+  display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; row-gap: 4px;
   padding: 6px 14px;
   background: rgba(13,5,25,0.6);
   border: 1px solid var(--line);
@@ -584,6 +584,14 @@ main {
   color: var(--gold-soft);
   margin-bottom: 18px;
   backdrop-filter: blur(8px);
+  max-width: 100%;
+}
+.hero-eyebrow em {
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  font-size: 11px;
 }
 .hero-eyebrow .heart-text { color: var(--rose); animation: pulse 1.6s infinite; }
 .hero-content h1 {
@@ -2875,10 +2883,15 @@ button:focus-visible, a:focus-visible, [data-heart]:focus-visible {
   .dest-card { flex: 0 0 250px; }
   .love-note { margin: 24px 12px; padding: 36px 18px; }
   .love-note p { font-size: 19px; }
-  .music-toggle, .music-panel { right: 12px; }
-  .music-toggle { top: 14px; padding: 9px 14px; }
+  /* Music-Toggle auf Mobile in der Mitte unter dem Header (nicht oben rechts wo es mit Notch + Hamburger kollidiert) */
+  .music-toggle {
+    top: auto; bottom: calc(env(safe-area-inset-bottom, 0px) + 96px);
+    right: 12px; left: auto;
+    padding: 9px 14px;
+    z-index: 41;
+  }
   .music-toggle span:not(.equalizer) { display: none; }
-  .music-panel { width: calc(100% - 24px); top: 64px; }
+  .music-panel { right: 12px; left: 12px; width: auto; max-width: none; bottom: calc(env(safe-area-inset-bottom, 0px) + 156px); top: auto; }
   .surprise-btn { top: 18px; right: 18px; }
   .petnames-card,
   .pandora-card,
