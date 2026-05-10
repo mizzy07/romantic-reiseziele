@@ -1206,6 +1206,202 @@
     };
   }
 
+  /* === ERINNERUNGEN (Slideshow + Grid) === */
+  let memoriesData = null;
+  let memIdx = 0;
+  let memTimer = null;
+  let memPlaying = true;
+
+  async function loadMemories() {
+    if (memoriesData) return memoriesData;
+    try {
+      const r = await fetch('./assets/erinnerungen/manifest.json');
+      memoriesData = await r.json();
+    } catch (e) { memoriesData = { records: [], clusters: [] }; }
+    return memoriesData;
+  }
+
+  function fmtDate(s) {
+    if (!s) return '';
+    const m = String(s).match(/(\d{4}):(\d{2}):(\d{2})/);
+    if (!m) return '';
+    const months = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sept','Okt','Nov','Dez'];
+    return `${parseInt(m[3])}. ${months[parseInt(m[2])-1]} ${m[1]}`;
+  }
+
+  function showMemoryAt(i) {
+    const d = memoriesData;
+    if (!d || !d.records.length) return;
+    memIdx = (i + d.records.length) % d.records.length;
+    const r = d.records[memIdx];
+    const frame = $('#memoriesFrame');
+    const isVid = r.type === 'video';
+    frame.innerHTML = isVid
+      ? `<video src="${r.web}" autoplay muted loop playsinline poster="${r.thumb || ''}"></video>`
+      : `<img src="${r.web}" alt="" loading="eager">`;
+    $('#memoriesMeta').innerHTML = `
+      ${r.place ? `<span class="meta-place">${r.place}</span>` : ''}
+      ${r.date ? `<span class="meta-date">${fmtDate(r.date)}</span>` : ''}
+    `;
+    $('#memoriesCounter').textContent = `${memIdx + 1} / ${d.records.length}`;
+  }
+
+  function memTick() { if (memPlaying) showMemoryAt(memIdx + 1); }
+
+  async function renderMemories() {
+    await loadMemories();
+    if (!memoriesData.records.length) {
+      $('#memoriesFrame').innerHTML = '<p style="padding:40px;text-align:center;color:var(--muted);">Noch keine Erinnerungen geladen.</p>';
+      return;
+    }
+    showMemoryAt(0);
+    if (memTimer) clearInterval(memTimer);
+    memTimer = setInterval(memTick, 4500);
+    $('#memPrev').onclick = () => { showMemoryAt(memIdx - 1); resetMemTimer(); };
+    $('#memNext').onclick = () => { showMemoryAt(memIdx + 1); resetMemTimer(); };
+    $('#memPlay').onclick = () => {
+      memPlaying = !memPlaying;
+      $('#memPlayIcon').innerHTML = memPlaying
+        ? '<polygon points="6 3 20 12 6 21 6 3"></polygon>'
+        : '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>';
+    };
+
+    // Grid
+    const grid = $('#memoriesGrid');
+    grid.innerHTML = memoriesData.records.map((r, i) => `
+      <button class="mem-tile" data-mem-idx="${i}" aria-label="${r.place || 'Erinnerung'}">
+        <img src="${r.thumb || r.web}" alt="" loading="lazy">
+        ${r.type === 'video' ? '<span class="mem-tile-video">▶</span>' : ''}
+        ${r.place ? `<span class="mem-tile-place">${r.place.split(',')[0]}</span>` : ''}
+      </button>
+    `).join('');
+    $$('[data-mem-idx]').forEach(b => {
+      b.onclick = () => {
+        showMemoryAt(parseInt(b.dataset.memIdx, 10));
+        resetMemTimer();
+        $('#memoriesStage').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+    });
+    $('#memoriesGridCount').textContent = `${memoriesData.records.length} Aufnahmen aus ${new Set(memoriesData.clusters.map(c => c.country).filter(Boolean)).size} Ländern`;
+
+    // Stats
+    const countries = {};
+    memoriesData.clusters.forEach(c => { if (c.country) countries[c.country] = (countries[c.country] || 0) + c.count; });
+    const sorted = Object.entries(countries).sort((a,b) => b[1] - a[1]);
+    $('#memoriesStats').innerHTML = `
+      <div class="stat-row">
+        ${sorted.map(([c, n]) => `<div class="stat-pill"><strong>${n}</strong><span>${c}</span></div>`).join('')}
+      </div>
+    `;
+  }
+  function resetMemTimer() {
+    if (memTimer) clearInterval(memTimer);
+    memTimer = setInterval(memTick, 4500);
+  }
+
+  /* === UNSERE KARTE === */
+  const dreams = [
+    { lat: 25.276987,  lon: 51.520008,   place: 'Doha, Katar',                   why: 'Souks, Skyline, Wochenende im Orient.' },
+    { lat: 21.3099,    lon: -157.8581,   place: 'Honolulu, Hawaii',              why: 'Aloha, Lei, Vulkane &mdash; und du in Weiß am Strand.' },
+    { lat: 18.4655,    lon: -66.1057,    place: 'San Juan, Puerto Rico',         why: 'Karibische Altstadt, Salsa, blauer Atlantik.' },
+    { lat: 13.0827,    lon: -59.5380,    place: 'Barbados, Karibik',             why: 'Türkis. Ich, du, eine Hängematte.' },
+    { lat: 40.7128,    lon: -74.0060,    place: 'New York City, USA',            why: 'Brunch, Skyline, Carrie-Bradshaw-Energy.' },
+    { lat: 34.0522,    lon: -118.2437,   place: 'Los Angeles, USA',              why: 'Hollywood, PCH-Roadtrip, Big Sur.' },
+    { lat: 36.1699,    lon: -115.1398,   place: 'Las Vegas, USA',                why: 'Lichter, Show, vielleicht eine zweite Verlobungsfeier.' },
+    { lat: -22.9068,   lon: -43.1729,    place: 'Rio de Janeiro, Brasilien',     why: 'Christo, Zuckerhut, Strand, Samba.' },
+    { lat: -34.6037,   lon: -58.3816,    place: 'Buenos Aires, Argentinien',     why: 'Tango und das beste Steak der Welt.' },
+    { lat: -13.1631,   lon: -72.5450,    place: 'Machu Picchu, Peru',            why: 'Wolken, Inka-Steine, du in einem Poncho.' },
+    { lat: -33.8688,   lon: 151.2093,    place: 'Sydney, Australien',            why: 'Opera House, Bondi Beach, Outback.' },
+    { lat: -36.8485,   lon: 174.7633,    place: 'Auckland, Neuseeland',          why: 'Mittelerde, Fjorde, Sterne.' },
+    { lat: -1.2921,    lon: 36.8219,     place: 'Nairobi, Kenia',                why: 'Safari Big Five &mdash; Inschallah.' },
+    { lat: -3.3731,    lon: 29.9189,     place: 'Bujumbura / Sansibar',          why: 'Gewürzinsel, Dhow, deine Hand.' },
+    { lat: 64.1466,    lon: -21.9426,    place: 'Reykjavík, Island',             why: 'Polarlichter, blaue Lagune, Stille.' },
+    { lat: 48.8566,    lon: 2.3522,      place: 'Paris, Frankreich',             why: 'Ein zweites Mal, weil einmal nicht reicht.' },
+    { lat: 41.8902,    lon: 12.4922,     place: 'Rom, Italien',                  why: 'Trevi-Brunnen-Wunsch: nochmal du.' },
+    { lat: 35.0116,    lon: 135.7681,    place: 'Kyoto, Japan',                  why: 'Kirschblüten, Tempel, Ryokan.' },
+    { lat: 30.0444,    lon: 31.2357,     place: 'Kairo, Ägypten',                why: 'Pyramiden, Nil, arabisches Frühstück.' },
+    { lat: 31.7683,    lon: 35.2137,     place: 'Jerusalem',                     why: 'Heilige Erde, Du\'a zusammen.' },
+    { lat: 21.4225,    lon: 39.8262,     place: 'Mekka &middot; Umrah',          why: 'Inschallah Hand in Hand vor der Kaaba.' },
+    { lat: 24.4539,    lon: 54.3773,     place: 'Abu Dhabi, VAE',                why: 'Sheikh Zayed Moschee, Wüste, Falknerei.' },
+    { lat: 4.6097,     lon: -74.0817,    place: 'Cartagena, Kolumbien',          why: 'Bunte Mauern, Karibik, du tanzt.' }
+  ];
+
+  let mapInstance = null;
+  async function renderKarte() {
+    await loadMemories();
+    if (!window.L) {
+      $('#ourMap').innerHTML = '<p style="padding:40px;text-align:center;">Karte konnte nicht geladen werden.</p>';
+      return;
+    }
+    if (mapInstance) { mapInstance.remove(); mapInstance = null; }
+
+    mapInstance = L.map('ourMap', { worldCopyJump: true, scrollWheelZoom: false });
+    mapInstance.setView([20, 30], 2);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd', maxZoom: 19
+    }).addTo(mapInstance);
+
+    // Been pins (gold)
+    const beenIcon = L.divIcon({
+      className: 'pin pin-been',
+      html: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>',
+      iconSize: [32, 32], iconAnchor: [16, 32]
+    });
+    (memoriesData.clusters || []).forEach(c => {
+      const sample = (c.samples || [])[0];
+      const sampleRec = sample ? memoriesData.records.find(r => r.id === sample) : null;
+      const popup = `
+        <div class="map-popup">
+          ${sampleRec ? `<img src="${sampleRec.thumb || sampleRec.web}" alt="" />` : ''}
+          <strong>${c.label || 'Unser Ort'}</strong>
+          <span>${c.count} Erinnerung${c.count === 1 ? '' : 'en'}</span>
+        </div>
+      `;
+      L.marker([c.lat, c.lon], { icon: beenIcon }).addTo(mapInstance).bindPopup(popup);
+    });
+
+    // Dream pins (rose)
+    const dreamIcon = L.divIcon({
+      className: 'pin pin-dream',
+      html: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>',
+      iconSize: [30, 30], iconAnchor: [15, 30]
+    });
+    dreams.forEach(d => {
+      const popup = `<div class="map-popup map-popup-dream"><strong>${d.place}</strong><span>${d.why}</span></div>`;
+      L.marker([d.lat, d.lon], { icon: dreamIcon }).addTo(mapInstance).bindPopup(popup);
+    });
+
+    setTimeout(() => mapInstance.invalidateSize(), 220);
+
+    // Stats
+    const countries = new Set();
+    (memoriesData.clusters || []).forEach(c => { if (c.country) countries.add(c.country); });
+    const totalPhotos = (memoriesData.records || []).filter(r => r.lat).length;
+    $('#mapStats').innerHTML = `
+      <div class="stat-row">
+        <div class="stat-pill"><strong>${countries.size}</strong><span>Länder zusammen</span></div>
+        <div class="stat-pill"><strong>${totalPhotos}</strong><span>geographische Erinnerungen</span></div>
+        <div class="stat-pill"><strong>${dreams.length}</strong><span>Träume noch offen</span></div>
+        <div class="stat-pill"><strong>${countries.size + dreams.length}</strong><span>Länder am Ende</span></div>
+      </div>
+    `;
+
+    // Dreams list below
+    $('#dreamsList').innerHTML = `
+      <h2>Wohin wir noch gehen, Inschallah</h2>
+      <div class="dreams-grid">
+        ${dreams.map(d => `
+          <div class="dream-card">
+            <span class="dream-pin">♥</span>
+            <strong>${d.place}</strong>
+            <p>${d.why}</p>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
   /* === ROUTER === */
   function switchPage(name) {
     if (!$('#page-' + name)) name = 'entdecken';
@@ -1214,6 +1410,8 @@
     $$('.side-nav a').forEach(a => a.classList.toggle('is-active', a.dataset.page === name));
     location.hash = '#' + name;
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (name === 'erinnerungen') renderMemories();
+    if (name === 'karte') renderKarte();
   }
   function bindNavLinks() {
     $$('a[data-nav]').forEach(a => {
