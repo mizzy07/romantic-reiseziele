@@ -948,8 +948,8 @@
   const letters = [
     { id: 'l1', featured: true, pin: 'Brief 01 · Unser Moment', title: 'Draußen vorm Museum', body: 'Wir standen draußen, nur du und ich. Du hast mich gefragt, was das schönste im Museum war. Ich hab dich angeschaut und gesagt: „Du bist das schönste arabische Gemälde da drinnen." Du hast mich kurz angeguckt — und bist dann sofort zu Samira gelaufen, um zu fragen, ob du das richtig gehört hast. Sie hat gegrinst und gesagt: „Nee, das stimmt nicht." Ich liebe dich genau für diese Reaktion, Galbi. Dass du es kaum glauben konntest. Aber ich meinte es. Ich meine es jedes Mal.', sign: '— Mika, der\'s wirklich so meint' },
     { id: 'l2', pin: 'Brief 02 · Versprechen', title: 'Alles für dich, Janem', body: 'Wenn du müde bist, mache ich dir Tee. Wenn du traurig bist, halte ich deine Hand. Wenn du tanzen willst, drehe ich Tum Hi Ho lauter. Du musst mir nichts sagen. Ich sehe dich.', sign: '— Mika' },
-    { id: 'l3', pin: 'Brief 03 · Schicksal', title: 'Samira hat uns gefunden', body: 'Wenn Samira nicht gewesen wäre, hätten wir uns vielleicht nie wieder gesehen. Ein paar Monate nachdem du mir bei Abbacos die Cola gebracht hast, hat sie uns wieder zusammengebracht — ohne es zu wissen. Manchmal denke ich: Manche Freunde sind keine Zufälle, sondern kleine Engel mit Telefonnummern. Danke, Samira. Und Habibti — danke, dass du den Mut hattest, nochmal Hallo zu sagen.', sign: '— dein Mika, ewig dankbar' },
-    { id: 'l4', pin: 'Brief 04 · Wie alles begann', title: 'Die Cola im Abbacos', body: 'Mein erster Satz zu dir war: „Ich kenne dich vom Abbacos." Du warst dort Hostess in dem kleinen Münchner Steakladen, hast mir eine Cola gebracht und hattest keine Ahnung, dass dieser Moment ein ganzes Leben starten würde. Ein paar Monate später hat uns Samira wieder zusammengebracht — und seitdem bin ich nur noch verliebt. Janem, ich will dir das schönste Leben ermöglichen, das es gibt. Das ist kein Versprechen. Das ist mein einziger Plan.', sign: '— Mika, seit der Cola für immer dein' },
+    { id: 'l3', pin: 'Brief 03 · Schicksal', title: '„Ich hab nichts damit zu tun"', body: 'Habibti, weißt du was Samira damals gesagt hat, bevor wir wieder zusammenkamen? „Wenn ihr zusammen kommt, hab ich nichts damit zu tun." Wortwörtlich. Sie wollte nicht die Vermittlerin sein, kein Cupido, kein Engel mit Telefonnummern. Sie hat einfach existiert — und durch ihr Existieren sind unsere Wege wieder gekreuzt. Das macht es noch schöner. Niemand hat uns zusammengebracht. Allah hat es geschrieben. Samira war nur die Bühne, der Hintergrund, der Zufall, der keiner war. Und sie wusste es selbst nicht. Was Allah will, passiert. Mit oder ohne Hilfe von Freunden. Wir sind das Beweisstück.', sign: '— dein Mika, dankbar dass das Schicksal sich nicht beirren ließ' },
+    { id: 'l4', pin: 'Brief 04 · Wie alles begann', title: 'Die Cola im Abbacos', body: 'Mein erster Satz zu dir war: „Ich kenne dich vom Abbacos." Du warst dort Hostess in dem kleinen Münchner Steakladen, hast mir eine Cola gebracht und hattest keine Ahnung, dass dieser Moment ein ganzes Leben starten würde. Ein paar Monate später haben sich unsere Wege durch Samira wieder gekreuzt — sie wollte nicht die Vermittlerin sein, sie hat sogar gesagt „ich hab nichts damit zu tun". Aber Allah hatte schon geschrieben. Seitdem bin ich nur noch verliebt. Janem, ich will dir das schönste Leben ermöglichen, das es gibt. Das ist kein Versprechen. Das ist mein einziger Plan.', sign: '— Mika, seit der Cola für immer dein' },
     { id: 'l5', pin: 'Brief 05 · Kandahar zu Bagdad', title: 'Zwei Städte, ein Herz', body: 'Aus Kandahar zu dir nach Bagdad — Kilometer waren nichts. Sprache war nichts. Krieg war nichts. Du hast gewonnen, bevor ich es wusste. Ich liebe dich auf Paschtu, auf Arabisch, auf Deutsch — auf jeder Sprache, die du jemals lernen wirst.', sign: '— Mika, dein Janem' },
     { id: 'l6', pin: 'Brief 06 · Heute', title: 'Heute, jetzt', body: 'Such dir den Ort aus. Ich kümmere mich um den Rest. Du musst nichts machen außer dein Herz öffnen. Diese App ist mein Brief an dich. Lies sie, wenn du willst. Aber denk dran: das Schönste in jeder Stadt bist du.', sign: '— ich, der Glückliche, dein Mika' },
 
@@ -1159,7 +1159,8 @@
     'Hajar wollte zu deinem Geburtstag kommen. Konnte nicht. Also fahren wir zu ihr — Familie macht keine Termine.',
     'Allguth-Tankstelle. Benzin in den Diesel. Auto um die Ecke schieben. „Mama". „Mein Sohn." Zwei Wörter, ein ganzes Versprechen.',
     'Verschwörungs-Essen mit Opa: drei Stunden, du nickst, lachst, isst Reis nach. Mama danach: „Sie ist gut. Sie ist deine."',
-    '2027 Inschallah Walima. 2028–29 Inschallah Kinder. Allah hat den Plan, wir haben einander.'
+    '2027 Inschallah Walima. 2028–29 Inschallah Kinder. Allah hat den Plan, wir haben einander.',
+    'Samira sagte damals: „Wenn ihr zusammen kommt, hab ich nichts damit zu tun." Allah hat es trotzdem geschrieben.'
   ];
 
   /* === MUSIC TRACKS === */
@@ -2413,7 +2414,7 @@
   /* === UNSERE GESCHICHTE (Timeline — chronologisch) === */
   const timelineEvents = [
     { date: '~ 2024', icon: '☕', title: 'Die Cola im Abbacos', body: 'Du als Hostess in dem kleinen Münchner Steakladen, ich am Tisch — du bringst mir eine Cola. Mein erster Satz: „Ich kenne dich vom Abbacos." Du wusstest nicht, dass dieser Moment ein ganzes Leben startet.', tag: 'Anfang' },
-    { date: '~ 2024', icon: '🌟', title: 'Wieder gefunden — durch Samira', body: 'Ein paar Monate später — Samira, gemeinsame Freundin, bringt uns wieder zusammen. Ohne es zu wissen. Manche Engel haben Telefonnummern.', tag: 'Schicksal' },
+    { date: '~ 2024', icon: '🌟', title: 'Wege gekreuzt — durch Samira (zufällig)', body: 'Ein paar Monate später — durch Samira, gemeinsame Freundin, kreuzten sich unsere Wege wieder. Sie wollte das gar nicht — sie hat sogar gesagt: „Wenn ihr zusammen kommt, hab ich nichts damit zu tun." Allah hatte trotzdem geschrieben.', tag: 'Schicksal' },
     { date: '~ 2024', icon: '🏛', title: 'Draußen vorm Museum', body: 'Du fragst, was das schönste im Museum war. Ich sage: „Du bist das schönste arabische Gemälde da drinnen." Du läufst sofort zu Samira, um zu fragen, ob du richtig gehört hast. Sie sagt: „Nee, das stimmt nicht."', tag: 'Unser Moment' },
     { date: '~ 2024', icon: '⛽', title: 'Deine Mama bei der Allguth-Tankstelle', body: 'Sie hatte aus Versehen Benzin in den Diesel getankt. Wir haben das Auto zu dritt um die Ecke geschoben — und mitten im Schieben hab ich gesagt: „Mama". Sie hat mich angeschaut: „Mein Sohn." Eine irakische Mama nennt dich nicht „mein Sohn", wenn sie nicht sicher ist.', tag: 'Familie' },
     { date: '~ 2024–2025', icon: '🍳', title: 'Das Frühstück, das wir nicht aßen', body: 'Drei, vier Stunden über Islam, Allah, Bagdad und Kandahar geredet. Tee wurde kalt, Brot trocken — uns war es egal. „Wa ja\'ala baynakum mawaddatan wa raḥmah." An dem Morgen hab ich verstanden, was das heißt.', tag: 'Tiefe' },
@@ -2456,7 +2457,7 @@
   /* === PANDORA-CHARMS-VISUALISIERUNG === */
   const charms = [
     { id: 'cola', icon: '☕', label: 'Erste Cola', date: 'Abbacos', collected: true },
-    { id: 'samira', icon: '🌟', label: 'Samira', date: 'Wieder gefunden', collected: true },
+    { id: 'samira', icon: '🌟', label: 'Samira', date: '„Ich hab nichts damit zu tun"', collected: true },
     { id: 'museum', icon: '🏛', label: 'Museum', date: '„Schönstes arabisches Gemälde"', collected: true },
     { id: 'allguth', icon: '⛽', label: 'Allguth & deine Mama', date: '„Mein Sohn"', collected: true },
     { id: 'breakfast', icon: '🍳', label: 'Frühstück', date: '4 Stunden Islam-Talk', collected: true },
@@ -2535,7 +2536,7 @@
     { icon: '🍽', title: 'Buffet', items: ['Irakisch: Dolma, Quzi (gefülltes Lamm), Masgouf, Kleicha', 'Paschtunisch: Kabuli Pulao, Mantu, Bolani, Sheer Yakh', 'Vegetarisch & vegan dabei für alle', 'Süßes: Baklava-Tower + indische Sweets für Bollywood-Vibe'] },
     { icon: '💃', title: 'Tanz & Musik', items: ['Tum Hi Ho als unser erster Tanz', 'Indila — Love Story für eine Solo-Runde von dir', 'Naghma Pashto Set für die paschtunische Familie', 'Iraqi Dabke Set für deine Familie', 'Nour El Ein für gemeinsamen Tanz'] },
     { icon: '🌹', title: 'Deko', items: ['Dunkle Lila Tischwäsche, Goldakzente, viele weiße Rosen', 'Pandora-Charm-Tisch mit kleinen Charms als Geschenk für Gäste', 'Henna-Bar für die Frauen', 'Foto-Wall mit „Riesstraße bis Penzberg" Story'] },
-    { icon: '👨‍👩‍👧‍👦', title: 'Gäste', items: ['Bagdad-Seite: deine Mama, Tante, Onkel, Cousins', 'Kandahar-Seite: meine Eltern, Geschwister, Onkel/Tanten', 'Schweden: Oma („Darling"), Noor & Monir, Saif, Yousef, Kinder', 'Berlin: Hajar & Momo', 'Samira an der Spitze (sie hat uns wieder zusammengebracht)'] },
+    { icon: '👨‍👩‍👧‍👦', title: 'Gäste', items: ['Bagdad-Seite: deine Mama, Tante, Onkel, Cousins', 'Kandahar-Seite: meine Eltern, Geschwister, Onkel/Tanten', 'Schweden: Oma („Darling"), Noor & Monir, Saif, Yousef, Kinder', 'Berlin: Hajar & Momo', 'Und natürlich Samira — die immer sagt „ich hab nichts damit zu tun" und genau deshalb dabei sein muss'] },
     { icon: '🎁', title: 'Hochzeitsgeschenk an dich', items: ['Großes Pandora-Charm „Walima 2026"', 'Erstes Honeymoon-Charm gleich danach', 'Neue Wohnung warten — Bald in unserem Palast'] }
   ];
 
