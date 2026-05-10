@@ -544,9 +544,9 @@
       stops: ['kyoto','rajasthan'],
       image: IMG('1493976040374-85c8e12f0c0e'),
       days: [
-        { day: 'Tag 1–5', place: 'Kyoto', title: 'Kirschblüten', desc: 'Ryokan, Tee-Zeremonie, Bambuswald, Geishas in Gion.' },
-        { day: 'Tag 6–9', place: 'Udaipur', title: 'Königin auf einem See', desc: 'Lake Palace, Boot bei Sonnenuntergang, Henna für dich.' },
-        { day: 'Tag 10–13', place: 'Jaipur', title: 'Pinke Stadt', desc: 'Hawa Mahal, Amber Fort, Sari-Shopping, Bollywood-Tanzabend.' }
+        { day: 'Tag 1–5', place: 'Kyoto', title: 'Kirschblüten', desc: 'Ryokan, Tee-Zeremonie, Bambuswald, Geishas in Gion.', image: IMG('1493976040374-85c8e12f0c0e') },
+        { day: 'Tag 6–9', place: 'Udaipur', title: 'Königin auf einem See', desc: 'Lake Palace, Boot bei Sonnenuntergang, Henna für dich.', image: IMG('1582510003544-4d00b7f74220') },
+        { day: 'Tag 10–13', place: 'Jaipur', title: 'Pinke Stadt', desc: 'Hawa Mahal, Amber Fort, Sari-Shopping, Bollywood-Tanzabend.', image: IMG('1599661046289-e31897846e41') }
       ]
     },
     {
@@ -582,10 +582,10 @@
       stops: ['mekka','heimreise'],
       image: IMG('1542521148-51306e7ffc1e'),
       days: [
-        { day: 'Tag 1–4', place: 'Mekka', title: 'Tawaf und Sa\'i', desc: 'Umrah gemeinsam — siebenmal um die Kaaba, Sa\'i zwischen Safa und Marwa, Du\'a für unser Leben.' },
-        { day: 'Tag 5–7', place: 'Medina', title: 'Madinah Sharif', desc: 'Salam an den Propheten ﷺ in der Rawda. Stille. Frieden. Dankbarkeit.' },
-        { day: 'Tag 8–11', place: 'Bagdad', title: 'Deine Wurzeln', desc: 'Du zeigst mir deine Stadt — den Tigris, alte Familienhäuser, deine Mama im Mittelpunkt.' },
-        { day: 'Tag 12–14', place: 'Kandahar', title: 'Meine Wurzeln', desc: 'Ich zeige dir meine — Tee mit Kardamom, Granatapfel, das Land meiner Eltern.' }
+        { day: 'Tag 1–4', place: 'Mekka', title: 'Tawaf und Sa\'i', desc: 'Umrah gemeinsam — siebenmal um die Kaaba, Sa\'i zwischen Safa und Marwa, Du\'a für unser Leben.', image: IMG('1542521148-51306e7ffc1e') },
+        { day: 'Tag 5–7', place: 'Medina', title: 'Madinah Sharif', desc: 'Salam an den Propheten ﷺ in der Rawda. Stille. Frieden. Dankbarkeit.', image: IMG('1692566123227-0f68f1b9dac6') },
+        { day: 'Tag 8–11', place: 'Bagdad', title: 'Deine Wurzeln', desc: 'Du zeigst mir deine Stadt — den Tigris, alte Familienhäuser, deine Mama im Mittelpunkt.', image: IMG('1624140930663-c6075007b7fd') },
+        { day: 'Tag 12–14', place: 'Kandahar', title: 'Meine Wurzeln', desc: 'Ich zeige dir meine — Tee mit Kardamom, Granatapfel, das Land meiner Eltern.', image: IMG('1673701348866-eaa57db8aba6') }
       ]
     },
     {
@@ -1241,11 +1241,12 @@
       </section>
       ${r.days.map((d, i) => {
         const dest = findDest(r.stops[Math.min(i, r.stops.length - 1)]) || heroDest;
+        const dayImage = d.image || dest.image;
         return `
           <section class="plan-day">
             <div class="plan-day-tag">${d.day}<span>${d.place}</span></div>
             <article class="plan-day-card">
-              <div class="plan-day-img"><img src="${dest.image}" alt="${d.place}" loading="lazy" /></div>
+              <div class="plan-day-img"><img src="${dayImage}" alt="${d.place}" loading="lazy" /></div>
               <div class="plan-day-body">
                 <h3>${d.title}</h3>
                 <p>${d.desc}</p>
@@ -1587,9 +1588,13 @@
     const r = d.records[memIdx];
     const frame = $('#memoriesFrame');
     const isVid = r.type === 'video';
-    frame.innerHTML = isVid
-      ? `<video src="${r.web}" autoplay muted loop playsinline poster="${r.thumb || ''}"></video>`
-      : `<img src="${r.web}" alt="" loading="eager">`;
+    const bgSrc = r.thumb || r.web;
+    frame.innerHTML = `
+      <div class="mem-bg" style="background-image:url('${bgSrc}')"></div>
+      ${isVid
+        ? `<video src="${r.web}" autoplay muted loop playsinline poster="${r.thumb || ''}"></video>`
+        : `<img src="${r.web}" alt="" loading="eager">`}
+    `;
     $('#memoriesMeta').innerHTML = `
       ${r.place ? `<span class="meta-place">${r.place}</span>` : ''}
       ${r.date ? `<span class="meta-date">${fmtDate(r.date)}</span>` : ''}
