@@ -1600,6 +1600,19 @@ main {
   direction: rtl;
   letter-spacing: 0.02em;
 }
+.verse-tr {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--gold);
+  letter-spacing: 0.01em;
+  padding: 6px 10px;
+  background: rgba(212, 168, 67, 0.06);
+  border-left: 2px solid rgba(212, 168, 67, 0.55);
+  border-radius: 0 6px 6px 0;
+}
 .verse-de {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
