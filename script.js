@@ -978,8 +978,9 @@
     { id: 'l18', pin: 'Brief 18 · Berlin', title: 'Hajar wollte kommen — wir kommen zu ihr', body: 'Habibti, deine Cousine Hajar in Berlin mit Momo — sie wollte zu deinem Geburtstag kommen. Sie hat geplant, sie hat versucht, sie konnte am Ende nicht. Du hast es leise gesagt, aber ich hab gesehen, was es dir bedeutet hat. Familie ist nicht nur an Tagen, an denen alle es schaffen — Familie ist auch an Tagen, an denen jemand fehlt und trotzdem da ist, im Telefon, im Gedanken, in jeder Geschichte die wir erzählen. Also fahren wir zu ihr. Berlin, Wochenende. Mauerpark, Brandenburger Tor, dann zu Hajar und Momo nach Hause für Tee, Lachen, Familienzeit. Wir holen den Geburtstag nicht nach — wir ergänzen ihn. Familie auf Distanz ist auch Familie. Und ich hab dir versprochen: zu jeder einzelnen Person, die dir wichtig ist, fahre ich mit dir.', sign: '— Mika, der mit dir zu jedem deiner Menschen fährt' }
   ];
 
-  /* === PETNAMES (Arabisch · Paschtu · Bollywood — mit deutscher Übersetzung) === */
+  /* === PETNAMES (8 Sprachen mit deutscher Übersetzung) === */
   const petnames = [
+    // Arabisch
     { word: 'حياتي',         tr: 'Ḥayāti',             meaning: 'Mein Leben',              lang: 'Arabisch' },
     { word: 'حبيبتي',        tr: 'Habibti',            meaning: 'Meine Geliebte',          lang: 'Arabisch' },
     { word: 'يا قلبي',       tr: 'Ya Albi · Galbi',    meaning: 'Mein Herz',               lang: 'Arabisch · Irakisch' },
@@ -987,14 +988,54 @@
     { word: 'يا عمري',       tr: 'Ya Omri',            meaning: 'Du, mein Leben',          lang: 'Arabisch' },
     { word: 'يا قمر',        tr: 'Ya Amar',            meaning: 'Mein Mond',               lang: 'Arabisch' },
     { word: 'نور عيني',      tr: 'Nour el Ayni',       meaning: 'Licht meiner Augen',      lang: 'Arabisch' },
+
+    // Paschtu / Dari
     { word: 'جانم',          tr: 'Janem',              meaning: 'Meine Seele · mein Leben', lang: 'Paschtu · Dari' },
     { word: 'زما زړه',        tr: 'Zma Zra',            meaning: 'Mein Herz',               lang: 'Paschtu' },
     { word: 'ګلابۍ',         tr: 'Gulabai',            meaning: 'Kleine Rose',             lang: 'Paschtu' },
     { word: 'سترگه',          tr: 'Stergai',            meaning: 'Mein Augenstern',         lang: 'Paschtu' },
     { word: 'مريم',          tr: 'Maryem',             meaning: 'Meine Maryem · für immer', lang: 'Ewig' },
+
+    // Bollywood / Hindi / Urdu
     { word: 'Jaan',           tr: 'Jaan',               meaning: 'Mein Liebling',           lang: 'Bollywood · Hindi' },
     { word: 'Saanson Ki Maala', tr: 'Saanson Ki Maala', meaning: 'Kette meiner Atemzüge',   lang: 'Bollywood · Hindi' },
-    { word: 'Mehboob',        tr: 'Mehboob',            meaning: 'Mein Geliebter',          lang: 'Bollywood · Urdu' }
+    { word: 'Mehboob',        tr: 'Mehboob',            meaning: 'Mein Geliebter',          lang: 'Bollywood · Urdu' },
+
+    // Deutsch
+    { word: 'Mein Schatz',    tr: 'Mein Schatz',        meaning: 'Mein Schatz',             lang: 'Deutsch' },
+    { word: 'Meine Königin',  tr: 'Meine Königin',      meaning: 'My Queen',                lang: 'Deutsch' },
+    { word: 'Mein Engel',     tr: 'Mein Engel',         meaning: 'Mein Engel',              lang: 'Deutsch' },
+    { word: 'Mein Augenstern', tr: 'Mein Augenstern',   meaning: 'Light of my eye',         lang: 'Deutsch' },
+
+    // English
+    { word: 'My Love',        tr: 'My Love',            meaning: 'Meine Liebe',             lang: 'English' },
+    { word: 'My Sunshine',    tr: 'My Sunshine',        meaning: 'Mein Sonnenschein',       lang: 'English' },
+    { word: 'My Everything',  tr: 'My Everything',      meaning: 'Mein Alles',              lang: 'English' },
+    { word: 'Darling',        tr: 'Darling',            meaning: 'Liebling (wie Oma sagt)', lang: 'English · Oma' },
+    { word: 'Sweetheart',     tr: 'Sweetheart',         meaning: 'Süßes Herz',              lang: 'English' },
+
+    // Italiano
+    { word: 'Amore mio',      tr: 'Amore mio',          meaning: 'Meine Liebe',             lang: 'Italienisch' },
+    { word: 'Tesoro mio',     tr: 'Tesoro mio',         meaning: 'Mein Schatz',             lang: 'Italienisch' },
+    { word: 'Cuore mio',      tr: 'Cuore mio',          meaning: 'Mein Herz',               lang: 'Italienisch' },
+    { word: 'Anima mia',      tr: 'Anima mia',          meaning: 'Meine Seele',             lang: 'Italienisch' },
+    { word: 'Bellissima',     tr: 'Bellissima',         meaning: 'Allerschönste',           lang: 'Italienisch' },
+
+    // Español
+    { word: 'Mi amor',        tr: 'Mi amor',            meaning: 'Meine Liebe',             lang: 'Spanisch' },
+    { word: 'Mi corazón',     tr: 'Mi corazón',         meaning: 'Mein Herz',               lang: 'Spanisch' },
+    { word: 'Mi vida',        tr: 'Mi vida',            meaning: 'Mein Leben',              lang: 'Spanisch' },
+    { word: 'Mi cielo',       tr: 'Mi cielo',           meaning: 'Mein Himmel',             lang: 'Spanisch' },
+    { word: 'Mi reina',       tr: 'Mi reina',           meaning: 'Meine Königin',           lang: 'Spanisch' },
+    { word: 'Hermosa',        tr: 'Hermosa',            meaning: 'Schöne',                  lang: 'Spanisch' },
+
+    // Français
+    { word: 'Mon amour',      tr: 'Mon amour',          meaning: 'Meine Liebe',             lang: 'Französisch' },
+    { word: 'Mon cœur',       tr: 'Mon cœur',           meaning: 'Mein Herz',               lang: 'Französisch' },
+    { word: 'Ma chérie',      tr: 'Ma chérie',          meaning: 'Meine Liebste',           lang: 'Französisch' },
+    { word: 'Ma reine',       tr: 'Ma reine',           meaning: 'Meine Königin',           lang: 'Französisch' },
+    { word: 'Mon trésor',     tr: 'Mon trésor',         meaning: 'Mein Schatz',             lang: 'Französisch' },
+    { word: 'Belle',          tr: 'Belle',              meaning: 'Schöne (wie aus Disney)', lang: 'Französisch · Disney' }
   ];
 
   /* === ISLAMIC VERSES + AHADITH (with Latin transliteration + German) === */
@@ -1163,13 +1204,21 @@
   /* === HERO HEADLINE WORD REVEAL + ROTATING PETNAME === */
   const heroPetnames = [
     /* Deutsch */
-    'meine Königin?', 'mein Herz?', 'meine Liebe?', 'meine Maryem?', 'meine Schöne?',
-    /* Englisch */
-    'my Queen?', 'my Love?', 'my Soul?', 'my World?', 'my Everything?',
-    /* Irakisch (Arabisch) */
-    'Habibti?', 'Ya Albi?', 'Hayāti?', 'Rouhi?', 'Helwa?', 'Ya Omri?', 'Ya Galbi?',
-    /* Pashtunisch */
-    'Janem?', 'Zma Zra?', 'Gulabai?', 'Zma Sterge?', 'Zma Gula?'
+    'meine Königin?', 'mein Herz?', 'meine Liebe?', 'meine Maryem?', 'mein Schatz?', 'mein Engel?',
+    /* English */
+    'my Queen?', 'my Love?', 'my Sunshine?', 'my Everything?', 'Darling?', 'Sweetheart?',
+    /* Arabisch */
+    'Habibti?', 'Ya Albi?', 'Hayāti?', 'Rouhi?', 'Ya Omri?', 'Ya Galbi?', 'Nour el Ayni?',
+    /* Paschtu */
+    'Janem?', 'Zma Zra?', 'Gulabai?', 'Stergai?',
+    /* Italiano */
+    'Amore mio?', 'Tesoro mio?', 'Cuore mio?', 'Bellissima?',
+    /* Español */
+    'Mi amor?', 'Mi corazón?', 'Mi reina?', 'Hermosa?',
+    /* Français */
+    'Mon amour?', 'Mon cœur?', 'Ma chérie?', 'Ma reine?', 'Belle?',
+    /* Bollywood */
+    'Jaan?', 'Mehboob?'
   ];
   function buildHero() {
     const headline = $('#heroHeadline');
