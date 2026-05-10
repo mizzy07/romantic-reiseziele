@@ -2803,15 +2803,22 @@ button:focus-visible, a:focus-visible, [data-heart]:focus-visible {
   .srk-ticker { left: 0; font-size: 12px; padding-inline: 12px; }
   .mobile-header {
     display: flex; align-items: center; justify-content: space-between;
-    padding: 16px 20px;
+    padding: 14px 16px 14px 20px;
     background: rgba(7,3,13,0.85);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--line-soft);
     position: sticky; top: 0; z-index: 20;
   }
   .mobile-header .script-logo { font-size: 22px; }
-  .mobile-menu-btn { color: var(--gold); padding: 8px; }
-  .mobile-menu-btn svg { width: 22px; height: 22px; }
+  .mobile-menu-btn {
+    color: var(--gold);
+    padding: 8px;
+    margin-right: -4px;       /* zieht das Icon näher zum rechten Rand */
+    background: transparent;
+    border: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .mobile-menu-btn svg { width: 24px; height: 24px; display: block; }
   .hero {
     min-height: 78vh;
     width: calc(100vw - 24px);
