@@ -508,18 +508,18 @@
     },
 
     /* ===== SKANDINAVIEN — Familie & Romantik ===== */
-    { id: 'malmoe', name: 'Malmö · bei deiner Familie', country: 'Schweden', region: 'SKANDINAVIEN', vibe: ['culture','luxuswert'], flight: 'short',
-      tagline: 'Fünf Tage bei Oma, Onkel, Tante, Noor, Saif, Yousef & den zwei zuckersüßen Kindern.',
-      summary: 'Familienzeit bei deiner Lieblings-Cousine Noor & Monir (auch Kandahar-Pashtune wie ich!), bei Saif und Yousef. Spaziergang am Hafen, Fika, Familienessen bei Oma — die irakische Seite, die dich groß gemacht hat.',
+    { id: 'malmoe', name: 'Malmö · zu deiner Familie', country: 'Schweden', region: 'SKANDINAVIEN', vibe: ['culture','luxuswert'], flight: 'short',
+      tagline: 'Fünf Tage bei Oma („Darling"), Noor & Monir, Saif, Yousef und den zwei zuckersüßen Kindern.',
+      summary: 'Heimkommen — ich gehöre schon dazu. Oma, die mich „Darling" nennt. Noor (deine Lieblings-Cousine) und Monir (auch Kandahar-Pashtune wie ich!), Saif und Yousef. Spaziergang am Hafen, Fika, Familienessen bei Oma — die irakische Seite, die dich groß gemacht hat.',
       flightTime: '2h von München', bestTime: 'Mai – September', mood: 'Familiär & warm',
       hearts: 5, image: IMG('1539696511453-ed701e370daf'),
       moodLines: [
-        ['Aufwachen', 'Bei Noor & Monir, Kaffee mit Karim für die Kinder'],
+        ['Aufwachen', 'Bei Noor & Monir, Frühstück mit den Kindern, Oma ruft schon an'],
         ['Tagsüber', 'Pildammsparken, Hafenpromenade, Lilla Torg mit Saif & Yousef'],
-        ['Abends', 'Familienessen — irakischer Reis, paschtunischer Lammkebab, Geschichten'],
+        ['Abends', 'Familienessen bei Oma — irakischer Reis, Lammkebab, „Darling, ess noch was"'],
         ['Nachts', 'Balkon-Talk mit Noor & Monir — wie damals, vor unserer Verlobung']
       ],
-      mapBlurb: 'Familie ist die Sprache, in der du am schönsten klingst, Habibti.'
+      mapBlurb: 'Deine Oma nennt mich „Darling" — das ist mehr wert als jeder Honeymoon.'
     },
 
     { id: 'berlin', name: 'Berlin · bei Hajar', country: 'Deutschland', region: 'EUROPA', vibe: ['culture','fun','luxuswert'], flight: 'short',
@@ -959,7 +959,9 @@
 
     { id: 'l15', featured: true, pin: 'Brief 15 · Trotz aller', title: 'Du hast nie losgelassen', body: 'Habibti, etwas, das ich dir nicht oft genug sage: Danke. Wir beide haben nie an UNS gezweifelt — keine Sekunde. Aber die Welt um uns hat\'s versucht. Manche haben Auge gemacht, manche haben uns nicht gegönnt, manche haben hinter unserem Rücken geredet. Du hast es einfach ignoriert. Du hast deinen Kopf zu mir gewendet, immer wieder, egal wer was sagte. Das ist der größte Beweis von Liebe, den eine Frau geben kann — nicht in den Anker zu beißen, wenn der Sturm kommt, sondern den Kompass auf dieselbe Richtung zu halten. Wir sind nicht zusammen weil es leicht war. Wir sind zusammen weil wir entschieden haben, dass nichts von außen es brechen darf. Und am 10.01.2026, in der Moschee in Penzberg, vor Allah und unseren Familien — haben wir es allen gezeigt. Was Allah zusammenbringt, kann kein Mensch trennen. Du hast nie losgelassen. Ich auch nicht. Wir haben gewonnen, Galbi.', sign: '— Mika, dankbar dass du nie losgelassen hast trotz aller, die wollten' },
 
-    { id: 'l16', featured: true, pin: 'Brief 16 · Balkon-Wunsch', title: 'Auf dem Balkon, vor unserer Verlobung', body: 'Erinnerst du dich? Wir saßen auf dem Balkon mit Noor und Monir. Sie verheiratet, zwei zuckersüße Kinder, beide stolz und in Liebe. Monir aus Kandahar — wie ich. Noor aus Schweden — deine Cousine, deine Person. Wir haben zugehört, haben geträumt: „Inschallah genauso, eines Tages — verheiratet, zwei oder mehr Kinder, ein Leben das aussieht wie ihres." Damals waren wir noch nicht mal verlobt. Heute sind wir es — vor Allah in der Moschee in Penzberg. Was damals ein Wunsch auf einem Balkon war, ist jetzt eine echte Geschichte. Inschallah kommen die Kinder als Nächstes — und wir werden für sie das, was Noor und Monir für uns waren: ein Vorbild. Hajar in Berlin, Noor in Malmö, Saif und Yousef — deine Cousins sind unsere zweite Familie, und ich nehme jeden einzeln an die Hand. Ein paar Balkon-Worte, ein paar Jahre, eine ganze Welt umgedreht.', sign: '— Mika, der den Wunsch nicht vergessen hat' }
+    { id: 'l16', featured: true, pin: 'Brief 16 · Balkon-Wunsch', title: 'Auf dem Balkon, vor unserer Verlobung', body: 'Erinnerst du dich? Wir saßen auf dem Balkon mit Noor und Monir. Sie verheiratet, zwei zuckersüße Kinder, beide stolz und in Liebe. Monir aus Kandahar — wie ich. Noor aus Schweden — deine Cousine, deine Person. Wir haben zugehört, haben geträumt: „Inschallah genauso, eines Tages — verheiratet, zwei oder mehr Kinder, ein Leben das aussieht wie ihres." Damals waren wir noch nicht mal verlobt. Heute sind wir es — vor Allah in der Moschee in Penzberg. Was damals ein Wunsch auf einem Balkon war, ist jetzt eine echte Geschichte. Inschallah kommen die Kinder als Nächstes — und wir werden für sie das, was Noor und Monir für uns waren: ein Vorbild. Hajar in Berlin, Noor in Malmö, Saif und Yousef — deine Cousins sind unsere zweite Familie, und ich nehme jeden einzeln an die Hand. Ein paar Balkon-Worte, ein paar Jahre, eine ganze Welt umgedreht.', sign: '— Mika, der den Wunsch nicht vergessen hat' },
+
+    { id: 'l17', featured: true, pin: 'Brief 17 · Darling', title: 'Deine Oma nennt mich „Darling"', body: 'Habibti, dass deine Oma in Malmö mich „Darling" nennt — das ist kein Spitzname. Das ist ein Diplom. Das ist die größte Anerkennung, die eine irakische Großmutter einem Mann geben kann, der nicht ihr Blut ist. Sie sieht durch alles hindurch. Sie sieht, ob ich dich liebe. Sie sieht, ob ich treu bin. Sie sieht, ob ich dich glücklich mache. Und sie hat entschieden: Darling. Ich kenne deine ganze Familie. Noor, Monir, Saif, Yousef, deine Tante, dein Onkel, die zwei kleinen Cousins-Kinder. Das ist nicht „ich darf endlich kennenlernen" — das ist „ich gehöre schon dazu". Und das ist mehr wert als jedes Hochzeitsgeschenk, jeder Honeymoon, jeder Ring. Wenn deine Oma „Darling" sagt, höre ich: „Du gehörst meiner Maryem. Pass auf sie auf. Du bist mein Junge auch." Inschallah werde ich jeden einzelnen Tag der Junge sein, von dem sie das gesagt hat.', sign: '— Mika, der Darling der Familie' }
   ];
 
   /* === PETNAMES (Arabisch · Paschtu · Bollywood — mit deutscher Übersetzung) === */
@@ -1090,7 +1092,10 @@
     'Riesstraße. Derselbe Hof. Derselbe Brunnen. Jahrelang. Ich habe deinen Schatten getroffen, bevor ich dein Gesicht kannte.',
     'Bagdad ↔ Kandahar ↔ München. Drei Städte, eine Geschichte. Meine.',
     'Wir hatten dieselben Freunde. Sind durch dieselben Treppenhäuser gerannt. Allah hat den Moment gewählt, wann wir uns endlich sehen.',
-    'Deine Mama hat dich allein groß gezogen. Inshallah werde ich der Mann, dem das niemals nochmal passiert.'
+    'Deine Mama hat dich allein groß gezogen. Inshallah werde ich der Mann, dem das niemals nochmal passiert.',
+    'Deine Oma in Malmö nennt mich „Darling" — größtes Diplom, das eine irakische Großmutter geben kann.',
+    'Noor in Schweden, Monir aus Kandahar wie ich — sie waren das Vorbild, wir sind jetzt die Geschichte.',
+    'Hajar in Berlin. Noor in Malmö. Saif & Yousef. Deine Cousins sind unsere zweite Familie.'
   ];
 
   /* === MUSIC TRACKS === */
