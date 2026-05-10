@@ -1278,6 +1278,30 @@ main {
   font-size: 20px;
   color: var(--rose-deep);
 }
+.letter.is-featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #2a0a3a 0%, #1a0f24 50%, #4a1530 100%);
+  color: #fff;
+  border-color: rgba(236, 72, 153, 0.35);
+  box-shadow: 0 18px 48px -12px rgba(236, 72, 153, 0.45);
+}
+.letter.is-featured::after { color: rgba(236, 72, 153, 0.45); font-size: 56px; }
+.letter.is-featured h3 { color: #fff; font-size: 36px; }
+.letter.is-featured p { color: rgba(255,255,255,0.92); font-size: 22px; }
+.letter.is-featured .letter-sign { color: var(--gold); font-size: 24px; }
+.letter-pin {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  background: var(--grad-rose);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-glow);
+}
 
 
 /* === RESPONSIVE === */
