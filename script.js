@@ -946,10 +946,12 @@
 
   /* === LETTERS === */
   const letters = [
+    { id: 'l0', featured: true, pin: 'Brief 00 · 14.10.2024', title: 'Der Anstarrwettbewerb, das Gemälde, das Autoparfüm', body: 'Habibti, alles begann am 14. Oktober 2024. Indisches Essen mit Samira und Enes — und du, mir gegenüber. Wir haben uns angestarrt, kein Wort, nur Augen. Wer zuerst lacht, hat verloren. Du hast verloren, Habibti — und ich auch, denn ab da konnte ich nichts anderes mehr ansehen. Danach das Museum. Ich vor dir, du vor einem arabischen Gemälde. Ich habe gesagt: „Du bist das schönste arabische Gemälde da drinnen." Du hast es nicht geglaubt. Du glaubst es bis heute nicht. Aber es stimmt. Zwei Tage später, am 16. Oktober — wir kannten uns drei Tage — hast du mir ein Autoparfüm gekauft. Einfach so. Ohne Anlass. Da habe ich es gewusst: das ist sie. Die Frau, die mich versteht, bevor ich rede. Drei Tage gereicht, Habibti. Drei Tage, und Allah hatte schon entschieden.', sign: '— Mika, der seitdem nicht mehr blinzelt.' },
+    { id: 'l0b', featured: true, pin: 'Brief 00b · Kino, OEZ, Café', title: 'Drei kleine Tests, die du nie verstanden hast', body: 'Habibti, ein paar Tage nach dem Frühstück saßen wir im Kino — du, ich, Samira, Enes. Was du nie wusstest: ich hatte tagelang geplant, wo du sitzen sollst, wie ich es einfädeln würde, dass du neben mir landest. Tagelang. Und dann, kurz vorm Eingang in den Saal, hast du dich umgedreht und einfach gefragt: „Willst du neben mir sitzen?" Habibti — ich war drei Schritte hinter dir, und drei Wochen voraus mit meinen Plänen, und du hast mit einem Satz alles überholt. So bist du. Du brauchst keine Strategie. Du bist die Strategie. Dann das OEZ. Samira hat dich angerufen — „komm, lass uns shoppen" — und dich hingebracht, wo Juan und ich „zufällig" waren. Juan, mein bester Freund seit immer. Der mit uns in Dubai war. Der jetzt auch dein bester Freund ist. Wir haben geschaut, als wärst du gerade vom Himmel gefallen — du hast geschaut, als hättest du nichts geahnt. Wer hat hier wen ausgetrickst, Habibti? Und dann das Café. Du und Samira saßt mir gegenüber, eure Augen klebten am Kellner. Ihr hattet gehört, ich sei geizig. Ihr habt geguckt, ob ich zahle. Habibti — ich habe gezahlt. Für dich werde ich immer zahlen. Für jeden Cappuccino, jeden Flug, jede Pandora-Charm, jede Sekunde mit dir, jedes Atmen. Drei kleine Tests an einem Tag, alle bestanden, weil ich von Sekunde eins wusste: ich bestehe alles, was zu dir gehört.', sign: '— Mika, der dich nie wieder testen lassen muss.' },
     { id: 'l1', featured: true, pin: 'Brief 01 · Unser Moment', title: 'Draußen vorm Museum', body: 'Wir standen draußen, nur du und ich. Du hast mich gefragt, was das schönste im Museum war. Ich hab dich angeschaut und gesagt: „Du bist das schönste arabische Gemälde da drinnen." Du hast mich kurz angeguckt — und bist dann sofort zu Samira gelaufen, um zu fragen, ob du das richtig gehört hast. Sie hat gegrinst und gesagt: „Nee, das stimmt nicht." Ich liebe dich genau für diese Reaktion, Galbi. Dass du es kaum glauben konntest. Aber ich meinte es. Ich meine es jedes Mal.', sign: '— Mika, der\'s wirklich so meint' },
     { id: 'l2', pin: 'Brief 02 · Versprechen', title: 'Alles für dich, Janem', body: 'Wenn du müde bist, mache ich dir Tee. Wenn du traurig bist, halte ich deine Hand. Wenn du tanzen willst, drehe ich Tum Hi Ho lauter. Du musst mir nichts sagen. Ich sehe dich.', sign: '— Mika' },
-    { id: 'l3', pin: 'Brief 03 · Schicksal', title: '„Ich hab nichts damit zu tun"', body: 'Habibti, weißt du was Samira damals gesagt hat, bevor wir wieder zusammenkamen? „Wenn ihr zusammen kommt, hab ich nichts damit zu tun." Wortwörtlich. Sie wollte nicht die Vermittlerin sein, kein Cupido, kein Engel mit Telefonnummern. Sie hat einfach existiert — und durch ihr Existieren sind unsere Wege wieder gekreuzt. Das macht es noch schöner. Niemand hat uns zusammengebracht. Allah hat es geschrieben. Samira war nur die Bühne, der Hintergrund, der Zufall, der keiner war. Und sie wusste es selbst nicht. Was Allah will, passiert. Mit oder ohne Hilfe von Freunden. Wir sind das Beweisstück.', sign: '— dein Mika, dankbar dass das Schicksal sich nicht beirren ließ' },
-    { id: 'l4', pin: 'Brief 04 · Wie alles begann', title: 'Die Cola im Abbacos', body: 'Mein erster Satz zu dir war: „Ich kenne dich vom Abbacos." Du warst dort Hostess in dem kleinen Münchner Steakladen, hast mir eine Cola gebracht und hattest keine Ahnung, dass dieser Moment ein ganzes Leben starten würde. Ein paar Monate später haben sich unsere Wege durch Samira wieder gekreuzt — sie wollte nicht die Vermittlerin sein, sie hat sogar gesagt „ich hab nichts damit zu tun". Aber Allah hatte schon geschrieben. Seitdem bin ich nur noch verliebt. Janem, ich will dir das schönste Leben ermöglichen, das es gibt. Das ist kein Versprechen. Das ist mein einziger Plan.', sign: '— Mika, seit der Cola für immer dein' },
+    { id: 'l3', pin: 'Brief 03 · Schicksal', title: 'Samira hat uns gefunden', body: 'Wenn Samira nicht gewesen wäre, hätten wir uns vielleicht nie wieder gesehen. Ein paar Monate nachdem du mir bei Abbacos die Cola gebracht hast, hat sie uns wieder zusammengebracht — ohne es zu wissen. Manchmal denke ich: Manche Freunde sind keine Zufälle, sondern kleine Engel mit Telefonnummern. Danke, Samira. Und Habibti — danke, dass du den Mut hattest, nochmal Hallo zu sagen.', sign: '— dein Mika, ewig dankbar' },
+    { id: 'l4', pin: 'Brief 04 · Wie alles begann', title: 'Die Cola im Abbacos', body: 'Mein erster Satz zu dir war: „Ich kenne dich vom Abbacos." Du warst dort Hostess in dem kleinen Münchner Steakladen, hast mir eine Cola gebracht und hattest keine Ahnung, dass dieser Moment ein ganzes Leben starten würde. Ein paar Monate später hat uns Samira wieder zusammengebracht — und seitdem bin ich nur noch verliebt. Janem, ich will dir das schönste Leben ermöglichen, das es gibt. Das ist kein Versprechen. Das ist mein einziger Plan.', sign: '— Mika, seit der Cola für immer dein' },
     { id: 'l5', pin: 'Brief 05 · Kandahar zu Bagdad', title: 'Zwei Städte, ein Herz', body: 'Aus Kandahar zu dir nach Bagdad — Kilometer waren nichts. Sprache war nichts. Krieg war nichts. Du hast gewonnen, bevor ich es wusste. Ich liebe dich auf Paschtu, auf Arabisch, auf Deutsch — auf jeder Sprache, die du jemals lernen wirst.', sign: '— Mika, dein Janem' },
     { id: 'l6', pin: 'Brief 06 · Heute', title: 'Heute, jetzt', body: 'Such dir den Ort aus. Ich kümmere mich um den Rest. Du musst nichts machen außer dein Herz öffnen. Diese App ist mein Brief an dich. Lies sie, wenn du willst. Aber denk dran: das Schönste in jeder Stadt bist du.', sign: '— ich, der Glückliche, dein Mika' },
 
@@ -975,11 +977,7 @@
 
     { id: 'l17', featured: true, pin: 'Brief 17 · Darling', title: 'Deine Oma nennt mich „Darling"', body: 'Habibti, dass deine Oma in Malmö mich „Darling" nennt — das ist kein Spitzname. Das ist ein Diplom. Das ist die größte Anerkennung, die eine irakische Großmutter einem Mann geben kann, der nicht ihr Blut ist. Sie sieht durch alles hindurch. Sie sieht, ob ich dich liebe. Sie sieht, ob ich treu bin. Sie sieht, ob ich dich glücklich mache. Und sie hat entschieden: Darling. Ich kenne deine ganze Familie. Noor, Monir, Saif, Yousef, deine Tante, dein Onkel, die zwei kleinen Cousins-Kinder. Das ist nicht „ich darf endlich kennenlernen" — das ist „ich gehöre schon dazu". Und das ist mehr wert als jedes Hochzeitsgeschenk, jeder Honeymoon, jeder Ring. Wenn deine Oma „Darling" sagt, höre ich: „Du gehörst meiner Maryem. Pass auf sie auf. Du bist mein Junge auch." Inschallah werde ich jeden einzelnen Tag der Junge sein, von dem sie das gesagt hat.', sign: '— Mika, der Darling der Familie' },
 
-    { id: 'l18', pin: 'Brief 18 · Berlin', title: 'Hajar wollte kommen — wir kommen zu ihr', body: 'Habibti, deine Cousine Hajar in Berlin mit Momo — sie wollte zu deinem Geburtstag kommen. Sie hat geplant, sie hat versucht, sie konnte am Ende nicht. Du hast es leise gesagt, aber ich hab gesehen, was es dir bedeutet hat. Familie ist nicht nur an Tagen, an denen alle es schaffen — Familie ist auch an Tagen, an denen jemand fehlt und trotzdem da ist, im Telefon, im Gedanken, in jeder Geschichte die wir erzählen. Also fahren wir zu ihr. Berlin, Wochenende. Mauerpark, Brandenburger Tor, dann zu Hajar und Momo nach Hause für Tee, Lachen, Familienzeit. Wir holen den Geburtstag nicht nach — wir ergänzen ihn. Familie auf Distanz ist auch Familie. Und ich hab dir versprochen: zu jeder einzelnen Person, die dir wichtig ist, fahre ich mit dir.', sign: '— Mika, der mit dir zu jedem deiner Menschen fährt' },
-
-    { id: 'l19', featured: true, pin: 'Brief 19 · Allguth', title: 'Deine Mama, ein Auto, ein „Mein Sohn"', body: 'Habibti, weißt du was die schönste Begegnung mit deiner Mama war? An der Allguth-Tankstelle. Sie hatte aus Versehen Benzin in den Diesel getankt. Du hast mich panisch angerufen — ich war in fünf Minuten da. Wir haben das Auto zu dritt um die Ecke geschoben, gelacht, geschwitzt, geflucht auf einer Mischung aus Deutsch, Arabisch und Paschtu. Mitten im Schieben hab ich gesagt: „Komm, Mama, einmal noch." Sie hat angehalten. Hat mich angeschaut. Und gesagt: „Mein Sohn." Zwei Wörter. Ein ganzes Versprechen. Ich war damals noch nicht offiziell ihr Schwiegersohn — aber ab dem Moment war ich es im Herzen. Eine irakische Mama nennt dich nicht „mein Sohn", wenn sie sich nicht sicher ist. Sie sieht alles. Ich werde dir versprechen, was ich ihr in dem Moment versprochen hab, ohne es laut zu sagen: Ich pass auf ihre Tochter auf. Bis zum letzten Atemzug. Inschallah.', sign: '— Mika, ihr Sohn von der Allguth-Tankstelle' },
-
-    { id: 'l20', featured: true, pin: 'Brief 20 · Verschwörungstheorien', title: 'Beim Familienessen mit Opa', body: 'Habibti, weißt du wann ich wusste, dass meine Familie dich liebt? An dem Essen, wo Opa angefangen hat über Verschwörungstheorien zu reden. Mein Opa kann reden. Eine Stunde, zwei Stunden, drei Stunden. Über alles, vor allem über alles, was die Welt angeblich versteckt. Niemand widerspricht ihm — er ist Opa. Du hast genickt. Du hast gelacht an den richtigen Stellen. Du hast dazwischen Reis nachgenommen. Du hast nicht widersprochen, du hast nicht aufgegeben, du hast nicht den Kopf geschüttelt — du warst einfach da, ruhig, du. Meine Mama hat dich beobachtet. Mein Papa hat dich beobachtet. Oma hat dir nachgeschöpft, ohne zu fragen — das ist die paschtunische Form von „du bleibst". Nach dem Essen hat meine Mama gesagt: „Sie ist gut. Sie ist ruhig. Sie ist deine." Drei Sätze. Ein ganzes Diplom. Du hast meine Familie genauso bestanden wie ich deine — bei der Allguth-Tankstelle, mit deiner Mama. Wir sind in beiden Familien zu Hause. Das ist alles, was ich je wollte.', sign: '— Mika, dessen Familie dich auch zu Hause haben will' }
+    { id: 'l18', pin: 'Brief 18 · Berlin', title: 'Hajar wollte kommen — wir kommen zu ihr', body: 'Habibti, deine Cousine Hajar in Berlin mit Momo — sie wollte zu deinem Geburtstag kommen. Sie hat geplant, sie hat versucht, sie konnte am Ende nicht. Du hast es leise gesagt, aber ich hab gesehen, was es dir bedeutet hat. Familie ist nicht nur an Tagen, an denen alle es schaffen — Familie ist auch an Tagen, an denen jemand fehlt und trotzdem da ist, im Telefon, im Gedanken, in jeder Geschichte die wir erzählen. Also fahren wir zu ihr. Berlin, Wochenende. Mauerpark, Brandenburger Tor, dann zu Hajar und Momo nach Hause für Tee, Lachen, Familienzeit. Wir holen den Geburtstag nicht nach — wir ergänzen ihn. Familie auf Distanz ist auch Familie. Und ich hab dir versprochen: zu jeder einzelnen Person, die dir wichtig ist, fahre ich mit dir.', sign: '— Mika, der mit dir zu jedem deiner Menschen fährt' }
   ];
 
   /* === PETNAMES (8 Sprachen mit deutscher Übersetzung) === */
@@ -1156,20 +1154,41 @@
     'Noor in Schweden, Monir aus Kandahar wie ich — sie waren das Vorbild, wir sind jetzt die Geschichte.',
     'Hajar in Berlin. Noor in Malmö. Saif & Yousef. Deine Cousins sind unsere zweite Familie.',
     'Dein Pandora-Armband wächst Charm um Charm — jede Reise ein Anhänger. Inschallah eines Tages voll wie Noors.',
-    'Hajar wollte zu deinem Geburtstag kommen. Konnte nicht. Also fahren wir zu ihr — Familie macht keine Termine.',
-    'Allguth-Tankstelle. Benzin in den Diesel. Auto um die Ecke schieben. „Mama". „Mein Sohn." Zwei Wörter, ein ganzes Versprechen.',
-    'Verschwörungs-Essen mit Opa: drei Stunden, du nickst, lachst, isst Reis nach. Mama danach: „Sie ist gut. Sie ist deine."',
-    '2027 Inschallah Walima. 2028–29 Inschallah Kinder. Allah hat den Plan, wir haben einander.',
-    'Samira sagte damals: „Wenn ihr zusammen kommt, hab ich nichts damit zu tun." Allah hat es trotzdem geschrieben.'
+    'Hajar wollte zu deinem Geburtstag kommen. Konnte nicht. Also fahren wir zu ihr — Familie macht keine Termine.'
   ];
 
   /* === MUSIC TRACKS === */
   const tracks = [
-    { id: 'tumhi',  label: 'Tum Hi Ho',          embed: 'Umqb9KENgmk' },
-    { id: 'janam',  label: 'Janam Janam',        embed: 'cgmhimjsczk' },
-    { id: 'kabhi',  label: 'Kabhi Kabhi Aditi',  embed: 'HIbzXaBdwZw' },
-    { id: 'arabic', label: 'Nour El Ein · Bagdad', embed: 'KLJA-srM_yM' },
-    { id: 'pashto', label: 'Naghma · Kandahar',  embed: '-ogNlWlornk' }
+    // SRK & Bollywood
+    { id: 'tumhi',     label: 'Tum Hi Ho',           cat: 'srk',    embed: 'Umqb9KENgmk' },
+    { id: 'janam',     label: 'Janam Janam',         cat: 'srk',    embed: 'cgmhimjsczk' },
+    { id: 'kabhi',     label: 'Kabhi Kabhi Aditi',   cat: 'srk',    embed: 'HIbzXaBdwZw' },
+    { id: 'gerua',     label: 'Gerua · Dilwale',     cat: 'srk',    embed: 'AEIVhBS6baE' },
+    { id: 'kalho',     label: 'Kal Ho Naa Ho',       cat: 'srk',    embed: 'tjpkbCyrxgU' },
+    // Französisch / Indila
+    { id: 'lovestory', label: 'Indila · Love Story', cat: 'fr',     embed: 'YqeW9_5kURI' },
+    { id: 'derniere',  label: 'Indila · Dernière Danse', cat: 'fr', embed: 'K5KAc5CoCuk' },
+    // Arabische romantische Lieder
+    { id: 'tamally',   label: 'Amr Diab · Tamally Maak', cat: 'ar', embed: 'dY67ELrwIZk' },
+    { id: 'noureen',   label: 'Amr Diab · Nour El Ein', cat: 'ar',  embed: 'KLJA-srM_yM' },
+    { id: 'habbeit',   label: 'Fairuz · Habbeitak',  cat: 'ar',     embed: 'kuOWsVCKrhk' },
+    { id: 'aaks',      label: 'Elissa · Aaks Ennas', cat: 'ar',     embed: 'WeR53A2sgdM' },
+    { id: 'pashto',    label: 'Naghma · Kandahar',   cat: 'ar',     embed: '-ogNlWlornk' },
+    // Surahs
+    { id: 'rahman',    label: 'Surah Ar-Rahman',     cat: 'quran',  embed: 'M-vMmpFn0nQ' },
+    { id: 'rum21',     label: 'Surah Ar-Rum · 30:21', cat: 'quran', embed: 'OZdFAUq0DT4' },
+    { id: 'yaseen',    label: 'Surah Yaseen',        cat: 'quran',  embed: 'thuk6cikamQ' },
+    { id: 'fatiha',    label: 'Surah Al-Fatiha',     cat: 'quran',  embed: 'PxIIIBjYM0Y' },
+    // Hadithe / Du'a
+    { id: 'duamarry',  label: "Du'a für Eheleute · Bāraka Llāhu",  cat: 'hadith', embed: 'wfL7vXMMfQI' },
+    { id: 'hadithlove', label: 'Hadith · Liebe in der Ehe',  cat: 'hadith', embed: 'A3oqU3v_aMY' }
+  ];
+  const trackCats = [
+    { id: 'srk',    label: '♥ SRK & Bollywood' },
+    { id: 'fr',     label: '♥ Indila' },
+    { id: 'ar',     label: '♥ Arabische Romantik' },
+    { id: 'quran',  label: '☪ Surahs' },
+    { id: 'hadith', label: '☪ Hadithe & Du\'a' }
   ];
 
   /* === STATE === */
@@ -1240,20 +1259,67 @@
       const el = $('#heroPetname');
       if (!el) return;
       i = (i + 1) % heroPetnames.length;
-      el.style.transition = 'opacity 0.45s ease, transform 0.45s ease, filter 0.45s ease';
+      // Sparkle out: scatter sparkles, fade
+      spawnSparkles(el, 8);
+      el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
       el.style.opacity = '0';
-      el.style.transform = 'translateY(-8px)';
-      el.style.filter = 'blur(6px)';
+      el.style.transform = 'translateY(-4px) scale(0.96)';
       setTimeout(() => {
         el.innerHTML = heroPetnames[i].replace(' ', '&nbsp;');
-        el.style.transform = 'translateY(8px)';
+        el.classList.remove('petname-shimmer');
+        // force reflow
+        void el.offsetWidth;
+        el.classList.add('petname-shimmer');
+        el.style.transform = 'translateY(6px) scale(0.98)';
         requestAnimationFrame(() => {
           el.style.opacity = '1';
-          el.style.transform = 'translateY(0)';
-          el.style.filter = 'blur(0)';
+          el.style.transform = 'translateY(0) scale(1)';
+          spawnSparkles(el, 5);
         });
-      }, 460);
-    }, 3200);
+      }, 420);
+    }, 3400);
+  }
+
+  /* === SPARKLE BURST (for petname rotation, etc.) === */
+  function spawnSparkles(el, n = 6) {
+    const r = el.getBoundingClientRect();
+    for (let i = 0; i < n; i++) {
+      const s = document.createElement('span');
+      s.className = 'sparkle-piece';
+      s.textContent = ['✦','✧','★','·'][i % 4];
+      const x = r.left + Math.random() * r.width;
+      const y = r.top + Math.random() * r.height;
+      s.style.left = x + 'px';
+      s.style.top = y + 'px';
+      s.style.color = Math.random() > 0.5 ? '#f1d896' : '#ffd4d8';
+      s.style.fontSize = (10 + Math.random() * 10) + 'px';
+      document.body.appendChild(s);
+      const dx = (Math.random() - 0.5) * 80;
+      const dy = -20 - Math.random() * 60;
+      s.animate(
+        [{ transform: 'translate(0,0) scale(0.4)', opacity: 0 },
+         { transform: `translate(${dx*0.4}px, ${dy*0.4}px) scale(1)`, opacity: 1, offset: 0.3 },
+         { transform: `translate(${dx}px, ${dy}px) scale(0.2)`, opacity: 0 }],
+        { duration: 900 + Math.random() * 500, easing: 'cubic-bezier(0.2,0.7,0.2,1)' }
+      ).onfinish = () => s.remove();
+    }
+  }
+
+  /* === NIKKAH COUNTER === */
+  function startNikkahCounter() {
+    const el = document.getElementById('nikkahDays');
+    if (!el) return;
+    const nikkah = new Date(2026, 0, 10); // 10.01.2026
+    const update = () => {
+      const now = new Date();
+      const ms = now - nikkah;
+      const days = Math.floor(ms / 86400000);
+      const display = days >= 0 ? days : 0;
+      el.textContent = display.toLocaleString('de-DE');
+      el.dataset.days = display;
+    };
+    update();
+    setInterval(update, 60000);
   }
 
   /* === FLOATING HEARTS === */
@@ -1274,6 +1340,26 @@
   }
 
   /* === SRK TICKER (typewriter) === */
+  function srkGlitter() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const t = document.getElementById('srkTicker');
+    if (!t) return;
+    const r = t.getBoundingClientRect();
+    const s = document.createElement('span');
+    s.className = 'srk-spark';
+    s.textContent = ['✦','✧','★','·'][Math.floor(Math.random()*4)];
+    s.style.left = (r.left + Math.random() * r.width) + 'px';
+    s.style.top  = (r.top + Math.random() * r.height) + 'px';
+    s.style.color = Math.random() > 0.5 ? '#f1d896' : '#ffd4d8';
+    document.body.appendChild(s);
+    s.animate([
+      { transform: 'translate(0,0) scale(0.4)', opacity: 0 },
+      { transform: 'translate(0,-12px) scale(1)', opacity: 1, offset: 0.3 },
+      { transform: 'translate(0,-32px) scale(0.3)', opacity: 0 }
+    ], { duration: 1400, easing: 'cubic-bezier(0.2,0.7,0.2,1)' }).onfinish = () => s.remove();
+  }
+  setInterval(srkGlitter, 1700);
+
   function startSrkTicker() {
     const el = $('#srkText');
     let line = 0, char = 0, deleting = false;
@@ -1818,6 +1904,62 @@
       </article>
     `).join('');
   }
+  function applyDropCap(html) {
+    // wrap first letter of body text in a drop-cap span
+    const m = html.match(/^(\s*)([A-Za-zÀ-ÿ„"'])/);
+    if (!m) return html;
+    const idx = m.index + m[1].length;
+    return html.slice(0, idx) + '<span class="drop-cap">' + html[idx] + '</span>' + html.slice(idx + 1);
+  }
+
+  /* === PANDORA-ARMBAND CHARMS === */
+  const pandoraCharms = [
+    { id: 'erstes',  glyph: '🍛', label: '14.10.2024 · Erstes Treffen',  story: 'Indisches Essen mit Samira und Enes. Anstarrwettbewerb gewonnen, Habibti.' },
+    { id: 'cola',    glyph: '🥤', label: 'Die Cola im Abbacos',          story: 'Du als Hostess, eine Cola in deiner Hand — ich wusste es da schon.' },
+    { id: 'samira',  glyph: '✉',  label: 'Samira: ich hab nichts damit zu tun', story: 'Indisch mit Samira und Enes — sie hat nichts damit zu tun. Allah hat es geschrieben.' },
+    { id: 'museum',  glyph: '🖼', label: 'Vorm Museum · 14.10.2024',      story: 'Nach dem Anstarrwettbewerb. „Du bist das schönste arabische Gemälde da drinnen."' },
+    { id: 'parfum',  glyph: '🌸', label: 'Autoparfüm · Tag 2',           story: 'Zwei Tage kannten wir uns. Du hast mir ein Autoparfüm gekauft. Ich wusste: das ist sie.' },
+    { id: 'allguth', glyph: '⛽', label: 'Allguth · Mein Sohn',           story: 'Benzin in den Diesel, Auto schieben — „Komm, Mama." / „Mein Sohn."' },
+    { id: 'fruh',    glyph: '🥐', label: 'Frühstück · 17.10.2024',        story: 'Vier Stunden, nichts gegessen. Über Allah und die Welt geredet.' },
+    { id: 'kino',    glyph: '🎬', label: 'Kino · Tage geplant, eine Frage',story: 'Tagelang habe ich geplant, neben dir zu sitzen. Du hast einfach gefragt, kurz vorm Saal: „Willst du neben mir sitzen?" Habibti, ich hatte alles geplant — und du warst schneller.' },
+    { id: 'oez',     glyph: '🛍', label: 'OEZ · Samiras „Zufall"',          story: 'Samira hat dich rausgerufen, ins OEZ gebracht — „zufällig" da: ich und Juan, mein und jetzt auch dein bester Freund. Der mit uns in Dubai war.' },
+    { id: 'cafe',    glyph: '☕', label: 'Café · Der Geiz-Test',           story: 'Du und Samira habt geguckt, ob ich zahle. Ihr hattet gehört, ich wäre geizig. Habibti — für dich zahle ich alles.' },
+    { id: 'balkon',  glyph: '🌙', label: 'Balkon · Noor & Monir',         story: '„Inschallah genauso." Zwei Kinder, ein Hof, ein Du\'a.' },
+    { id: 'pandora', glyph: '✨', label: 'Pandora · Charm um Charm',      story: 'Wie Monir Noor — jedes Charm ein Tag, der bleibt.' },
+    { id: 'opa',     glyph: '🍽', label: 'Opas Verschwörungs-Essen',       story: 'Meine Familie hat dich aufgenommen. Mit Lachen, mit allem.' },
+    { id: 'nikkah',  glyph: '💍', label: 'Nikkah · Penzberg 10.01.2026',  story: 'Bāraka Llāhu laka wa jama\'a baynakumā fī khayr.', confetti: true },
+    { id: 'walima',  glyph: '🌹', label: 'Walima · 2027 Inschallah',      story: 'Unser Fest. Deine Familie, meine Familie — ein Saal voller Liebe.' },
+    { id: 'kinder',  glyph: '👶', label: 'Kinder · 2028–29 Inschallah',   story: 'Klein-Maryem mit deinen Augen, klein-Mika mit deinem Lachen.' },
+    { id: 'mekka',   glyph: '🕋', label: 'Umrah · Mekka & Medina',        story: 'Hand in Hand vor der Kaaba. Höchstes Ziel, höchste Liebe.' }
+  ];
+
+  function renderPandora() {
+    const wrap = document.getElementById('pandoraCharms');
+    if (!wrap) return;
+    wrap.innerHTML = pandoraCharms.map((c, i) => {
+      const t = i / (pandoraCharms.length - 1);
+      const u = 1 - t;
+      const x = u*u*60 + 2*u*t*550 + t*t*1040;
+      const y = u*u*240 + 2*u*t*(-40) + t*t*240;
+      const xPct = (x / 1100 * 100).toFixed(2);
+      const yPct = (y / 320 * 100).toFixed(2);
+      return `<button class="pandora-charm" data-charm="${c.id}" style="left:${xPct}%;top:${yPct}%;animation-delay:${(i * 0.12).toFixed(2)}s" aria-label="${c.label}"><span class="charm-bead"><span class="charm-glyph">${c.glyph}</span></span><span class="charm-tip"><strong>${c.label}</strong><em>${c.story}</em></span></button>`;
+    }).join('');
+    Array.from(wrap.querySelectorAll('.pandora-charm')).forEach(b => {
+      b.addEventListener('mouseenter', () => playTing(620 + Math.random() * 280, 0.05));
+      b.addEventListener('click', () => {
+        const c = pandoraCharms.find(x => x.id === b.dataset.charm);
+        if (!c) return;
+        burstConfetti(c.confetti ? 44 : 16, b);
+        playTing(880 + Math.random() * 200, 0.07);
+        const r = b.getBoundingClientRect();
+        const txt = c.id === 'nikkah' ? 'Bāraka Llāhu laka' : c.id === 'allguth' ? 'Mein Sohn' : c.id === 'mekka' ? 'Labbayk Allāhumma' : c.id === 'cola' ? 'Cola, Habibti' : c.label.split('·')[0].trim();
+        spawnLoveText(r.left + r.width/2, r.top + r.height/2 - 10, txt);
+        if (typeof vibrate === 'function') vibrate(30);
+      });
+    });
+  }
+
   function renderLetters() {
     renderVerses();
     $('#petnamesGrid').innerHTML = petnames.map(p => `
@@ -1829,31 +1971,179 @@
     `).join('');
     $$('.petname').forEach(b => {
       b.onclick = () => { playTing(520 + Math.random() * 240); spawnHeartTrail(b); };
+      b.onmouseenter = () => { playTing(720 + Math.random() * 200, 0.04); };
     });
 
-    $('#lettersGrid').innerHTML = letters.map(l => `
-      <article class="letter ${l.featured ? 'is-featured' : ''}">
+    const grid = $('#lettersGrid');
+    const SAVED = parseInt(localStorage.getItem('letter_index') || '0', 10);
+    const start = Math.min(Math.max(SAVED, 0), letters.length - 1);
+    const letterHtml = (l) => `
         <span class="letter-pin">${l.pin}</span>
+        <div class="letter-paper" aria-hidden="true"></div>
         <h3>${l.title}</h3>
-        <p>${l.body}</p>
+        <p>${applyDropCap(l.body)}</p>
         <span class="letter-sign">${l.sign}</span>
         <div class="letter-actions">
+          <button class="letter-action-btn" data-script="${l.id}" aria-label="Handschrift"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>Handschrift</button>
+          <button class="letter-action-btn" data-speak="${l.id}" aria-label="Vorlesen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>Vorlesen</button>
+          <button class="letter-action-btn" data-wa="${l.id}" aria-label="An Mama / Hajar via WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.5 0-.1-.7-1.6-.9-2.2-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4C8.7 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>WhatsApp</button>
           <button class="letter-action-btn" data-share="${l.id}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>Teilen</button>
           <button class="letter-action-btn" onclick="window.print()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>Drucken</button>
+        </div>`;
+    grid.innerHTML = `
+      <div class="letter-book" id="letterBook" data-index="${start}">
+        <div class="letter-stage" id="letterStage">
+          <article class="letter ${letters[start].featured ? 'is-featured' : ''} is-active" data-i="${start}">${letterHtml(letters[start])}</article>
         </div>
-      </article>
-    `).join('');
-    $$('[data-share]').forEach(b => {
-      b.onclick = async () => {
-        const l = letters.find(x => x.id === b.dataset.share);
-        const text = `${l.title}\n\n${l.body}\n\n${l.sign}`;
-        if (navigator.share) {
-          try { await navigator.share({ title: 'Für Maryem ♥', text }); } catch {}
-        } else {
-          try { await navigator.clipboard.writeText(text); b.innerHTML = '✓ Kopiert'; setTimeout(() => renderLetters(), 1400); } catch {}
-        }
-      };
+        <button class="letter-nav letter-nav-prev" id="letterPrev" aria-label="Vorheriger Brief">‹</button>
+        <button class="letter-nav letter-nav-next" id="letterNext" aria-label="Nächster Brief">›</button>
+        <div class="letter-tabs" id="letterTabs">
+          ${letters.map((l, i) => `<button class="letter-tab ${i === start ? 'is-active' : ''}" data-go="${i}" aria-label="${l.title}"><span>${String(i + 1).padStart(2, '0')}</span></button>`).join('')}
+        </div>
+      </div>`;
+
+    const book = $('#letterBook');
+    const stage = $('#letterStage');
+    let curIdx = start;
+    let busy = false;
+
+    function go(nextIdx, dir) {
+      if (busy) return;
+      nextIdx = (nextIdx + letters.length) % letters.length;
+      if (nextIdx === curIdx) return;
+      busy = true;
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const direction = dir || (nextIdx > curIdx || (curIdx === letters.length - 1 && nextIdx === 0) ? 1 : -1);
+      const cur = stage.querySelector('.letter.is-active');
+      const next = document.createElement('article');
+      next.className = 'letter ' + (letters[nextIdx].featured ? 'is-featured ' : '') + (direction === 1 ? 'enter-right' : 'enter-left');
+      next.dataset.i = nextIdx;
+      next.innerHTML = letterHtml(letters[nextIdx]);
+      stage.appendChild(next);
+      bindActions(next);
+      // trigger curl on outgoing
+      if (cur) {
+        cur.classList.remove('is-active');
+        cur.classList.add(direction === 1 ? 'curl-out-left' : 'curl-out-right');
+      }
+      // tabs
+      $$('.letter-tab').forEach((t, i) => t.classList.toggle('is-active', i === nextIdx));
+      requestAnimationFrame(() => {
+        next.classList.remove('enter-right', 'enter-left');
+        next.classList.add('is-active');
+      });
+      const dur = reduce ? 50 : 760;
+      setTimeout(() => {
+        if (cur && cur.parentNode === stage) stage.removeChild(cur);
+        curIdx = nextIdx;
+        book.dataset.index = nextIdx;
+        localStorage.setItem('letter_index', String(nextIdx));
+        busy = false;
+        if (typeof playTing === 'function') playTing(540 + Math.random() * 180, 0.04);
+      }, dur);
+    }
+
+    function bindActions(scope) {
+      scope.querySelectorAll('[data-share]').forEach(b => {
+        b.onclick = async () => {
+          const l = letters.find(x => x.id === b.dataset.share);
+          const text = `${l.title}\n\n${l.body}\n\n${l.sign}`;
+          if (navigator.share) {
+            try { await navigator.share({ title: 'Für Maryem ♥', text }); } catch {}
+          } else {
+            try { await navigator.clipboard.writeText(text); b.innerHTML = '✓ Kopiert'; setTimeout(() => b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>Teilen', 1400); } catch {}
+          }
+        };
+      });
+      scope.querySelectorAll('[data-wa]').forEach(b => {
+        b.onclick = () => {
+          const l = letters.find(x => x.id === b.dataset.wa);
+          const msg = `${l.title}\n\n${l.body}\n\n${l.sign}\n\n— marymika.de`;
+          window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+        };
+      });
+      scope.querySelectorAll('[data-script]').forEach(b => {
+        b.onclick = () => {
+          const art = b.closest('.letter');
+          art.classList.toggle('is-handwritten');
+          b.classList.toggle('is-on', art.classList.contains('is-handwritten'));
+          if (typeof playTing === 'function') playTing(660, 0.04);
+        };
+      });
+      scope.querySelectorAll('[data-speak]').forEach(b => {
+        b.onclick = () => speakLetter(letters.find(x => x.id === b.dataset.speak), b);
+      });
+    }
+    bindActions(stage);
+
+    $('#letterPrev').onclick = () => go(curIdx - 1, -1);
+    $('#letterNext').onclick = () => go(curIdx + 1, 1);
+    $$('.letter-tab').forEach(t => {
+      t.onclick = () => go(parseInt(t.dataset.go, 10));
     });
+
+    // Keyboard nav (only when on this page)
+    if (!window._letterKeyBound) {
+      window._letterKeyBound = true;
+      document.addEventListener('keydown', (e) => {
+        if (location.hash !== '#liebesbriefe') return;
+        if (e.target.matches('input, textarea')) return;
+        const b = document.getElementById('letterBook');
+        if (!b) return;
+        const cur = parseInt(b.dataset.index, 10) || 0;
+        if (e.key === 'ArrowLeft') { e.preventDefault(); $('#letterPrev').click(); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); $('#letterNext').click(); }
+      });
+    }
+
+    // Swipe nav
+    let tx = 0, ty = 0;
+    stage.addEventListener('touchstart', (e) => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
+    stage.addEventListener('touchend', (e) => {
+      const dx = e.changedTouches[0].clientX - tx;
+      const dy = e.changedTouches[0].clientY - ty;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)) {
+        if (dx < 0) $('#letterNext').click(); else $('#letterPrev').click();
+      }
+    }, { passive: true });
+  }
+
+  /* === TTS for letters (Web Speech) === */
+  let ttsActive = null;
+  function speakLetter(l, btn) {
+    if (!('speechSynthesis' in window) || !l) return;
+    if (ttsActive && ttsActive.btn === btn) {
+      window.speechSynthesis.cancel();
+      ttsActive.btn.classList.remove('is-speaking');
+      ttsActive = null;
+      return;
+    }
+    if (ttsActive) {
+      window.speechSynthesis.cancel();
+      ttsActive.btn.classList.remove('is-speaking');
+    }
+    const u = new SpeechSynthesisUtterance(`${l.title}. ${l.body}. ${l.sign}.`);
+    u.lang = 'de-DE';
+    u.rate = 0.9;
+    u.pitch = 1.05;
+    u.volume = 1;
+    // Pick a German voice if available; prefer male for Mika's letters
+    const pickVoice = () => {
+      const voices = window.speechSynthesis.getVoices();
+      const de = voices.filter(v => v.lang && v.lang.startsWith('de'));
+      if (!de.length) return;
+      const male = de.find(v => /male|männ|markus|stefan|yannick|conrad|daniel/i.test(v.name));
+      u.voice = male || de[0];
+    };
+    pickVoice();
+    if (!u.voice) window.speechSynthesis.onvoiceschanged = pickVoice;
+    btn.classList.add('is-speaking');
+    ttsActive = { btn, u };
+    u.onend = u.onerror = () => {
+      btn.classList.remove('is-speaking');
+      if (ttsActive && ttsActive.btn === btn) ttsActive = null;
+    };
+    window.speechSynthesis.speak(u);
   }
 
   /* === SHORTLIST + COMPARE DRAWER === */
@@ -1958,6 +2248,54 @@
         { duration: 1100 + Math.random() * 600, easing: 'cubic-bezier(0.2,0.7,0.2,1)' }
       ).onfinish = () => p.remove();
     }
+    // ~25% of bursts: also form "I love you" text that floats up
+    if (n >= 24 && Math.random() < 0.6) spawnLoveText(cx, cy);
+  }
+
+  /* === EPHEMERAL TEXT (forms after confetti, floats up, fades) === */
+  function spawnLoveText(cx, cy, text = 'I love you') {
+    const t = document.createElement('span');
+    t.className = 'love-text-burst';
+    t.textContent = text;
+    t.style.left = cx + 'px';
+    t.style.top = cy + 'px';
+    document.body.appendChild(t);
+    t.animate(
+      [{ transform: 'translate(-50%, -50%) scale(0.4)', opacity: 0, filter: 'blur(8px)' },
+       { transform: 'translate(-50%, -90%) scale(1)', opacity: 1, filter: 'blur(0)', offset: 0.4 },
+       { transform: 'translate(-50%, -160%) scale(1.05)', opacity: 0, filter: 'blur(2px)' }],
+      { duration: 2200, easing: 'cubic-bezier(0.2,0.7,0.2,1)' }
+    ).onfinish = () => t.remove();
+  }
+
+  /* === INTRO VEIL (3-second fade greeting) === */
+  function runIntroVeil() {
+    const veil = document.getElementById('introVeil');
+    if (!veil) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      veil.remove();
+      return;
+    }
+    // Build subtle stars
+    const stars = veil.querySelector('.intro-stars');
+    if (stars) {
+      for (let i = 0; i < 28; i++) {
+        const s = document.createElement('span');
+        s.style.left = Math.random() * 100 + '%';
+        s.style.top = Math.random() * 100 + '%';
+        s.style.animationDelay = (Math.random() * 2.4) + 's';
+        s.style.opacity = (0.3 + Math.random() * 0.7).toFixed(2);
+        stars.appendChild(s);
+      }
+    }
+    document.body.classList.add('intro-locked');
+    // Reveal sequence
+    requestAnimationFrame(() => veil.classList.add('is-visible'));
+    setTimeout(() => veil.classList.add('is-fading'), 2600);
+    setTimeout(() => {
+      veil.remove();
+      document.body.classList.remove('intro-locked');
+    }, 3600);
   }
 
   /* === TINY HEART TRAIL === */
@@ -1984,24 +2322,32 @@
 
   /* === WEB AUDIO TING === */
   let audioCtx = null;
-  function playTing(freq = 880) {
+  function playTing(freq = 880, gain = 0.08) {
     try {
       audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
       const o = audioCtx.createOscillator();
       const g = audioCtx.createGain();
-      o.frequency.value = freq;
       o.type = 'sine';
-      g.gain.setValueAtTime(0.0001, audioCtx.currentTime);
-      g.gain.exponentialRampToValueAtTime(0.06, audioCtx.currentTime + 0.01);
-      g.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.55);
+      o.frequency.value = freq;
+      g.gain.value = 0;
       o.connect(g).connect(audioCtx.destination);
-      o.start(); o.stop(audioCtx.currentTime + 0.6);
+      const t = audioCtx.currentTime;
+      g.gain.linearRampToValueAtTime(gain, t + 0.01);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.45);
+      o.start(t);
+      o.stop(t + 0.5);
     } catch {}
   }
 
   /* === MUSIC === */
   function buildMusicTabs() {
-    $('#musicTabs').innerHTML = tracks.map(t => `<button class="${t.id === state.currentTrack ? 'is-active' : ''}" data-track="${t.id}">${t.label}</button>`).join('');
+    $('#musicTabs').innerHTML = trackCats.map(c => {
+      const items = tracks.filter(t => t.cat === c.id);
+      if (!items.length) return '';
+      return '<div class="music-cat"><h5>' + c.label + '</h5><div class="music-cat-items">' +
+        items.map(t => '<button class="' + (t.id === state.currentTrack ? 'is-active' : '') + '" data-track="' + t.id + '">' + t.label + '</button>').join('') +
+        '</div></div>';
+    }).join('');
     $$('#musicTabs button').forEach(b => {
       b.onclick = () => { state.currentTrack = b.dataset.track; buildMusicTabs(); loadMusicFrame(); };
     });
@@ -2081,6 +2427,20 @@
     showMemoryAt(0);
     if (memTimer) clearInterval(memTimer);
     memTimer = setInterval(memTick, 4500);
+    // Touch swipe (mobile)
+    const stage = document.getElementById('memoriesStage');
+    if (stage && !stage.dataset.swipeBound) {
+      stage.dataset.swipeBound = '1';
+      let sx = 0, sy = 0, dx = 0;
+      stage.addEventListener('touchstart', e => { sx = e.touches[0].clientX; sy = e.touches[0].clientY; dx = 0; }, { passive: true });
+      stage.addEventListener('touchmove',  e => { dx = e.touches[0].clientX - sx; }, { passive: true });
+      stage.addEventListener('touchend', () => {
+        if (Math.abs(dx) > 50) {
+          if (dx < 0) showMemoryAt(memIdx + 1); else showMemoryAt(memIdx - 1);
+          if (typeof resetMemTimer === 'function') resetMemTimer();
+        }
+      });
+    }
     $('#memPrev').onclick = () => { showMemoryAt(memIdx - 1); resetMemTimer(); };
     $('#memNext').onclick = () => { showMemoryAt(memIdx + 1); resetMemTimer(); };
     $('#memPlay').onclick = () => {
@@ -2217,7 +2577,7 @@
     }
     if (mapInstance) { mapInstance.remove(); mapInstance = null; }
 
-    mapInstance = L.map('ourMap', {
+    window.mapInstance = mapInstance = L.map('ourMap', {
       worldCopyJump: true,
       scrollWheelZoom: false,
       zoomControl: true,
@@ -2226,20 +2586,19 @@
     });
     mapInstance.setView([22, 25], 2);
 
-    // Stadia Alidade Smooth Dark — registration-free for non-prod use
-    // Falls back to CARTO Dark Matter on tile-load errors
-    const tileLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; OpenStreetMap',
-      maxZoom: 20, minZoom: 2
+    // CARTO Dark Matter — registration-free, reliable
+    const tileLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd', maxZoom: 19, minZoom: 2
     });
     let fellBack = false;
     tileLayer.on('tileerror', () => {
       if (fellBack) return;
       fellBack = true;
       mapInstance.removeLayer(tileLayer);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap &copy; CARTO',
-        subdomains: 'abcd', maxZoom: 19
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap',
+        maxZoom: 19
       }).addTo(mapInstance);
     });
     tileLayer.addTo(mapInstance);
@@ -2405,224 +2764,7 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (name === 'erinnerungen') renderMemories();
     if (name === 'karte') renderKarte();
-    if (name === 'geschichte') renderGeschichte();
-    if (name === 'pandora') renderPandora();
-    if (name === 'walima') renderWalima();
-    if (name === 'liebesbriefe') renderMaryemLetters();
   }
-
-  /* === UNSERE GESCHICHTE (Timeline — chronologisch) === */
-  const timelineEvents = [
-    { date: '~ 2024', icon: '☕', title: 'Die Cola im Abbacos', body: 'Du als Hostess in dem kleinen Münchner Steakladen, ich am Tisch — du bringst mir eine Cola. Mein erster Satz: „Ich kenne dich vom Abbacos." Du wusstest nicht, dass dieser Moment ein ganzes Leben startet.', tag: 'Anfang' },
-    { date: '~ 2024', icon: '🌟', title: 'Wege gekreuzt — durch Samira (zufällig)', body: 'Ein paar Monate später — durch Samira, gemeinsame Freundin, kreuzten sich unsere Wege wieder. Sie wollte das gar nicht — sie hat sogar gesagt: „Wenn ihr zusammen kommt, hab ich nichts damit zu tun." Allah hatte trotzdem geschrieben.', tag: 'Schicksal' },
-    { date: '~ 2024', icon: '🏛', title: 'Draußen vorm Museum', body: 'Du fragst, was das schönste im Museum war. Ich sage: „Du bist das schönste arabische Gemälde da drinnen." Du läufst sofort zu Samira, um zu fragen, ob du richtig gehört hast. Sie sagt: „Nee, das stimmt nicht."', tag: 'Unser Moment' },
-    { date: '~ 2024', icon: '⛽', title: 'Deine Mama bei der Allguth-Tankstelle', body: 'Sie hatte aus Versehen Benzin in den Diesel getankt. Wir haben das Auto zu dritt um die Ecke geschoben — und mitten im Schieben hab ich gesagt: „Mama". Sie hat mich angeschaut: „Mein Sohn." Eine irakische Mama nennt dich nicht „mein Sohn", wenn sie nicht sicher ist.', tag: 'Familie' },
-    { date: '~ 2024–2025', icon: '🍳', title: 'Das Frühstück, das wir nicht aßen', body: 'Drei, vier Stunden über Islam, Allah, Bagdad und Kandahar geredet. Tee wurde kalt, Brot trocken — uns war es egal. „Wa ja\'ala baynakum mawaddatan wa raḥmah." An dem Morgen hab ich verstanden, was das heißt.', tag: 'Tiefe' },
-    { date: '~ 2025', icon: '🏘️', title: 'Riesstraße — wir lebten Tür an Tür', body: 'Wir realisieren: wir sind beide in München geboren, im selben Hof in der Riesstraße aufgewachsen. Am gleichen Brunnen. Ohne uns je gesehen zu haben. Allah hat den Moment selbst gewählt.', tag: 'Schicksal' },
-    { date: '~ 2025', icon: '🌃', title: 'Auf dem Balkon mit Noor & Monir', body: 'Sie verheiratet, zwei zuckersüße Kinder. Monir aus Kandahar wie ich, Noor irakisch wie du. „Inschallah genauso", flüsterten wir. Damals waren wir noch nicht mal verlobt.', tag: 'Wunsch' },
-    { date: '~ 2025', icon: '💎', title: 'Das Pandora-Armband', body: 'Nach jenem Balkon-Abend hab ich dir ein Pandora geschenkt — wie Monir es Noor geschenkt hatte. Charm um Charm: Geburtstag, ein „Ich liebe dich", eine Reise. Noors war schon voll. Deins wächst.', tag: 'Versprechen' },
-    { date: '~ 2025', icon: '👨‍👩‍👦', title: 'Meine Eltern, Opa & Oma kennengelernt', body: 'Beim Familienessen — Opa fängt an über Verschwörungstheorien zu reden, eine Stunde, zwei, drei. Du nickst, lachst an den richtigen Stellen, nimmst Reis nach. Oma schöpft dir nach ohne zu fragen — die paschtunische Form von „du bleibst". Mama danach: „Sie ist gut. Sie ist deine."', tag: 'Familie' },
-    { date: '10.01.2026', icon: '💍', title: 'Nikkah & Verlobung in Penzberg', body: 'In der Moschee in Penzberg, vor Allah und unseren Familien. Sommerreifen durch hohen Schnee. Du komplett crashout wegen DJ. Ich nur ein Gedanke: „Alhamdulillah, dass diese Frau meine wird."', tag: 'Hochzeit', highlight: true, easter: 'nikkah' },
-    { date: 'Jeden Tag seit 2024', icon: '🤲', title: 'Alhamdulillah — kein Tag ohne dich', body: 'Seit dem ersten Tag haben wir jeden einzelnen geredet, jeden gesehen. Auch durch Streits, auch durch Tränen. Keine Sekunde haben wir an UNS gezweifelt — nur die Welt um uns hat\'s versucht. Du hast es ignoriert.', tag: 'Heute' },
-    { date: '2027, Inschallah', icon: '🎊', title: 'Walima — die große Hochzeit', body: 'Nächstes Jahr, Inschallah. Disney-Bollywood-Princess-Energy. Iraker Buffet, paschtunische Tänze, alle die wir lieben in einem Saal. Tum Hi Ho als unser erster Tanz.', tag: 'Zukunft' },
-    { date: '~ 2028–2029, Inschallah', icon: '👶', title: 'Unsere Kinder', body: 'In drei, vier Jahren, wenn die Zeit kommt — Inschallah Kinder, die Bagdad und Kandahar in einem Atemzug nennen. Die deine Mama Tata nennen, meine Eltern Bibi & Baba. Unsere Geschichte geht weiter.', tag: 'Zukunft' },
-    { date: 'Bald, Inschallah', icon: '🤲', title: 'Umrah — Hand in Hand vor der Kaaba', body: 'Unser höchstes Ziel — Tawaf gemeinsam, Sa\'i, Du\'a in Madinah Sharif. Bekleidet in Weiß, vor dem Haus Allahs. Bāraka Llāhu lana.', tag: 'Zukunft' },
-    { date: 'Bald, Inschallah', icon: '🏛', title: 'Unser Palast', body: 'Bald nicht mehr bei meinen Eltern. Bald in einem Zuhause, das schöner ist als der Taj Mahal. Garten wo du jede Blume aussuchst. Küche, in der wir vergessen zu kochen, weil wir reden.', tag: 'Zukunft' }
-  ];
-
-  function renderGeschichte() {
-    if (!$('#timelineContainer')) return;
-    $('#timelineContainer').innerHTML = timelineEvents.map((e, i) => `
-      <article class="timeline-event ${e.highlight ? 'is-highlight' : ''}" ${e.easter ? `data-easter="${e.easter}"` : ''}>
-        <div class="timeline-dot">${e.icon}</div>
-        <div class="timeline-content">
-          <div class="timeline-meta">
-            <span class="timeline-date">${e.date}</span>
-            <span class="timeline-tag">${e.tag}</span>
-          </div>
-          <h3>${e.title}</h3>
-          <p>${e.body}</p>
-        </div>
-      </article>
-    `).join('');
-    $$('[data-easter="nikkah"]').forEach(el => {
-      el.addEventListener('click', () => {
-        const r = el.getBoundingClientRect();
-        burstConfetti(60, el);
-        playTing(880);
-      });
-    });
-  }
-
-  /* === PANDORA-CHARMS-VISUALISIERUNG === */
-  const charms = [
-    { id: 'cola', icon: '☕', label: 'Erste Cola', date: 'Abbacos', collected: true },
-    { id: 'samira', icon: '🌟', label: 'Samira', date: '„Ich hab nichts damit zu tun"', collected: true },
-    { id: 'museum', icon: '🏛', label: 'Museum', date: '„Schönstes arabisches Gemälde"', collected: true },
-    { id: 'allguth', icon: '⛽', label: 'Allguth & deine Mama', date: '„Mein Sohn"', collected: true },
-    { id: 'breakfast', icon: '🍳', label: 'Frühstück', date: '4 Stunden Islam-Talk', collected: true },
-    { id: 'riesstr', icon: '🏘️', label: 'Riesstraße', date: 'Selber Hof', collected: true },
-    { id: 'balkon', icon: '🌃', label: 'Balkon', date: 'Mit Noor & Monir', collected: true },
-    { id: 'pandora', icon: '💎', label: 'Pandora-Geschenk', date: 'Charm Nr. 1', collected: true },
-    { id: 'family', icon: '👨‍👩‍👦', label: 'Meine Familie', date: 'Verschwörungs-Essen', collected: true },
-    { id: 'birthday', icon: '🎂', label: 'Dein Geburtstag', date: 'Erstes mit mir', collected: true },
-    { id: 'love', icon: '♥', label: '„Ich liebe dich"', date: 'Erstes Mal', collected: true },
-    { id: 'darling', icon: '👵', label: '„Darling"', date: 'Oma in Malmö', collected: true },
-    { id: 'nikkah', icon: '💍', label: 'Nikkah', date: '10.01.2026 Penzberg', collected: true, highlight: true },
-
-    { id: 'walima', icon: '🎊', label: 'Walima', date: '2027 Inschallah', collected: false, highlight: true },
-    { id: 'baby', icon: '👶', label: 'Erstes Kind', date: '~ 2028–29 Inschallah', collected: false },
-    { id: 'mekka', icon: '🕋', label: 'Mekka & Medina', date: 'Umrah Inschallah', collected: false },
-    { id: 'palast', icon: '🏛', label: 'Unser Palast', date: 'Inschallah', collected: false },
-    { id: 'malmoe', icon: '👨‍👩‍👧', label: 'Malmö-Trip', date: 'Bei Oma & Familie', collected: false },
-    { id: 'berlin', icon: '🇩🇪', label: 'Berlin-Trip', date: 'Bei Hajar & Momo', collected: false },
-    { id: 'paris', icon: '🗼', label: 'Paris', date: 'Honeymoon', collected: false },
-    { id: 'maldives', icon: '🏝️', label: 'Malediven', date: 'Wasservilla', collected: false },
-    { id: 'silver', icon: '🥈', label: 'Silberhochzeit', date: 'In 25 Jahren', collected: false },
-    { id: 'gold', icon: '🥇', label: 'Goldene Hochzeit', date: 'In 50 Jahren', collected: false }
-  ];
-
-  function renderPandora() {
-    if (!$('#pandoraStage')) return;
-    const total = charms.length;
-    const got = charms.filter(c => c.collected).length;
-    $('#pandoraStage').innerHTML = `
-      <div class="pandora-bracelet" aria-label="Pandora-Armband">
-        <svg viewBox="-260 -160 520 320" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="braceletGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#d4a843" stop-opacity="0.85"/>
-              <stop offset="50%" stop-color="#fde9b9" stop-opacity="0.95"/>
-              <stop offset="100%" stop-color="#d4a843" stop-opacity="0.85"/>
-            </linearGradient>
-            <filter id="charmShadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/></filter>
-          </defs>
-          <ellipse cx="0" cy="0" rx="220" ry="120" fill="none" stroke="url(#braceletGrad)" stroke-width="3" stroke-dasharray="2 4" opacity="0.85"/>
-          ${charms.map((c, i) => {
-            const angle = (i / charms.length) * Math.PI * 2 - Math.PI/2;
-            const x = Math.cos(angle) * 220;
-            const y = Math.sin(angle) * 120;
-            return `<g transform="translate(${x.toFixed(1)}, ${y.toFixed(1)})" class="charm-svg ${c.collected ? 'is-collected' : 'is-empty'} ${c.highlight ? 'is-highlight' : ''}" data-charm="${c.id}" filter="url(#charmShadow)" tabindex="0">
-              <circle r="20" fill="${c.collected ? (c.highlight ? '#fde9b9' : '#d4a843') : 'rgba(255,255,255,0.05)'}" stroke="${c.collected ? '#fff' : 'rgba(212,168,67,0.45)'}" stroke-width="${c.collected ? '2.5' : '1.2'}"/>
-              <text y="6" text-anchor="middle" font-size="18" fill="${c.collected ? '#1a0f24' : '#d4a843'}">${c.icon}</text>
-            </g>`;
-          }).join('')}
-        </svg>
-        <div class="pandora-stats">
-          <div><strong>${got}</strong><span>gesammelt</span></div>
-          <div><strong>${total - got}</strong><span>kommend</span></div>
-          <div><strong>${total}</strong><span>insgesamt</span></div>
-        </div>
-      </div>
-    `;
-    $('#pandoraGrid').innerHTML = charms.map(c => `
-      <article class="charm-card ${c.collected ? 'is-collected' : 'is-empty'} ${c.highlight ? 'is-highlight' : ''}">
-        <div class="charm-icon">${c.icon}</div>
-        <div class="charm-info">
-          <strong>${c.label}</strong>
-          <span>${c.date}</span>
-        </div>
-        <span class="charm-status">${c.collected ? '♥' : '✦'}</span>
-      </article>
-    `).join('');
-  }
-
-  /* === WALIMA-PLANUNG === */
-  const walimaSections = [
-    { icon: '📅', title: 'Datum', items: ['Inschallah Sommer 2026', 'Möglich: Mai–September', 'An einem Wochenende, dass beide Familien aus Bagdad/Schweden + Kandahar kommen können'] },
-    { icon: '🏛', title: 'Saal-Ideen', items: ['Eleganter Saal in München (für Familie & Freunde aus DE)', 'Optional: Marrakesch-Riad-Wedding (Disney + Tausendundeine Nacht)', 'Optional: Schloss in Bayern (Wintermärchen-Energy)'] },
-    { icon: '👰', title: 'Brautkleid-Träume', items: ['Hauptkleid: Disney-Princess weiß mit langer Schleppe', 'Zweites Outfit: irakisches Brautkleid für die Familie', 'Drittes Outfit: paschtunisches Outfit für meine Familie', 'Schmuck: Gold (irakisch + paschtunisch traditionell)'] },
-    { icon: '🤵', title: 'Mein Look', items: ['Klassischer schwarzer Smoking', 'Zweites Outfit: traditionelle paschtunische Perahan & Patu', 'Goldene Manschettenknöpfe von meinem Vater'] },
-    { icon: '🍽', title: 'Buffet', items: ['Irakisch: Dolma, Quzi (gefülltes Lamm), Masgouf, Kleicha', 'Paschtunisch: Kabuli Pulao, Mantu, Bolani, Sheer Yakh', 'Vegetarisch & vegan dabei für alle', 'Süßes: Baklava-Tower + indische Sweets für Bollywood-Vibe'] },
-    { icon: '💃', title: 'Tanz & Musik', items: ['Tum Hi Ho als unser erster Tanz', 'Indila — Love Story für eine Solo-Runde von dir', 'Naghma Pashto Set für die paschtunische Familie', 'Iraqi Dabke Set für deine Familie', 'Nour El Ein für gemeinsamen Tanz'] },
-    { icon: '🌹', title: 'Deko', items: ['Dunkle Lila Tischwäsche, Goldakzente, viele weiße Rosen', 'Pandora-Charm-Tisch mit kleinen Charms als Geschenk für Gäste', 'Henna-Bar für die Frauen', 'Foto-Wall mit „Riesstraße bis Penzberg" Story'] },
-    { icon: '👨‍👩‍👧‍👦', title: 'Gäste', items: ['Bagdad-Seite: deine Mama, Tante, Onkel, Cousins', 'Kandahar-Seite: meine Eltern, Geschwister, Onkel/Tanten', 'Schweden: Oma („Darling"), Noor & Monir, Saif, Yousef, Kinder', 'Berlin: Hajar & Momo', 'Und natürlich Samira — die immer sagt „ich hab nichts damit zu tun" und genau deshalb dabei sein muss'] },
-    { icon: '🎁', title: 'Hochzeitsgeschenk an dich', items: ['Großes Pandora-Charm „Walima 2026"', 'Erstes Honeymoon-Charm gleich danach', 'Neue Wohnung warten — Bald in unserem Palast'] }
-  ];
-
-  function renderWalima() {
-    if (!$('#walimaGrid')) return;
-    $('#walimaGrid').innerHTML = walimaSections.map(s => `
-      <article class="walima-card">
-        <div class="walima-icon">${s.icon}</div>
-        <h3>${s.title}</h3>
-        <ul>${s.items.map(it => `<li>${it}</li>`).join('')}</ul>
-      </article>
-    `).join('');
-  }
-
-  /* === MARYEM LETTERS (localStorage) === */
-  const MARYEM_KEY = 'maryem_letters_v1';
-  function loadMaryemLetters() {
-    try { return JSON.parse(localStorage.getItem(MARYEM_KEY)) || []; } catch (e) { return []; }
-  }
-  function saveMaryemLetters(arr) {
-    try { localStorage.setItem(MARYEM_KEY, JSON.stringify(arr)); } catch (e) {}
-  }
-  function renderMaryemLetters() {
-    const list = loadMaryemLetters();
-    const cont = $('#maryemLettersList');
-    if (!cont) return;
-    if (!list.length) {
-      cont.innerHTML = '<p class="maryem-empty"><em>Noch keine Briefe von dir. Schreib gerne den ersten — ich freu mich auf jedes Wort.</em></p>';
-    } else {
-      cont.innerHTML = list.slice().reverse().map((l, i) => `
-        <article class="maryem-letter">
-          <div class="maryem-letter-meta">
-            <span class="maryem-letter-date">${new Date(l.date).toLocaleDateString('de-DE', { day:'2-digit', month:'long', year:'numeric' })}</span>
-            <button class="maryem-letter-del" data-del="${l.date}" aria-label="Brief löschen">×</button>
-          </div>
-          ${l.title ? `<h3>${esc(l.title)}</h3>` : ''}
-          <p>${esc(l.body).replace(/\n/g, '<br>')}</p>
-          <span class="maryem-letter-sign">— Maryem ♥</span>
-        </article>
-      `).join('');
-      $$('[data-del]').forEach(b => {
-        b.onclick = () => {
-          if (!confirm('Diesen Brief löschen?')) return;
-          const arr = loadMaryemLetters().filter(l => l.date !== b.dataset.del);
-          saveMaryemLetters(arr);
-          renderMaryemLetters();
-        };
-      });
-    }
-  }
-  function bindMaryemLetterForm() {
-    const f = $('#maryemLetterForm');
-    if (!f || f.dataset.bound) return;
-    f.dataset.bound = '1';
-    f.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const title = $('#maryemLetterTitle').value.trim();
-      const body = $('#maryemLetterBody').value.trim();
-      if (!body) return;
-      const arr = loadMaryemLetters();
-      arr.push({ title, body, date: new Date().toISOString() });
-      saveMaryemLetters(arr);
-      $('#maryemLetterTitle').value = '';
-      $('#maryemLetterBody').value = '';
-      renderMaryemLetters();
-      burstConfetti(40);
-      playTing(880);
-    });
-  }
-
-  /* === MILESTONE COUNTER (Tage seit Nikkah) === */
-  function renderMilestone() {
-    const el = $('#milestoneCounter');
-    if (!el) return;
-    const nikkah = new Date('2026-01-10');
-    const now = new Date();
-    const days = Math.floor((now - nikkah) / (1000 * 60 * 60 * 24));
-    el.innerHTML = `
-      <div class="milestone-row">
-        <strong>${days}</strong>
-        <span>Tage verheiratet</span>
-      </div>
-      <div class="milestone-sub">Seit Nikkah Penzberg, 10.01.2026</div>
-    `;
-  }
-
   function bindNavLinks() {
     $$('a[data-nav]').forEach(a => {
       a.onclick = (e) => {
@@ -2644,6 +2786,9 @@
     window.addEventListener('hashchange', () => {
       const name = location.hash.replace('#','') || 'entdecken';
       switchPage(name);
+    });
+    window.addEventListener('hashchange', () => {
+      setTimeout(() => { try { if (window.mapInstance && location.hash === '#karte') { mapInstance.eachLayer(l => { if (!(l instanceof L.Marker)) return; const c = ((l.getPopup&&l.getPopup()&&l.getPopup().getContent&&l.getPopup().getContent())||'')+' '+((l.getTooltip&&l.getTooltip()&&l.getTooltip().getContent&&l.getTooltip().getContent())||''); if(/mekka|medina|kaaba|saudi/i.test(String(c))){ const e=l.getElement&&l.getElement(); if(e) e.classList.add('is-holy'); } }); } } catch{} }, 1500);
     });
     bindNavLinks();
   }
@@ -2718,7 +2863,93 @@
   }
 
   /* === INIT === */
+  function bindMaryemForm() {
+    const save = document.getElementById('maryemFormSave');
+    const list = document.getElementById('maryemFormList');
+    const note = document.getElementById('maryemFormNote');
+    const titleEl = document.getElementById('maryemFormTitle');
+    const bodyEl = document.getElementById('maryemFormBody');
+    if (!save || !list) return;
+    const KEY = 'maryem_briefe_v1';
+    const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } };
+    const persist = (arr) => localStorage.setItem(KEY, JSON.stringify(arr));
+    const fmt = (ts) => new Date(ts).toLocaleString('de-DE', { day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit' });
+    function render() {
+      const arr = load();
+      list.innerHTML = arr.length === 0
+        ? '<p class="maryem-form-empty"><em>Noch nichts geschrieben — nur du und ein leeres Blatt.</em></p>'
+        : arr.map((l, i) => '<article class="maryem-form-card"><div class="maryem-form-card-head"><strong>' + (l.title || 'Ohne Titel') + '</strong><span>' + fmt(l.ts) + '</span></div><p>' + l.body.replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c])) + '</p><button class="maryem-form-del" data-del="' + i + '" aria-label="Löschen">×</button></article>').join('');
+      list.querySelectorAll('[data-del]').forEach(b => {
+        b.onclick = () => {
+          const a = load();
+          a.splice(parseInt(b.dataset.del, 10), 1);
+          persist(a);
+          render();
+        };
+      });
+    }
+    save.onclick = () => {
+      const t = (titleEl.value || '').trim();
+      const body = (bodyEl.value || '').trim();
+      if (!body) { note.textContent = 'Schreib mir was, Habibti …'; note.classList.add('shake'); setTimeout(()=>note.classList.remove('shake'),500); return; }
+      const arr = load();
+      arr.unshift({ title: t, body, ts: Date.now() });
+      persist(arr);
+      titleEl.value = ''; bodyEl.value = '';
+      note.textContent = 'Gespeichert. Nur für dich, mein Herz.';
+      if (typeof burstConfetti === 'function') burstConfetti(20, save);
+      if (typeof playTing === 'function') playTing(740, 0.06);
+      render();
+    };
+    render();
+  }
+
+  
+  /* === HEUTE-MODUS === */
+  function renderHeute() {
+    const host = document.getElementById('heuteStrip');
+    if (!host) return;
+    const today = new Date();
+    today.setHours(0,0,0,0);
+    const days = (a, b) => Math.floor((b - a) / 86400000);
+    const items = [
+      { date: new Date(2024, 9, 14), label: 'Tage seit unserem ersten Treffen', mode: 'since', tone: 'rose' },
+      { date: new Date(2024, 9, 17), label: 'Tage seit unserem ersten Frühstück · 4 Stunden Islam', mode: 'since', tone: 'rose' },
+      { date: new Date(2026, 0, 10), label: 'Tage bis zur Nikkah · Penzberg', mode: 'until', tone: 'gold' },
+      { date: new Date(2027, 5, 1),  label: 'Tage bis zur Walima Inschallah', mode: 'until', tone: 'rose' },
+      { date: new Date(2026, 0, 10), label: 'Tage seit unserer Nikkah · Penzberg, 10.01.2026', mode: 'since', tone: 'gold' }
+    ];
+    host.innerHTML = items.map(it => {
+      const d = days(it.mode === 'since' ? it.date : today, it.mode === 'since' ? today : it.date);
+      if (d < 0) return '';
+      return '<div class="heute-pill heute-' + it.tone + '"><strong>' + d + '</strong><span>' + it.label + '</span></div>';
+    }).join('');
+  }
+
+  function bindSealed() {
+    const env = document.getElementById('sealedEnvelope');
+    const seal = document.getElementById('sealedSeal');
+    const content = document.getElementById('sealedContent');
+    const close = document.getElementById('sealedClose');
+    const wrap = document.getElementById('sealedLetter');
+    if (!seal) return;
+    seal.onclick = () => {
+      wrap.classList.add('is-open');
+      if (typeof playTing === 'function') playTing(880, 0.07);
+      if (typeof burstConfetti === 'function') burstConfetti(30, seal);
+      if (typeof spawnLoveText === 'function') {
+        const r = seal.getBoundingClientRect();
+        spawnLoveText(r.left + r.width/2, r.top + r.height/2, 'Bāraka Llāhu');
+      }
+    };
+    if (close) close.onclick = () => {
+      wrap.classList.remove('is-open');
+      if (typeof playTing === 'function') playTing(440, 0.05);
+    };
+  }
+
   function init() {
+    // hook for holy aura check
     buildHero();
     buildFloatingHearts();
     startSrkTicker();
@@ -2734,6 +2965,10 @@
     renderFavorites();
     renderVoteArena();
     renderLetters();
+    bindSealed();
+    renderHeute();
+    renderPandora();
+    bindMaryemForm();
     renderShortlist();
     renderCompareDrawer();
     renderComparePage();
@@ -2744,11 +2979,11 @@
     buildMusicTabs();
     bindMusic();
     bindHeartCursor();
-    renderMilestone();
-    bindMaryemLetterForm();
-    setInterval(renderMilestone, 60 * 60 * 1000);
+    startNikkahCounter();
+    runIntroVeil();
     const initial = location.hash.replace('#','') || 'entdecken';
     switchPage(initial);
+    setTimeout(() => { try { if (window.mapInstance) { mapInstance.eachLayer(l => { if (!(l instanceof L.Marker)) return; const c = ((l.getPopup&&l.getPopup()&&l.getPopup().getContent&&l.getPopup().getContent())||'')+' '+((l.getTooltip&&l.getTooltip()&&l.getTooltip().getContent&&l.getTooltip().getContent())||''); if(/mekka|medina|kaaba|saudi/i.test(String(c))){ const e=l.getElement&&l.getElement(); if(e) e.classList.add('is-holy'); } }); } } catch{} }, 1200);
     setTimeout(setupReveal, 400);
   }
 
