@@ -6,16 +6,24 @@
     <title>Für Maryem ♥ — Wohin entführe ich dich?</title>
     <meta name="description" content="Eine Liebeserklärung in App-Form. Von Mika für Maryem. Wähle einen Ort und ich nehme dich mit." />
     <meta name="theme-color" content="#0d0717" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Für Maryem ♥ — Wohin entführe ich dich?" />
+    <meta property="og:description" content="Eine private Liebes-App von Mika für Maryem: Reiseziele, Erinnerungen, Briefe und unsere Karte." />
+    <meta property="og:url" content="https://marymika.de/" />
+    <meta property="og:image" content="https://marymika.de/assets/destinations/punta-cana.jpg" />
+    <meta property="og:image:alt" content="Türkiser Strand als romantische Vorschau für Maryems Geschenk-App" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e85a8c'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
     <link rel="preconnect" href="https://videos.pexels.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Dancing+Script:wght@600;700&display=swap&family=Caveat:wght@500;600&family=Homemade+Apple" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Inter:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&amp;family=Dancing+Script:wght@600;700&amp;family=Caveat:wght@500;600&amp;family=Homemade+Apple&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#top">Direkt zum Geschenk springen</a>
     <!-- Intro greeting (3-second fade) -->
     <div class="intro-veil" id="introVeil" aria-hidden="true">
       <div class="intro-stars" aria-hidden="true"></div>
@@ -122,7 +130,7 @@
       </aside>
 
       <!-- MAIN CONTENT -->
-      <main id="top">
+      <main id="top" tabindex="-1">
         <header class="mobile-header">
           <span class="script-logo">Für Maryem · Mit Liebe</span>
           <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
@@ -148,7 +156,7 @@
               <span class="hero-eyebrow">Eine Liebeserklärung an dich, Habibti <em>(meine Geliebte)</em> <span class="heart-text">♥</span></span>
               <h1 id="heroHeadline"></h1>
               <div class="heute-strip" id="heuteStrip"></div>
-              <p>Sechsunddreißig Orte habe ich für uns ausgesucht &mdash; vom Strand bis zur Kaaba, von Bagdad bis Hawaii. Tipp auf das Herz, das dich am meisten ruft. Den Rest mache ich. <em>Wie im Film.</em></p>
+              <p>Siebenundvierzig Orte habe ich für uns ausgesucht &mdash; vom Strand bis zur Kaaba, von Bagdad bis Hawaii. Tipp auf das Herz, das dich am meisten ruft. Den Rest mache ich. <em>Wie im Film.</em></p>
               <div class="hero-avatars">
                 <div class="avatars">
                   <span class="initial-avatar" aria-label="Mika">M</span>
@@ -238,7 +246,7 @@
           <header class="page-header">
             <span class="page-eyebrow">Alle Orte für uns ♥</span>
             <h1>Reiseziele</h1>
-            <p>Sechsunddreißig Welten, eine Maryem &mdash; vom Strand bis zur Kaaba, von unseren Wurzeln bis ans Ende der Welt.</p>
+            <p>Siebenundvierzig Welten, eine Maryem &mdash; vom Strand bis zur Kaaba, von unseren Wurzeln bis ans Ende der Welt.</p>
           </header>
           <div class="grid-12" id="destinationsGrid"></div>
         </section>
@@ -358,15 +366,17 @@
           <section class="maryem-form" id="maryemForm">
             <div class="maryem-form-head">
               <span class="maryem-form-eyebrow">Briefe von Maryem an Mika</span>
-              <h2>Schreib mir, mein Herz</h2>
+              <h2 id="maryemFormHeading">Schreib mir, mein Herz</h2>
               <p>Was du nicht laut sagen kannst — schreib es hier auf. Bleibt bei dir, auf deinem Gerät.</p>
             </div>
-            <form class="maryem-form-grid" onsubmit="return false;">
-              <input type="text" id="maryemFormTitle" placeholder="Titel · z.B. Heute Morgen, als ich aufwachte" maxlength="120" />
-              <textarea id="maryemFormBody" placeholder="Mika, ..." rows="6" maxlength="3000"></textarea>
+            <form class="maryem-form-grid" aria-labelledby="maryemFormHeading" onsubmit="return false;">
+              <label class="sr-only" for="maryemFormTitle">Titel für deinen Brief</label>
+              <input type="text" id="maryemFormTitle" name="maryem-letter-title" autocomplete="off" placeholder="Titel · z.B. Heute Morgen, als ich aufwachte" maxlength="120" />
+              <label class="sr-only" for="maryemFormBody">Dein Brief an Mika</label>
+              <textarea id="maryemFormBody" name="maryem-letter-body" autocomplete="off" placeholder="Mika, …" rows="6" maxlength="5000"></textarea>
               <div class="maryem-form-actions">
                 <button type="button" id="maryemFormSave"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>Speichern</button>
-                <span class="maryem-form-note" id="maryemFormNote">Bleibt nur auf deinem Gerät, Habibti.</span>
+                <span class="maryem-form-note" id="maryemFormNote" aria-live="polite">Bleibt nur auf deinem Gerät, Habibti.</span>
               </div>
             </form>
             <div class="maryem-form-list" id="maryemFormList"></div>
