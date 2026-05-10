@@ -505,6 +505,149 @@
         ['Nachts', 'Zermatt — Matterhorn glüht im Sonnenuntergang']
       ],
       mapBlurb: 'Hier oben sind wir näher am Himmel — und an uns.'
+    },
+
+    /* ===== SKANDINAVIEN — Familie & Romantik ===== */
+    { id: 'malmoe', name: 'Malmö · bei deiner Familie', country: 'Schweden', region: 'SKANDINAVIEN', vibe: ['culture','luxuswert'], flight: 'short',
+      tagline: 'Fünf Tage bei Oma, Onkel, Tante und deinen Cousins — Familie ist Heimat.',
+      summary: 'Spaziergang am Hafen, Fika in alten Cafés, Familienessen bei deiner Oma — die irakische Seite, die dich groß gemacht hat. Und ich darf endlich alle kennenlernen.',
+      flightTime: '2h von München', bestTime: 'Mai – September', mood: 'Familiär & warm',
+      hearts: 5, image: IMG('1539696511453-ed701e370daf'),
+      moodLines: [
+        ['Aufwachen', 'Boutique-Hotel oder bei deiner Tante, Kaffee am Tisch'],
+        ['Tagsüber', 'Pildammsparken, Hafenpromenade, Lilla Torg'],
+        ['Abends', 'Familienessen — irakischer Reis, Lammkebab, Geschichten'],
+        ['Nachts', 'Cousin-Talk bis spät, dein Lachen mit Familie']
+      ],
+      mapBlurb: 'Familie ist die Sprache, in der du am schönsten klingst, Habibti.'
+    },
+
+    { id: 'kopenhagen', name: 'Kopenhagen', country: 'Dänemark', region: 'SKANDINAVIEN', vibe: ['culture','luxuswert','strand'], flight: 'short',
+      tagline: 'Hygge, Nyhavn, Tivoli unter Lichterketten.',
+      summary: 'Bunte Häuser am Nyhavn-Hafen, Tivoli-Vergnügungspark bei Nacht, Smørrebrød zum Lunch, Fahrrad-Tour durch die Stadt der Liebe für Erwachsene.',
+      flightTime: '1.5h von München (oder Zug von Malmö, 30min!)', bestTime: 'Mai – September', mood: 'Hygge & lebendig',
+      hearts: 4, image: IMG('1534955811692-7ff56da8be7c'),
+      moodLines: [
+        ['Aufwachen', 'Boutique-Hotel im Stadtkern, Brunch im Café'],
+        ['Tagsüber', 'Nyhavn-Spaziergang, Schloss Rosenborg, Fahrrad'],
+        ['Abends', 'Tivoli-Park bei Nacht — Lichterketten, Karussell'],
+        ['Nachts', 'Cocktail-Bar in Vesterbro']
+      ],
+      mapBlurb: 'Über die Öresundbrücke — und du bist in einer neuen Welt.'
+    },
+
+    { id: 'stockholm', name: 'Stockholm · Schären-Inseln', country: 'Schweden', region: 'SKANDINAVIEN', vibe: ['culture','nature','luxuswert'], flight: 'short',
+      tagline: 'Gamla Stan im Schnee, Inselhopping im Sommer, ABBA-Karaoke.',
+      summary: 'Altstadt Gamla Stan, ABBA-Museum, Bootstour durch die 30.000 Schären-Inseln, Sauna mit Sprung in den See, Fika im Café.',
+      flightTime: '2.5h von München', bestTime: 'Mai – September', mood: 'Hell & nordisch',
+      hearts: 4, image: IMG('1536363511619-505315aded7c'),
+      moodLines: [
+        ['Aufwachen', 'Hotel mit Blick auf Gamla Stan'],
+        ['Tagsüber', 'Schären-Inselhopping, Sauna mit Seesprung'],
+        ['Abends', 'Fika mit Zimtschnecken, ABBA-Museum'],
+        ['Nachts', 'Skyline-Bar mit Mitternachtssonne (im Sommer)']
+      ],
+      mapBlurb: 'Mitternachtssonne — wir merken nicht mal, dass die Welt schläft.'
+    },
+
+    { id: 'lofoten', name: 'Lofoten · Norwegische Polarlichter', country: 'Norwegen', region: 'SKANDINAVIEN', vibe: ['nature','adventure','luxuswert','romantic'], flight: 'medium',
+      tagline: 'Rote Fischerhütten, Polarlichter über Bergen, Strände wie aus einem Traum.',
+      summary: 'Cabin in Reine, Polarlicht-Jagd ab Oktober, Hike auf Reinebringen, Kaviar-Frühstück in Henningsvær.',
+      flightTime: '5h via Oslo', bestTime: 'September – März (Aurora) / Juni – August (Mitternachtssonne)', mood: 'Episch & still',
+      hearts: 5, image: IMG('1505246464763-5f59c5b9a2d8'),
+      moodLines: [
+        ['Aufwachen', 'Rorbu-Cabin am Wasser, Kamin knistert'],
+        ['Tagsüber', 'Wanderung Reinebringen, Strand von Haukland'],
+        ['Abends', 'Fischsuppe, Aquavit, Kerzen'],
+        ['Nachts', 'Aurora — du in meinem Pulli, der Himmel tanzt']
+      ],
+      mapBlurb: 'Wenn die Aurora tanzt, denke ich: meine Frau ist heller.'
+    },
+
+    /* ===== LONDON — Maryem mag es ===== */
+    { id: 'london', name: 'London', country: 'England', region: 'EUROPA', vibe: ['culture','luxuswert','fun'], flight: 'short',
+      tagline: 'Afternoon Tea bei Claridge\'s, West End Show, Notting Hill Spaziergang.',
+      summary: 'Boutique-Hotel in Mayfair, Tea bei Claridge\'s, Hyde Park Picknick, Borough Market, West End Show, Sky Garden Drinks.',
+      flightTime: '1.5h von München', bestTime: 'Mai – September / Dezember (X-Mas Lights)', mood: 'Royal & verspielt',
+      hearts: 5, image: IMG('1513635269975-59663e0ac1ad'),
+      moodLines: [
+        ['Aufwachen', 'Hotel in Mayfair, Earl Grey im Bett'],
+        ['Tagsüber', 'Notting Hill, Portobello, V&A Museum'],
+        ['Abends', 'West End Show, dann Late-Night-Cocktail'],
+        ['Nachts', 'Sky Garden über der Themse, du in einem Mantel']
+      ],
+      mapBlurb: 'London ist deine zweite Sprache — und mein Lieblings-Akzent in deinem Mund.'
+    },
+
+    /* ===== RICH-VIBE GEHEIM-SPOTS ===== */
+    { id: 'monaco', name: 'Monaco & Monte Carlo', country: 'Monaco', region: 'EUROPA', vibe: ['luxuswert','culture'], flight: 'short',
+      tagline: 'Yachten, Casino Monte-Carlo, Rosé am Pool des Hôtel de Paris.',
+      summary: 'Suite mit Mittelmeer-Blick, Casino-Abend in Smoking & Kleid, Lunch im Café de Paris, Helikopter nach Saint-Tropez für den Tag.',
+      flightTime: '1.5h von München (Nizza)', bestTime: 'Mai / Juni / September', mood: 'Glamour & leise Eleganz',
+      hearts: 5, image: IMG('1566972182176-2c898ded3124'),
+      moodLines: [
+        ['Aufwachen', 'Suite im Hôtel de Paris, Mittelmeer im Fenster'],
+        ['Tagsüber', 'Yacht-Day, Schwimmen vor Cap-Ferrat'],
+        ['Abends', 'Casino Monte-Carlo, Champagner, Roulette für 100€'],
+        ['Nachts', 'Rooftop, Skyline, du in einer Robe']
+      ],
+      mapBlurb: 'Monaco zeigt sich nur denen, die wissen, wo sie hinschauen.'
+    },
+
+    { id: 'stmoritz', name: 'St. Moritz', country: 'Schweiz', region: 'EUROPA', vibe: ['luxuswert','nature','culture'], flight: 'short',
+      tagline: 'Schweizer Glamour — Skihütte, Pelz, Champagner über dem Schnee.',
+      summary: 'Badrutt\'s Palace Hotel, Polo on Snow im Februar, Helicopter zur Diavolezza, Glüh-Wein an einer Berghütte.',
+      flightTime: '2h von München', bestTime: 'Dezember – März / Juni – September', mood: 'Snow-Glamour & Stille',
+      hearts: 5, image: IMG('1533284133567-0da9844151ce'),
+      moodLines: [
+        ['Aufwachen', 'Suite mit Bergblick, Bergamotte-Tee am Bett'],
+        ['Tagsüber', 'Skifahren oder Wandern, Lunch in einer Berghütte'],
+        ['Abends', 'Spa, dann Dinner im Badrutt\'s Palace'],
+        ['Nachts', 'Bar mit Pianist, du in einer Robe, der Schnee fällt']
+      ],
+      mapBlurb: 'Hier flüstert sogar der Schnee mit Akzent.'
+    },
+
+    { id: 'como', name: 'Lago di Como · Bellagio', country: 'Italien', region: 'EUROPA', vibe: ['luxuswert','romantic','nature'], flight: 'short',
+      tagline: 'Villa am See, Kakao am Morgen, Boot durch die Buchten — wo Clooney lebt.',
+      summary: 'Villa d\'Este oder Grand Hotel Tremezzo, privates Boot durch die Buchten, Lunch in Varenna, Aperitivo in Bellagio.',
+      flightTime: '1h nach Mailand + 1h Auto', bestTime: 'Mai – Juni / September', mood: 'Geheim & elegant',
+      hearts: 5, image: IMG('1584476009646-32293283ae1c'),
+      moodLines: [
+        ['Aufwachen', 'Villa-Suite mit See-Blick, Cappuccino am Balkon'],
+        ['Tagsüber', 'Privates Holzboot durch die Buchten'],
+        ['Abends', 'Aperitivo in Bellagio, Negroni, Sonnenuntergang'],
+        ['Nachts', 'Dinner mit Pasta-Uomo am Wasser']
+      ],
+      mapBlurb: 'Como ist Italien, das nur die wissen, die wirklich Liebe verstehen.'
+    },
+
+    { id: 'saintemilion', name: 'Saint-Émilion · Bordeaux', country: 'Frankreich', region: 'EUROPA', vibe: ['culture','luxuswert','nature'], flight: 'short',
+      tagline: 'Mittelalterliche Weindörfer, Château-Übernachtung, Bordeaux-Tasting privat.',
+      summary: 'Übernachtung in einem Château zwischen Weinbergen, private Cellar-Tour, Lunch im 2-Sterne-Restaurant La Grand\'Vigne, Picknick zwischen Reben.',
+      flightTime: '2h von München (Bordeaux)', bestTime: 'Mai – Oktober', mood: 'Geheim & weinverliebt',
+      hearts: 5, image: IMG('1589706207569-76eb9b8b8414'),
+      moodLines: [
+        ['Aufwachen', 'Château-Zimmer, Weinberge bis zum Horizont'],
+        ['Tagsüber', 'Privater Cellar-Tour, alte Steinmauern, Verkostung'],
+        ['Abends', 'Sterne-Dinner, du im weißen Sommerkleid'],
+        ['Nachts', 'Picknick zwischen Reben, Wein, Sterne']
+      ],
+      mapBlurb: 'Manche Wein-Geschichten sind nur für zwei geschrieben.'
+    },
+
+    { id: 'fjorde', name: 'Norwegische Fjorde · Bergen & Geirangerfjord', country: 'Norwegen', region: 'SKANDINAVIEN', vibe: ['nature','adventure','luxuswert'], flight: 'short',
+      tagline: 'Kreuzfahrt durch dramatische Fjorde, bunte Häuser in Bergen, Wasserfälle.',
+      summary: 'Bergen mit dem Bryggen-Viertel, dann Hurtigruten-Mini-Cruise zum Geirangerfjord, Übernachtung in einem Berg-Hotel über dem Wasser.',
+      flightTime: '4h via Oslo', bestTime: 'Mai – September', mood: 'Episch & weit',
+      hearts: 4, image: IMG('1504298147600-5f2dd35405ba'),
+      moodLines: [
+        ['Aufwachen', 'Bergen-Hotel, Hafen vor dem Fenster'],
+        ['Tagsüber', 'Mini-Cruise durch die Fjorde, Wasserfälle'],
+        ['Abends', 'Berg-Hotel, Suppe, Sauna mit Fjord-Blick'],
+        ['Nachts', 'Sterne über schwarzem Wasser']
+      ],
+      mapBlurb: 'Hier hört die Welt auf — und Norwegen flüstert weiter.'
     }
   ];
 
@@ -623,8 +766,47 @@
       stops: ['nyc','hawaii'],
       image: IMG('1485409088362-2cedbda60383'),
       days: [
-        { day: 'Tag 1–5', place: 'New York', title: 'Skyline-Tage', desc: 'SoHo, Central Park, Top of the Rock, Broadway.' },
-        { day: 'Tag 6–12', place: 'Hawaii · Maui', title: 'Aloha-Tage', desc: 'Beach-Bungalow, Road to Hana, Haleakala-Sunrise, Lūʻau.' }
+        { day: 'Tag 1–5', place: 'New York', title: 'Skyline-Tage', desc: 'SoHo, Central Park, Top of the Rock, Broadway.', image: IMG('1485409088362-2cedbda60383') },
+        { day: 'Tag 6–12', place: 'Hawaii · Maui', title: 'Aloha-Tage', desc: 'Beach-Bungalow, Road to Hana, Haleakala-Sunrise, Lūʻau.', image: IMG('1542259009477-d625272157b7') }
+      ]
+    },
+    {
+      id: 'route-skandinavien-familie',
+      title: 'Skandinavien mit deiner Familie',
+      subtitle: '10 Tage · Malmö (Familie) → Kopenhagen → Stockholm',
+      blurb: 'Fünf Tage bei Oma, Onkel, Tante und deinen Cousins in Malmö — dann zu zweit weiter durch Hygge und Schären.',
+      stops: ['malmoe','kopenhagen','stockholm'],
+      image: IMG('1539696511453-ed701e370daf'),
+      days: [
+        { day: 'Tag 1–5', place: 'Malmö (Familie)', title: 'Bei Oma & der Familie', desc: 'Familienzeit — Oma, Onkel, Tante, Cousins. Iraker Reis, Lammkebab, alte Geschichten, Fika in alten Cafés.', image: IMG('1539696511453-ed701e370daf') },
+        { day: 'Tag 6–7', place: 'Kopenhagen', title: 'Hygge-Pause zu zweit', desc: 'Mit dem Zug über die Öresundbrücke (30 min!), Nyhavn, Tivoli bei Nacht, Smørrebrød.', image: IMG('1534955811692-7ff56da8be7c') },
+        { day: 'Tag 8–10', place: 'Stockholm', title: 'Schären & Mitternachtssonne', desc: 'Gamla Stan Altstadt, Bootstour durch die Schären-Inseln, Sauna mit Sprung in den See, Skyline-Bar.', image: IMG('1536363511619-505315aded7c') }
+      ]
+    },
+    {
+      id: 'route-rich-vibe',
+      title: 'Rich-Vibe Geheim-Spots',
+      subtitle: '12 Tage · Monaco → St. Moritz → Lago di Como → Saint-Émilion',
+      blurb: 'Vier Orte, die du nur kennst, wenn du dahin gehörst — oder dir vornimmst, dahin zu gehören.',
+      stops: ['monaco','stmoritz','como','saintemilion'],
+      image: IMG('1566972182176-2c898ded3124'),
+      days: [
+        { day: 'Tag 1–3', place: 'Monaco', title: 'Mittelmeer-Glamour', desc: 'Suite Hôtel de Paris, Yacht-Day, Casino-Abend in Smoking & Kleid.', image: IMG('1566972182176-2c898ded3124') },
+        { day: 'Tag 4–6', place: 'St. Moritz', title: 'Schweizer Schnee', desc: 'Badrutt\'s Palace, Skihütte-Lunch, Spa, Pianist in der Bar.', image: IMG('1533284133567-0da9844151ce') },
+        { day: 'Tag 7–9', place: 'Lago di Como', title: 'Italienische Stille', desc: 'Villa-Suite, Holzboot durch die Buchten, Aperitivo in Bellagio.', image: IMG('1584476009646-32293283ae1c') },
+        { day: 'Tag 10–12', place: 'Saint-Émilion', title: 'Bordeaux-Finale', desc: 'Château zwischen Weinbergen, Cellar-Tour, Picknick zwischen Reben.', image: IMG('1589706207569-76eb9b8b8414') }
+      ]
+    },
+    {
+      id: 'route-london-paris',
+      title: 'London → Paris',
+      subtitle: '8 Tage · zwei Hauptstädte, ein Eurostar',
+      blurb: 'Afternoon Tea bei Claridge\'s — dann Eurostar nach Paris, Champagner an der Seine. Du in zwei Welten, beide gehören dir.',
+      stops: ['london','paris'],
+      image: IMG('1513635269975-59663e0ac1ad'),
+      days: [
+        { day: 'Tag 1–4', place: 'London', title: 'Royal Tage', desc: 'Mayfair, Notting Hill, West End Show, Sky Garden Drinks, Borough Market.', image: IMG('1513635269975-59663e0ac1ad') },
+        { day: 'Tag 5–8', place: 'Paris', title: 'Champagner-Tage', desc: 'Eurostar in 2.5h, Marais, Eiffelturm bei Nacht, Seine-Boots-Dinner, Patisserien.', image: IMG('1502602898657-3e91760cbb34') }
       ]
     }
   ];
