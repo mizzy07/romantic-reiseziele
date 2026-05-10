@@ -6,6 +6,12 @@
     <title>Für Maryem ♥ — Wohin entführe ich dich?</title>
     <meta name="description" content="Eine Liebeserklärung in App-Form. Von Mika für Maryem. Wähle einen Ort und ich nehme dich mit." />
     <meta name="theme-color" content="#0d0717" />
+    <meta property="og:title" content="Für Maryem ♥ — Wohin entführe ich dich?" />
+    <meta property="og:description" content="Eine Liebeserklärung in App-Form. Von Mika für Maryem. 47 Reiseziele, 18 Liebesbriefe, 322 Erinnerungen — und unsere ganze Geschichte." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542521148-51306e7ffc1e?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:url" content="https://mizzy07.github.io/romantic-reiseziele/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e85a8c'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -83,6 +89,18 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             Liebesbriefe
           </a>
+          <a href="#geschichte" data-page="geschichte">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Unsere Geschichte
+          </a>
+          <a href="#pandora" data-page="pandora">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2.5" fill="currentColor"></circle></svg>
+            Pandora-Charms
+          </a>
+          <a href="#walima" data-page="walima">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-8h6v8"></path></svg>
+            Walima-Planung
+          </a>
           <a href="#erinnerungen" data-page="erinnerungen">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"></circle><polyline points="21,15 16,10 5,21"></polyline></svg>
             Erinnerungen
@@ -104,6 +122,7 @@
               <strong>Kandahar ↔ Bagdad <svg class="inline-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></strong>
             </div>
           </div>
+          <div class="milestone-counter" id="milestoneCounter"></div>
           <p class="side-quote">
             <span>„Du bist das schönste arabische Gemälde."</span>
             <em>— ich, draußen vorm Museum, nur zu dir</em>
@@ -322,6 +341,54 @@
           </section>
 
           <div class="letters-grid" id="lettersGrid"></div>
+
+          <section class="maryem-letters">
+            <div class="maryem-letters-head">
+              <span class="maryem-letters-eyebrow">Wenn du Lust hast, schreib zurück</span>
+              <h2>Briefe von Maryem</h2>
+              <p>Hier ist Platz für deine Antwort. Schreib, wann du willst &mdash; und so viel du willst. Es bleibt zwischen uns.</p>
+            </div>
+            <div class="maryem-letters-list" id="maryemLettersList"></div>
+            <form class="maryem-letter-form" id="maryemLetterForm">
+              <input type="text" id="maryemLetterTitle" placeholder="Titel (optional)" maxlength="80" />
+              <textarea id="maryemLetterBody" placeholder="Schreib hier alles, was du mir sagen möchtest..." rows="6" required></textarea>
+              <div class="maryem-letter-actions">
+                <button type="submit">Brief speichern <span>♥</span></button>
+                <span class="maryem-letter-hint">Wird nur in deinem Browser gespeichert &mdash; ganz privat.</span>
+              </div>
+            </form>
+          </section>
+        </section>
+
+        <!-- ============== PAGE: UNSERE GESCHICHTE (Timeline) ============== -->
+        <section class="page" id="page-geschichte" data-screen-label="Unsere Geschichte">
+          <header class="page-header">
+            <span class="page-eyebrow">Wie wir wurden</span>
+            <h1>Unsere Geschichte</h1>
+            <p>Von der Cola im Abbacos bis zur Nikkah in Penzberg &mdash; jeder Moment ein Stein im Mosaik.</p>
+          </header>
+          <div class="timeline" id="timelineContainer"></div>
+        </section>
+
+        <!-- ============== PAGE: PANDORA-CHARMS ============== -->
+        <section class="page" id="page-pandora" data-screen-label="Pandora-Charms">
+          <header class="page-header">
+            <span class="page-eyebrow">Charm um Charm, Reise um Reise</span>
+            <h1>Dein Pandora-Armband</h1>
+            <p>Wie Monir Noor — ich dir. Jeder Charm ein Moment, jeder Charm ein Versprechen. Inschallah eines Tages so voll wie Noors.</p>
+          </header>
+          <div class="pandora-stage" id="pandoraStage"></div>
+          <div class="pandora-grid" id="pandoraGrid"></div>
+        </section>
+
+        <!-- ============== PAGE: WALIMA-PLANUNG ============== -->
+        <section class="page" id="page-walima" data-screen-label="Walima-Planung">
+          <header class="page-header">
+            <span class="page-eyebrow">Nach der Nikkah, vor der Welt</span>
+            <h1>Walima-Planung</h1>
+            <p>Die große Hochzeit. Disney-Bollywood-Princess-Energy, irakisches Buffet, paschtunische Tänze, alle die wir lieben in einem Saal.</p>
+          </header>
+          <div class="walima-grid" id="walimaGrid"></div>
         </section>
 
         <!-- ============== PAGE: ERINNERUNGEN (Slideshow) ============== -->

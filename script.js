@@ -2397,7 +2397,216 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (name === 'erinnerungen') renderMemories();
     if (name === 'karte') renderKarte();
+    if (name === 'geschichte') renderGeschichte();
+    if (name === 'pandora') renderPandora();
+    if (name === 'walima') renderWalima();
+    if (name === 'liebesbriefe') renderMaryemLetters();
   }
+
+  /* === UNSERE GESCHICHTE (Timeline) === */
+  const timelineEvents = [
+    { date: '~ 2024', icon: '☕', title: 'Die Cola im Abbacos', body: 'Du als Hostess in dem kleinen Münchner Steakladen, ich am Tisch — du bringst mir eine Cola. Mein erster Satz: „Ich kenne dich vom Abbacos." Du wusstest nicht, dass dieser Moment ein ganzes Leben startet.', tag: 'Anfang' },
+    { date: '~ 2024', icon: '🌟', title: 'Wieder gefunden — durch Samira', body: 'Ein paar Monate später — Samira, gemeinsame Freundin, bringt uns wieder zusammen. Ohne es zu wissen. Manche Engel haben Telefonnummern.', tag: 'Schicksal' },
+    { date: '~ 2024', icon: '🏛', title: 'Draußen vorm Museum', body: 'Du fragst, was das schönste im Museum war. Ich sage: „Du bist das schönste arabische Gemälde da drinnen." Du läufst sofort zu Samira, um zu fragen, ob du richtig gehört hast. Sie sagt: „Nee, das stimmt nicht."', tag: 'Unser Moment' },
+    { date: '~ 2025', icon: '🏘️', title: 'Riesstraße — wir lebten Tür an Tür', body: 'Wir realisieren: wir sind beide in München geboren, im selben Hof in der Riesstraße aufgewachsen. Am gleichen Brunnen. Ohne uns je gesehen zu haben. Allah hat den Moment selbst gewählt.', tag: 'Schicksal' },
+    { date: '~ 2025', icon: '🌃', title: 'Auf dem Balkon mit Noor & Monir', body: 'Sie verheiratet, zwei zuckersüße Kinder. Monir aus Kandahar wie ich, Noor irakisch wie du. „Inschallah genauso", flüsterten wir. Damals waren wir noch nicht mal verlobt.', tag: 'Wunsch' },
+    { date: '~ 2025', icon: '💎', title: 'Das Pandora-Armband', body: 'Wie Monir Noor, hab ich dir ein Pandora geschenkt. Charm um Charm — Geburtstag, ein „Ich liebe dich", eine Reise. Noors war schon voll. Deins wächst.', tag: 'Versprechen' },
+    { date: '10.01.2026', icon: '💍', title: 'Nikkah & Verlobung in Penzberg', body: 'In der Moschee in Penzberg, vor Allah und unseren Familien. Sommerreifen durch hohen Schnee. Du komplett crashout wegen DJ. Ich nur ein Gedanke: „Alhamdulillah, dass diese Frau meine wird."', tag: 'Hochzeit', highlight: true, easter: 'nikkah' },
+    { date: 'Jeden Tag seit 2024', icon: '☕', title: 'Alhamdulillah — kein Tag ohne dich', body: 'Seit dem ersten Tag haben wir jeden einzelnen geredet, jeden gesehen. Auch durch Streits, auch durch Tränen. Keine Sekunde haben wir an UNS gezweifelt — nur die Welt um uns hat\'s versucht. Du hast es ignoriert.', tag: 'Heute' },
+    { date: 'Bald, Inschallah', icon: '🎊', title: 'Walima — die große Hochzeit', body: 'Nach der Nikkah folgt das Fest. Disney-Bollywood-Princess-Energy, irakisches Buffet, paschtunische Tänze, alle die wir lieben in einem Saal. Datum kommt.', tag: 'Zukunft' },
+    { date: 'Bald, Inschallah', icon: '🤲', title: 'Umrah — Hand in Hand vor der Kaaba', body: 'Unser höchstes Ziel — Tawaf gemeinsam, Sa\'i, Du\'a in Madinah Sharif. Bekleidet in Weiß, vor dem Haus Allahs. Bāraka Llāhu lana.', tag: 'Zukunft' },
+    { date: 'Inschallah', icon: '👶', title: 'Unsere Kinder', body: 'Wenn die Zeit kommt — Inschallah Kinder, die Bagdad und Kandahar in einem Atemzug nennen. Die deine Mama Oma nennen, meine Eltern Bibi & Baba. Unsere Geschichte geht weiter.', tag: 'Zukunft' },
+    { date: 'Inschallah', icon: '🏛', title: 'Unser Palast', body: 'Bald nicht mehr bei meinen Eltern. Bald in einem Zuhause, das schöner ist als der Taj Mahal. Garten wo du jede Blume aussuchst. Küche, in der wir vergessen zu kochen, weil wir reden.', tag: 'Zukunft' }
+  ];
+
+  function renderGeschichte() {
+    if (!$('#timelineContainer')) return;
+    $('#timelineContainer').innerHTML = timelineEvents.map((e, i) => `
+      <article class="timeline-event ${e.highlight ? 'is-highlight' : ''}" ${e.easter ? `data-easter="${e.easter}"` : ''}>
+        <div class="timeline-dot">${e.icon}</div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <span class="timeline-date">${e.date}</span>
+            <span class="timeline-tag">${e.tag}</span>
+          </div>
+          <h3>${e.title}</h3>
+          <p>${e.body}</p>
+        </div>
+      </article>
+    `).join('');
+    $$('[data-easter="nikkah"]').forEach(el => {
+      el.addEventListener('click', () => {
+        const r = el.getBoundingClientRect();
+        burstConfetti(60, el);
+        playTing(880);
+      });
+    });
+  }
+
+  /* === PANDORA-CHARMS-VISUALISIERUNG === */
+  const charms = [
+    { id: 'cola', icon: '☕', label: 'Erste Cola', date: 'Abbacos', collected: true },
+    { id: 'museum', icon: '🏛', label: 'Museum', date: 'Unser Moment', collected: true },
+    { id: 'samira', icon: '🌟', label: 'Samira', date: 'Wieder gefunden', collected: true },
+    { id: 'balkon', icon: '🌃', label: 'Balkon', date: 'Mit Noor & Monir', collected: true },
+    { id: 'birthday', icon: '🎂', label: 'Dein Geburtstag', date: 'Erstes mit mir', collected: true },
+    { id: 'love', icon: '♥', label: '„Ich liebe dich"', date: 'Erstes Mal', collected: true },
+    { id: 'nikkah', icon: '💍', label: 'Nikkah', date: '10.01.2026 Penzberg', collected: true, highlight: true },
+    { id: 'darling', icon: '👵', label: '„Darling"', date: 'Oma in Malmö', collected: true },
+    { id: 'riesstr', icon: '🏘️', label: 'Riesstraße', date: 'Im selben Hof', collected: true },
+    { id: 'walima', icon: '🎊', label: 'Walima', date: 'Bald, Inschallah', collected: false },
+    { id: 'mekka', icon: '🕋', label: 'Mekka & Medina', date: 'Umrah Inschallah', collected: false },
+    { id: 'baby', icon: '👶', label: 'Erstes Kind', date: 'Inschallah', collected: false },
+    { id: 'palast', icon: '🏛', label: 'Unser Palast', date: 'Inschallah', collected: false },
+    { id: 'malmoe', icon: '👨‍👩‍👧', label: 'Malmö-Trip', date: 'Bei der Familie', collected: false },
+    { id: 'berlin', icon: '🇩🇪', label: 'Berlin-Trip', date: 'Bei Hajar & Momo', collected: false },
+    { id: 'paris', icon: '🗼', label: 'Paris', date: 'Honeymoon', collected: false },
+    { id: 'maldives', icon: '🏝️', label: 'Malediven', date: 'Wasservilla', collected: false },
+    { id: 'silver', icon: '🥈', label: 'Silberhochzeit', date: 'In 25 Jahren', collected: false },
+    { id: 'gold', icon: '🥇', label: 'Goldene Hochzeit', date: 'In 50 Jahren', collected: false }
+  ];
+
+  function renderPandora() {
+    if (!$('#pandoraStage')) return;
+    const total = charms.length;
+    const got = charms.filter(c => c.collected).length;
+    $('#pandoraStage').innerHTML = `
+      <div class="pandora-bracelet" aria-label="Pandora-Armband">
+        <svg viewBox="-260 -160 520 320" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="braceletGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#d4a843" stop-opacity="0.85"/>
+              <stop offset="50%" stop-color="#fde9b9" stop-opacity="0.95"/>
+              <stop offset="100%" stop-color="#d4a843" stop-opacity="0.85"/>
+            </linearGradient>
+            <filter id="charmShadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/></filter>
+          </defs>
+          <ellipse cx="0" cy="0" rx="220" ry="120" fill="none" stroke="url(#braceletGrad)" stroke-width="3" stroke-dasharray="2 4" opacity="0.85"/>
+          ${charms.map((c, i) => {
+            const angle = (i / charms.length) * Math.PI * 2 - Math.PI/2;
+            const x = Math.cos(angle) * 220;
+            const y = Math.sin(angle) * 120;
+            return `<g transform="translate(${x.toFixed(1)}, ${y.toFixed(1)})" class="charm-svg ${c.collected ? 'is-collected' : 'is-empty'} ${c.highlight ? 'is-highlight' : ''}" data-charm="${c.id}" filter="url(#charmShadow)" tabindex="0">
+              <circle r="20" fill="${c.collected ? (c.highlight ? '#fde9b9' : '#d4a843') : 'rgba(255,255,255,0.05)'}" stroke="${c.collected ? '#fff' : 'rgba(212,168,67,0.45)'}" stroke-width="${c.collected ? '2.5' : '1.2'}"/>
+              <text y="6" text-anchor="middle" font-size="18" fill="${c.collected ? '#1a0f24' : '#d4a843'}">${c.icon}</text>
+            </g>`;
+          }).join('')}
+        </svg>
+        <div class="pandora-stats">
+          <div><strong>${got}</strong><span>gesammelt</span></div>
+          <div><strong>${total - got}</strong><span>kommend</span></div>
+          <div><strong>${total}</strong><span>insgesamt</span></div>
+        </div>
+      </div>
+    `;
+    $('#pandoraGrid').innerHTML = charms.map(c => `
+      <article class="charm-card ${c.collected ? 'is-collected' : 'is-empty'} ${c.highlight ? 'is-highlight' : ''}">
+        <div class="charm-icon">${c.icon}</div>
+        <div class="charm-info">
+          <strong>${c.label}</strong>
+          <span>${c.date}</span>
+        </div>
+        <span class="charm-status">${c.collected ? '♥' : '✦'}</span>
+      </article>
+    `).join('');
+  }
+
+  /* === WALIMA-PLANUNG === */
+  const walimaSections = [
+    { icon: '📅', title: 'Datum', items: ['Inschallah Sommer 2026', 'Möglich: Mai–September', 'An einem Wochenende, dass beide Familien aus Bagdad/Schweden + Kandahar kommen können'] },
+    { icon: '🏛', title: 'Saal-Ideen', items: ['Eleganter Saal in München (für Familie & Freunde aus DE)', 'Optional: Marrakesch-Riad-Wedding (Disney + Tausendundeine Nacht)', 'Optional: Schloss in Bayern (Wintermärchen-Energy)'] },
+    { icon: '👰', title: 'Brautkleid-Träume', items: ['Hauptkleid: Disney-Princess weiß mit langer Schleppe', 'Zweites Outfit: irakisches Brautkleid für die Familie', 'Drittes Outfit: paschtunisches Outfit für meine Familie', 'Schmuck: Gold (irakisch + paschtunisch traditionell)'] },
+    { icon: '🤵', title: 'Mein Look', items: ['Klassischer schwarzer Smoking', 'Zweites Outfit: traditionelle paschtunische Perahan & Patu', 'Goldene Manschettenknöpfe von meinem Vater'] },
+    { icon: '🍽', title: 'Buffet', items: ['Irakisch: Dolma, Quzi (gefülltes Lamm), Masgouf, Kleicha', 'Paschtunisch: Kabuli Pulao, Mantu, Bolani, Sheer Yakh', 'Vegetarisch & vegan dabei für alle', 'Süßes: Baklava-Tower + indische Sweets für Bollywood-Vibe'] },
+    { icon: '💃', title: 'Tanz & Musik', items: ['Tum Hi Ho als unser erster Tanz', 'Indila — Love Story für eine Solo-Runde von dir', 'Naghma Pashto Set für die paschtunische Familie', 'Iraqi Dabke Set für deine Familie', 'Nour El Ein für gemeinsamen Tanz'] },
+    { icon: '🌹', title: 'Deko', items: ['Dunkle Lila Tischwäsche, Goldakzente, viele weiße Rosen', 'Pandora-Charm-Tisch mit kleinen Charms als Geschenk für Gäste', 'Henna-Bar für die Frauen', 'Foto-Wall mit „Riesstraße bis Penzberg" Story'] },
+    { icon: '👨‍👩‍👧‍👦', title: 'Gäste', items: ['Bagdad-Seite: deine Mama, Tante, Onkel, Cousins', 'Kandahar-Seite: meine Eltern, Geschwister, Onkel/Tanten', 'Schweden: Oma („Darling"), Noor & Monir, Saif, Yousef, Kinder', 'Berlin: Hajar & Momo', 'Samira an der Spitze (sie hat uns wieder zusammengebracht)'] },
+    { icon: '🎁', title: 'Hochzeitsgeschenk an dich', items: ['Großes Pandora-Charm „Walima 2026"', 'Erstes Honeymoon-Charm gleich danach', 'Neue Wohnung warten — Bald in unserem Palast'] }
+  ];
+
+  function renderWalima() {
+    if (!$('#walimaGrid')) return;
+    $('#walimaGrid').innerHTML = walimaSections.map(s => `
+      <article class="walima-card">
+        <div class="walima-icon">${s.icon}</div>
+        <h3>${s.title}</h3>
+        <ul>${s.items.map(it => `<li>${it}</li>`).join('')}</ul>
+      </article>
+    `).join('');
+  }
+
+  /* === MARYEM LETTERS (localStorage) === */
+  const MARYEM_KEY = 'maryem_letters_v1';
+  function loadMaryemLetters() {
+    try { return JSON.parse(localStorage.getItem(MARYEM_KEY)) || []; } catch (e) { return []; }
+  }
+  function saveMaryemLetters(arr) {
+    try { localStorage.setItem(MARYEM_KEY, JSON.stringify(arr)); } catch (e) {}
+  }
+  function renderMaryemLetters() {
+    const list = loadMaryemLetters();
+    const cont = $('#maryemLettersList');
+    if (!cont) return;
+    if (!list.length) {
+      cont.innerHTML = '<p class="maryem-empty"><em>Noch keine Briefe von dir. Schreib gerne den ersten — ich freu mich auf jedes Wort.</em></p>';
+    } else {
+      cont.innerHTML = list.slice().reverse().map((l, i) => `
+        <article class="maryem-letter">
+          <div class="maryem-letter-meta">
+            <span class="maryem-letter-date">${new Date(l.date).toLocaleDateString('de-DE', { day:'2-digit', month:'long', year:'numeric' })}</span>
+            <button class="maryem-letter-del" data-del="${l.date}" aria-label="Brief löschen">×</button>
+          </div>
+          ${l.title ? `<h3>${esc(l.title)}</h3>` : ''}
+          <p>${esc(l.body).replace(/\n/g, '<br>')}</p>
+          <span class="maryem-letter-sign">— Maryem ♥</span>
+        </article>
+      `).join('');
+      $$('[data-del]').forEach(b => {
+        b.onclick = () => {
+          if (!confirm('Diesen Brief löschen?')) return;
+          const arr = loadMaryemLetters().filter(l => l.date !== b.dataset.del);
+          saveMaryemLetters(arr);
+          renderMaryemLetters();
+        };
+      });
+    }
+  }
+  function bindMaryemLetterForm() {
+    const f = $('#maryemLetterForm');
+    if (!f || f.dataset.bound) return;
+    f.dataset.bound = '1';
+    f.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const title = $('#maryemLetterTitle').value.trim();
+      const body = $('#maryemLetterBody').value.trim();
+      if (!body) return;
+      const arr = loadMaryemLetters();
+      arr.push({ title, body, date: new Date().toISOString() });
+      saveMaryemLetters(arr);
+      $('#maryemLetterTitle').value = '';
+      $('#maryemLetterBody').value = '';
+      renderMaryemLetters();
+      burstConfetti(40);
+      playTing(880);
+    });
+  }
+
+  /* === MILESTONE COUNTER (Tage seit Nikkah) === */
+  function renderMilestone() {
+    const el = $('#milestoneCounter');
+    if (!el) return;
+    const nikkah = new Date('2026-01-10');
+    const now = new Date();
+    const days = Math.floor((now - nikkah) / (1000 * 60 * 60 * 24));
+    el.innerHTML = `
+      <div class="milestone-row">
+        <strong>${days}</strong>
+        <span>Tage verheiratet</span>
+      </div>
+      <div class="milestone-sub">Seit Nikkah Penzberg, 10.01.2026</div>
+    `;
+  }
+
   function bindNavLinks() {
     $$('a[data-nav]').forEach(a => {
       a.onclick = (e) => {
@@ -2519,6 +2728,9 @@
     buildMusicTabs();
     bindMusic();
     bindHeartCursor();
+    renderMilestone();
+    bindMaryemLetterForm();
+    setInterval(renderMilestone, 60 * 60 * 1000);
     const initial = location.hash.replace('#','') || 'entdecken';
     switchPage(initial);
     setTimeout(setupReveal, 400);
