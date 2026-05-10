@@ -486,7 +486,7 @@ $('surpriseBtn').addEventListener('click', (e) => {
 /* MUSIC PLAYER */
 const songs = [
   { title: "Tum Hi Ho", yt: "Umqb9KENgmk" },     // Aashiqui 2 — Arijit Singh
-  { title: "Indila — Love Story", yt: "ZAUMpz9OGqk" }
+  { title: "Indila — Love Story", yt: "DF3XjEhJ40Y" }
 ];
 let activeSong = 0;
 let musicOpen = false;
