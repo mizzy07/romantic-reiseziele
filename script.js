@@ -522,18 +522,18 @@
       mapBlurb: 'Deine Oma nennt mich „Darling" — das ist mehr wert als jeder Honeymoon.'
     },
 
-    { id: 'berlin', name: 'Berlin · bei Hajar', country: 'Deutschland', region: 'EUROPA', vibe: ['culture','fun','luxuswert'], flight: 'short',
-      tagline: 'Bei deiner Lieblings-Cousine Hajar — Mauerpark, Brunch, Familie.',
-      summary: 'Wochenende bei Hajar — Boutique-Hotel oder bei ihr, Spaziergang Mauerpark, Brunch in Mitte, Brandenburger Tor, Spree-Boot, abends Hajars Wohnzimmer mit Tee.',
+    { id: 'berlin', name: 'Berlin · bei Hajar & Momo', country: 'Deutschland', region: 'EUROPA', vibe: ['culture','fun','luxuswert'], flight: 'short',
+      tagline: 'Hajar wollte zu deinem Geburtstag kommen — also fahren wir zu ihr.',
+      summary: 'Wochenende bei deiner Cousine Hajar und ihrem Mann Momo. Boutique-Hotel in Mitte oder bei ihnen, Mauerpark, Brunch, Brandenburger Tor, Späti-Talk auf der Bank, abends Familienzeit bei Hajar zu Hause.',
       flightTime: '1h von München (oder Zug)', bestTime: 'Mai – September / Dezember (X-Mas)', mood: 'Lebendig & familiär',
-      hearts: 4, image: IMG('1560969184-10fe8719e047'),
+      hearts: 5, image: IMG('1560969184-10fe8719e047'),
       moodLines: [
-        ['Aufwachen', 'Boutique-Hotel in Mitte oder bei Hajar, Brunch-Pläne'],
-        ['Tagsüber', 'Mauerpark Karaoke, East Side Gallery, Spreeufer'],
-        ['Abends', 'Familien-Dinner mit Hajar, Späti-Talk auf der Bank'],
-        ['Nachts', 'Sky Bar im Park Inn, Berlin-Skyline für dich']
+        ['Aufwachen', 'Boutique-Hotel in Mitte, Brunch-Pläne mit Hajar & Momo'],
+        ['Tagsüber', 'Mauerpark, East Side Gallery, Spreeufer'],
+        ['Abends', 'Familien-Dinner bei Hajar & Momo — Geburtstag wird ergänzt'],
+        ['Nachts', 'Sky Bar Park Inn, Berlin-Skyline für dich']
       ],
-      mapBlurb: 'Hajar in Berlin ist Familie auf Distanz — aber nicht im Herzen.'
+      mapBlurb: 'Wir holen den Geburtstag nicht nach — wir ergänzen ihn bei Hajar.'
     },
 
     { id: 'kopenhagen', name: 'Kopenhagen', country: 'Dänemark', region: 'SKANDINAVIEN', vibe: ['culture','luxuswert','strand'], flight: 'short',
@@ -792,9 +792,21 @@
       stops: ['malmoe','kopenhagen','stockholm'],
       image: IMG('1539696511453-ed701e370daf'),
       days: [
-        { day: 'Tag 1–5', place: 'Malmö (Familie)', title: 'Bei Oma & der Familie', desc: 'Familienzeit — Oma, Onkel, Tante, Cousins. Iraker Reis, Lammkebab, alte Geschichten, Fika in alten Cafés.', image: IMG('1539696511453-ed701e370daf') },
+        { day: 'Tag 1–5', place: 'Malmö (Familie)', title: 'Bei Oma & der Familie', desc: 'Familienzeit — Oma („Darling"), Noor & Monir, Saif & Yousef, die Kinder. Irakischer Reis, Lammkebab, alte Geschichten, Fika.', image: IMG('1539696511453-ed701e370daf') },
         { day: 'Tag 6–7', place: 'Kopenhagen', title: 'Hygge-Pause zu zweit', desc: 'Mit dem Zug über die Öresundbrücke (30 min!), Nyhavn, Tivoli bei Nacht, Smørrebrød.', image: IMG('1534955811692-7ff56da8be7c') },
         { day: 'Tag 8–10', place: 'Stockholm', title: 'Schären & Mitternachtssonne', desc: 'Gamla Stan Altstadt, Bootstour durch die Schären-Inseln, Sauna mit Sprung in den See, Skyline-Bar.', image: IMG('1536363511619-505315aded7c') }
+      ]
+    },
+    {
+      id: 'route-familien-tour',
+      title: 'Familien-Tour: Berlin → Malmö',
+      subtitle: '7 Tage · Hajar & Momo (Berlin) → Oma & Noor & Monir (Malmö)',
+      blurb: 'Eine Reise zu allen, die du Familie nennst — Hajar in Berlin, dann mit Direktflug zu Noor und der ganzen Malmö-Crew.',
+      stops: ['berlin','malmoe'],
+      image: IMG('1560969184-10fe8719e047'),
+      days: [
+        { day: 'Tag 1–3', place: 'Berlin', title: 'Bei Hajar & Momo', desc: 'Geburtstag ergänzen — Mauerpark-Spaziergang, Brandenburger Tor, abends Familienzeit bei Hajar zu Hause.', image: IMG('1560969184-10fe8719e047') },
+        { day: 'Tag 4–7', place: 'Malmö', title: 'Bei Oma, Noor & Monir', desc: 'Direktflug von Berlin (1.5h), dann vier Tage bei der ganzen Familie. Oma sagt „Darling", die Kinder hängen an dir, Balkon-Talk wie damals.', image: IMG('1539696511453-ed701e370daf') }
       ]
     },
     {
@@ -959,9 +971,11 @@
 
     { id: 'l15', featured: true, pin: 'Brief 15 · Trotz aller', title: 'Du hast nie losgelassen', body: 'Habibti, etwas, das ich dir nicht oft genug sage: Danke. Wir beide haben nie an UNS gezweifelt — keine Sekunde. Aber die Welt um uns hat\'s versucht. Manche haben Auge gemacht, manche haben uns nicht gegönnt, manche haben hinter unserem Rücken geredet. Du hast es einfach ignoriert. Du hast deinen Kopf zu mir gewendet, immer wieder, egal wer was sagte. Das ist der größte Beweis von Liebe, den eine Frau geben kann — nicht in den Anker zu beißen, wenn der Sturm kommt, sondern den Kompass auf dieselbe Richtung zu halten. Wir sind nicht zusammen weil es leicht war. Wir sind zusammen weil wir entschieden haben, dass nichts von außen es brechen darf. Und am 10.01.2026, in der Moschee in Penzberg, vor Allah und unseren Familien — haben wir es allen gezeigt. Was Allah zusammenbringt, kann kein Mensch trennen. Du hast nie losgelassen. Ich auch nicht. Wir haben gewonnen, Galbi.', sign: '— Mika, dankbar dass du nie losgelassen hast trotz aller, die wollten' },
 
-    { id: 'l16', featured: true, pin: 'Brief 16 · Balkon-Wunsch', title: 'Auf dem Balkon, vor unserer Verlobung', body: 'Erinnerst du dich? Wir saßen auf dem Balkon mit Noor und Monir. Sie verheiratet, zwei zuckersüße Kinder, beide stolz und in Liebe. Monir aus Kandahar — wie ich. Noor aus Schweden — deine Cousine, deine Person. Wir haben zugehört, haben geträumt: „Inschallah genauso, eines Tages — verheiratet, zwei oder mehr Kinder, ein Leben das aussieht wie ihres." Damals waren wir noch nicht mal verlobt. Heute sind wir es — vor Allah in der Moschee in Penzberg. Was damals ein Wunsch auf einem Balkon war, ist jetzt eine echte Geschichte. Inschallah kommen die Kinder als Nächstes — und wir werden für sie das, was Noor und Monir für uns waren: ein Vorbild. Hajar in Berlin, Noor in Malmö, Saif und Yousef — deine Cousins sind unsere zweite Familie, und ich nehme jeden einzeln an die Hand. Ein paar Balkon-Worte, ein paar Jahre, eine ganze Welt umgedreht.', sign: '— Mika, der den Wunsch nicht vergessen hat' },
+    { id: 'l16', featured: true, pin: 'Brief 16 · Balkon & Pandora', title: 'Der Balkon-Abend & dein Pandora-Armband', body: 'Habibti, erinnerst du dich? Wir saßen auf dem Balkon mit Noor und Monir. Noor — deine Cousine, irakische Wurzeln wie deine, lebt in Schweden. Monir — ihr Mann, aus Kandahar wie ich. Dieselben zwei Welten, dieselbe Liebe, dieselben zwei zuckersüßen Kinder. Wir haben nicht nur zugehört — wir haben gestaunt. „Inschallah genauso", haben wir uns geflüstert. Damals waren wir noch nicht mal verlobt. Nach jenem Abend hab ich dir ein Pandora-Armband geschenkt — wie Monir es Noor geschenkt hatte. Jeder Charm steht für etwas: dein Geburtstag, unser Hochzeitstag, eine Reise, ein „Ich liebe dich". Noors Armband war schon voll, als wir es sahen. Deins wächst — Stück für Stück, Reise für Reise, Erinnerung für Erinnerung. Diese ganze App ist nichts anderes als eine Liste von Charms, die noch kommen. Jedes Reiseziel hier wird ein Anhänger an deinem Pandora. Mekka. Bagdad. Kandahar. Hawaii. Wo auch immer du wählst. Inschallah ist dein Armband eines Tages so voll wie Noors — und wir sitzen dann auf einem Balkon mit unseren eigenen Kindern, und ein junges Paar staunt uns an.', sign: '— Mika, dein Sammler von Charms' },
 
-    { id: 'l17', featured: true, pin: 'Brief 17 · Darling', title: 'Deine Oma nennt mich „Darling"', body: 'Habibti, dass deine Oma in Malmö mich „Darling" nennt — das ist kein Spitzname. Das ist ein Diplom. Das ist die größte Anerkennung, die eine irakische Großmutter einem Mann geben kann, der nicht ihr Blut ist. Sie sieht durch alles hindurch. Sie sieht, ob ich dich liebe. Sie sieht, ob ich treu bin. Sie sieht, ob ich dich glücklich mache. Und sie hat entschieden: Darling. Ich kenne deine ganze Familie. Noor, Monir, Saif, Yousef, deine Tante, dein Onkel, die zwei kleinen Cousins-Kinder. Das ist nicht „ich darf endlich kennenlernen" — das ist „ich gehöre schon dazu". Und das ist mehr wert als jedes Hochzeitsgeschenk, jeder Honeymoon, jeder Ring. Wenn deine Oma „Darling" sagt, höre ich: „Du gehörst meiner Maryem. Pass auf sie auf. Du bist mein Junge auch." Inschallah werde ich jeden einzelnen Tag der Junge sein, von dem sie das gesagt hat.', sign: '— Mika, der Darling der Familie' }
+    { id: 'l17', featured: true, pin: 'Brief 17 · Darling', title: 'Deine Oma nennt mich „Darling"', body: 'Habibti, dass deine Oma in Malmö mich „Darling" nennt — das ist kein Spitzname. Das ist ein Diplom. Das ist die größte Anerkennung, die eine irakische Großmutter einem Mann geben kann, der nicht ihr Blut ist. Sie sieht durch alles hindurch. Sie sieht, ob ich dich liebe. Sie sieht, ob ich treu bin. Sie sieht, ob ich dich glücklich mache. Und sie hat entschieden: Darling. Ich kenne deine ganze Familie. Noor, Monir, Saif, Yousef, deine Tante, dein Onkel, die zwei kleinen Cousins-Kinder. Das ist nicht „ich darf endlich kennenlernen" — das ist „ich gehöre schon dazu". Und das ist mehr wert als jedes Hochzeitsgeschenk, jeder Honeymoon, jeder Ring. Wenn deine Oma „Darling" sagt, höre ich: „Du gehörst meiner Maryem. Pass auf sie auf. Du bist mein Junge auch." Inschallah werde ich jeden einzelnen Tag der Junge sein, von dem sie das gesagt hat.', sign: '— Mika, der Darling der Familie' },
+
+    { id: 'l18', pin: 'Brief 18 · Berlin', title: 'Hajar wollte kommen — wir kommen zu ihr', body: 'Habibti, deine Cousine Hajar in Berlin mit Momo — sie wollte zu deinem Geburtstag kommen. Sie hat geplant, sie hat versucht, sie konnte am Ende nicht. Du hast es leise gesagt, aber ich hab gesehen, was es dir bedeutet hat. Familie ist nicht nur an Tagen, an denen alle es schaffen — Familie ist auch an Tagen, an denen jemand fehlt und trotzdem da ist, im Telefon, im Gedanken, in jeder Geschichte die wir erzählen. Also fahren wir zu ihr. Berlin, Wochenende. Mauerpark, Brandenburger Tor, dann zu Hajar und Momo nach Hause für Tee, Lachen, Familienzeit. Wir holen den Geburtstag nicht nach — wir ergänzen ihn. Familie auf Distanz ist auch Familie. Und ich hab dir versprochen: zu jeder einzelnen Person, die dir wichtig ist, fahre ich mit dir.', sign: '— Mika, der mit dir zu jedem deiner Menschen fährt' }
   ];
 
   /* === PETNAMES (Arabisch · Paschtu · Bollywood — mit deutscher Übersetzung) === */
@@ -1095,7 +1109,9 @@
     'Deine Mama hat dich allein groß gezogen. Inshallah werde ich der Mann, dem das niemals nochmal passiert.',
     'Deine Oma in Malmö nennt mich „Darling" — größtes Diplom, das eine irakische Großmutter geben kann.',
     'Noor in Schweden, Monir aus Kandahar wie ich — sie waren das Vorbild, wir sind jetzt die Geschichte.',
-    'Hajar in Berlin. Noor in Malmö. Saif & Yousef. Deine Cousins sind unsere zweite Familie.'
+    'Hajar in Berlin. Noor in Malmö. Saif & Yousef. Deine Cousins sind unsere zweite Familie.',
+    'Dein Pandora-Armband wächst Charm um Charm — jede Reise ein Anhänger. Inschallah eines Tages voll wie Noors.',
+    'Hajar wollte zu deinem Geburtstag kommen. Konnte nicht. Also fahren wir zu ihr — Familie macht keine Termine.'
   ];
 
   /* === MUSIC TRACKS === */
