@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
     <link rel="preconnect" href="https://videos.pexels.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -81,6 +82,14 @@
           <a href="#liebesbriefe" data-page="liebesbriefe">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             Liebesbriefe
+          </a>
+          <a href="#erinnerungen" data-page="erinnerungen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"></circle><polyline points="21,15 16,10 5,21"></polyline></svg>
+            Erinnerungen
+          </a>
+          <a href="#karte" data-page="karte">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+            Unsere Karte
           </a>
         </nav>
 
@@ -313,6 +322,63 @@
           <div class="letters-grid" id="lettersGrid"></div>
         </section>
 
+        <!-- ============== PAGE: ERINNERUNGEN (Slideshow) ============== -->
+        <section class="page" id="page-erinnerungen" data-screen-label="10 Erinnerungen">
+          <header class="page-header">
+            <span class="page-eyebrow">Unsere Bilder &middot; Unsere Filme</span>
+            <h1>Erinnerungen</h1>
+            <p>Jedes Bild ein Atemzug. Tipp auf Play und sieh dir uns an &mdash; oder klick auf jedes Foto, um es groß zu sehen.</p>
+          </header>
+
+          <section class="memories-stage" id="memoriesStage">
+            <div class="memories-frame" id="memoriesFrame"></div>
+            <div class="memories-meta" id="memoriesMeta"></div>
+            <div class="memories-controls">
+              <button id="memPrev" aria-label="Vorheriges">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button id="memPlay" aria-label="Play/Pause">
+                <svg id="memPlayIcon" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+              </button>
+              <button id="memNext" aria-label="Nächstes">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+              <span class="memories-counter" id="memoriesCounter">0 / 0</span>
+            </div>
+          </section>
+
+          <section class="memories-stats" id="memoriesStats"></section>
+
+          <section class="memories-section">
+            <div class="section-header">
+              <h2>Alle Momente</h2>
+              <span class="section-sub" id="memoriesGridCount"></span>
+            </div>
+            <div class="memories-grid" id="memoriesGrid"></div>
+          </section>
+        </section>
+
+        <!-- ============== PAGE: KARTE (Interactive map) ============== -->
+        <section class="page" id="page-karte" data-screen-label="11 Unsere Karte">
+          <header class="page-header">
+            <span class="page-eyebrow">Wo wir waren &middot; Wo wir hin wollen</span>
+            <h1>Unsere Karte</h1>
+            <p>Goldene Pins: jedes Land, das uns schon gehört. Pinke Pins: die Welt, die noch auf uns wartet.</p>
+          </header>
+
+          <section class="map-stats" id="mapStats"></section>
+
+          <div class="map-wrap">
+            <div id="ourMap"></div>
+            <div class="map-legend">
+              <div><span class="map-dot map-dot-been"></span> Wo wir schon waren</div>
+              <div><span class="map-dot map-dot-dream"></span> Wo ich mit dir hin will</div>
+            </div>
+          </div>
+
+          <section class="dreams-list" id="dreamsList"></section>
+        </section>
+
       </main>
 
       <!-- BOTTOM STICKY BAR -->
@@ -350,6 +416,7 @@
 
     </div>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="./script.js"></script>
   </body>
 </html>
