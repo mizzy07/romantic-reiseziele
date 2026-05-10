@@ -2586,22 +2586,24 @@
     });
     mapInstance.setView([22, 25], 2);
 
-    // CARTO Dark Matter — registration-free, reliable
-    const tileLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    // Premium dark basemap — CARTO Dark Matter (no labels) + CARTO labels overlay.
+    // Same vector source Stadia uses; works without registration on any domain.
+    const baseLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
-      subdomains: 'abcd', maxZoom: 19, minZoom: 2
+      subdomains: 'abcd', maxZoom: 20, minZoom: 2
     });
-    let fellBack = false;
-    tileLayer.on('tileerror', () => {
-      if (fellBack) return;
-      fellBack = true;
-      mapInstance.removeLayer(tileLayer);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap',
-        maxZoom: 19
-      }).addTo(mapInstance);
+    const labelsLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png', {
+      attribution: '', subdomains: 'abcd', maxZoom: 20, minZoom: 2, pane: 'shadowPane'
     });
-    tileLayer.addTo(mapInstance);
+    baseLayer.addTo(mapInstance);
+    labelsLayer.addTo(mapInstance);
+    // Premium tint via CSS filter on the tile layer
+    setTimeout(() => {
+      const tilesEl = mapInstance.getContainer().querySelector('.leaflet-tile-pane');
+      if (tilesEl) {
+        tilesEl.style.filter = 'saturate(0.85) brightness(0.95) contrast(1.05)';
+      }
+    }, 100);
 
     // Visited country glow zones (gold halos behind cluster pins)
     const clusters = memoriesData.clusters || [];
