@@ -315,27 +315,32 @@
 
     { id: 'l7', featured: true, pin: 'Brief 07 · 10.01.2026', title: 'Verlobung im Schnee', body: 'Mein Herz, an unserem Verlobungstag bin ich mit Sommerreifen durch hohen Schnee gefahren — weil ich keinen einzigen Moment ohne dich verpassen wollte. Auf der Hinfahrt zum Saal bist du komplett crashout gegangen, weil der DJ nicht auf seinen Platz spielen wollte. Du hast geweint, geschrien, alles war chaotisch — und ich hab nur eins gedacht: „Alhamdulillah, dass diese Frau meine wird." Jeder Moment der Panik war ein Beweis: du nimmst es ernst, du willst alles perfekt — für UNS. Habibti, an dem Tag hab ich mich nicht nur mit dir verlobt. Ich hab mich mit jeder Version von dir verlobt. Mit der lachenden, der weinenden, der wütenden, der schlafenden. Mit allen.', sign: '— Mika, dein Verlobter durch jeden Sturm' },
 
-    { id: 'l8', featured: true, pin: 'Brief 08 · Stunden, die wie Minuten waren', title: 'Das Frühstück, das wir nie gegessen haben', body: 'Erinnerst du dich an das Frühstück, bei dem wir vergessen haben zu essen? Drei, vier Stunden lang haben wir über den Islam geredet. Über Gott. Über die Welt. Über Bagdad und Kandahar. Über unsere Eltern, unsere Träume, unsere Ängste. Der Tee wurde kalt, das Brot trocken — uns war es egal. „وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً" sagt der Quran — Und Er hat zwischen euch Liebe und Barmherzigkeit gelegt. An dem Morgen hab ich verstanden, was das heißt. Mit dir kann ich über alles reden, was wichtig ist. Und auch über alles, was nicht wichtig ist. Beides ist gleich heilig.', sign: '— dein Mika, der dir lieber zuhört als isst' },
+    { id: 'l8', featured: true, pin: 'Brief 08 · Stunden, die wie Minuten waren', title: 'Das Frühstück, das wir nie gegessen haben', body: 'Erinnerst du dich an das Frühstück, bei dem wir vergessen haben zu essen? Drei, vier Stunden lang haben wir über den Islam geredet. Über Allah. Über die Welt. Über Bagdad und Kandahar. Über unsere Eltern, unsere Träume, unsere Ängste. Der Tee wurde kalt, das Brot trocken — uns war es egal. „Wa ja\'ala baynakum mawaddatan wa raḥmah" sagt der Quran (Sure 30:21) — Und Er hat zwischen euch Liebe und Barmherzigkeit gelegt. An dem Morgen hab ich verstanden, was das heißt. Mit dir kann ich über alles reden, was wichtig ist. Und auch über alles, was nicht wichtig ist. Beides ist gleich heilig.', sign: '— dein Mika, der dir lieber zuhört als isst' },
 
     { id: 'l9', pin: 'Brief 09 · Was du für mich bist', title: 'Du bist alles, in einer Person', body: 'Du bist meine Frau. Meine beste Freundin. Meine Sekretärin — die beste, die jemals existiert hat. Meine Party-Plannerin (jede Feier wird durch dich zur Erinnerung). Meine Hochzeitsplannerin (du hast unsere Verlobung in einen Film verwandelt, trotz Schnee und DJ-Drama). Und Insha\'Allah, sehr bald: die beste Mutter, die ein Kind sich wünschen kann. Manche Frauen sind eine Rolle. Du bist alle. Und das macht keinen einzigen Tag schwer — es macht jeden Tag reich. Alhamdulillah für dich, jeden Atemzug.', sign: '— Mika, der weiß, wen er an seiner Seite hat' },
 
     { id: 'l10', pin: 'Brief 10 · Unser Zuhause', title: 'Bald in einem Palast schöner als der Taj Mahal', body: 'Aktuell wohnen wir bei meinen Eltern. Wir teilen seit Monaten ein Bett — das Schönste, das ich je geteilt habe. Aber das ist nur der Anfang. Bald baue ich dir ein Zuhause schöner als der Taj Mahal. Mit einem Garten, in dem du jede Blume aussuchen darfst. Mit einer Küche, in der wir kochen — oder vergessen zu kochen, weil wir wieder über die Welt reden. Shah Jahan hat den Taj Mahal für seine tote Frau gebaut. Ich baue dir alles für deine Lebenszeit, Habibti. Du sollst es spüren, nicht nur sehen.', sign: '— Mika, dein Architekt der Zukunft' },
 
-    { id: 'l11', pin: 'Brief 11 · Alhamdulillah', title: 'Jeden Tag, seit dem ersten', body: 'Seit ich dich kenne, haben wir jeden einzelnen Tag geredet. Jeden Tag gesehen. Alhamdulillah. Auch durch Streits, auch durch Tränen, auch durch Up und Downs — keinen Tag ohne dich. Der Prophet ﷺ hat gesagt: „خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ" — Der Beste von euch ist der Beste zu seiner Familie. Ich versuche jeden Tag, der zu sein. Manchmal scheitere ich. Aber ich stehe immer wieder auf — für dich. Mit dir. Wegen dir. Diese Zeit ist die schönste meines Lebens. Ich weiß, dass alles davor nur Vorbereitung war.', sign: '— Mika, dankbar in jedem Atemzug' }
+    { id: 'l11', pin: 'Brief 11 · Alhamdulillah', title: 'Jeden Tag, seit dem ersten', body: 'Seit ich dich kenne, haben wir jeden einzelnen Tag geredet. Jeden Tag gesehen. Alhamdulillah (Lob sei Allah). Auch durch Streits, auch durch Tränen, auch durch Up und Downs — keinen Tag ohne dich. Der Prophet ﷺ hat gesagt: „Khayrukum khayrukum li-ahlihi" — Der Beste von euch ist der Beste zu seiner Familie. Ich versuche jeden Tag, der zu sein. Manchmal scheitere ich. Aber ich stehe immer wieder auf — für dich. Mit dir. Wegen dir. Diese Zeit ist die schönste meines Lebens. Ich weiß, dass alles davor nur Vorbereitung war.', sign: '— Mika, dankbar in jedem Atemzug' }
   ];
 
-  /* === PETNAMES (cultural mix) === */
+  /* === PETNAMES (Arabisch · Paschtu · Bollywood — mit deutscher Übersetzung) === */
   const petnames = [
-    { word: 'حياتي', tr: 'Ḥayāti', meaning: 'Mein Leben', lang: 'Arabisch' },
-    { word: 'حبيبتي', tr: 'Habibti', meaning: 'Meine Geliebte', lang: 'Arabisch' },
-    { word: 'يا قلبي', tr: 'Ya Albi', meaning: 'Mein Herz', lang: 'Arabisch' },
-    { word: 'روحي', tr: 'Rouhi', meaning: 'Meine Seele', lang: 'Arabisch' },
-    { word: 'جانم', tr: 'Janem', meaning: 'Mein Leben', lang: 'Paschtu' },
-    { word: 'زما زړه', tr: 'Zma Zra', meaning: 'Mein Herz', lang: 'Paschtu' },
-    { word: 'ګلابۍ', tr: 'Gulabai', meaning: 'Kleine Rose', lang: 'Paschtu' },
-    { word: 'مريم', tr: 'Maryem', meaning: 'Meine Maryem', lang: 'الأبد' },
-    { word: 'Jaan', tr: 'Jaan', meaning: 'Mein Liebling', lang: 'Bollywood' },
-    { word: 'Saanson Ki', tr: 'Saanson Ki Maala', meaning: 'Kette meiner Atemzüge', lang: 'Hindi' }
+    { word: 'حياتي',         tr: 'Ḥayāti',             meaning: 'Mein Leben',              lang: 'Arabisch' },
+    { word: 'حبيبتي',        tr: 'Habibti',            meaning: 'Meine Geliebte',          lang: 'Arabisch' },
+    { word: 'يا قلبي',       tr: 'Ya Albi · Galbi',    meaning: 'Mein Herz',               lang: 'Arabisch · Irakisch' },
+    { word: 'روحي',          tr: 'Rouhi',              meaning: 'Meine Seele',             lang: 'Arabisch' },
+    { word: 'يا عمري',       tr: 'Ya Omri',            meaning: 'Du, mein Leben',          lang: 'Arabisch' },
+    { word: 'يا قمر',        tr: 'Ya Amar',            meaning: 'Mein Mond',               lang: 'Arabisch' },
+    { word: 'نور عيني',      tr: 'Nour el Ayni',       meaning: 'Licht meiner Augen',      lang: 'Arabisch' },
+    { word: 'جانم',          tr: 'Janem',              meaning: 'Meine Seele · mein Leben', lang: 'Paschtu · Dari' },
+    { word: 'زما زړه',        tr: 'Zma Zra',            meaning: 'Mein Herz',               lang: 'Paschtu' },
+    { word: 'ګلابۍ',         tr: 'Gulabai',            meaning: 'Kleine Rose',             lang: 'Paschtu' },
+    { word: 'سترگه',          tr: 'Stergai',            meaning: 'Mein Augenstern',         lang: 'Paschtu' },
+    { word: 'مريم',          tr: 'Maryem',             meaning: 'Meine Maryem · für immer', lang: 'Ewig' },
+    { word: 'Jaan',           tr: 'Jaan',               meaning: 'Mein Liebling',           lang: 'Bollywood · Hindi' },
+    { word: 'Saanson Ki Maala', tr: 'Saanson Ki Maala', meaning: 'Kette meiner Atemzüge',   lang: 'Bollywood · Hindi' },
+    { word: 'Mehboob',        tr: 'Mehboob',            meaning: 'Mein Geliebter',          lang: 'Bollywood · Urdu' }
   ];
 
   /* === ISLAMIC VERSES + AHADITH (with Latin transliteration + German) === */
@@ -414,34 +419,36 @@
     }
   ];
 
-  /* === SRK / Bollywood / Arabic / Pashto / Islamic — alle in Latein === */
+  /* === SRK / Bollywood / Arabic / Pashto / Islamic — Original + deutsche Übersetzung === */
   const srkLines = [
-    'Tum hi ho … mera dil tum hi ho. Habibti, Janem, Maryem.',
-    'Bade bade deshon mein, aisi choti choti baatein hoti rehti hain. Auch im Schnee, auch beim DJ-Drama.',
-    'Pyar dosti hai — Liebe ist Freundschaft. Du bist meine.',
-    'Kuch kuch hota hai, Maryem … du verstehst. Du verstehst alles.',
-    '„Wa ja\'ala baynakum mawaddatan wa raḥmah" — Er hat zwischen uns Liebe & Erbarmen gelegt. Alhamdulillah.',
-    'Janem, das Leben ist ein Film. Du bist die Hauptrolle, der Soundtrack und das Happy End.',
-    'Habibti — wenn du tanzt, vergesse ich, dass ich Mika heiße.',
+    '„Tum hi ho … mera dil tum hi ho." — Du bist es … mein Herz, du bist es. Habibti, Janem.',
+    '„Bade bade deshon mein, aisi choti choti baatein hoti rehti hain." — In großen Ländern passieren solche kleinen Sachen. Auch im Schnee, auch beim DJ-Drama.',
+    '„Pyar dosti hai." — Liebe ist Freundschaft. Du bist meine.',
+    '„Kuch kuch hota hai." — Etwas passiert. Maryem, du verstehst alles.',
+    '„Wa ja\'ala baynakum mawaddatan wa raḥmah." — Er hat zwischen uns Liebe & Barmherzigkeit gelegt. Alhamdulillah (Lob sei Allah).',
+    'Janem (meine Seele), das Leben ist ein Film. Du bist Hauptrolle, Soundtrack und Happy End.',
+    'Habibti (meine Geliebte) — wenn du tanzt, vergesse ich, dass ich Mika heiße.',
     'Shah Jahan baute den Taj Mahal für seine tote Frau. Ich baue dir alles, solange du lebst.',
-    '„Khayrukum khayrukum li-ahlihi" — Der Beste ist der Beste zu seiner Familie. Ich versuche es jeden Tag.',
-    'Saanson ki maala — meine Atemzüge sind eine Kette aus deinem Namen.',
-    '„Hunna libāsun lakum wa antum libāsun lahunn" — Du bist mein Gewand. Ich bin deins.',
-    'Janam Janam — in diesem und im nächsten Leben, du.',
-    'Mera mehboob — meine Liebste. Auf Urdu, Arabisch, Paschtu, Deutsch. Bedeutet immer dich.',
-    '„Rabbanā hab lanā qurrata a\'yun" — Allah, schenke uns Trost der Augen. Du bist schon meiner.',
+    '„Khayrukum khayrukum li-ahlihi." — Der Beste von euch ist der Beste zu seiner Familie. Ich versuche es jeden Tag.',
+    '„Saanson ki maala." — Eine Kette meiner Atemzüge — aus deinem Namen geknüpft.',
+    '„Hunna libāsun lakum wa antum libāsun lahunn." — Sie sind ein Gewand für euch, ihr für sie. Wir sind füreinander Haut.',
+    '„Janam Janam." — In diesem Leben und im nächsten — du.',
+    '„Mera mehboob." — Meine/Mein Geliebte/r. Auf Urdu, Arabisch, Paschtu, Deutsch. Bedeutet immer dich.',
+    '„Rabbanā hab lanā qurrata a\'yun." — Allah, schenke uns Trost der Augen. Du bist schon meiner.',
     'Crashout im Auto, Sommerreifen im Schnee, DJ-Drama — und trotzdem der schönste Tag meines Lebens.',
     'Drei Stunden Frühstück, kein Bissen gegessen — aber satter als je zuvor. Mit dir.',
-    '„Idhā aḥabba aḥadukum akhāhu fal-yu\'limhu" — Liebst du jemanden, sag\'s ihm. Maryem, jeden Tag.',
-    'Bagdad zu Kandahar sind 2000 km. Du zu mir sind 0. Alhamdulillah.',
-    'Du bist Frau, Sekretärin, Party-Plannerin, Hochzeitsplannerin. Bald Inshallah Mutter. Eine Frau, hundert Geschenke.',
-    '„Idhā tazawwaja al-\'abdu fa-qad istakmala niṣfa d-dīn" — Wer heiratet, vervollständigt sein halbes Deen. Du hast meines.',
-    '„Al-jannatu taḥta aqdāmi l-ummahāt" — Das Paradies liegt unter den Füßen der Mütter. Bald gehst du darauf.',
-    '„Bāraka Llāhu laka wa jama\'a baynakumā fī khayr" — Möge Allah euch im Guten vereinen. Über uns gesprochen.',
-    'Mawaddah wa Rahmah — Liebe & Barmherzigkeit. Quran 30:21. Wir, in einem Vers.',
-    'Yeh dosti hum nahin todenge — diese Freundschaft brechen wir nicht. Tum hi ho meri yaariyaan.',
-    '„Wa khalaqnākum azwājā" — Wir haben euch als Paare erschaffen. Allah hat dich für mich geschrieben.',
-    'Tujhe dekha to yeh jaana sanam — als ich dich sah, habe ich verstanden. Maryem.'
+    '„Idhā aḥabba aḥadukum akhāhu fal-yu\'limhu." — Liebst du jemanden, sag\'s ihm. Maryem, jeden Tag.',
+    'Bagdad zu Kandahar sind 2000 km. Du zu mir sind 0. Alhamdulillah (Lob sei Allah).',
+    'Du bist Frau, Sekretärin, Party-Plannerin, Hochzeitsplannerin. Bald Inshallah (so Allah will) Mutter. Eine Frau, hundert Geschenke.',
+    '„Idhā tazawwaja al-\'abdu fa-qad istakmala niṣfa d-dīn." — Wer heiratet, vervollständigt sein halbes Deen (seine halbe Religion). Du hast meines.',
+    '„Al-jannatu taḥta aqdāmi l-ummahāt." — Das Paradies liegt unter den Füßen der Mütter. Bald gehst du darauf.',
+    '„Bāraka Llāhu laka wa jama\'a baynakumā fī khayr." — Möge Allah dich segnen und euch beide im Guten vereinen. Über uns gesprochen.',
+    '„Mawaddah wa Rahmah." — Liebe & Barmherzigkeit. Quran 30:21. Wir, in einem Vers.',
+    '„Yeh dosti hum nahin todenge." — Diese Freundschaft brechen wir nie. Tum hi ho meri yaariyaan — du bist meine Freundschaft.',
+    '„Wa khalaqnākum azwājā." — Und Wir haben euch als Paare erschaffen. Allah hat dich für mich geschrieben.',
+    '„Tujhe dekha to yeh jaana sanam." — Als ich dich sah, habe ich verstanden, mein Liebling. Maryem.',
+    '„Galbi" (mein Herz) auf Irakisch · „Zma Zra" (mein Herz) auf Paschtu · „Mein Herz" auf Deutsch — drei Sprachen, ein Herz.',
+    '„Subhanallah" — Glorie sei Allah. Wenn ich dich anschaue, ist das das einzige Wort, das passt.'
   ];
 
   /* === MUSIC TRACKS === */
