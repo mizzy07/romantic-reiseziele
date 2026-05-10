@@ -2167,6 +2167,338 @@ button:focus-visible, a:focus-visible, [data-heart]:focus-visible {
   color: var(--gold-soft);
 }
 .map-popup-dream strong { color: #ffb8d0; }
+.map-popup .popup-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #f6cf6f;
+  opacity: 0.85;
+  margin-bottom: 2px;
+}
+
+/* === MAP TILE TINT (warmer dusk over the dark base) === */
+#ourMap .leaflet-tile-pane {
+  filter: hue-rotate(-12deg) saturate(1.15) contrast(1.04) brightness(0.92);
+}
+#ourMap::after {
+  content: "";
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 22% 30%, rgba(232, 90, 140, 0.10), transparent 55%),
+    radial-gradient(ellipse at 78% 72%, rgba(212, 168, 67, 0.10), transparent 60%),
+    linear-gradient(180deg, rgba(13, 7, 23, 0.30) 0%, transparent 25%, transparent 80%, rgba(13, 7, 23, 0.40) 100%);
+  mix-blend-mode: screen;
+  z-index: 400;
+  border-radius: 22px;
+}
+.map-wrap { position: relative; }
+
+/* === LOVE THREADS === */
+.love-thread {
+  filter: drop-shadow(0 0 4px currentColor);
+}
+.love-thread-gold {
+  stroke-dasharray: 200 1200;
+  animation: thread-flow 12s linear infinite;
+}
+.love-thread-rose {
+  animation: thread-pulse 3.6s ease-in-out infinite;
+}
+.love-thread-1 { animation-delay: 0.6s; }
+.love-thread-2 { animation-delay: 1.2s; }
+.love-thread-3 { animation-delay: 1.8s; }
+@keyframes thread-flow {
+  to { stroke-dashoffset: -1400; }
+}
+@keyframes thread-pulse {
+  0%, 100% { opacity: 0.30; }
+  50%      { opacity: 0.85; }
+}
+.love-zone {
+  filter: drop-shadow(0 0 12px rgba(246, 207, 111, 0.55));
+  animation: zone-breathe 6s ease-in-out infinite;
+}
+@keyframes zone-breathe {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 0.85; }
+}
+
+/* === UPGRADED PINS === */
+/* Visited (3D gold ring, photo thumbnail center, count badge, drop-in animation) */
+.pin-been-3d {
+  position: relative;
+  width: 44px; height: 56px;
+  display: block;
+  transform: translateY(-12px) scale(0.6);
+  opacity: 0;
+  animation: pin-drop 0.7s cubic-bezier(.34,1.56,.64,1) forwards;
+  animation-delay: var(--delay, 0ms);
+  cursor: pointer;
+}
+.pin-been-3d .pin-halo {
+  position: absolute; inset: 0 0 12px 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(246, 207, 111, 0.55) 0%, rgba(246, 207, 111, 0) 70%);
+  animation: halo-pulse 3.2s ease-in-out infinite;
+}
+.pin-been-3d .pin-thumb {
+  position: absolute; left: 4px; top: 4px;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background-size: cover; background-position: center;
+  background-color: #2a1a3a;
+  border: 2px solid #f6cf6f;
+  box-shadow:
+    0 0 0 1px rgba(13, 7, 23, 0.9),
+    0 6px 14px -2px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.pin-been-3d .pin-count {
+  position: absolute; right: -2px; top: -2px;
+  min-width: 18px; height: 18px; padding: 0 5px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f6cf6f 0%, #d4a843 100%);
+  color: #2a1a3a;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(13, 7, 23, 0.85);
+}
+.pin-been-3d .pin-stem {
+  position: absolute; left: 50%; bottom: 0;
+  transform: translateX(-50%);
+  width: 2px; height: 14px;
+  background: linear-gradient(180deg, #d4a843 0%, rgba(212, 168, 67, 0) 100%);
+  filter: drop-shadow(0 1px 2px rgba(212, 168, 67, 0.6));
+}
+.pin-been-3d::after {
+  content: "";
+  position: absolute; left: 50%; bottom: -4px;
+  transform: translateX(-50%);
+  width: 14px; height: 4px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  filter: blur(2px);
+}
+.pin-been-3d:hover .pin-thumb {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 0 1px rgba(13, 7, 23, 0.9),
+    0 0 0 4px rgba(246, 207, 111, 0.35),
+    0 10px 20px -2px rgba(212, 168, 67, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* Dream (rose heart with category symbol, pulsing) */
+.pin-dream-3d {
+  position: relative;
+  width: 38px; height: 46px;
+  transform: translateY(-10px) scale(0.55);
+  opacity: 0;
+  animation: pin-drop 0.7s cubic-bezier(.34,1.56,.64,1) forwards;
+  animation-delay: var(--delay, 0ms);
+  cursor: pointer;
+}
+.pin-dream-3d .pin-pulse {
+  position: absolute; left: 50%; top: 4px;
+  transform: translateX(-50%);
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(232, 90, 140, 0.5) 0%, rgba(232, 90, 140, 0) 70%);
+  animation: dream-pulse 2.4s ease-in-out infinite;
+}
+.pin-dream-3d .pin-heart {
+  position: absolute; left: 3px; top: 0;
+  width: 32px; height: 32px;
+  color: #ff7aa8;
+  filter:
+    drop-shadow(0 2px 4px rgba(232, 90, 140, 0.65))
+    drop-shadow(0 6px 10px rgba(0, 0, 0, 0.55));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.pin-dream-3d .pin-sym {
+  position: absolute; left: 50%; top: 12px;
+  transform: translate(-50%, 0);
+  width: 14px; height: 14px;
+  color: #fff5f9;
+  display: inline-flex; align-items: center; justify-content: center;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+}
+.pin-dream-3d .pin-sym svg { width: 100%; height: 100%; }
+.pin-dream-3d::after {
+  content: "";
+  position: absolute; left: 50%; bottom: 0;
+  transform: translateX(-50%);
+  width: 12px; height: 4px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  filter: blur(2px);
+}
+.pin-dream-3d:hover .pin-heart {
+  transform: scale(1.18) translateY(-2px);
+  filter:
+    drop-shadow(0 0 8px rgba(232, 90, 140, 0.85))
+    drop-shadow(0 8px 14px rgba(0, 0, 0, 0.6));
+}
+
+@keyframes pin-drop {
+  0%   { transform: translateY(-32px) scale(0.4); opacity: 0; }
+  60%  { transform: translateY(2px) scale(1.05); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+@keyframes halo-pulse {
+  0%, 100% { opacity: 0.65; transform: scale(1); }
+  50%      { opacity: 0.95; transform: scale(1.25); }
+}
+@keyframes dream-pulse {
+  0%, 100% { opacity: 0.55; transform: translateX(-50%) scale(1); }
+  50%      { opacity: 1.0;  transform: translateX(-50%) scale(1.45); }
+}
+
+/* === MAP STATS — counter row + world progress bar === */
+.stat-pill-anim strong {
+  font-variant-numeric: tabular-nums;
+}
+.map-progress {
+  margin: 16px auto 0;
+  max-width: 720px;
+  padding: 16px 20px 14px;
+  border-radius: 14px;
+  background: linear-gradient(160deg, rgba(26, 15, 36, 0.65) 0%, rgba(42, 10, 58, 0.55) 100%);
+  border: 1px solid rgba(212, 168, 67, 0.28);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.map-progress-track {
+  position: relative;
+  height: 8px;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+  border: 1px solid rgba(212, 168, 67, 0.2);
+  overflow: visible;
+  margin-bottom: 26px;
+}
+.map-progress-fill {
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: var(--pct, 0%);
+  border-radius: 999px;
+  background: linear-gradient(90deg, #d4a843 0%, #f6cf6f 50%, #ffb8d0 100%);
+  box-shadow:
+    0 0 12px rgba(246, 207, 111, 0.6),
+    0 0 24px rgba(232, 90, 140, 0.35);
+  animation: progress-grow 1.6s cubic-bezier(.34,1.2,.64,1) both;
+}
+@keyframes progress-grow {
+  from { width: 0; }
+}
+.map-progress-marker {
+  position: absolute; top: 14px;
+  transform: translateX(-50%);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #fde9b9;
+  white-space: nowrap;
+  opacity: 0; animation: fade-in 0.6s 1.2s forwards;
+}
+.map-progress-marker::before {
+  content: "";
+  position: absolute; left: 50%; top: -10px;
+  transform: translateX(-50%);
+  width: 1px; height: 8px;
+  background: rgba(246, 207, 111, 0.6);
+}
+.map-progress-meta {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 12px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  color: #fde9b9;
+  opacity: 0; animation: fade-in 0.6s 1.4s forwards;
+}
+.map-progress-meta em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #f6cf6f;
+}
+.map-progress-meta span { font-style: italic; opacity: 0.85; }
+@keyframes fade-in { to { opacity: 1; } }
+
+/* === DREAMS — continent-grouped === */
+.dreams-list-head {
+  text-align: center;
+  padding: 0 40px 12px;
+}
+.dreams-list-head h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #f6cf6f 0%, #ffb8d0 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  margin: 0 0 6px;
+}
+.dreams-list-head p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--gold-soft);
+  margin: 0;
+}
+.dream-group {
+  padding: 0 40px;
+  margin-bottom: 28px;
+}
+.dream-group-head {
+  display: flex; align-items: center; gap: 12px;
+  margin: 18px 0 12px;
+  color: #f6cf6f;
+}
+.dream-group-glyph {
+  display: inline-flex; width: 28px; height: 28px;
+  color: #f6cf6f;
+  filter: drop-shadow(0 1px 2px rgba(212, 168, 67, 0.5));
+}
+.dream-group-glyph svg { width: 100%; height: 100%; }
+.dream-group-head h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+.dream-group-count {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #fde9b9;
+  background: rgba(212, 168, 67, 0.18);
+  border: 1px solid rgba(212, 168, 67, 0.4);
+  padding: 2px 9px;
+  border-radius: 999px;
+}
+.dream-group-rule {
+  flex: 1; height: 1px;
+  background: linear-gradient(90deg, rgba(212, 168, 67, 0.5), rgba(212, 168, 67, 0));
+}
+.dream-card .dream-glyph {
+  position: absolute; left: 18px; top: 16px;
+  width: 22px; height: 22px;
+  color: #ffb8d0;
+  filter: drop-shadow(0 1px 2px rgba(232, 90, 140, 0.5));
+  opacity: 0.95;
+}
+.dream-card .dream-glyph svg { width: 100%; height: 100%; }
+.dream-card { padding-left: 50px !important; }
 
 .dreams-list {
   padding: 0 40px 40px;
