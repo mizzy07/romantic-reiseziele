@@ -6,22 +6,26 @@
     <title>Für Maryem ♥ — Wohin entführe ich dich?</title>
     <meta name="description" content="Eine Liebeserklärung in App-Form. Von Mika für Maryem. Wähle einen Ort und ich nehme dich mit." />
     <meta name="theme-color" content="#0d0717" />
-    <meta property="og:title" content="Für Maryem ♥ — Wohin entführe ich dich?" />
-    <meta property="og:description" content="Eine Liebeserklärung in App-Form. Von Mika für Maryem. 47 Reiseziele, 18 Liebesbriefe, 322 Erinnerungen — und unsere ganze Geschichte." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1542521148-51306e7ffc1e?auto=format&fit=crop&w=1200&q=80" />
-    <meta property="og:url" content="https://mizzy07.github.io/romantic-reiseziele/" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e85a8c'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
     <link rel="preconnect" href="https://videos.pexels.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Dancing+Script:wght@600;700&display=swap&family=Caveat:wght@500;600&family=Homemade+Apple" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!-- Intro greeting (3-second fade) -->
+    <div class="intro-veil" id="introVeil" aria-hidden="true">
+      <div class="intro-stars" aria-hidden="true"></div>
+      <div class="intro-content">
+        <span class="intro-eyebrow">Mit Liebe von Mika</span>
+        <h1 class="intro-name">Maryem<span class="intro-heart">♥</span></h1>
+        <span class="intro-sub">Tum hi ho — du bist es.</span>
+      </div>
+    </div>
+
     <!-- Floating hearts background -->
     <div class="floating-hearts" aria-hidden="true"></div>
 
@@ -89,18 +93,6 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             Liebesbriefe
           </a>
-          <a href="#geschichte" data-page="geschichte">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-            Unsere Geschichte
-          </a>
-          <a href="#pandora" data-page="pandora">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2.5" fill="currentColor"></circle></svg>
-            Pandora-Charms
-          </a>
-          <a href="#walima" data-page="walima">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-8h6v8"></path></svg>
-            Walima-Planung
-          </a>
           <a href="#erinnerungen" data-page="erinnerungen">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"></circle><polyline points="21,15 16,10 5,21"></polyline></svg>
             Erinnerungen
@@ -122,7 +114,6 @@
               <strong>Kandahar ↔ Bagdad <svg class="inline-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></strong>
             </div>
           </div>
-          <div class="milestone-counter" id="milestoneCounter"></div>
           <p class="side-quote">
             <span>„Du bist das schönste arabische Gemälde."</span>
             <em>— ich, draußen vorm Museum, nur zu dir</em>
@@ -156,6 +147,7 @@
             <div class="hero-content">
               <span class="hero-eyebrow">Eine Liebeserklärung an dich, Habibti <em>(meine Geliebte)</em> <span class="heart-text">♥</span></span>
               <h1 id="heroHeadline"></h1>
+              <div class="heute-strip" id="heuteStrip"></div>
               <p>Sechsunddreißig Orte habe ich für uns ausgesucht &mdash; vom Strand bis zur Kaaba, von Bagdad bis Hawaii. Tipp auf das Herz, das dich am meisten ruft. Den Rest mache ich. <em>Wie im Film.</em></p>
               <div class="hero-avatars">
                 <div class="avatars">
@@ -331,6 +323,29 @@
             <div class="petnames-grid" id="petnamesGrid"></div>
           </section>
 
+          <section class="pandora-card" id="pandoraCard">
+            <div class="pandora-head">
+              <span class="pandora-eyebrow">Charm um Charm &middot; wie Monir &amp; Noor &middot; wie Allah es geschrieben hat</span>
+              <h2>Dein Pandora-Armband</h2>
+              <p>Jedes Charm ist ein Tag mit dir. Tipp drauf — ich erzähl ihn dir nochmal.</p>
+            </div>
+            <div class="pandora-stage">
+              <svg class="pandora-arc" viewBox="0 0 1100 320" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                  <linearGradient id="braceletGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#f6f0e0"/>
+                    <stop offset="50%" stop-color="#cfc7b0"/>
+                    <stop offset="100%" stop-color="#7a7363"/>
+                  </linearGradient>
+                </defs>
+                <path d="M 60 240 Q 550 -40 1040 240" fill="none" stroke="url(#braceletGrad)" stroke-width="6" stroke-linecap="round"/>
+                <path d="M 60 240 Q 550 -40 1040 240" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.4" stroke-linecap="round" transform="translate(0,-2.5)"/>
+              </svg>
+              <div class="pandora-charms" id="pandoraCharms"></div>
+            </div>
+            <p class="pandora-foot"><em>„Inschallah genauso." — Noor, auf dem Balkon</em></p>
+          </section>
+
           <section class="verses-card">
             <div class="verses-head">
               <span class="verses-eyebrow">Quran &middot; Hadith &middot; مع الترجمة الألمانية</span>
@@ -340,55 +355,48 @@
             <div class="verses-grid" id="versesGrid"></div>
           </section>
 
-          <div class="letters-grid" id="lettersGrid"></div>
-
-          <section class="maryem-letters">
-            <div class="maryem-letters-head">
-              <span class="maryem-letters-eyebrow">Wenn du Lust hast, schreib zurück</span>
-              <h2>Briefe von Maryem</h2>
-              <p>Hier ist Platz für deine Antwort. Schreib, wann du willst &mdash; und so viel du willst. Es bleibt zwischen uns.</p>
+          <section class="maryem-form" id="maryemForm">
+            <div class="maryem-form-head">
+              <span class="maryem-form-eyebrow">Briefe von Maryem an Mika</span>
+              <h2>Schreib mir, mein Herz</h2>
+              <p>Was du nicht laut sagen kannst — schreib es hier auf. Bleibt bei dir, auf deinem Gerät.</p>
             </div>
-            <div class="maryem-letters-list" id="maryemLettersList"></div>
-            <form class="maryem-letter-form" id="maryemLetterForm">
-              <input type="text" id="maryemLetterTitle" placeholder="Titel (optional)" maxlength="80" />
-              <textarea id="maryemLetterBody" placeholder="Schreib hier alles, was du mir sagen möchtest..." rows="6" required></textarea>
-              <div class="maryem-letter-actions">
-                <button type="submit">Brief speichern <span>♥</span></button>
-                <span class="maryem-letter-hint">Wird nur in deinem Browser gespeichert &mdash; ganz privat.</span>
+            <form class="maryem-form-grid" onsubmit="return false;">
+              <input type="text" id="maryemFormTitle" placeholder="Titel · z.B. Heute Morgen, als ich aufwachte" maxlength="120" />
+              <textarea id="maryemFormBody" placeholder="Mika, ..." rows="6" maxlength="3000"></textarea>
+              <div class="maryem-form-actions">
+                <button type="button" id="maryemFormSave"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>Speichern</button>
+                <span class="maryem-form-note" id="maryemFormNote">Bleibt nur auf deinem Gerät, Habibti.</span>
               </div>
             </form>
+            <div class="maryem-form-list" id="maryemFormList"></div>
           </section>
-        </section>
 
-        <!-- ============== PAGE: UNSERE GESCHICHTE (Timeline) ============== -->
-        <section class="page" id="page-geschichte" data-screen-label="Unsere Geschichte">
-          <header class="page-header">
-            <span class="page-eyebrow">Wie wir wurden</span>
-            <h1>Unsere Geschichte</h1>
-            <p>Von der Cola im Abbacos bis zur Nikkah in Penzberg &mdash; jeder Moment ein Stein im Mosaik.</p>
-          </header>
-          <div class="timeline" id="timelineContainer"></div>
-        </section>
+          <section class="sealed-section" id="sealedSection">
+            <div class="sealed-letter" id="sealedLetter">
+              <div class="sealed-envelope" id="sealedEnvelope">
+                <div class="sealed-flap"></div>
+                <div class="sealed-body"></div>
+                <button class="sealed-seal" id="sealedSeal" aria-label="Siegel öffnen">
+                  <span class="seal-monogram">M ♥ M</span>
+                  <span class="seal-ring"></span>
+                </button>
+                <span class="sealed-hint">Tippe das Siegel · ein Brief nur für dich</span>
+              </div>
+              <article class="sealed-content" id="sealedContent">
+                <div class="letter-paper" aria-hidden="true"></div>
+                <h3>An Maryem · in stillen Stunden</h3>
+                <p>Habibti, wenn du diesen Brief öffnest — egal an welchem Tag, egal um welche Uhrzeit — dann höre ich dich. Wenn dein Herz schwer ist, lies das hier:</p>
+                <p>Allah hat uns füreinander geschrieben, lange bevor wir uns gesehen haben. Jeder Schritt, jeder Schmerz, jedes Lachen war ein Wegpunkt zu UNS. Du bist nicht zufällig in mein Leben gekommen. Du bist <em>Qadar</em>, Habibti — Schicksal, mit deinem Namen darauf.</p>
+                <p>Wenn du Angst hast: ich bin da. Wenn du müde bist: ich trage dich. Wenn du weinst: ich weine mit dir, dann lachen wir wieder. Wenn du glücklich bist: das ist mein einziges Ziel.</p>
+                <p>Lies das immer wieder. So oft du willst. Es bleibt wahr.</p>
+                <span class="letter-sign">— Dein Mika, immer.</span>
+                <button class="sealed-close" id="sealedClose" aria-label="Wieder versiegeln">✦ Wieder versiegeln</button>
+              </article>
+            </div>
+          </section>
 
-        <!-- ============== PAGE: PANDORA-CHARMS ============== -->
-        <section class="page" id="page-pandora" data-screen-label="Pandora-Charms">
-          <header class="page-header">
-            <span class="page-eyebrow">Charm um Charm, Reise um Reise</span>
-            <h1>Dein Pandora-Armband</h1>
-            <p>Wie Monir Noor — ich dir. Jeder Charm ein Moment, jeder Charm ein Versprechen. Inschallah eines Tages so voll wie Noors.</p>
-          </header>
-          <div class="pandora-stage" id="pandoraStage"></div>
-          <div class="pandora-grid" id="pandoraGrid"></div>
-        </section>
-
-        <!-- ============== PAGE: WALIMA-PLANUNG ============== -->
-        <section class="page" id="page-walima" data-screen-label="Walima-Planung">
-          <header class="page-header">
-            <span class="page-eyebrow">Nach der Nikkah, vor der Welt</span>
-            <h1>Walima-Planung</h1>
-            <p>Die große Hochzeit. Disney-Bollywood-Princess-Energy, irakisches Buffet, paschtunische Tänze, alle die wir lieben in einem Saal.</p>
-          </header>
-          <div class="walima-grid" id="walimaGrid"></div>
+          <div class="letters-grid" id="lettersGrid"></div>
         </section>
 
         <!-- ============== PAGE: ERINNERUNGEN (Slideshow) ============== -->
