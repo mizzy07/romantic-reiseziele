@@ -311,7 +311,17 @@
     { id: 'l3', pin: 'Brief 03 · Schicksal', title: 'Samira hat uns gefunden', body: 'Wenn Samira nicht gewesen wäre, hätten wir uns vielleicht nie wieder gesehen. Ein paar Monate nachdem du mir bei Abbacos die Cola gebracht hast, hat sie uns wieder zusammengebracht — ohne es zu wissen. Manchmal denke ich: Manche Freunde sind keine Zufälle, sondern kleine Engel mit Telefonnummern. Danke, Samira. Und Habibti — danke, dass du den Mut hattest, nochmal Hallo zu sagen.', sign: '— dein Mika, ewig dankbar' },
     { id: 'l4', pin: 'Brief 04 · Wie alles begann', title: 'Die Cola im Abbacos', body: 'Mein erster Satz zu dir war: „Ich kenne dich vom Abbacos." Du warst dort Hostess in dem kleinen Münchner Steakladen, hast mir eine Cola gebracht und hattest keine Ahnung, dass dieser Moment ein ganzes Leben starten würde. Ein paar Monate später hat uns Samira wieder zusammengebracht — und seitdem bin ich nur noch verliebt. Janem, ich will dir das schönste Leben ermöglichen, das es gibt. Das ist kein Versprechen. Das ist mein einziger Plan.', sign: '— Mika, seit der Cola für immer dein' },
     { id: 'l5', pin: 'Brief 05 · Kandahar zu Bagdad', title: 'Zwei Städte, ein Herz', body: 'Aus Kandahar zu dir nach Bagdad — Kilometer waren nichts. Sprache war nichts. Krieg war nichts. Du hast gewonnen, bevor ich es wusste. Ich liebe dich auf Paschtu, auf Arabisch, auf Deutsch — auf jeder Sprache, die du jemals lernen wirst.', sign: '— Mika, dein Janem' },
-    { id: 'l6', pin: 'Brief 06 · Heute', title: 'Heute, jetzt', body: 'Such dir den Ort aus. Ich kümmere mich um den Rest. Du musst nichts machen außer dein Herz öffnen. Diese App ist mein Brief in 8 Seiten. Lies sie, wenn du willst. Aber denk dran: das Schönste in jeder Stadt bist du.', sign: '— ich, der Glückliche, dein Mika' }
+    { id: 'l6', pin: 'Brief 06 · Heute', title: 'Heute, jetzt', body: 'Such dir den Ort aus. Ich kümmere mich um den Rest. Du musst nichts machen außer dein Herz öffnen. Diese App ist mein Brief an dich. Lies sie, wenn du willst. Aber denk dran: das Schönste in jeder Stadt bist du.', sign: '— ich, der Glückliche, dein Mika' },
+
+    { id: 'l7', featured: true, pin: 'Brief 07 · 10.01.2026', title: 'Verlobung im Schnee', body: 'Mein Herz, an unserem Verlobungstag bin ich mit Sommerreifen durch hohen Schnee gefahren — weil ich keinen einzigen Moment ohne dich verpassen wollte. Auf der Hinfahrt zum Saal bist du komplett crashout gegangen, weil der DJ nicht auf seinen Platz spielen wollte. Du hast geweint, geschrien, alles war chaotisch — und ich hab nur eins gedacht: „Alhamdulillah, dass diese Frau meine wird." Jeder Moment der Panik war ein Beweis: du nimmst es ernst, du willst alles perfekt — für UNS. Habibti, an dem Tag hab ich mich nicht nur mit dir verlobt. Ich hab mich mit jeder Version von dir verlobt. Mit der lachenden, der weinenden, der wütenden, der schlafenden. Mit allen.', sign: '— Mika, dein Verlobter durch jeden Sturm' },
+
+    { id: 'l8', featured: true, pin: 'Brief 08 · Stunden, die wie Minuten waren', title: 'Das Frühstück, das wir nie gegessen haben', body: 'Erinnerst du dich an das Frühstück, bei dem wir vergessen haben zu essen? Drei, vier Stunden lang haben wir über den Islam geredet. Über Gott. Über die Welt. Über Bagdad und Kandahar. Über unsere Eltern, unsere Träume, unsere Ängste. Der Tee wurde kalt, das Brot trocken — uns war es egal. „وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً" sagt der Quran — Und Er hat zwischen euch Liebe und Barmherzigkeit gelegt. An dem Morgen hab ich verstanden, was das heißt. Mit dir kann ich über alles reden, was wichtig ist. Und auch über alles, was nicht wichtig ist. Beides ist gleich heilig.', sign: '— dein Mika, der dir lieber zuhört als isst' },
+
+    { id: 'l9', pin: 'Brief 09 · Was du für mich bist', title: 'Du bist alles, in einer Person', body: 'Du bist meine Frau. Meine beste Freundin. Meine Sekretärin — die beste, die jemals existiert hat. Meine Party-Plannerin (jede Feier wird durch dich zur Erinnerung). Meine Hochzeitsplannerin (du hast unsere Verlobung in einen Film verwandelt, trotz Schnee und DJ-Drama). Und Insha\'Allah, sehr bald: die beste Mutter, die ein Kind sich wünschen kann. Manche Frauen sind eine Rolle. Du bist alle. Und das macht keinen einzigen Tag schwer — es macht jeden Tag reich. Alhamdulillah für dich, jeden Atemzug.', sign: '— Mika, der weiß, wen er an seiner Seite hat' },
+
+    { id: 'l10', pin: 'Brief 10 · Unser Zuhause', title: 'Bald in einem Palast schöner als der Taj Mahal', body: 'Aktuell wohnen wir bei meinen Eltern. Wir teilen seit Monaten ein Bett — das Schönste, das ich je geteilt habe. Aber das ist nur der Anfang. Bald baue ich dir ein Zuhause schöner als der Taj Mahal. Mit einem Garten, in dem du jede Blume aussuchen darfst. Mit einer Küche, in der wir kochen — oder vergessen zu kochen, weil wir wieder über die Welt reden. Shah Jahan hat den Taj Mahal für seine tote Frau gebaut. Ich baue dir alles für deine Lebenszeit, Habibti. Du sollst es spüren, nicht nur sehen.', sign: '— Mika, dein Architekt der Zukunft' },
+
+    { id: 'l11', pin: 'Brief 11 · Alhamdulillah', title: 'Jeden Tag, seit dem ersten', body: 'Seit ich dich kenne, haben wir jeden einzelnen Tag geredet. Jeden Tag gesehen. Alhamdulillah. Auch durch Streits, auch durch Tränen, auch durch Up und Downs — keinen Tag ohne dich. Der Prophet ﷺ hat gesagt: „خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ" — Der Beste von euch ist der Beste zu seiner Familie. Ich versuche jeden Tag, der zu sein. Manchmal scheitere ich. Aber ich stehe immer wieder auf — für dich. Mit dir. Wegen dir. Diese Zeit ist die schönste meines Lebens. Ich weiß, dass alles davor nur Vorbereitung war.', sign: '— Mika, dankbar in jedem Atemzug' }
   ];
 
   /* === PETNAMES (cultural mix) === */
@@ -328,16 +338,40 @@
     { word: 'Saanson Ki', tr: 'Saanson Ki Maala', meaning: 'Kette meiner Atemzüge', lang: 'Hindi' }
   ];
 
-  /* === SRK / Bollywood quotes === */
+  /* === ISLAMIC VERSES + AHADITH (with German translations) === */
+  const verses = [
+    { src: 'Quran · Ar-Rum 30:21', ar: 'وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً', de: '„Und Er hat zwischen euch Liebe und Barmherzigkeit gelegt." — das ist unsere Antwort, Habibti.' },
+    { src: 'Quran · Al-Baqarah 2:187', ar: 'هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَّهُنَّ', de: '„Sie sind ein Gewand für euch, und ihr seid ein Gewand für sie." Ich schütze dich, du wärmst mich.' },
+    { src: 'Quran · Ar-Rum 30:21', ar: 'لِتَسْكُنُوا إِلَيْهَا', de: '„… damit ihr Ruhe bei ihnen findet." Bei dir atme ich zum ersten Mal richtig.' },
+    { src: 'Quran · Al-Furqan 25:74', ar: 'رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ', de: '„Unser Herr, schenke uns an unseren Frauen und Kindern den Trost der Augen." Mein Du\'a, jede Nacht.' },
+    { src: 'Hadith · Tirmidhi', ar: 'خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ وَأَنَا خَيْرُكُمْ لِأَهْلِي', de: '„Der Beste von euch ist der Beste zu seiner Familie — und ich bin der Beste zu meiner." (Prophet ﷺ) Mein täglicher Kompass.' },
+    { src: 'Hadith · Sahih Muslim', ar: 'الدُّنْيَا مَتَاعٌ، وَخَيْرُ مَتَاعِ الدُّنْيَا الْمَرْأَةُ الصَّالِحَةُ', de: '„Die Welt ist Vergnügen, und das beste Vergnügen ist eine rechtschaffene Frau." Du bist mein Diesseits-Lohn vor dem Jenseits-Lohn.' },
+    { src: 'Hadith · Tirmidhi', ar: 'إِذَا أَحَبَّ أَحَدُكُمْ أَخَاهُ فَلْيُعْلِمْهُ', de: '„Wenn jemand seinen Bruder liebt, soll er es ihm sagen." Maryem — ich liebe dich. Vor Allah, vor der Welt, jetzt.' },
+    { src: 'Hadith · Bukhari', ar: 'لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ', de: '„Keiner von euch ist gläubig, bis er für seinen Bruder will, was er für sich selbst will." Ich will für dich nur das Beste — weil ich es für mich auch will, mit dir.' }
+  ];
+
+  /* === SRK / Bollywood / Arabic / Pashto / Islamic mixed === */
   const srkLines = [
-    'Tum hi ho ... mera dil tum hi ho.',
-    'Bade bade deshon mein ... aisi choti choti baatein hoti rehti hain, Maryem.',
-    'Pyar dosti hai. Liebe ist Freundschaft. Du bist meine.',
-    'Don ka intezar to gyarah mulkon ki police kar rahi hai — aber ich warte nur auf dich.',
-    'Kuch kuch hota hai, Maryem ... du verstehst.',
-    'Ich liebe dich auf Paschtu, Arabisch, Hindi, Deutsch — und in jeder Sprache, die noch kommt.',
-    'Janem, das Leben ist ein Film. Du bist die Hauptrolle.',
-    'Habibti — wenn du tanzt, vergesse ich, dass ich Mika heiße.'
+    'Tum hi ho ... mera dil tum hi ho. Habibti, Janem, Maryem.',
+    'Bade bade deshon mein ... aisi choti choti baatein hoti rehti hain. Auch im Schnee, auch beim DJ-Drama.',
+    'Pyar dosti hai — Liebe ist Freundschaft. Du bist meine.',
+    'Kuch kuch hota hai, Maryem ... du verstehst. Du verstehst alles.',
+    '„وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً" — Und Er hat zwischen uns Liebe und Barmherzigkeit gelegt. Alhamdulillah.',
+    'Janem, das Leben ist ein Film. Du bist die Hauptrolle, der Soundtrack und das Happy End.',
+    'Habibti — wenn du tanzt, vergesse ich, dass ich Mika heiße.',
+    'Shah Jahan baute den Taj Mahal für seine tote Frau. Ich baue dir alles, solange du lebst.',
+    '„خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ" — Der Beste ist der Beste zu seiner Familie. Ich versuche es jeden Tag.',
+    'Saanson Ki Maala — meine Atemzüge sind eine Kette aus deinem Namen.',
+    '„هُنَّ لِبَاسٌ لَكُمْ" — Du bist mein Gewand. Ich bin deins. Quran, 2:187.',
+    'Janam Janam — in diesem und im nächsten Leben, du.',
+    'Ahmad Zahir hat gesungen, was ich fühle. Ich kann\'s nur leiser sagen: Janem, ich bin deins.',
+    'Mera mehboob — meine Liebste. Auf Urdu, Arabisch, Paschtu, Deutsch. Bedeutet immer dich.',
+    '„رَبَّنَا هَبْ لَنَا قُرَّةَ أَعْيُنٍ" — Allah, schenke uns Trost der Augen. Du bist schon meiner.',
+    'Crashout im Auto, Sommerreifen im Schnee, DJ-Drama — und trotzdem der schönste Tag meines Lebens.',
+    'Drei Stunden Frühstück, kein Bissen gegessen — aber satter als je zuvor. Mit dir.',
+    '„إِذَا أَحَبَّ أَحَدُكُمْ أَخَاهُ فَلْيُعْلِمْهُ" — Liebst du jemanden, sag\'s ihm. Maryem, ich sag\'s dir jeden Tag.',
+    'Bagdad zu Kandahar sind 2000 km. Du zu mir sind 0. Alhamdulillah.',
+    'Du bist Frau, Sekretärin, Party-Plannerin, beste Freundin. Bald Inshallah Mutter. Eine Frau, hundert Geschenke.'
   ];
 
   /* === MUSIC TRACKS === */
@@ -875,7 +909,19 @@
   }
 
   /* === LIEBESBRIEFE === */
+  function renderVerses() {
+    const grid = $('#versesGrid');
+    if (!grid) return;
+    grid.innerHTML = verses.map(v => `
+      <article class="verse">
+        <span class="verse-src">${v.src}</span>
+        <span class="verse-ar" lang="ar" dir="rtl">${v.ar}</span>
+        <span class="verse-de">${v.de}</span>
+      </article>
+    `).join('');
+  }
   function renderLetters() {
+    renderVerses();
     $('#petnamesGrid').innerHTML = petnames.map(p => `
       <button class="petname" data-pet="${p.tr}">
         <span class="petname-word" lang="ar">${p.word}</span>
