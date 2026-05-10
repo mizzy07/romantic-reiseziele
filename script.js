@@ -338,40 +338,110 @@
     { word: 'Saanson Ki', tr: 'Saanson Ki Maala', meaning: 'Kette meiner Atemzüge', lang: 'Hindi' }
   ];
 
-  /* === ISLAMIC VERSES + AHADITH (with German translations) === */
+  /* === ISLAMIC VERSES + AHADITH (with Latin transliteration + German) === */
   const verses = [
-    { src: 'Quran · Ar-Rum 30:21', ar: 'وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً', de: '„Und Er hat zwischen euch Liebe und Barmherzigkeit gelegt." — das ist unsere Antwort, Habibti.' },
-    { src: 'Quran · Al-Baqarah 2:187', ar: 'هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَّهُنَّ', de: '„Sie sind ein Gewand für euch, und ihr seid ein Gewand für sie." Ich schütze dich, du wärmst mich.' },
-    { src: 'Quran · Ar-Rum 30:21', ar: 'لِتَسْكُنُوا إِلَيْهَا', de: '„… damit ihr Ruhe bei ihnen findet." Bei dir atme ich zum ersten Mal richtig.' },
-    { src: 'Quran · Al-Furqan 25:74', ar: 'رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ', de: '„Unser Herr, schenke uns an unseren Frauen und Kindern den Trost der Augen." Mein Du\'a, jede Nacht.' },
-    { src: 'Hadith · Tirmidhi', ar: 'خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ وَأَنَا خَيْرُكُمْ لِأَهْلِي', de: '„Der Beste von euch ist der Beste zu seiner Familie — und ich bin der Beste zu meiner." (Prophet ﷺ) Mein täglicher Kompass.' },
-    { src: 'Hadith · Sahih Muslim', ar: 'الدُّنْيَا مَتَاعٌ، وَخَيْرُ مَتَاعِ الدُّنْيَا الْمَرْأَةُ الصَّالِحَةُ', de: '„Die Welt ist Vergnügen, und das beste Vergnügen ist eine rechtschaffene Frau." Du bist mein Diesseits-Lohn vor dem Jenseits-Lohn.' },
-    { src: 'Hadith · Tirmidhi', ar: 'إِذَا أَحَبَّ أَحَدُكُمْ أَخَاهُ فَلْيُعْلِمْهُ', de: '„Wenn jemand seinen Bruder liebt, soll er es ihm sagen." Maryem — ich liebe dich. Vor Allah, vor der Welt, jetzt.' },
-    { src: 'Hadith · Bukhari', ar: 'لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ', de: '„Keiner von euch ist gläubig, bis er für seinen Bruder will, was er für sich selbst will." Ich will für dich nur das Beste — weil ich es für mich auch will, mit dir.' }
+    {
+      src: 'Quran · Ar-Rum 30:21',
+      ar: 'وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً',
+      tr: 'Wa min āyātihī an khalaqa lakum min anfusikum azwājan li-taskunū ilayhā wa ja\'ala baynakum mawaddatan wa raḥmah.',
+      de: '„Und zu Seinen Zeichen gehört, dass Er euch aus euch selbst Gattinnen erschuf, damit ihr Ruhe bei ihnen findet — und Er hat zwischen euch Liebe und Barmherzigkeit gelegt." Das ist unsere Antwort, Habibti. Mawaddah wa Rahmah — Liebe & Erbarmen.'
+    },
+    {
+      src: 'Quran · Adh-Dhariyat 51:49',
+      ar: 'وَمِن كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ',
+      tr: 'Wa min kulli shay\'in khalaqnā zawjayni la\'allakum tadhakkarūn.',
+      de: '„Und von allem haben Wir Paare erschaffen, damit ihr nachdenkt." Allah hat uns als Paar gedacht — bevor wir uns gekannt haben, Janem.'
+    },
+    {
+      src: 'Quran · An-Naba 78:8',
+      ar: 'وَخَلَقْنَاكُمْ أَزْوَاجًا',
+      tr: 'Wa khalaqnākum azwājā.',
+      de: '„Und Wir haben euch als Paare erschaffen." Drei Worte. Eine ganze Beziehung. Du und ich, kein Zufall.'
+    },
+    {
+      src: 'Nikkah-Du\'a · Sunan Abu Dawood',
+      ar: 'بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ',
+      tr: 'Bāraka Llāhu laka wa bāraka \'alayka wa jama\'a baynakumā fī khayr.',
+      de: '„Möge Allah dich segnen, Segen über dich bringen — und euch beide im Guten vereinen." Das wurde über uns gesprochen, Galbi. Im Nikkah, vor Allah, gesegnet.'
+    },
+    {
+      src: 'Quran · Al-Baqarah 2:187',
+      ar: 'هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَّهُنَّ',
+      tr: 'Hunna libāsun lakum wa antum libāsun lahunn.',
+      de: '„Sie sind ein Gewand für euch, und ihr seid ein Gewand für sie." Ich schütze dich, du wärmst mich. Wir sind füreinander Haut.'
+    },
+    {
+      src: 'Quran · Al-Furqan 25:74',
+      ar: 'رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ',
+      tr: 'Rabbanā hab lanā min azwājinā wa dhurriyyātinā qurrata a\'yun.',
+      de: '„Unser Herr, schenke uns an unseren Frauen und Kindern den Trost der Augen." Mein Du\'a, jede Nacht für dich und unsere Zukunft.'
+    },
+    {
+      src: 'Hadith · Tirmidhi',
+      ar: 'خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ وَأَنَا خَيْرُكُمْ لِأَهْلِي',
+      tr: 'Khayrukum khayrukum li-ahlihi, wa anā khayrukum li-ahlī.',
+      de: '„Der Beste von euch ist derjenige, der am besten zu seiner Familie ist — und ich bin der Beste zu meiner." (Prophet ﷺ) Mein täglicher Kompass.'
+    },
+    {
+      src: 'Hadith · Sahih Muslim',
+      ar: 'الدُّنْيَا مَتَاعٌ، وَخَيْرُ مَتَاعِ الدُّنْيَا الْمَرْأَةُ الصَّالِحَةُ',
+      tr: 'Ad-dunyā matā\', wa khayru matā\'i d-dunyā al-mar\'atu s-sāliḥah.',
+      de: '„Die Welt ist Vergnügen, und das beste Vergnügen ist eine rechtschaffene Frau." Du bist mein Diesseits-Lohn vor dem Jenseits-Lohn.'
+    },
+    {
+      src: 'Hadith · Tirmidhi',
+      ar: 'إِذَا أَحَبَّ أَحَدُكُمْ أَخَاهُ فَلْيُعْلِمْهُ',
+      tr: 'Idhā aḥabba aḥadukum akhāhu, fal-yu\'limhu.',
+      de: '„Wenn jemand seinen Bruder liebt, soll er es ihm sagen." Maryem — ich liebe dich. Vor Allah, vor der Welt, jetzt und für immer.'
+    },
+    {
+      src: 'Hadith · Bukhari',
+      ar: 'لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ',
+      tr: 'Lā yu\'minu aḥadukum ḥattā yuḥibba li-akhīhi mā yuḥibbu li-nafsihi.',
+      de: '„Keiner von euch ist gläubig, bis er für seinen Bruder will, was er für sich selbst will." Ich will für dich nur das Beste — weil ich es mit dir auch will.'
+    },
+    {
+      src: 'Hadith · Al-Bayhaqi',
+      ar: 'إِذَا تَزَوَّجَ الْعَبْدُ فَقَدِ اسْتَكْمَلَ نِصْفَ الدِّينِ',
+      tr: 'Idhā tazawwaja al-\'abdu fa-qadi-stakmala niṣfa d-dīn.',
+      de: '„Wer heiratet, hat die Hälfte seiner Religion vervollständigt." (Prophet ﷺ) Du hast mein halbes Deen vervollständigt, Habibti — die andere Hälfte verbringe ich damit, deiner würdig zu sein.'
+    },
+    {
+      src: 'Hadith · An-Nasa\'i',
+      ar: 'الْجَنَّةُ تَحْتَ أَقْدَامِ الْأُمَّهَاتِ',
+      tr: 'Al-jannatu taḥta aqdāmi l-ummahāt.',
+      de: '„Das Paradies liegt unter den Füßen der Mütter." (Prophet ﷺ) Bald, Inshallah, gehst du auf diesem Boden — und ich werde der Mann sein, der das Paradies in deinem Schritt erkennt.'
+    }
   ];
 
-  /* === SRK / Bollywood / Arabic / Pashto / Islamic mixed === */
+  /* === SRK / Bollywood / Arabic / Pashto / Islamic — alle in Latein === */
   const srkLines = [
-    'Tum hi ho ... mera dil tum hi ho. Habibti, Janem, Maryem.',
-    'Bade bade deshon mein ... aisi choti choti baatein hoti rehti hain. Auch im Schnee, auch beim DJ-Drama.',
+    'Tum hi ho … mera dil tum hi ho. Habibti, Janem, Maryem.',
+    'Bade bade deshon mein, aisi choti choti baatein hoti rehti hain. Auch im Schnee, auch beim DJ-Drama.',
     'Pyar dosti hai — Liebe ist Freundschaft. Du bist meine.',
-    'Kuch kuch hota hai, Maryem ... du verstehst. Du verstehst alles.',
-    '„وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً" — Und Er hat zwischen uns Liebe und Barmherzigkeit gelegt. Alhamdulillah.',
+    'Kuch kuch hota hai, Maryem … du verstehst. Du verstehst alles.',
+    '„Wa ja\'ala baynakum mawaddatan wa raḥmah" — Er hat zwischen uns Liebe & Erbarmen gelegt. Alhamdulillah.',
     'Janem, das Leben ist ein Film. Du bist die Hauptrolle, der Soundtrack und das Happy End.',
     'Habibti — wenn du tanzt, vergesse ich, dass ich Mika heiße.',
     'Shah Jahan baute den Taj Mahal für seine tote Frau. Ich baue dir alles, solange du lebst.',
-    '„خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ" — Der Beste ist der Beste zu seiner Familie. Ich versuche es jeden Tag.',
-    'Saanson Ki Maala — meine Atemzüge sind eine Kette aus deinem Namen.',
-    '„هُنَّ لِبَاسٌ لَكُمْ" — Du bist mein Gewand. Ich bin deins. Quran, 2:187.',
+    '„Khayrukum khayrukum li-ahlihi" — Der Beste ist der Beste zu seiner Familie. Ich versuche es jeden Tag.',
+    'Saanson ki maala — meine Atemzüge sind eine Kette aus deinem Namen.',
+    '„Hunna libāsun lakum wa antum libāsun lahunn" — Du bist mein Gewand. Ich bin deins.',
     'Janam Janam — in diesem und im nächsten Leben, du.',
-    'Ahmad Zahir hat gesungen, was ich fühle. Ich kann\'s nur leiser sagen: Janem, ich bin deins.',
     'Mera mehboob — meine Liebste. Auf Urdu, Arabisch, Paschtu, Deutsch. Bedeutet immer dich.',
-    '„رَبَّنَا هَبْ لَنَا قُرَّةَ أَعْيُنٍ" — Allah, schenke uns Trost der Augen. Du bist schon meiner.',
+    '„Rabbanā hab lanā qurrata a\'yun" — Allah, schenke uns Trost der Augen. Du bist schon meiner.',
     'Crashout im Auto, Sommerreifen im Schnee, DJ-Drama — und trotzdem der schönste Tag meines Lebens.',
     'Drei Stunden Frühstück, kein Bissen gegessen — aber satter als je zuvor. Mit dir.',
-    '„إِذَا أَحَبَّ أَحَدُكُمْ أَخَاهُ فَلْيُعْلِمْهُ" — Liebst du jemanden, sag\'s ihm. Maryem, ich sag\'s dir jeden Tag.',
+    '„Idhā aḥabba aḥadukum akhāhu fal-yu\'limhu" — Liebst du jemanden, sag\'s ihm. Maryem, jeden Tag.',
     'Bagdad zu Kandahar sind 2000 km. Du zu mir sind 0. Alhamdulillah.',
-    'Du bist Frau, Sekretärin, Party-Plannerin, beste Freundin. Bald Inshallah Mutter. Eine Frau, hundert Geschenke.'
+    'Du bist Frau, Sekretärin, Party-Plannerin, Hochzeitsplannerin. Bald Inshallah Mutter. Eine Frau, hundert Geschenke.',
+    '„Idhā tazawwaja al-\'abdu fa-qad istakmala niṣfa d-dīn" — Wer heiratet, vervollständigt sein halbes Deen. Du hast meines.',
+    '„Al-jannatu taḥta aqdāmi l-ummahāt" — Das Paradies liegt unter den Füßen der Mütter. Bald gehst du darauf.',
+    '„Bāraka Llāhu laka wa jama\'a baynakumā fī khayr" — Möge Allah euch im Guten vereinen. Über uns gesprochen.',
+    'Mawaddah wa Rahmah — Liebe & Barmherzigkeit. Quran 30:21. Wir, in einem Vers.',
+    'Yeh dosti hum nahin todenge — diese Freundschaft brechen wir nicht. Tum hi ho meri yaariyaan.',
+    '„Wa khalaqnākum azwājā" — Wir haben euch als Paare erschaffen. Allah hat dich für mich geschrieben.',
+    'Tujhe dekha to yeh jaana sanam — als ich dich sah, habe ich verstanden. Maryem.'
   ];
 
   /* === MUSIC TRACKS === */
@@ -916,6 +986,7 @@
       <article class="verse">
         <span class="verse-src">${v.src}</span>
         <span class="verse-ar" lang="ar" dir="rtl">${v.ar}</span>
+        <span class="verse-tr">${v.tr}</span>
         <span class="verse-de">${v.de}</span>
       </article>
     `).join('');
