@@ -975,7 +975,11 @@
 
     { id: 'l17', featured: true, pin: 'Brief 17 · Darling', title: 'Deine Oma nennt mich „Darling"', body: 'Habibti, dass deine Oma in Malmö mich „Darling" nennt — das ist kein Spitzname. Das ist ein Diplom. Das ist die größte Anerkennung, die eine irakische Großmutter einem Mann geben kann, der nicht ihr Blut ist. Sie sieht durch alles hindurch. Sie sieht, ob ich dich liebe. Sie sieht, ob ich treu bin. Sie sieht, ob ich dich glücklich mache. Und sie hat entschieden: Darling. Ich kenne deine ganze Familie. Noor, Monir, Saif, Yousef, deine Tante, dein Onkel, die zwei kleinen Cousins-Kinder. Das ist nicht „ich darf endlich kennenlernen" — das ist „ich gehöre schon dazu". Und das ist mehr wert als jedes Hochzeitsgeschenk, jeder Honeymoon, jeder Ring. Wenn deine Oma „Darling" sagt, höre ich: „Du gehörst meiner Maryem. Pass auf sie auf. Du bist mein Junge auch." Inschallah werde ich jeden einzelnen Tag der Junge sein, von dem sie das gesagt hat.', sign: '— Mika, der Darling der Familie' },
 
-    { id: 'l18', pin: 'Brief 18 · Berlin', title: 'Hajar wollte kommen — wir kommen zu ihr', body: 'Habibti, deine Cousine Hajar in Berlin mit Momo — sie wollte zu deinem Geburtstag kommen. Sie hat geplant, sie hat versucht, sie konnte am Ende nicht. Du hast es leise gesagt, aber ich hab gesehen, was es dir bedeutet hat. Familie ist nicht nur an Tagen, an denen alle es schaffen — Familie ist auch an Tagen, an denen jemand fehlt und trotzdem da ist, im Telefon, im Gedanken, in jeder Geschichte die wir erzählen. Also fahren wir zu ihr. Berlin, Wochenende. Mauerpark, Brandenburger Tor, dann zu Hajar und Momo nach Hause für Tee, Lachen, Familienzeit. Wir holen den Geburtstag nicht nach — wir ergänzen ihn. Familie auf Distanz ist auch Familie. Und ich hab dir versprochen: zu jeder einzelnen Person, die dir wichtig ist, fahre ich mit dir.', sign: '— Mika, der mit dir zu jedem deiner Menschen fährt' }
+    { id: 'l18', pin: 'Brief 18 · Berlin', title: 'Hajar wollte kommen — wir kommen zu ihr', body: 'Habibti, deine Cousine Hajar in Berlin mit Momo — sie wollte zu deinem Geburtstag kommen. Sie hat geplant, sie hat versucht, sie konnte am Ende nicht. Du hast es leise gesagt, aber ich hab gesehen, was es dir bedeutet hat. Familie ist nicht nur an Tagen, an denen alle es schaffen — Familie ist auch an Tagen, an denen jemand fehlt und trotzdem da ist, im Telefon, im Gedanken, in jeder Geschichte die wir erzählen. Also fahren wir zu ihr. Berlin, Wochenende. Mauerpark, Brandenburger Tor, dann zu Hajar und Momo nach Hause für Tee, Lachen, Familienzeit. Wir holen den Geburtstag nicht nach — wir ergänzen ihn. Familie auf Distanz ist auch Familie. Und ich hab dir versprochen: zu jeder einzelnen Person, die dir wichtig ist, fahre ich mit dir.', sign: '— Mika, der mit dir zu jedem deiner Menschen fährt' },
+
+    { id: 'l19', featured: true, pin: 'Brief 19 · Allguth', title: 'Deine Mama, ein Auto, ein „Mein Sohn"', body: 'Habibti, weißt du was die schönste Begegnung mit deiner Mama war? An der Allguth-Tankstelle. Sie hatte aus Versehen Benzin in den Diesel getankt. Du hast mich panisch angerufen — ich war in fünf Minuten da. Wir haben das Auto zu dritt um die Ecke geschoben, gelacht, geschwitzt, geflucht auf einer Mischung aus Deutsch, Arabisch und Paschtu. Mitten im Schieben hab ich gesagt: „Komm, Mama, einmal noch." Sie hat angehalten. Hat mich angeschaut. Und gesagt: „Mein Sohn." Zwei Wörter. Ein ganzes Versprechen. Ich war damals noch nicht offiziell ihr Schwiegersohn — aber ab dem Moment war ich es im Herzen. Eine irakische Mama nennt dich nicht „mein Sohn", wenn sie sich nicht sicher ist. Sie sieht alles. Ich werde dir versprechen, was ich ihr in dem Moment versprochen hab, ohne es laut zu sagen: Ich pass auf ihre Tochter auf. Bis zum letzten Atemzug. Inschallah.', sign: '— Mika, ihr Sohn von der Allguth-Tankstelle' },
+
+    { id: 'l20', featured: true, pin: 'Brief 20 · Verschwörungstheorien', title: 'Beim Familienessen mit Opa', body: 'Habibti, weißt du wann ich wusste, dass meine Familie dich liebt? An dem Essen, wo Opa angefangen hat über Verschwörungstheorien zu reden. Mein Opa kann reden. Eine Stunde, zwei Stunden, drei Stunden. Über alles, vor allem über alles, was die Welt angeblich versteckt. Niemand widerspricht ihm — er ist Opa. Du hast genickt. Du hast gelacht an den richtigen Stellen. Du hast dazwischen Reis nachgenommen. Du hast nicht widersprochen, du hast nicht aufgegeben, du hast nicht den Kopf geschüttelt — du warst einfach da, ruhig, du. Meine Mama hat dich beobachtet. Mein Papa hat dich beobachtet. Oma hat dir nachgeschöpft, ohne zu fragen — das ist die paschtunische Form von „du bleibst". Nach dem Essen hat meine Mama gesagt: „Sie ist gut. Sie ist ruhig. Sie ist deine." Drei Sätze. Ein ganzes Diplom. Du hast meine Familie genauso bestanden wie ich deine — bei der Allguth-Tankstelle, mit deiner Mama. Wir sind in beiden Familien zu Hause. Das ist alles, was ich je wollte.', sign: '— Mika, dessen Familie dich auch zu Hause haben will' }
   ];
 
   /* === PETNAMES (8 Sprachen mit deutscher Übersetzung) === */
@@ -1152,7 +1156,10 @@
     'Noor in Schweden, Monir aus Kandahar wie ich — sie waren das Vorbild, wir sind jetzt die Geschichte.',
     'Hajar in Berlin. Noor in Malmö. Saif & Yousef. Deine Cousins sind unsere zweite Familie.',
     'Dein Pandora-Armband wächst Charm um Charm — jede Reise ein Anhänger. Inschallah eines Tages voll wie Noors.',
-    'Hajar wollte zu deinem Geburtstag kommen. Konnte nicht. Also fahren wir zu ihr — Familie macht keine Termine.'
+    'Hajar wollte zu deinem Geburtstag kommen. Konnte nicht. Also fahren wir zu ihr — Familie macht keine Termine.',
+    'Allguth-Tankstelle. Benzin in den Diesel. Auto um die Ecke schieben. „Mama". „Mein Sohn." Zwei Wörter, ein ganzes Versprechen.',
+    'Verschwörungs-Essen mit Opa: drei Stunden, du nickst, lachst, isst Reis nach. Mama danach: „Sie ist gut. Sie ist deine."',
+    '2027 Inschallah Walima. 2028–29 Inschallah Kinder. Allah hat den Plan, wir haben einander.'
   ];
 
   /* === MUSIC TRACKS === */
@@ -2403,20 +2410,23 @@
     if (name === 'liebesbriefe') renderMaryemLetters();
   }
 
-  /* === UNSERE GESCHICHTE (Timeline) === */
+  /* === UNSERE GESCHICHTE (Timeline — chronologisch) === */
   const timelineEvents = [
     { date: '~ 2024', icon: '☕', title: 'Die Cola im Abbacos', body: 'Du als Hostess in dem kleinen Münchner Steakladen, ich am Tisch — du bringst mir eine Cola. Mein erster Satz: „Ich kenne dich vom Abbacos." Du wusstest nicht, dass dieser Moment ein ganzes Leben startet.', tag: 'Anfang' },
     { date: '~ 2024', icon: '🌟', title: 'Wieder gefunden — durch Samira', body: 'Ein paar Monate später — Samira, gemeinsame Freundin, bringt uns wieder zusammen. Ohne es zu wissen. Manche Engel haben Telefonnummern.', tag: 'Schicksal' },
     { date: '~ 2024', icon: '🏛', title: 'Draußen vorm Museum', body: 'Du fragst, was das schönste im Museum war. Ich sage: „Du bist das schönste arabische Gemälde da drinnen." Du läufst sofort zu Samira, um zu fragen, ob du richtig gehört hast. Sie sagt: „Nee, das stimmt nicht."', tag: 'Unser Moment' },
+    { date: '~ 2024', icon: '⛽', title: 'Deine Mama bei der Allguth-Tankstelle', body: 'Sie hatte aus Versehen Benzin in den Diesel getankt. Wir haben das Auto zu dritt um die Ecke geschoben — und mitten im Schieben hab ich gesagt: „Mama". Sie hat mich angeschaut: „Mein Sohn." Eine irakische Mama nennt dich nicht „mein Sohn", wenn sie nicht sicher ist.', tag: 'Familie' },
+    { date: '~ 2024–2025', icon: '🍳', title: 'Das Frühstück, das wir nicht aßen', body: 'Drei, vier Stunden über Islam, Allah, Bagdad und Kandahar geredet. Tee wurde kalt, Brot trocken — uns war es egal. „Wa ja\'ala baynakum mawaddatan wa raḥmah." An dem Morgen hab ich verstanden, was das heißt.', tag: 'Tiefe' },
     { date: '~ 2025', icon: '🏘️', title: 'Riesstraße — wir lebten Tür an Tür', body: 'Wir realisieren: wir sind beide in München geboren, im selben Hof in der Riesstraße aufgewachsen. Am gleichen Brunnen. Ohne uns je gesehen zu haben. Allah hat den Moment selbst gewählt.', tag: 'Schicksal' },
     { date: '~ 2025', icon: '🌃', title: 'Auf dem Balkon mit Noor & Monir', body: 'Sie verheiratet, zwei zuckersüße Kinder. Monir aus Kandahar wie ich, Noor irakisch wie du. „Inschallah genauso", flüsterten wir. Damals waren wir noch nicht mal verlobt.', tag: 'Wunsch' },
-    { date: '~ 2025', icon: '💎', title: 'Das Pandora-Armband', body: 'Wie Monir Noor, hab ich dir ein Pandora geschenkt. Charm um Charm — Geburtstag, ein „Ich liebe dich", eine Reise. Noors war schon voll. Deins wächst.', tag: 'Versprechen' },
+    { date: '~ 2025', icon: '💎', title: 'Das Pandora-Armband', body: 'Nach jenem Balkon-Abend hab ich dir ein Pandora geschenkt — wie Monir es Noor geschenkt hatte. Charm um Charm: Geburtstag, ein „Ich liebe dich", eine Reise. Noors war schon voll. Deins wächst.', tag: 'Versprechen' },
+    { date: '~ 2025', icon: '👨‍👩‍👦', title: 'Meine Eltern, Opa & Oma kennengelernt', body: 'Beim Familienessen — Opa fängt an über Verschwörungstheorien zu reden, eine Stunde, zwei, drei. Du nickst, lachst an den richtigen Stellen, nimmst Reis nach. Oma schöpft dir nach ohne zu fragen — die paschtunische Form von „du bleibst". Mama danach: „Sie ist gut. Sie ist deine."', tag: 'Familie' },
     { date: '10.01.2026', icon: '💍', title: 'Nikkah & Verlobung in Penzberg', body: 'In der Moschee in Penzberg, vor Allah und unseren Familien. Sommerreifen durch hohen Schnee. Du komplett crashout wegen DJ. Ich nur ein Gedanke: „Alhamdulillah, dass diese Frau meine wird."', tag: 'Hochzeit', highlight: true, easter: 'nikkah' },
-    { date: 'Jeden Tag seit 2024', icon: '☕', title: 'Alhamdulillah — kein Tag ohne dich', body: 'Seit dem ersten Tag haben wir jeden einzelnen geredet, jeden gesehen. Auch durch Streits, auch durch Tränen. Keine Sekunde haben wir an UNS gezweifelt — nur die Welt um uns hat\'s versucht. Du hast es ignoriert.', tag: 'Heute' },
-    { date: 'Bald, Inschallah', icon: '🎊', title: 'Walima — die große Hochzeit', body: 'Nach der Nikkah folgt das Fest. Disney-Bollywood-Princess-Energy, irakisches Buffet, paschtunische Tänze, alle die wir lieben in einem Saal. Datum kommt.', tag: 'Zukunft' },
+    { date: 'Jeden Tag seit 2024', icon: '🤲', title: 'Alhamdulillah — kein Tag ohne dich', body: 'Seit dem ersten Tag haben wir jeden einzelnen geredet, jeden gesehen. Auch durch Streits, auch durch Tränen. Keine Sekunde haben wir an UNS gezweifelt — nur die Welt um uns hat\'s versucht. Du hast es ignoriert.', tag: 'Heute' },
+    { date: '2027, Inschallah', icon: '🎊', title: 'Walima — die große Hochzeit', body: 'Nächstes Jahr, Inschallah. Disney-Bollywood-Princess-Energy. Iraker Buffet, paschtunische Tänze, alle die wir lieben in einem Saal. Tum Hi Ho als unser erster Tanz.', tag: 'Zukunft' },
+    { date: '~ 2028–2029, Inschallah', icon: '👶', title: 'Unsere Kinder', body: 'In drei, vier Jahren, wenn die Zeit kommt — Inschallah Kinder, die Bagdad und Kandahar in einem Atemzug nennen. Die deine Mama Tata nennen, meine Eltern Bibi & Baba. Unsere Geschichte geht weiter.', tag: 'Zukunft' },
     { date: 'Bald, Inschallah', icon: '🤲', title: 'Umrah — Hand in Hand vor der Kaaba', body: 'Unser höchstes Ziel — Tawaf gemeinsam, Sa\'i, Du\'a in Madinah Sharif. Bekleidet in Weiß, vor dem Haus Allahs. Bāraka Llāhu lana.', tag: 'Zukunft' },
-    { date: 'Inschallah', icon: '👶', title: 'Unsere Kinder', body: 'Wenn die Zeit kommt — Inschallah Kinder, die Bagdad und Kandahar in einem Atemzug nennen. Die deine Mama Oma nennen, meine Eltern Bibi & Baba. Unsere Geschichte geht weiter.', tag: 'Zukunft' },
-    { date: 'Inschallah', icon: '🏛', title: 'Unser Palast', body: 'Bald nicht mehr bei meinen Eltern. Bald in einem Zuhause, das schöner ist als der Taj Mahal. Garten wo du jede Blume aussuchst. Küche, in der wir vergessen zu kochen, weil wir reden.', tag: 'Zukunft' }
+    { date: 'Bald, Inschallah', icon: '🏛', title: 'Unser Palast', body: 'Bald nicht mehr bei meinen Eltern. Bald in einem Zuhause, das schöner ist als der Taj Mahal. Garten wo du jede Blume aussuchst. Küche, in der wir vergessen zu kochen, weil wir reden.', tag: 'Zukunft' }
   ];
 
   function renderGeschichte() {
@@ -2446,19 +2456,24 @@
   /* === PANDORA-CHARMS-VISUALISIERUNG === */
   const charms = [
     { id: 'cola', icon: '☕', label: 'Erste Cola', date: 'Abbacos', collected: true },
-    { id: 'museum', icon: '🏛', label: 'Museum', date: 'Unser Moment', collected: true },
     { id: 'samira', icon: '🌟', label: 'Samira', date: 'Wieder gefunden', collected: true },
+    { id: 'museum', icon: '🏛', label: 'Museum', date: '„Schönstes arabisches Gemälde"', collected: true },
+    { id: 'allguth', icon: '⛽', label: 'Allguth & deine Mama', date: '„Mein Sohn"', collected: true },
+    { id: 'breakfast', icon: '🍳', label: 'Frühstück', date: '4 Stunden Islam-Talk', collected: true },
+    { id: 'riesstr', icon: '🏘️', label: 'Riesstraße', date: 'Selber Hof', collected: true },
     { id: 'balkon', icon: '🌃', label: 'Balkon', date: 'Mit Noor & Monir', collected: true },
+    { id: 'pandora', icon: '💎', label: 'Pandora-Geschenk', date: 'Charm Nr. 1', collected: true },
+    { id: 'family', icon: '👨‍👩‍👦', label: 'Meine Familie', date: 'Verschwörungs-Essen', collected: true },
     { id: 'birthday', icon: '🎂', label: 'Dein Geburtstag', date: 'Erstes mit mir', collected: true },
     { id: 'love', icon: '♥', label: '„Ich liebe dich"', date: 'Erstes Mal', collected: true },
-    { id: 'nikkah', icon: '💍', label: 'Nikkah', date: '10.01.2026 Penzberg', collected: true, highlight: true },
     { id: 'darling', icon: '👵', label: '„Darling"', date: 'Oma in Malmö', collected: true },
-    { id: 'riesstr', icon: '🏘️', label: 'Riesstraße', date: 'Im selben Hof', collected: true },
-    { id: 'walima', icon: '🎊', label: 'Walima', date: 'Bald, Inschallah', collected: false },
+    { id: 'nikkah', icon: '💍', label: 'Nikkah', date: '10.01.2026 Penzberg', collected: true, highlight: true },
+
+    { id: 'walima', icon: '🎊', label: 'Walima', date: '2027 Inschallah', collected: false, highlight: true },
+    { id: 'baby', icon: '👶', label: 'Erstes Kind', date: '~ 2028–29 Inschallah', collected: false },
     { id: 'mekka', icon: '🕋', label: 'Mekka & Medina', date: 'Umrah Inschallah', collected: false },
-    { id: 'baby', icon: '👶', label: 'Erstes Kind', date: 'Inschallah', collected: false },
     { id: 'palast', icon: '🏛', label: 'Unser Palast', date: 'Inschallah', collected: false },
-    { id: 'malmoe', icon: '👨‍👩‍👧', label: 'Malmö-Trip', date: 'Bei der Familie', collected: false },
+    { id: 'malmoe', icon: '👨‍👩‍👧', label: 'Malmö-Trip', date: 'Bei Oma & Familie', collected: false },
     { id: 'berlin', icon: '🇩🇪', label: 'Berlin-Trip', date: 'Bei Hajar & Momo', collected: false },
     { id: 'paris', icon: '🗼', label: 'Paris', date: 'Honeymoon', collected: false },
     { id: 'maldives', icon: '🏝️', label: 'Malediven', date: 'Wasservilla', collected: false },
