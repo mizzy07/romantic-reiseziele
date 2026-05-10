@@ -404,7 +404,7 @@ function renderVotes() {
 
 /* PAGE: LIEBESBRIEFE */
 const letters = [
-  { title: "Habibti, Janem", body: "Ich hab dir nie erzählt, wie oft ich nachts wach lag bevor wir uns kannten — und hab gehofft, dass es jemanden gibt, der mein Lachen versteht. Du bist diese Person. Bagdad und Kabul lagen tausend Kilometer auseinander, aber dein Herz hat den Weg zu mir gefunden.", sign: "— Mika" },
+  { title: "Habibti, Janem", body: "Ich hab dir nie erzählt, wie oft ich nachts wach lag bevor wir uns kannten — und hab gehofft, dass es jemanden gibt, der mein Lachen versteht. Du bist diese Person. Bagdad und Kandahar lagen tausend Kilometer auseinander, aber dein Herz hat den Weg zu mir gefunden.", sign: "— Mika" },
   { title: "Mein Bollywood-Moment", body: "Manchmal denk ich an dich und es spielt ein Shah Rukh Khan-Lied im Kopf. Du bist mein „Tum hi ho\", mein „Suraj hua maddham\". Ich würde durch jeden Regen tanzen, wenn du am Ende stehst.", sign: "— Mika, dein SRK" },
   { title: "Disney, aber wahr", body: "Du sagst manchmal, du wärst nicht die Prinzessin im Film. Habibti, du bist die Prinzessin UND die Königin. Und ich bin froh, der Mann zu sein, der dir die Krone hochhält wenn keiner schaut.", sign: "— Dein Mika" },
   { title: "Wenn du müde bist", body: "An den Tagen, an denen alles zu viel ist — denk an diese App. Denk daran, dass irgendwo zwölf Orte warten, an denen niemand was von uns will. Nur das Meer, der Wind, und ich, der dich anschaut.", sign: "— Mika ♥" },
