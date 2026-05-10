@@ -602,7 +602,7 @@
       moodLines: [
         ['Aufwachen', 'Suite im Hôtel de Paris, Mittelmeer im Fenster'],
         ['Tagsüber', 'Yacht-Day, Schwimmen vor Cap-Ferrat'],
-        ['Abends', 'Casino Monte-Carlo, Champagner, Roulette für 100€'],
+        ['Abends', 'Casino Monte-Carlo, Champagner, ein Abend wie im Film'],
         ['Nachts', 'Rooftop, Skyline, du in einer Robe']
       ],
       mapBlurb: 'Monaco zeigt sich nur denen, die wissen, wo sie hinschauen.'
@@ -959,7 +959,7 @@
 
     { id: 'l8', featured: true, pin: 'Brief 08 · Stunden, die wie Minuten waren', title: 'Das Frühstück, das wir nie gegessen haben', body: 'Erinnerst du dich an das Frühstück, bei dem wir vergessen haben zu essen? Drei, vier Stunden lang haben wir über den Islam geredet. Über Allah. Über die Welt. Über Bagdad und Kandahar. Über unsere Eltern, unsere Träume, unsere Ängste. Der Tee wurde kalt, das Brot trocken — uns war es egal. „Wa ja\'ala baynakum mawaddatan wa raḥmah" sagt der Quran (Sure 30:21) — Und Er hat zwischen euch Liebe und Barmherzigkeit gelegt. An dem Morgen hab ich verstanden, was das heißt. Mit dir kann ich über alles reden, was wichtig ist. Und auch über alles, was nicht wichtig ist. Beides ist gleich heilig.', sign: '— dein Mika, der dir lieber zuhört als isst' },
 
-    { id: 'l9', pin: 'Brief 09 · Was du für mich bist', title: 'Du bist alles, in einer Person', body: 'Du bist meine Frau. Meine beste Freundin. Meine Sekretärin — die beste, die jemals existiert hat. Meine Party-Plannerin (jede Feier wird durch dich zur Erinnerung). Meine Hochzeitsplannerin (du hast unsere Verlobung in einen Film verwandelt, trotz Schnee und DJ-Drama). Und Insha\'Allah, sehr bald: die beste Mutter, die ein Kind sich wünschen kann. Manche Frauen sind eine Rolle. Du bist alle. Und das macht keinen einzigen Tag schwer — es macht jeden Tag reich. Alhamdulillah für dich, jeden Atemzug.', sign: '— Mika, der weiß, wen er an seiner Seite hat' },
+    { id: 'l9', pin: 'Brief 09 · Was du für mich bist', title: 'Du bist alles, in einer Person', body: 'Du bist meine Frau. Meine beste Freundin. Meine Sekretärin — die beste, die jemals existiert hat. Meine Party-Plannerin (jede Feier wird durch dich zur Erinnerung). Meine Hochzeitsplannerin (du hast unsere Verlobung in einen Film verwandelt, trotz Schnee und DJ-Drama). Und Inschallah, sehr bald: die beste Mutter, die ein Kind sich wünschen kann. Manche Frauen sind eine Rolle. Du bist alle. Und das macht keinen einzigen Tag schwer — es macht jeden Tag reich. Alhamdulillah für dich, jeden Atemzug.', sign: '— Mika, der weiß, wen er an seiner Seite hat' },
 
     { id: 'l10', pin: 'Brief 10 · Unser Zuhause', title: 'Bald in einem Palast schöner als der Taj Mahal', body: 'Aktuell wohnen wir bei meinen Eltern. Wir teilen seit Monaten ein Bett — das Schönste, das ich je geteilt habe. Aber das ist nur der Anfang. Bald baue ich dir ein Zuhause schöner als der Taj Mahal. Mit einem Garten, in dem du jede Blume aussuchen darfst. Mit einer Küche, in der wir kochen — oder vergessen zu kochen, weil wir wieder über die Welt reden. Shah Jahan hat den Taj Mahal für seine tote Frau gebaut. Ich baue dir alles für deine Lebenszeit, Habibti. Du sollst es spüren, nicht nur sehen.', sign: '— Mika, dein Architekt der Zukunft' },
 
@@ -967,7 +967,7 @@
 
     { id: 'l12', featured: true, pin: 'Brief 12 · Vor allem', title: 'Riesstraße — im selben Hof, jahrelang', body: 'Hör mir zu, Habibti. Wir haben uns am Abbacos kennengelernt — aber wir kennen uns viel länger. Wir wussten es nur nicht. Wir sind beide in München geboren. Im selben Hof aufgewachsen. Riesstraße. Am gleichen Brunnen haben wir gespielt — du auf der einen Seite, ich auf der anderen. Dieselben Treppenhäuser. Dieselben Eisverkäufer. Dieselben gemeinsamen Freunde. Und uns trotzdem nie gesehen. Allah weiß, was Er tut. Er hat uns nicht zu früh treffen lassen — Er hat gewartet, bis wir bereit waren. Bis du Frau warst, ich Mann. Bis dein Herz und meins gleichzeitig wussten, was sie wollten. Manchmal denke ich: vielleicht haben unsere Schatten sich schon damals begegnet, an dem Brunnen, an einem Sommernachmittag. Vielleicht hat das Wasser uns beide getragen, lange bevor du mir die erste Cola brachtest. „Wa khalaqnākum azwājā" — Wir haben euch als Paare erschaffen. Allah hat uns in denselben Hof gesetzt, Galbi. Er hat nur den Moment gewählt, wann wir uns sehen.', sign: '— Mika, dein Nachbar von Geburt an' },
 
-    { id: 'l13', pin: 'Brief 13 · Bagdad → München', title: 'Deine Mama, eine Königin', body: 'Janem, deine Mama. Aus Bagdad. Durch alles durchgegangen, allein für dich. Eine Frau, die das Wort „stark" zu klein wirken lässt. Sie hat dich groß gezogen mit der Tiefe des Tigris und der Geduld der Datteln. Wenn ich dich anschaue, sehe ich auch sie. Wenn ich dich liebe, ehre ich auch sie. Inshallah (so Allah will) werde ich Tag für Tag der Mann sein, der dir das gibt, was sie dir verdient hat. Und Inshallah werden wir Eltern, die so warm und treu sind, dass unsere Kinder nie verstehen müssen, was Loslassen heißt. „Al-jannatu taḥta aqdāmi l-ummahāt." — Das Paradies liegt unter den Füßen der Mütter. Bei deiner Mama liegt es schon. Bei dir wird es bald liegen.', sign: '— Mika, der deine Familie ehrt' },
+    { id: 'l13', pin: 'Brief 13 · Bagdad → München', title: 'Deine Mama, eine Königin', body: 'Janem, deine Mama. Aus Bagdad. Durch alles durchgegangen, allein für dich. Eine Frau, die das Wort „stark" zu klein wirken lässt. Sie hat dich groß gezogen mit der Tiefe des Tigris und der Geduld der Datteln. Wenn ich dich anschaue, sehe ich auch sie. Wenn ich dich liebe, ehre ich auch sie. Inschallah (so Allah will) werde ich Tag für Tag der Mann sein, der dir das gibt, was sie dir verdient hat. Und Inschallah werden wir Eltern, die so warm und treu sind, dass unsere Kinder nie verstehen müssen, was Loslassen heißt. „Al-jannatu taḥta aqdāmi l-ummahāt." — Das Paradies liegt unter den Füßen der Mütter. Bei deiner Mama liegt es schon. Bei dir wird es bald liegen.', sign: '— Mika, der deine Familie ehrt' },
 
     { id: 'l14', pin: 'Brief 14 · Geographie', title: 'Bagdad ↔ Kandahar ↔ München', body: 'Meine Eltern aus Kandahar. Deine aus Bagdad. Tausende Kilometer zwischen unseren Wurzeln — und doch hat das Schicksal uns in dieselbe deutsche Straße gelegt. Wir sind beide München-Kinder. Wir sind beide Migrationskinder. Wir sind beide das Ergebnis von Eltern, die alles riskiert haben, damit wir es leichter haben. Und unsere Liebe ist die Antwort darauf. Sie ist Bagdad und Kandahar, gemischt mit Münchner Regen. Sie ist Arabisch und Paschtu, gesprochen mit bayerischem Akzent. Habibti, wir sind eine Geschichte, die zwei Großmütter in Tränen erzählen werden. Und ich bin stolz, jeden Tag mit dir an dieser Geschichte zu schreiben.', sign: '— Mika, dein Münchner Pashtune für deine irakische Königin' },
 
@@ -1112,7 +1112,7 @@
       src: 'Hadith · An-Nasa\'i',
       ar: 'الْجَنَّةُ تَحْتَ أَقْدَامِ الْأُمَّهَاتِ',
       tr: 'Al-jannatu taḥta aqdāmi l-ummahāt.',
-      de: '„Das Paradies liegt unter den Füßen der Mütter." (Prophet ﷺ) Bald, Inshallah, gehst du auf diesem Boden — und ich werde der Mann sein, der das Paradies in deinem Schritt erkennt.'
+      de: '„Das Paradies liegt unter den Füßen der Mütter." (Prophet ﷺ) Bald, Inschallah, gehst du auf diesem Boden — und ich werde der Mann sein, der das Paradies in deinem Schritt erkennt.'
     }
   ];
 
@@ -1136,7 +1136,7 @@
     'Drei Stunden Frühstück, kein Bissen gegessen — aber satter als je zuvor. Mit dir.',
     '„Idhā aḥabba aḥadukum akhāhu fal-yu\'limhu." — Liebst du jemanden, sag\'s ihm. Maryem, jeden Tag.',
     'Bagdad zu Kandahar sind 2000 km. Du zu mir sind 0. Alhamdulillah (Lob sei Allah).',
-    'Du bist Frau, Sekretärin, Party-Plannerin, Hochzeitsplannerin. Bald Inshallah (so Allah will) Mutter. Eine Frau, hundert Geschenke.',
+    'Du bist Frau, Sekretärin, Party-Plannerin, Hochzeitsplannerin. Bald Inschallah (so Allah will) Mutter. Eine Frau, hundert Geschenke.',
     '„Idhā tazawwaja al-\'abdu fa-qad istakmala niṣfa d-dīn." — Wer heiratet, vervollständigt sein halbes Deen (seine halbe Religion). Du hast meines.',
     '„Al-jannatu taḥta aqdāmi l-ummahāt." — Das Paradies liegt unter den Füßen der Mütter. Bald gehst du darauf.',
     '„Bāraka Llāhu laka wa jama\'a baynakumā fī khayr." — Möge Allah dich segnen und euch beide im Guten vereinen. Über uns gesprochen.',
@@ -1149,7 +1149,7 @@
     'Riesstraße. Derselbe Hof. Derselbe Brunnen. Jahrelang. Ich habe deinen Schatten getroffen, bevor ich dein Gesicht kannte.',
     'Bagdad ↔ Kandahar ↔ München. Drei Städte, eine Geschichte. Meine.',
     'Wir hatten dieselben Freunde. Sind durch dieselben Treppenhäuser gerannt. Allah hat den Moment gewählt, wann wir uns endlich sehen.',
-    'Deine Mama hat dich allein groß gezogen. Inshallah werde ich der Mann, dem das niemals nochmal passiert.',
+    'Deine Mama hat dich allein groß gezogen. Inschallah werde ich der Mann, dem das niemals nochmal passiert.',
     'Deine Oma in Malmö nennt mich „Darling" — größtes Diplom, das eine irakische Großmutter geben kann.',
     'Noor in Schweden, Monir aus Kandahar wie ich — sie waren das Vorbild, wir sind jetzt die Geschichte.',
     'Hajar in Berlin. Noor in Malmö. Saif & Yousef. Deine Cousins sind unsere zweite Familie.',
@@ -1224,6 +1224,23 @@
   const $ = (s, root = document) => root.querySelector(s);
   const $$ = (s, root = document) => Array.from(root.querySelectorAll(s));
   const findDest = (id) => destinations.find(d => d.id === id);
+  const esc = (value = '') => String(value).replace(/[&<>"']/g, c => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  }[c]));
+  const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const scrollBehavior = () => prefersReducedMotion() ? 'auto' : 'smooth';
+  const imgAttrs = (src, alt = '', w = 1200, h = 800, loading = 'lazy') =>
+    `src="${esc(src)}" alt="${esc(alt)}" width="${w}" height="${h}" loading="${loading}" decoding="async"`;
+  const memoryAlt = (r = {}, index = 0) => {
+    const bits = ['Erinnerung'];
+    if (r.place) bits.push(r.place);
+    if (r.date) bits.push(fmtDate(r.date));
+    return `${bits.join(' · ')} · Bild ${index + 1}`;
+  };
 
   /* === HEART ICON === */
   const heartSVG = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
@@ -1250,9 +1267,15 @@
   function buildHero() {
     const headline = $('#heroHeadline');
     const html = ['Wohin', 'entführe', 'ich', 'dich,'];
-    headline.innerHTML = html.map((w, i) =>
-      `<span class="word" style="animation-delay:${0.4 + i * 0.18}s">${w}</span> `
-    ).join('') + `<em class="word" id="heroPetname" style="animation-delay:${0.4 + html.length * 0.18}s">${heroPetnames[0].replace(' ', '&nbsp;')}</em>`;
+    headline.innerHTML = [
+      `<span class="word" style="animation-delay:0.4s">Wohin</span>`,
+      `<span class="word" style="animation-delay:0.58s">entführe</span>`,
+      '<br class="hero-mobile-break">',
+      `<span class="word" style="animation-delay:0.76s">ich</span>`,
+      `<span class="word" style="animation-delay:0.94s">dich,</span>`,
+      '<br>',
+      `<em class="word" id="heroPetname" style="animation-delay:${0.4 + html.length * 0.18}s">${heroPetnames[0].replace(' ', '&nbsp;')}</em>`
+    ].join(' ');
 
     let i = 0;
     setInterval(() => {
@@ -1481,10 +1504,10 @@
     const wrap = $('#destinationCarousel');
     const list = filteredDests();
     wrap.innerHTML = list.map(d => `
-      <article class="dest-card" data-id="${d.id}" tabindex="0">
+      <article class="dest-card" data-id="${d.id}" tabindex="0" role="button" aria-label="${esc(d.name)} auswählen">
         <div class="dest-img-wrap">
           <button class="card-heart ${state.likes.has(d.id) ? 'is-liked' : ''}" data-heart="${d.id}" aria-label="Zu Favoriten">${heartSVG}</button>
-          <img src="${d.image}" alt="${d.name}" loading="lazy" />
+        <img ${imgAttrs(d.image, d.name, 1200, 800)} />
         </div>
         <div class="dest-info">
           <div class="dest-title-row"><h3>${d.name}</h3></div>
@@ -1497,10 +1520,18 @@
       </article>
     `).join('');
     $$('.dest-card', wrap).forEach(card => {
+      const activate = () => {
+        setCurrentDest(card.dataset.id);
+        $('#top').scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
+      };
       card.onclick = (e) => {
         if (e.target.closest('[data-heart]')) return;
-        setCurrentDest(card.dataset.id);
-        $('#top').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        activate();
+      };
+      card.onkeydown = (e) => {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        e.preventDefault();
+        activate();
       };
     });
     bindHearts(wrap);
@@ -1520,7 +1551,7 @@
     const day = d.moodLines[state.activeDay];
     const dayImage = `${d.image.split('?')[0]}?auto=format&fit=crop&w=600&q=80`;
     $('#itineraryDetails').innerHTML = `
-      <img src="${dayImage}" alt="${d.name}" loading="lazy" />
+      <img ${imgAttrs(dayImage, `${d.name} · ${day[0]}`, 600, 400)} />
       <div class="day-info">
         <h4>${day[0]} in ${d.name}</h4>
         <p>${day[1]}</p>
@@ -1553,7 +1584,7 @@
     const preview = experiences.filter(e => e.cats.includes('must') || e.cats.includes('romantic')).slice(0, 4);
     $('#experiencesPreview').innerHTML = preview.map((e, i) => `
       <article class="experience-item" data-exp-idx="${experiences.indexOf(e)}">
-        <img src="${e.img}" alt="${e.name}" loading="lazy" />
+        <img ${imgAttrs(e.img, `${e.name} · ${e.place}`, 900, 600)} />
         <div class="exp-info"><span class="exp-place">${e.place}</span><h4>${e.name}</h4></div>
       </article>
     `).join('');
@@ -1582,7 +1613,7 @@
       const tagHtml = e.cats.slice(0, 2).map(c => `<span class="exp-cat" style="color:${expCategories[c].color}">${expCategories[c].icon} ${expCategories[c].label}</span>`).join('');
       return `
         <article class="experience-item" data-exp-idx="${idx}">
-          <img src="${e.img}" alt="${e.name}" loading="lazy" />
+          <img ${imgAttrs(e.img, `${e.name} · ${e.place}`, 900, 600)} />
           <div class="exp-info">
             <div class="exp-cats">${tagHtml}</div>
             <h4>${e.name}</h4>
@@ -1608,9 +1639,9 @@
     }
     const tagHtml = e.cats.map(c => `<span class="exp-cat-pill" style="background:${expCategories[c].color}22;color:${expCategories[c].color};border-color:${expCategories[c].color}55">${expCategories[c].icon} ${expCategories[c].label}</span>`).join('');
     modal.innerHTML = `
-      <div class="exp-modal" role="dialog" aria-label="${e.name}">
+      <div class="exp-modal" role="dialog" aria-modal="true" aria-label="${esc(e.name)}">
         <button class="exp-modal-close" aria-label="Schließen">×</button>
-        <img src="${e.img}" alt="${e.name}">
+        <img ${imgAttrs(e.img, `${e.name} · ${e.place}`, 1200, 800, 'eager')}>
         <div class="exp-modal-body">
           <span class="exp-modal-place">${e.place.toUpperCase()}</span>
           <h3>${e.name}</h3>
@@ -1620,8 +1651,14 @@
       </div>
     `;
     modal.classList.add('is-open');
-    modal.onclick = (ev) => { if (ev.target === modal || ev.target.classList.contains('exp-modal-close')) modal.classList.remove('is-open'); };
-    document.addEventListener('keydown', function esc(ev){ if (ev.key === 'Escape') { modal.classList.remove('is-open'); document.removeEventListener('keydown', esc); } });
+    const closeModal = () => {
+      modal.classList.remove('is-open');
+      document.removeEventListener('keydown', onEsc);
+    };
+    const onEsc = (ev) => { if (ev.key === 'Escape') closeModal(); };
+    modal.onclick = (ev) => { if (ev.target === modal || ev.target.classList.contains('exp-modal-close')) closeModal(); };
+    document.addEventListener('keydown', onEsc);
+    $('.exp-modal-close', modal)?.focus();
   }
 
   /* === DESTINATIONS GRID === */
@@ -1631,7 +1668,7 @@
       <article class="dest-tile">
         <div class="dest-tile-img">
           <button class="card-heart ${state.likes.has(d.id) ? 'is-liked' : ''}" data-heart="${d.id}" aria-label="Zu Favoriten">${heartSVG}</button>
-          <img src="${d.image}" alt="${d.name}" loading="lazy" />
+          <img ${imgAttrs(d.image, d.name, 1200, 800)} />
         </div>
         <div class="dest-tile-body">
           <span class="region">${d.region} · ${d.country}</span>
@@ -1654,9 +1691,9 @@
     grid.innerHTML = routes.map(r => {
       const stops = r.stops.map(s => findDest(s)?.name).filter(Boolean);
       return `
-        <article class="route-card" style="background:rgba(246,236,222,0.04);border:1px solid var(--line);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow-card);transition:all 0.4s ease;">
+        <article class="route-card" style="background:rgba(246,236,222,0.04);border:1px solid var(--line);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow-card);transition:transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;">
           <div style="position:relative;aspect-ratio:21/9;overflow:hidden;">
-            <img src="${r.image}" alt="${r.title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;animation:kenBurns 22s ease-in-out infinite alternate;" />
+            <img ${imgAttrs(r.image, r.title, 1400, 600)} style="width:100%;height:100%;object-fit:cover;animation:kenBurns 22s ease-in-out infinite alternate;" />
             <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(7,3,13,0.92) 100%);"></div>
             <div style="position:absolute;left:28px;right:28px;bottom:24px;color:var(--paper);">
               <span style="font-size:11px;letter-spacing:0.16em;color:var(--gold);text-transform:uppercase;">${r.subtitle}</span>
@@ -1701,7 +1738,7 @@
       $('#comparePage').innerHTML = `
         <div class="empty-love">
           <span class="empty-ornament">${heartSVG}</span>
-          <h3>Hertz' dir mindestens zwei Orte</h3>
+          <h3>Herz dir mindestens zwei Orte</h3>
           <p>Tippe auf ein paar Herzen, dann zeige ich dir hier alles direkt nebeneinander, Janem.</p>
           <a class="empty-cta" href="#reiseziele" data-nav>Reiseziele ansehen</a>
         </div>
@@ -1723,7 +1760,7 @@
     $('#comparePage').innerHTML = `
       <div class="compare-grid" style="grid-template-columns:${cols};">
         <div class="corner"><span>Side by side</span><em>für meine Maryem</em></div>
-        ${dests.map(d => `<div class="compare-img-cell"><img src="${d.image}" alt="${d.name}" loading="lazy" /><span class="name">${d.name}</span></div>`).join('')}
+        ${dests.map(d => `<div class="compare-img-cell"><img ${imgAttrs(d.image, d.name, 900, 600)} /><span class="name">${d.name}</span></div>`).join('')}
         ${rows.map(row => `
           <div class="label">${row.label}</div>
           ${dests.map(d => `<div class="value">${row.key(d)}</div>`).join('')}
@@ -1747,7 +1784,7 @@
     const heroDest = findDest(r.stops[0]);
     $('#planTimeline').innerHTML = `
       <section class="plan-hero">
-        <img src="${r.image}" alt="${r.title}" />
+        <img ${imgAttrs(r.image, r.title, 1400, 700, 'eager')} />
         <div class="plan-hero-overlay"></div>
         <div class="plan-hero-text">
           <span>${r.subtitle}</span>
@@ -1762,7 +1799,7 @@
           <section class="plan-day">
             <div class="plan-day-tag">${d.day}<span>${d.place}</span></div>
             <article class="plan-day-card">
-              <div class="plan-day-img"><img src="${dayImage}" alt="${d.place}" loading="lazy" /></div>
+              <div class="plan-day-img"><img ${imgAttrs(dayImage, `${r.title} · ${d.place}`, 900, 600)} /></div>
               <div class="plan-day-body">
                 <h3>${d.title}</h3>
                 <p>${d.desc}</p>
@@ -1794,7 +1831,7 @@
       const d = findDest(id); if (!d) return '';
       return `
         <article class="fav-row">
-          <img src="${d.image}" alt="${d.name}" loading="lazy" />
+          <img ${imgAttrs(d.image, d.name, 900, 600)} />
           <div class="fav-body">
             <h3>${d.name} <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--gold-soft);">· ${d.country}</span></h3>
             <p>${d.summary}</p>
@@ -1860,7 +1897,7 @@
       return `
         <article class="vote-card ${isLeading ? 'is-leading' : ''}">
           <div class="vote-card-img">
-            <img src="${it.img}" alt="${it.name}" loading="lazy" />
+            <img ${imgAttrs(it.img, it.name, 900, 600)} />
             <span class="vote-kind-pill">${kindLabel}</span>
           </div>
           <div class="vote-card-body">
@@ -1988,7 +2025,7 @@
           <button class="letter-action-btn" data-speak="${l.id}" aria-label="Vorlesen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>Vorlesen</button>
           <button class="letter-action-btn" data-wa="${l.id}" aria-label="An Mama / Hajar via WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.5 0-.1-.7-1.6-.9-2.2-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4C8.7 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>WhatsApp</button>
           <button class="letter-action-btn" data-share="${l.id}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>Teilen</button>
-          <button class="letter-action-btn" onclick="window.print()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>Drucken</button>
+          <button class="letter-action-btn" data-print-letter><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>Drucken</button>
         </div>`;
     grid.innerHTML = `
       <div class="letter-book" id="letterBook" data-index="${start}">
@@ -2073,6 +2110,9 @@
       scope.querySelectorAll('[data-speak]').forEach(b => {
         b.onclick = () => speakLetter(letters.find(x => x.id === b.dataset.speak), b);
       });
+      scope.querySelectorAll('[data-print-letter]').forEach(b => {
+        b.onclick = () => window.print();
+      });
     }
     bindActions(stage);
 
@@ -2127,7 +2167,7 @@
     u.rate = 0.9;
     u.pitch = 1.05;
     u.volume = 1;
-    // Pick a German voice if available; prefer male for Mika's letters
+    // Pick a German voice if available; prefer a warm voice for Mika-Briefe.
     const pickVoice = () => {
       const voices = window.speechSynthesis.getVoices();
       const de = voices.filter(v => v.lang && v.lang.startsWith('de'));
@@ -2157,7 +2197,7 @@
           const d = findDest(id); if (!d) return '';
           return `
             <div class="candidate">
-              <img src="${d.image}" alt="" />
+              <img ${imgAttrs(d.image, d.name, 180, 120)} />
               <div class="info"><strong>${d.name}</strong><span>${d.region}</span></div>
             </div>
           `;
@@ -2171,7 +2211,7 @@
       const d = findDest(id); if (!d) return '';
       return `
         <div class="thumb-card">
-          <img src="${d.image}" alt="" />
+          <img ${imgAttrs(d.image, d.name, 220, 140)} />
           <span>${d.name}</span>
           <button class="remove-btn" data-remove="${id}" aria-label="Entfernen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
         </div>
@@ -2407,7 +2447,7 @@
       <div class="mem-bg" style="background-image:url('${bgSrc}')"></div>
       ${isVid
         ? `<video src="${r.web}" autoplay muted loop playsinline poster="${r.thumb || ''}"></video>`
-        : `<img src="${r.web}" alt="" loading="eager">`}
+        : `<img ${imgAttrs(r.web, memoryAlt(r, memIdx), 1400, 900, 'eager')}>`}
     `;
     $('#memoriesMeta').innerHTML = `
       ${r.place ? `<span class="meta-place">${r.place}</span>` : ''}
@@ -2454,7 +2494,7 @@
     const grid = $('#memoriesGrid');
     grid.innerHTML = memoriesData.records.map((r, i) => `
       <button class="mem-tile" data-mem-idx="${i}" aria-label="${r.place || 'Erinnerung'}">
-        <img src="${r.thumb || r.web}" alt="" loading="lazy">
+        <img ${imgAttrs(r.thumb || r.web, memoryAlt(r, i), 360, 360)}>
         ${r.type === 'video' ? '<span class="mem-tile-video">▶</span>' : ''}
         ${r.place ? `<span class="mem-tile-place">${r.place.split(',')[0]}</span>` : ''}
       </button>
@@ -2656,7 +2696,7 @@
       });
       const popup = `
         <div class="map-popup">
-          ${thumbUrl ? `<img src="${thumbUrl}" alt="" />` : ''}
+          ${thumbUrl ? `<img ${imgAttrs(thumbUrl, c.label || 'Unser Ort', 220, 140)} />` : ''}
           <strong>${c.label || 'Unser Ort'}</strong>
           <span>${c.count} Erinnerung${c.count === 1 ? '' : 'en'}</span>
         </div>
@@ -2763,7 +2803,7 @@
     $('#page-' + name).classList.add('is-active');
     $$('.side-nav a').forEach(a => a.classList.toggle('is-active', a.dataset.page === name));
     location.hash = '#' + name;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
     if (name === 'erinnerungen') renderMemories();
     if (name === 'karte') renderKarte();
   }
@@ -2783,6 +2823,7 @@
         e.preventDefault();
         switchPage(a.dataset.page);
         $('#sideRail').classList.remove('is-open');
+        $('#mobileMenuBtn')?.setAttribute('aria-expanded', 'false');
       };
     });
     window.addEventListener('hashchange', () => {
@@ -2798,7 +2839,14 @@
   /* === MOBILE MENU === */
   function bindMobile() {
     const btn = $('#mobileMenuBtn');
-    if (btn) btn.onclick = () => $('#sideRail').classList.toggle('is-open');
+    if (btn) {
+      btn.setAttribute('aria-expanded', 'false');
+      btn.onclick = () => {
+        const rail = $('#sideRail');
+        const open = rail.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', String(open));
+      };
+    }
   }
 
   /* === SURPRISE BUTTON === */
@@ -2808,15 +2856,16 @@
       const pick = visible[Math.floor(Math.random() * visible.length)];
       setCurrentDest(pick.id);
       burstConfetti(40, $('#surpriseBtn'));
-      $('#top').scrollIntoView({ behavior: 'smooth' });
+      $('#top').scrollIntoView({ behavior: scrollBehavior() });
     };
   }
 
   /* === CLEAR COMPARE === */
   function bindClearCompare() {
     $('#clearCompare').onclick = () => {
+      if (state.likes.size && !window.confirm('Alle Favoriten aus dem Vergleich entfernen?')) return;
       state.likes.clear();
-      state.compare = new Set(['santorini','bali','kyoto']);
+      state.compare = new Set(['santorini','kyoto','zanzibar']);
       save(); refreshAll();
     };
   }
@@ -2872,21 +2921,28 @@
     const titleEl = document.getElementById('maryemFormTitle');
     const bodyEl = document.getElementById('maryemFormBody');
     if (!save || !list) return;
-    const KEY = 'maryem_briefe_v1';
+    const KEY = 'maryem_letters_v1';
     const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } };
-    const persist = (arr) => localStorage.setItem(KEY, JSON.stringify(arr));
+    const persist = (arr) => {
+      try {
+        localStorage.setItem(KEY, JSON.stringify(arr));
+        return true;
+      } catch {
+        return false;
+      }
+    };
     const fmt = (ts) => new Date(ts).toLocaleString('de-DE', { day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit' });
     function render() {
       const arr = load();
       list.innerHTML = arr.length === 0
         ? '<p class="maryem-form-empty"><em>Noch nichts geschrieben — nur du und ein leeres Blatt.</em></p>'
-        : arr.map((l, i) => '<article class="maryem-form-card"><div class="maryem-form-card-head"><strong>' + (l.title || 'Ohne Titel') + '</strong><span>' + fmt(l.ts) + '</span></div><p>' + l.body.replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c])) + '</p><button class="maryem-form-del" data-del="' + i + '" aria-label="Löschen">×</button></article>').join('');
+        : arr.map((l, i) => '<article class="maryem-form-card"><div class="maryem-form-card-head"><strong>' + esc(l.title || 'Ohne Titel') + '</strong><span>' + fmt(l.ts) + '</span></div><p>' + esc(l.body) + '</p><button class="maryem-form-del" data-del="' + i + '" aria-label="Brief löschen">×</button></article>').join('');
       list.querySelectorAll('[data-del]').forEach(b => {
         b.onclick = () => {
           const a = load();
           a.splice(parseInt(b.dataset.del, 10), 1);
-          persist(a);
-          render();
+          if (persist(a)) render();
+          else note.textContent = 'Konnte gerade nicht speichern. Bitte versuch es nochmal.';
         };
       });
     }
@@ -2896,7 +2952,10 @@
       if (!body) { note.textContent = 'Schreib mir was, Habibti …'; note.classList.add('shake'); setTimeout(()=>note.classList.remove('shake'),500); return; }
       const arr = load();
       arr.unshift({ title: t, body, ts: Date.now() });
-      persist(arr);
+      if (!persist(arr)) {
+        note.textContent = 'Dein Gerät hat den Speicher verweigert. Der Brief bleibt sichtbar, bis du die Seite schließt.';
+        return;
+      }
       titleEl.value = ''; bodyEl.value = '';
       note.textContent = 'Gespeichert. Nur für dich, mein Herz.';
       if (typeof burstConfetti === 'function') burstConfetti(20, save);
