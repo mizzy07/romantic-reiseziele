@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Für Maryem ♥ — Wohin entführe ich dich?</title>
     <meta name="description" content="Eine Liebeserklärung in App-Form. Von Mika für Maryem. Wähle einen Ort und ich nehme dich mit." />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ef4444'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/%3E%3C/svg%3E" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0d0717" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e85a8c'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="preconnect" href="https://videos.pexels.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <!-- Floating hearts background -->
     <div class="floating-hearts" aria-hidden="true"></div>
 
+    <!-- Custom heart cursor -->
+    <svg class="heart-cursor" id="heartCursor" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+
     <!-- SRK Quote Ticker -->
-    <div class="srk-ticker" id="srkTicker" aria-live="polite"></div>
+    <div class="srk-ticker" id="srkTicker" aria-live="polite"><span class="typer" id="srkText"></span><span class="caret" aria-hidden="true"></span></div>
 
     <!-- Music Player -->
     <button class="music-toggle" id="musicToggle" aria-label="Musik">
@@ -26,17 +32,14 @@
     </button>
     <div class="music-panel is-hidden" id="musicPanel" role="dialog" aria-label="Unsere Lieder">
       <h4>Unsere Lieder ♥</h4>
-      <div class="music-tabs">
-        <button class="is-active" data-song="0">Tum Hi Ho</button>
-        <button data-song="1">Indila — Love Story</button>
-      </div>
+      <div class="music-tabs" id="musicTabs"></div>
       <div class="music-frame" id="musicFrame"></div>
       <p class="music-note">Mit Liebe via YouTube. Schließ das Fenster, um es leise zu machen.</p>
     </div>
 
     <div class="app-shell">
       <!-- LEFT SIDEBAR -->
-      <aside class="side-rail" aria-label="Navigation">
+      <aside class="side-rail" id="sideRail" aria-label="Navigation">
         <a class="brand" href="#entdecken" aria-label="Startseite">
           <span class="script-logo">Für Maryem<br />Mit Liebe</span>
           <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
@@ -49,6 +52,10 @@
           <a href="#reiseziele" data-page="reiseziele">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
             Reiseziele
+          </a>
+          <a href="#routen" data-page="routen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h12M3 18h18"></path><circle cx="20" cy="12" r="2" fill="currentColor"></circle></svg>
+            Honeymoon-Routen
           </a>
           <a href="#vergleichen" data-page="vergleichen">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
@@ -65,7 +72,7 @@
           <a href="#favoriten" data-page="favoriten" class="nav-with-badge">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
             Favoriten
-            <span class="badge" id="navFavoritesBadge">3</span>
+            <span class="badge" id="navFavoritesBadge">0</span>
           </a>
           <a href="#abstimmen" data-page="abstimmen">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
@@ -99,14 +106,16 @@
       <main id="top">
         <header class="mobile-header">
           <span class="script-logo">Für Maryem · Mit Liebe</span>
-          <button class="mobile-menu-btn" aria-label="Menü"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
         </header>
 
         <!-- ============== PAGE: ENTDECKEN ============== -->
-        <section class="page is-active" id="page-entdecken">
+        <section class="page is-active" id="page-entdecken" data-screen-label="01 Entdecken">
           <section class="hero">
-            <div class="hero-bg">
-              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1900&q=84" alt="Santorini">
+            <div class="hero-bg" id="heroBg">
+              <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1900&q=84">
+                <source src="https://videos.pexels.com/video-files/2169880/2169880-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+              </video>
               <div class="hero-overlay"></div>
               <div class="hero-sparkles" aria-hidden="true"></div>
             </div>
@@ -118,7 +127,7 @@
 
             <div class="hero-content">
               <span class="hero-eyebrow">Eine Liebeserklärung an dich, Habibti <span class="heart-text">♥</span></span>
-              <h1>Wohin entführe ich dich,<br/><em>meine Jaan?</em> <svg class="inline-heart-large" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></h1>
+              <h1 id="heroHeadline"></h1>
               <p>Zwölf Orte habe ich für uns ausgesucht &mdash; jeder einer, an dem ich neben dir aufwachen möchte. Tipp auf das Herz, das dich am meisten ruft. Den Rest mache ich. <em>Wie im Film.</em></p>
               <div class="hero-avatars">
                 <div class="avatars">
@@ -138,7 +147,7 @@
                     <button class="filter-btn" data-filter="luxuswert"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><span>Romantisch</span></button>
                     <button class="filter-btn" data-filter="strand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 18h20"></path><path d="M5 12c1-3 4-6 7-6s6 3 7 6"></path><circle cx="12" cy="6" r="1.5"></circle></svg><span>Entspannt</span></button>
                     <button class="filter-btn" data-filter="abenteuer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg><span>Abenteuer</span></button>
-                    <button class="filter-btn" data-filter="culture"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18"></path><path d="M5 21V8l7-5 7 5v13"></path><path d="M9 9h2v2H9zM13 9h2v2h-2zM9 13h2v2H9zM13 13h2v2h-2zM10 17h4v4h-4z"></path></svg><span>Kultur</span></button>
+                    <button class="filter-btn" data-filter="culture"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18"></path><path d="M5 21V8l7-5 7 5v13"></path></svg><span>Kultur</span></button>
                     <button class="filter-btn" data-filter="nature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-12a8 8 0 1 0-16 0c0 8 8 12 8 12z"></path></svg><span>Natur</span></button>
                   </div>
                 </div>
@@ -146,10 +155,10 @@
                 <div class="filter-panel">
                   <div class="panel-header">FLUGZEIT <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
                   <div class="filter-options" id="flightFilters">
-                    <button class="filter-btn is-active" data-flight="any"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>Egal</span></button>
-                    <button class="filter-btn" data-flight="short"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>0–6h</span></button>
-                    <button class="filter-btn" data-flight="medium"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>6–10h</span></button>
-                    <button class="filter-btn" data-flight="long"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>10h+</span></button>
+                    <button class="filter-btn is-active" data-flight="any"><span>Egal</span></button>
+                    <button class="filter-btn" data-flight="short"><span>0–6h</span></button>
+                    <button class="filter-btn" data-flight="medium"><span>6–10h</span></button>
+                    <button class="filter-btn" data-flight="long"><span>10h+</span></button>
                   </div>
                 </div>
               </div>
@@ -178,17 +187,10 @@
             <article class="dashboard-card itinerary-card">
               <div class="card-header">
                 <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Reiseplan-Vorschau</h3>
-                <div class="dropdown">
-                  <span id="itineraryDropdownName">Griechenland / Kreta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-                </div>
+                <div class="dropdown" id="itineraryDropdownName">Ort <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
               </div>
               <div class="itinerary-content">
-                <div class="day-tabs" id="itineraryTabs">
-                  <button class="day-tab is-active"><strong>Tag 1</strong><span>Ankommen &amp; Atmen</span></button>
-                  <button class="day-tab"><strong>Tag 2–3</strong><span>Romantik</span></button>
-                  <button class="day-tab"><strong>Tag 4–6</strong><span>Abenteuer</span></button>
-                  <button class="day-tab"><strong>Finale</strong><span>Küssen &amp; Abschied</span></button>
-                </div>
+                <div class="day-tabs" id="itineraryTabs"></div>
                 <div class="day-details" id="itineraryDetails"></div>
               </div>
             </article>
@@ -196,7 +198,7 @@
             <article class="dashboard-card mood-card">
               <div class="card-header">
                 <h3><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Stimmung</h3>
-                <span class="header-note" id="moodDestName">Griechenland</span>
+                <span class="header-note" id="moodDestName">—</span>
               </div>
               <div class="mood-content" id="moodContent"></div>
             </article>
@@ -212,17 +214,27 @@
         </section>
 
         <!-- ============== PAGE: REISEZIELE ============== -->
-        <section class="page" id="page-reiseziele">
+        <section class="page" id="page-reiseziele" data-screen-label="02 Reiseziele">
           <header class="page-header">
             <span class="page-eyebrow">Alle Orte für uns ♥</span>
             <h1>Reiseziele</h1>
-            <p>Zwölf Welten, eine Maryem. Suche dir aus, wo dein Herz tanzt.</p>
+            <p>Sechzehn Welten, eine Maryem. Suche dir aus, wo dein Herz tanzt.</p>
           </header>
           <div class="grid-12" id="destinationsGrid"></div>
         </section>
 
+        <!-- ============== PAGE: ROUTEN ============== -->
+        <section class="page" id="page-routen" data-screen-label="03 Honeymoon-Routen">
+          <header class="page-header">
+            <span class="page-eyebrow">Mehr als ein Ort</span>
+            <h1>Honeymoon-Routen</h1>
+            <p>Drei Tage hier, drei Tage dort. Ich hab dir kleine Geschichten gebaut, die zwei oder drei Welten verbinden — du wählst die Geschichte.</p>
+          </header>
+          <div class="routes-grid" id="routesGrid"></div>
+        </section>
+
         <!-- ============== PAGE: VERGLEICHEN ============== -->
-        <section class="page" id="page-vergleichen">
+        <section class="page" id="page-vergleichen" data-screen-label="04 Vergleichen">
           <header class="page-header">
             <span class="page-eyebrow">Side by side</span>
             <h1>Vergleichen</h1>
@@ -232,7 +244,7 @@
         </section>
 
         <!-- ============== PAGE: REISEPLAENE ============== -->
-        <section class="page" id="page-reiseplaene">
+        <section class="page" id="page-reiseplaene" data-screen-label="05 Reisepläne">
           <header class="page-header">
             <span class="page-eyebrow">Tag für Tag</span>
             <h1>Reisepläne</h1>
@@ -243,7 +255,7 @@
         </section>
 
         <!-- ============== PAGE: ERLEBNISSE ============== -->
-        <section class="page" id="page-erlebnisse">
+        <section class="page" id="page-erlebnisse" data-screen-label="06 Erlebnisse">
           <header class="page-header">
             <span class="page-eyebrow">Momente, die bleiben</span>
             <h1>Erlebnisse</h1>
@@ -253,7 +265,7 @@
         </section>
 
         <!-- ============== PAGE: FAVORITEN ============== -->
-        <section class="page" id="page-favoriten">
+        <section class="page" id="page-favoriten" data-screen-label="07 Favoriten">
           <header class="page-header">
             <span class="page-eyebrow">Was dein Herz mag</span>
             <h1>Favoriten</h1>
@@ -263,7 +275,7 @@
         </section>
 
         <!-- ============== PAGE: ABSTIMMEN ============== -->
-        <section class="page" id="page-abstimmen">
+        <section class="page" id="page-abstimmen" data-screen-label="08 Abstimmen">
           <header class="page-header">
             <span class="page-eyebrow">Du entscheidest, mein Herz</span>
             <h1>Abstimmen</h1>
@@ -273,7 +285,7 @@
         </section>
 
         <!-- ============== PAGE: LIEBESBRIEFE ============== -->
-        <section class="page" id="page-liebesbriefe">
+        <section class="page" id="page-liebesbriefe" data-screen-label="09 Liebesbriefe">
           <header class="page-header">
             <span class="page-eyebrow">Worte, die ich dir nie laut genug sage</span>
             <h1>Liebesbriefe</h1>
@@ -297,7 +309,7 @@
       <!-- BOTTOM STICKY BAR -->
       <section class="bottom-sticky-bar">
         <div class="shortlist-header">
-          <strong>Deine Favoriten <span class="badge" id="shortlistBadge">3</span></strong>
+          <strong>Deine Favoriten <span class="badge" id="shortlistBadge">0</span></strong>
           <span>Wähl unseren nächsten Ort</span>
         </div>
         <div class="shortlist-candidates" id="shortlistCandidates"></div>
@@ -314,7 +326,7 @@
       <!-- RIGHT SIDEBAR (COMPARE) -->
       <aside class="right-drawer">
         <div class="drawer-header">
-          <h2>VERGLEICHEN <span class="badge" id="compareBadge">3</span></h2>
+          <h2>VERGLEICHEN <span class="badge" id="compareBadge">0</span></h2>
           <button class="clear-btn" id="clearCompare">Alle entfernen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
         </div>
         <div class="compare-thumbs" id="compareThumbs"></div>
