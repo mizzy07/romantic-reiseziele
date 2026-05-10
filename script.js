@@ -1,422 +1,436 @@
+/* Für Maryem ♥ — Eine kleine Liebes-App von Mika. */
+
 const destinations = [
-  {
-    name: "Japan",
-    region: "Kyoto, Tokio, Okinawa",
-    image: "https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=1200&q=82",
-    season: "Mar – May / Sep – Nov",
-    flightTime: "12h 30m",
-    price: "€4,980",
-    tags: ["Culture", "Romance"],
-    rawTags: ["culture", "luxuswert"],
-    pitch: "Temples, Onsen, cherry blossoms and quiet beach days in Okinawa.",
-    activities: ["Onsen Spa", "Food Tour", "Temple walk", "Beach"],
-    mustDo: ["Private Onsen night", "Kyoto at sunrise", "Okinawa island hopping"],
-    romance: "Magical, elegant, unlike anything normal",
-    thrill: "City lights, temples, food, island ending",
-    costBreakdown: { flights: 1350, stay: 2200, activities: 700, food: 630, total: 4980 },
-    vibeScore: 4.5
-  },
-  {
-    name: "Thailand",
-    region: "Krabi, Koh Lanta",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=82",
-    season: "Nov – Apr",
-    flightTime: "10h 30m",
-    price: "€3,250",
-    tags: ["Beach", "Adventure"],
-    rawTags: ["strand", "abenteuer"],
-    pitch: "Honeymoon vibes: Beach, spa, boat days, night markets.",
-    activities: ["Longtail boat", "Couple Spa", "Snorkeling", "Streetfood"],
-    mustDo: ["Private boat tour", "Jungle waterfall", "Night market date"],
-    romance: "Warm, playful, sensual",
-    thrill: "Islands, scooters, Thai food",
-    costBreakdown: { flights: 1000, stay: 1400, activities: 400, food: 450, total: 3250 },
-    vibeScore: 4
-  },
-  {
-    name: "Punta Cana",
-    region: "Caribbean",
-    image: "./assets/destinations/punta-cana.jpg",
-    season: "Dec – Apr",
-    flightTime: "10h",
-    price: "€3,950",
-    tags: ["Beach", "All inclusive"],
-    rawTags: ["strand", "luxuswert"],
-    pitch: "Turquoise water, soft sand, completely uncomplicated relaxation.",
-    activities: ["Sunset dinner", "Catamaran", "Beach riding", "Spa"],
-    mustDo: ["Beach riding", "Saona Island", "Sunset Catamaran"],
-    romance: "Tropical, soft, carefree",
-    thrill: "Boats, music, Caribbean water",
-    costBreakdown: { flights: 900, stay: 2400, activities: 350, food: 300, total: 3950 },
-    vibeScore: 4
-  },
-  {
-    name: "Zanzibar",
-    region: "Tanzania",
-    image: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1200&q=82",
-    season: "Jun – Oct",
-    flightTime: "8h 30m",
-    price: "€4,300",
-    tags: ["Beach", "Safari"],
-    rawTags: ["strand", "abenteuer", "luxuswert"],
-    pitch: "White beaches, spice island vibes, optional safari.",
-    activities: ["Spice Tour", "Safari daytrip", "Dhow Sunset", "Snorkeling"],
-    mustDo: ["Dhow Sunset", "Stone Town", "Spice Tour + Safari"],
-    romance: "Exotic, warm, spicy",
-    thrill: "Safari vibes, spices, Dhow",
-    costBreakdown: { flights: 950, stay: 1800, activities: 650, food: 500, total: 3900 },
-    vibeScore: 5
-  },
-  {
-    name: "Paris",
-    region: "France",
-    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=82",
-    season: "Apr – Jun / Sep – Oct",
-    flightTime: "3h 30m",
-    price: "€2,250",
-    tags: ["Romance", "Culture"],
-    rawTags: ["luxuswert", "culture"],
-    pitch: "Classic romance, boutique hotels, Seine, art, patisserie.",
-    activities: ["Seine cruise", "Montmartre", "Fine Dining", "Museums"],
-    mustDo: ["Seine at night", "Montmartre date", "Champagne evening"],
-    romance: "Classic, elegant, cinematic",
-    thrill: "Art, rooftops, patisserie",
-    costBreakdown: { flights: 200, stay: 1200, activities: 300, food: 550, total: 2250 },
-    vibeScore: 5
-  },
-  {
-    name: "Greece / Crete",
-    region: "Greece",
-    image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=82",
-    season: "May – Oct",
-    flightTime: "3h 30m",
-    price: "€4,420",
-    tags: ["Beach", "Romance"],
-    rawTags: ["strand", "luxuswert"],
-    pitch: "Sunsets, sea & timeless romance.",
-    activities: ["Boat day", "Old-town", "Beach Club", "Sunset"],
-    mustDo: ["Boat day to bays", "Sunset taverna", "Roadtrip"],
-    romance: "Sunsets, sea, white houses",
-    thrill: "Island hopping, beach clubs",
-    costBreakdown: { flights: 860, stay: 2100, activities: 680, food: 560, total: 4420 },
-    vibeScore: 5
-  },
-  {
-    name: "Morocco",
-    region: "Marrakech coast",
-    image: "./assets/destinations/morocco.jpg",
-    season: "Sep – Nov",
-    flightTime: "3h 30m",
-    price: "€2,900",
-    tags: ["Culture", "Adventure"],
-    rawTags: ["culture", "abenteuer"],
-    pitch: "Riads, Hammam, desert, riding on the Atlantic.",
-    activities: ["Hammam", "Desert dinner", "Riding", "Souks"],
-    mustDo: ["Riad night", "Desert dinner", "Atlantic riding"],
-    romance: "Oriental, fragrant, intense",
-    thrill: "Souks, Hammam, desert",
-    costBreakdown: { flights: 400, stay: 1500, activities: 500, food: 500, total: 2900 },
-    vibeScore: 4.5
-  },
-  {
-    name: "Albania Riviera",
-    region: "Ksamil, Himare",
-    image: "./assets/destinations/albania-riviera.jpg",
-    season: "May – Sep",
-    flightTime: "2h 15m",
-    price: "€2,900",
-    tags: ["Beach", "Nature"],
-    rawTags: ["strand", "nature"],
-    pitch: "Clear water, bays, roadtrip vibes.",
-    activities: ["Bay roadtrip", "Boat", "Seafood", "Beach"],
-    mustDo: ["Ksamil bays", "Himare roadtrip", "Seafood"],
-    romance: "Young, wild, sunny",
-    thrill: "Roadtrip, bays, clear water",
-    costBreakdown: { flights: 300, stay: 1600, activities: 400, food: 600, total: 2900 },
-    vibeScore: 4
-  },
-  {
-    name: "Cape Verde",
-    region: "Sal, Boa Vista",
-    image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=82",
-    season: "Nov – Jun",
-    flightTime: "6h",
-    price: "€3,000",
-    tags: ["Beach", "Relaxing"],
-    rawTags: ["strand", "nature"],
-    pitch: "Soft Atlantic beaches and easy island calm.",
-    activities: ["Beach day", "Catamaran", "Spa", "Seafood"],
-    mustDo: ["Sunset sail", "Beach picnic", "Salt lagoon swim"],
-    romance: "Calm, sun-bleached, easy",
-    thrill: "Atlantic waves, kite spots",
-    costBreakdown: { flights: 700, stay: 1500, activities: 400, food: 400, total: 3000 },
-    vibeScore: 4
-  },
-  {
-    name: "Madeira",
-    region: "Portugal",
-    image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8334b4?auto=format&fit=crop&w=1200&q=82",
-    season: "Apr – Oct",
-    flightTime: "4h",
-    price: "€3,100",
-    tags: ["Nature", "Adventure"],
-    rawTags: ["nature", "abenteuer"],
-    pitch: "Cliffs, levadas, ocean pools and quiet luxury.",
-    activities: ["Levada hike", "Ocean pool", "Wine tasting", "Cable car"],
-    mustDo: ["Sunrise at Pico do Arieiro", "Funchal old town", "Levada walk"],
-    romance: "Misty mountains, ocean cliffs",
-    thrill: "Hikes, viewpoints, atlantic vibes",
-    costBreakdown: { flights: 500, stay: 1600, activities: 500, food: 500, total: 3100 },
-    vibeScore: 4
-  },
-  {
-    name: "Sri Lanka",
-    region: "Galle, Ella, Mirissa",
-    image: "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=1200&q=82",
-    season: "Dec – Mar",
-    flightTime: "10h",
-    price: "€4,450",
-    tags: ["Culture", "Nature", "Safari"],
-    rawTags: ["culture", "abenteuer", "nature"],
-    pitch: "Tea hills, beaches, ancient cities and gentle wildlife.",
-    activities: ["Tea-train ride", "Safari", "Surf lesson", "Temple visit"],
-    mustDo: ["Train Kandy → Ella", "Safari Yala", "Mirissa beach day"],
-    romance: "Lush, slow, soulful",
-    thrill: "Trains, jungle, surf",
-    costBreakdown: { flights: 950, stay: 2000, activities: 800, food: 700, total: 4450 },
-    vibeScore: 4.5
-  },
-  {
-    name: "Egypt Red Sea",
-    region: "Hurghada, El Gouna",
-    image: "./assets/destinations/egypt-red-sea.jpg",
-    season: "Mar – May / Sep – Nov",
-    flightTime: "4h",
-    price: "€3,150",
-    tags: ["Beach", "Snorkeling"],
-    rawTags: ["strand", "luxuswert"],
-    pitch: "Warm sea, coral reefs, palm-lined coves.",
-    activities: ["Snorkeling", "Desert tour", "Spa", "Catamaran"],
-    mustDo: ["Reef snorkel", "Sunset desert", "Lazy beach day"],
-    romance: "Warm, sun-soaked, easy",
-    thrill: "Reefs, desert, water sports",
-    costBreakdown: { flights: 500, stay: 1700, activities: 500, food: 450, total: 3150 },
-    vibeScore: 4
-  }
+  { name: "Japan", region: "Kyoto · Tokio · Okinawa", country: "Japan", image: "https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=1200&q=82", season: "März – Mai · Sept – Nov", flightTime: "12h 30m", flightBucket: "long", tags: ["Kultur", "Romantik"], rawTags: ["culture", "luxuswert"], pitch: "Kirschblüten, leise Tempel, heiße Onsen — und am Ende ein paar Strandtage auf Okinawa.", why: "Als ob wir in einem Studio Ghibli-Film leben würden. Ich seh dich schon mit Kirschblüten im Haar.", quote: "„Wo der Tee dampft, vergisst die Zeit ihr Tempo.\"", mustDo: ["Kyoto bei Sonnenaufgang", "Privater Onsen-Abend", "Okinawa-Strandtag"], days: [{ tag: "Tag 1", title: "Ankommen in Tokio", desc: "Wir landen, kuscheln im Boutique-Hotel und essen Sushi an einer winzigen Bar.", chips: ["Sushi-Bar", "Skyline-Sicht", "Ruhe"] }, { tag: "Tag 2-3", title: "Kyoto, Hand in Hand", desc: "Tempel, Bambuswald, kleine Gassen — und der Onsen am Abend.", chips: ["Bambuswald", "Privater Onsen", "Tempel"] }, { tag: "Tag 4-6", title: "Okinawa-Strände", desc: "Türkisblaues Wasser, Schnorcheln, langsame Tage am Meer.", chips: ["Strand", "Schnorcheln", "Sunset"] }, { tag: "Finale", title: "Tokio-Lichter", desc: "Eine letzte Nacht in der Stadt — Skyline, Drinks, du.", chips: ["Skyline-Bar", "Spaziergang", "Abschied"] }], vibeScore: 4.5 },
+  { name: "Thailand", region: "Krabi · Koh Lanta", country: "Thailand", image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=82", season: "Nov – Apr", flightTime: "10h 30m", flightBucket: "long", tags: ["Strand", "Abenteuer"], rawTags: ["strand", "abenteuer"], pitch: "Honeymoon-Stimmung: weiße Strände, Longtailboote, Spa und Nachtmärkte.", why: "Du, ich, ein Boot und nirgendwo zu sein. Genau das.", quote: "„Manchmal ist das Meer der einzige Ort, der laut genug ist für unsere Stille.\"", mustDo: ["Privates Boot zu den Inseln", "Dschungel-Wasserfall", "Nachtmarkt-Date"], days: [{ tag: "Tag 1", title: "Ankommen in Krabi", desc: "Transfer zum Strand, Cocktails bei Sonnenuntergang.", chips: ["Sunset", "Cocktail", "Strand"] }, { tag: "Tag 2-3", title: "Inseln aus dem Boot", desc: "Privates Longtail-Boot zu versteckten Buchten.", chips: ["Boot", "Bucht", "Schnorcheln"] }, { tag: "Tag 4-6", title: "Dschungel & Spa", desc: "Wasserfall am Morgen, Couple-Spa am Abend.", chips: ["Wasserfall", "Spa", "Massage"] }, { tag: "Finale", title: "Nachtmarkt-Abschied", desc: "Streetfood, Lichter, deine Hand in meiner.", chips: ["Streetfood", "Lichter", "Romantik"] }], vibeScore: 4 },
+  { name: "Punta Cana", region: "Dominikanische Republik", country: "Karibik", image: "./assets/destinations/punta-cana.jpg", season: "Dez – Apr", flightTime: "10h", flightBucket: "long", tags: ["Strand", "All-inclusive"], rawTags: ["strand", "luxuswert"], pitch: "Türkises Wasser, weicher Sand — komplett unkompliziertes Glück.", why: "Wir machen nichts. Wir machen alles. Wir machen uns. So.", quote: "„Karibik — wo das Meer dich umarmt wie ich.\"", mustDo: ["Reiten am Strand", "Saona Island", "Sunset-Catamaran"], days: [{ tag: "Tag 1", title: "Ankommen am Meer", desc: "Resort-Check-in, Welcome-Cocktail, erster Schritt im Sand.", chips: ["Cocktail", "Sand", "Sunset"] }, { tag: "Tag 2-3", title: "Saona Island", desc: "Bootstour zu der Insel, die aussieht wie ein Bildschirmschoner.", chips: ["Boot", "Insel", "Schwimmen"] }, { tag: "Tag 4-6", title: "Reiten & Spa", desc: "Sonnenaufgang am Strand, Pferde, am Abend Couple-Spa.", chips: ["Pferde", "Strand", "Spa"] }, { tag: "Finale", title: "Catamaran-Sunset", desc: "Letzter Abend auf dem Wasser, Champagner, Sterne.", chips: ["Champagner", "Sterne", "Wasser"] }], vibeScore: 4 },
+  { name: "Sansibar", region: "Tansania", country: "Tansania", image: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1200&q=82", season: "Jun – Okt", flightTime: "8h 30m", flightBucket: "medium", tags: ["Strand", "Safari"], rawTags: ["strand", "abenteuer", "luxuswert"], pitch: "Weiße Strände, Gewürzinsel-Vibe — und auf Wunsch Safari.", why: "Strand, Safari, Sterne. Drei S, eine Maryem.", quote: "„Wo die Gewürze duften, atmet das Herz tiefer.\"", mustDo: ["Dhow im Sonnenuntergang", "Stone Town", "Spice + Safari"], days: [{ tag: "Tag 1", title: "Ankommen in Stone Town", desc: "Spaziergang durch alte Gassen, Dachterrasse zum Sunset.", chips: ["Stone Town", "Dachterrasse", "Sunset"] }, { tag: "Tag 2-3", title: "Gewürze & Strand", desc: "Spice Tour am Vormittag, Strand am Nachmittag.", chips: ["Gewürze", "Strand", "Massage"] }, { tag: "Tag 4-6", title: "Mini-Safari", desc: "Tagesausflug zur Safari, abends zurück ans Meer.", chips: ["Safari", "Wildlife", "Lodge"] }, { tag: "Finale", title: "Dhow im Sunset", desc: "Letzte Bootstour, alter Holzsegler, Champagner.", chips: ["Dhow", "Champagner", "Sterne"] }], vibeScore: 5 },
+  { name: "Paris", region: "Frankreich", country: "Frankreich", image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=82", season: "Apr – Jun · Sept – Okt", flightTime: "1h 50m", flightBucket: "short", tags: ["Romantik", "Kultur"], rawTags: ["luxuswert", "culture"], pitch: "Klassische Romantik — Boutique-Hotels, Seine, Patisserie und Champagner.", why: "Weil ich seit immer mit dir auf der Pont Neuf stehen wollte.", quote: "„Paris ist nicht die Stadt der Liebe. Du bist es.\"", mustDo: ["Eiffelturm bei Nacht", "Montmartre-Date", "Champagner-Abend"], days: [{ tag: "Tag 1", title: "Ankommen in Paris", desc: "Boutique-Hotel im Marais, Spaziergang an der Seine.", chips: ["Marais", "Seine", "Wein"] }, { tag: "Tag 2-3", title: "Kunst & Cafés", desc: "Louvre, Orsay, Croissants in einem winzigen Café.", chips: ["Louvre", "Café", "Croissant"] }, { tag: "Tag 4-6", title: "Montmartre & Sterne", desc: "Hügel, kleine Gassen, Künstler, Wein.", chips: ["Montmartre", "Sacré-Cœur", "Wein"] }, { tag: "Finale", title: "Eiffelturm bei Nacht", desc: "Champagner, Lichter, du. Ende Film.", chips: ["Eiffelturm", "Champagner", "Nacht"] }], vibeScore: 5 },
+  { name: "Griechenland / Kreta", region: "Kreta", country: "Griechenland", image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=82", season: "Mai – Okt", flightTime: "3h 30m", flightBucket: "short", tags: ["Strand", "Romantik"], rawTags: ["strand", "luxuswert"], pitch: "Sonnenuntergänge, Meer & zeitlose Romantik — weiße Häuser, blaue Kuppeln.", why: "Ich versprech dir den Sonnenuntergang, wenn du mir den Tag versprichst.", quote: "„Die Ägäis trägt die Farbe deiner Augen.\"", mustDo: ["Bootstag in versteckten Buchten", "Sunset-Taverne", "Roadtrip"], days: [{ tag: "Tag 1", title: "Ankommen in Heraklion", desc: "Privater Transfer zum Boutique-Hotel am Meer. Sunset-Dinner.", chips: ["Privater Transfer", "Sunset-Dinner", "Boutique-Hotel"] }, { tag: "Tag 2-3", title: "Altstadt & Sunsets", desc: "Spaziergang durch die alten Gassen, kleine Tavernen, blaue Kuppeln.", chips: ["Altstadt", "Tavernen", "Sunset"] }, { tag: "Tag 4-6", title: "Bootstag", desc: "Privates Boot, versteckte Buchten, Picknick auf dem Wasser.", chips: ["Boot", "Bucht", "Picknick"] }, { tag: "Finale", title: "Sunset & Abschied", desc: "Letzte Sunset-Taverne, Wein, alles in deinen Augen.", chips: ["Sunset", "Wein", "Abschied"] }], vibeScore: 5 },
+  { name: "Marokko", region: "Marrakesch · Atlantikküste", country: "Marokko", image: "./assets/destinations/morocco.jpg", season: "Sep – Nov", flightTime: "3h 30m", flightBucket: "short", tags: ["Kultur", "Abenteuer"], rawTags: ["culture", "abenteuer"], pitch: "Riads, Hammam, Wüste — und Reiten am Atlantik.", why: "Tausendundeine Nacht, aber wir sind die Geschichte.", quote: "„In der Wüste hört man das Herz deutlicher.\"", mustDo: ["Riad-Abend", "Wüsten-Dinner", "Reiten am Atlantik"], days: [{ tag: "Tag 1", title: "Riad in Marrakesch", desc: "Ankommen, Innenhof, Tee, Stille mitten im Trubel.", chips: ["Riad", "Tee", "Innenhof"] }, { tag: "Tag 2-3", title: "Souks & Hammam", desc: "Verlauf dich mit mir in den Souks. Abends Hammam.", chips: ["Souks", "Hammam", "Tee"] }, { tag: "Tag 4-6", title: "Wüste", desc: "Fahrt in die Wüste, Dinner unter Sternen, Camp.", chips: ["Wüste", "Sterne", "Camp"] }, { tag: "Finale", title: "Atlantik & Pferde", desc: "An der Küste reiten, Wellen, Salz, Sonnenuntergang.", chips: ["Atlantik", "Pferde", "Sunset"] }], vibeScore: 4.5 },
+  { name: "Albanische Riviera", region: "Ksamil · Himare", country: "Albanien", image: "./assets/destinations/albania-riviera.jpg", season: "Mai – Sept", flightTime: "2h 15m", flightBucket: "short", tags: ["Strand", "Natur"], rawTags: ["strand", "nature"], pitch: "Klares Wasser, Buchten, Roadtrip-Vibe.", why: "Wenig Plan, viel wir. Wie früher, nur besser.", quote: "„Manche Buchten sind so still, dass man Liebe hört.\"", mustDo: ["Ksamil-Buchten", "Himare-Roadtrip", "Seafood am Hafen"], days: [{ tag: "Tag 1", title: "Ankommen in Saranda", desc: "Mietwagen, Küstenstraße, erste Bucht.", chips: ["Roadtrip", "Bucht", "Sunset"] }, { tag: "Tag 2-3", title: "Ksamil-Inseln", desc: "Klares Wasser, Schwimmen, frische Meeresfrüchte.", chips: ["Inseln", "Schwimmen", "Seafood"] }, { tag: "Tag 4-6", title: "Himare-Küste", desc: "Weiterfahrt nach Norden, versteckte Strände, Tavernen.", chips: ["Strände", "Tavernen", "Klippen"] }, { tag: "Finale", title: "Hafen-Abend", desc: "Frischer Fisch, lokaler Wein, am Hafen.", chips: ["Hafen", "Fisch", "Wein"] }], vibeScore: 4 },
+  { name: "Kap Verde", region: "Sal · Boa Vista", country: "Kap Verde", image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=82", season: "Nov – Jun", flightTime: "6h", flightBucket: "medium", tags: ["Strand", "Entspannt"], rawTags: ["strand", "nature"], pitch: "Atlantik-Strände, Insel-Ruhe, Salz in der Luft.", why: "Hier hat das Meer kein Ende. Wir auch nicht.", quote: "„Salz, Sonne, deine Hand. Das reicht.\"", mustDo: ["Sunset-Sail", "Strand-Picknick", "Salz-Lagune"], days: [{ tag: "Tag 1", title: "Ankommen auf Sal", desc: "Resort am Meer, Welcome-Drink, Sand zwischen den Zehen.", chips: ["Resort", "Welcome", "Sand"] }, { tag: "Tag 2-3", title: "Strand-Tage", desc: "Faulenzen, schwimmen, lesen, du.", chips: ["Strand", "Buch", "Schwimmen"] }, { tag: "Tag 4-6", title: "Catamaran & Spa", desc: "Bootstour bei Sunset, am nächsten Tag Spa.", chips: ["Boot", "Sunset", "Spa"] }, { tag: "Finale", title: "Salz-Lagune", desc: "Schweben in der Lagune, Sand, Sonne.", chips: ["Lagune", "Schweben", "Sonne"] }], vibeScore: 4 },
+  { name: "Madeira", region: "Portugal", country: "Portugal", image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8334b4?auto=format&fit=crop&w=1200&q=82", season: "Apr – Okt", flightTime: "4h", flightBucket: "short", tags: ["Natur", "Abenteuer"], rawTags: ["nature", "abenteuer"], pitch: "Klippen, Levadas, Ozean-Pools — leise Eleganz im Atlantik.", why: "Ein Ort, an dem die Berge sich ins Meer verlieben.", quote: "„Jeder Pfad eine Geschichte, jede Aussicht ein Heiratsantrag.\"", mustDo: ["Sonnenaufgang Pico do Arieiro", "Funchal Altstadt", "Levada-Walk"], days: [{ tag: "Tag 1", title: "Funchal Altstadt", desc: "Bunte Türen, Wein, Aussicht auf den Hafen.", chips: ["Altstadt", "Wein", "Hafen"] }, { tag: "Tag 2-3", title: "Levada-Walks", desc: "Sanfte Wanderungen entlang der Wasserkanäle, Lorbeerwald.", chips: ["Levada", "Wasserfall", "Lorbeerwald"] }, { tag: "Tag 4-6", title: "Ozean-Pools", desc: "Schwimmen in natürlichen Pools, Atlantik direkt daneben.", chips: ["Ozean", "Pool", "Sunset"] }, { tag: "Finale", title: "Pico do Arieiro", desc: "Sonnenaufgang über den Wolken. Stille. Du.", chips: ["Sunrise", "Wolken", "Gipfel"] }], vibeScore: 4 },
+  { name: "Sri Lanka", region: "Galle · Ella · Mirissa", country: "Sri Lanka", image: "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=1200&q=82", season: "Dez – März", flightTime: "10h", flightBucket: "long", tags: ["Kultur", "Natur"], rawTags: ["culture", "abenteuer", "nature"], pitch: "Tee-Hügel, Strände, alte Städte und sanfte Wildnis.", why: "Bollywood-Tea-Train. Du am Fenster. Wind im Haar.", quote: "„Der Zug fährt langsam genug, dass man verlieben kann.\"", mustDo: ["Train Kandy → Ella", "Safari Yala", "Mirissa Beach"], days: [{ tag: "Tag 1", title: "Galle Old Town", desc: "Koloniale Mauern, kleine Boutiquen, Sunset auf der Mauer.", chips: ["Altstadt", "Boutique", "Sunset"] }, { tag: "Tag 2-3", title: "Tea-Train Kandy → Ella", desc: "Eine der schönsten Zugfahrten der Welt. Mit dir doppelt.", chips: ["Zug", "Tee", "Berge"] }, { tag: "Tag 4-6", title: "Safari Yala", desc: "Leoparden, Elefanten, Vögel. Lodge im Busch.", chips: ["Safari", "Lodge", "Wildlife"] }, { tag: "Finale", title: "Mirissa Beach", desc: "Surfen lernen, Strand, Kokoswasser. Süßes Ende.", chips: ["Surfen", "Strand", "Kokos"] }], vibeScore: 4.5 },
+  { name: "Ägypten Rotes Meer", region: "Hurghada · El Gouna", country: "Ägypten", image: "./assets/destinations/egypt-red-sea.jpg", season: "März – Mai · Sep – Nov", flightTime: "4h", flightBucket: "short", tags: ["Strand", "Schnorcheln"], rawTags: ["strand", "luxuswert"], pitch: "Warmes Meer, Korallenriffe, palmengesäumte Buchten.", why: "Arabische Wärme, ein bisschen Heimatnähe — und Korallen.", quote: "„Das Rote Meer ist warm, weil ich an dich denke.\"", mustDo: ["Riff schnorcheln", "Wüsten-Sunset", "Strand-Tag"], days: [{ tag: "Tag 1", title: "El Gouna Lagunen", desc: "Boutique-Resort an der Lagune, abends Cocktails am Wasser.", chips: ["Lagune", "Resort", "Cocktail"] }, { tag: "Tag 2-3", title: "Riff-Schnorcheln", desc: "Boot raus, Korallen, Fische in allen Farben.", chips: ["Boot", "Korallen", "Fische"] }, { tag: "Tag 4-6", title: "Wüsten-Tour", desc: "Quad, Sterne, Beduinen-Tee. Ein anderer Planet.", chips: ["Quad", "Sterne", "Tee"] }, { tag: "Finale", title: "Catamaran", desc: "Letzter Tag auf dem Wasser, Sunset, du.", chips: ["Catamaran", "Sunset", "Champagner"] }], vibeScore: 4 }
 ];
 
-const carousel = document.getElementById('destinationCarousel');
-const heroSummary = document.getElementById('heroSummary');
-const itineraryDetails = document.getElementById('itineraryDetails');
-const itineraryDropdownName = document.getElementById('itineraryDropdownName');
-const budgetBars = document.getElementById('budgetBars');
-const shortlistCandidates = document.getElementById('shortlistCandidates');
-const shortlistBadge = document.getElementById('shortlistBadge');
-const compareThumbs = document.getElementById('compareThumbs');
-const compareTable = document.getElementById('compareTable');
-const compareBadge = document.getElementById('compareBadge');
-
-const liked = new Set(["Greece / Crete", "Japan", "Zanzibar"]);
+const liked = new Set(["Griechenland / Kreta", "Japan", "Sansibar"]);
 let currentVibeFilter = "all";
-let activeDestination = destinations.find(d => d.name === "Greece / Crete") || destinations[0];
+let currentFlightFilter = "any";
+let activeDestination = destinations.find(d => d.name === "Griechenland / Kreta") || destinations[0];
+let activeDayIndex = 0;
+let activePlanIndex = 0;
 
-// Vibe Filters
-document.querySelectorAll('#vibeFilters .filter-btn').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    document.querySelectorAll('#vibeFilters .filter-btn').forEach(b => b.classList.remove('is-active'));
-    e.currentTarget.classList.add('is-active');
-    currentVibeFilter = e.currentTarget.dataset.filter || "all";
-    renderCarousel();
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* ROUTER */
+function navigateTo(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('is-active'));
+  const target = document.getElementById('page-' + page);
+  if (target) target.classList.add('is-active');
+  document.querySelectorAll('.side-nav a').forEach(a => {
+    a.classList.toggle('is-active', a.dataset.page === page);
   });
+  if (page === 'reiseziele') renderDestinationsGrid();
+  if (page === 'vergleichen') renderComparePage();
+  if (page === 'reiseplaene') renderPlans();
+  if (page === 'erlebnisse') renderAllExperiences();
+  if (page === 'favoriten') renderFavorites();
+  if (page === 'abstimmen') renderVotes();
+  if (page === 'liebesbriefe') renderLetters();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function readPageFromHash() { return (location.hash || '#entdecken').replace('#', '') || 'entdecken'; }
+window.addEventListener('hashchange', () => navigateTo(readPageFromHash()));
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('[data-nav], [data-page]');
+  if (!a) return;
+  const href = a.getAttribute('href');
+  if (href && href.startsWith('#')) { e.preventDefault(); location.hash = href; }
 });
 
-function renderCarousel() {
-  carousel.innerHTML = "";
-  
-  const filtered = destinations.filter(d => currentVibeFilter === "all" || d.rawTags.includes(currentVibeFilter));
-  
-  filtered.forEach((dest, index) => {
-    const isLiked = liked.has(dest.name);
-    const card = document.createElement('div');
-    card.className = 'dest-card';
-    card.innerHTML = `
-      <div class="dest-img-wrap">
-        <img src="${dest.image}" alt="${dest.name}" loading="${index < 3 ? 'eager' : 'lazy'}">
-        <button class="card-heart ${isLiked ? 'is-liked' : ''}" data-name="${dest.name}">
-          <svg viewBox="0 0 24 24" fill="${isLiked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-          </svg>
-        </button>
-      </div>
-      <div class="dest-info">
-        <div class="dest-title-row">
-          <h3>${dest.name}</h3>
-          <span class="dest-price">${dest.price}</span>
-        </div>
-        <span class="dest-tags">${dest.tags.join(', ')}</span>
-        <div class="dest-meta">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          ${dest.flightTime}
-        </div>
-      </div>
-    `;
-    
-    card.querySelector('.card-heart').addEventListener('click', (e) => {
-      e.stopPropagation();
-      toggleLike(dest.name);
+/* FLOATING HEARTS */
+function spawnFloatingHearts(n) {
+  const wrap = document.querySelector('.floating-hearts');
+  if (!wrap) return;
+  for (let i = 0; i < n; i++) {
+    const s = document.createElement('span');
+    s.textContent = '♥';
+    s.style.left = (Math.random() * 100) + '%';
+    s.style.fontSize = (16 + Math.random() * 24) + 'px';
+    s.style.animationDuration = (14 + Math.random() * 18) + 's';
+    s.style.animationDelay = (-Math.random() * 18) + 's';
+    s.style.color = ['rgba(236,72,153,0.10)', 'rgba(239,68,68,0.10)', 'rgba(212,168,67,0.12)'][i % 3];
+    wrap.appendChild(s);
+  }
+}
+function burstHearts(x, y) {
+  for (let i = 0; i < 8; i++) {
+    const h = document.createElement('span');
+    h.textContent = '♥';
+    h.style.cssText = 'position:fixed;left:'+x+'px;top:'+y+'px;z-index:9999;color:hsl('+(340+Math.random()*30)+',80%,60%);font-size:'+(14+Math.random()*12)+'px;pointer-events:none;transition:transform 1s ease-out, opacity 1s ease-out;';
+    document.body.appendChild(h);
+    requestAnimationFrame(() => {
+      const angle = (i / 8) * Math.PI * 2;
+      const r = 60 + Math.random() * 40;
+      h.style.transform = 'translate('+(Math.cos(angle)*r)+'px,'+(Math.sin(angle)*r-30)+'px) scale('+(0.5+Math.random())+')';
+      h.style.opacity = '0';
     });
-    
-    card.addEventListener('mouseenter', () => setActiveDestination(dest));
-    
-    carousel.appendChild(card);
+    setTimeout(() => h.remove(), 1100);
+  }
+}
+
+/* FILTERS */
+function bindFilters() {
+  document.querySelectorAll('#vibeFilters .filter-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('#vibeFilters .filter-btn').forEach(b => b.classList.remove('is-active'));
+      e.currentTarget.classList.add('is-active');
+      currentVibeFilter = e.currentTarget.dataset.filter || "all";
+      renderCarousel();
+    });
+  });
+  document.querySelectorAll('#flightFilters .filter-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('#flightFilters .filter-btn').forEach(b => b.classList.remove('is-active'));
+      e.currentTarget.classList.add('is-active');
+      currentFlightFilter = e.currentTarget.dataset.flight || "any";
+      renderCarousel();
+    });
+  });
+}
+function getFiltered() {
+  return destinations.filter(d => {
+    if (currentVibeFilter !== "all" && !d.rawTags.includes(currentVibeFilter)) return false;
+    if (currentFlightFilter !== "any" && d.flightBucket !== currentFlightFilter) return false;
+    return true;
+  });
+}
+
+/* CAROUSEL */
+const heartPath = 'M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z';
+function heartSvg(filled) { return '<svg viewBox="0 0 24 24" fill="'+(filled?'currentColor':'none')+'" stroke="currentColor" stroke-width="2"><path d="'+heartPath+'"></path></svg>'; }
+
+function renderCarousel() {
+  const carousel = $('destinationCarousel');
+  const filtered = getFiltered();
+  if (filtered.length === 0) {
+    carousel.innerHTML = '<div style="padding:40px;color:var(--muted);font-style:italic;font-family:Cormorant Garamond,serif;font-size:18px;">Keine Orte für diese Wahl. Probier einen anderen Vibe.</div>';
+    return;
+  }
+  carousel.innerHTML = filtered.map((dest, index) => {
+    const isLiked = liked.has(dest.name);
+    return '<div class="dest-card" data-name="'+esc(dest.name)+'">'
+      + '<div class="dest-img-wrap">'
+      + '<img src="'+esc(dest.image)+'" alt="'+esc(dest.name)+'" loading="'+(index<4?'eager':'lazy')+'">'
+      + '<button class="card-heart '+(isLiked?'is-liked':'')+'" data-heart="'+esc(dest.name)+'" aria-label="Zu Favoriten">'+heartSvg(isLiked)+'</button>'
+      + '</div>'
+      + '<div class="dest-info">'
+      + '<div class="dest-title-row"><h3>'+esc(dest.name)+'</h3></div>'
+      + '<span class="dest-tags">'+esc(dest.tags.join(' · '))+'</span>'
+      + '<div class="dest-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> '+esc(dest.flightTime)+'</div>'
+      + '</div></div>';
+  }).join('');
+  carousel.querySelectorAll('[data-heart]').forEach(b => {
+    b.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const name = b.dataset.heart;
+      if (!liked.has(name)) { const r = b.getBoundingClientRect(); burstHearts(r.left + r.width/2, r.top + r.height/2); }
+      toggleLike(name);
+    });
+  });
+  carousel.querySelectorAll('.dest-card').forEach(c => {
+    const dest = destinations.find(d => d.name === c.dataset.name);
+    c.addEventListener('mouseenter', () => setActiveDestination(dest));
+    c.addEventListener('click', () => setActiveDestination(dest));
   });
 }
 
 function toggleLike(name) {
-  if (liked.has(name)) {
-    liked.delete(name);
-  } else {
-    liked.add(name);
-  }
+  if (liked.has(name)) liked.delete(name); else liked.add(name);
   renderCarousel();
   renderShortlist();
-  renderCompare();
+  renderCompareDrawer();
+  $('navFavoritesBadge').textContent = liked.size;
+  if ($('page-favoriten').classList.contains('is-active')) renderFavorites();
+  if ($('page-vergleichen').classList.contains('is-active')) renderComparePage();
+  if ($('page-abstimmen').classList.contains('is-active')) renderVotes();
+  if ($('page-reiseziele').classList.contains('is-active')) renderDestinationsGrid();
 }
 
 function setActiveDestination(dest) {
   activeDestination = dest;
-  
-  // Update Hero Summary
-  heroSummary.innerHTML = `
-    <div class="summary-content">
-      <span class="region-label">${dest.name.toUpperCase()}</span>
-      <h2>${dest.pitch}</h2>
-      <button class="primary-action-btn">View this destination <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
-    </div>
-    <div class="pagination">
-      <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></button>
-      <span>1 / ${destinations.length}</span>
-      <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
-    </div>
-  `;
-  
-  // Update Itinerary
-  itineraryDropdownName.innerHTML = `${dest.name} <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
-  itineraryDetails.innerHTML = `
-    <img src="${dest.image}" alt="${dest.name}">
-    <div class="day-info">
-      <h4>Day 1 – Arrival & settle in</h4>
-      <p>Land in ${dest.region} and enjoy a private transfer. Unwind and toast to the adventure ahead.</p>
-      <ul class="day-highlights">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path></svg> Private transfer</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle></svg> Sunset dinner</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg> Boutique stay</li>
-      </ul>
-      <div class="day-cost">
-        <span>Estimated cost for day</span>
-        <strong>€${Math.round(dest.costBreakdown.stay / 7 + 100)}</strong>
-      </div>
-    </div>
-  `;
+  activeDayIndex = 0;
+  renderHeroSummary();
+  renderItineraryPreview();
+  renderMood();
+  renderExperiencesPreview();
 }
 
+/* HERO SUMMARY */
+function renderHeroSummary() {
+  const idx = destinations.findIndex(d => d.name === activeDestination.name);
+  $('heroSummary').innerHTML =
+    '<div class="summary-content">'
+    + '<span class="region-label">'+esc(activeDestination.country)+'</span>'
+    + '<h2>'+esc(activeDestination.pitch)+'</h2>'
+    + '<a class="primary-action-btn" href="#reiseziele" data-nav>Diesen Ort ansehen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>'
+    + '</div>'
+    + '<div class="pagination">'
+    + '<button data-prev><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>'
+    + '<span>'+(idx+1)+' / '+destinations.length+'</span>'
+    + '<button data-next><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>'
+    + '</div>';
+  $('heroSummary').querySelector('[data-prev]').addEventListener('click', () => {
+    setActiveDestination(destinations[(idx - 1 + destinations.length) % destinations.length]);
+  });
+  $('heroSummary').querySelector('[data-next]').addEventListener('click', () => {
+    setActiveDestination(destinations[(idx + 1) % destinations.length]);
+  });
+}
+
+/* ITINERARY PREVIEW */
+function renderItineraryPreview() {
+  $('itineraryDropdownName').innerHTML = esc(activeDestination.name) + ' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+  const tabs = $('itineraryTabs');
+  tabs.innerHTML = activeDestination.days.map((d, i) =>
+    '<button class="day-tab '+(i===activeDayIndex?'is-active':'')+'" data-day="'+i+'"><strong>'+esc(d.tag)+'</strong><span>'+esc(d.title.split(' ').slice(0,2).join(' '))+'</span></button>'
+  ).join('');
+  tabs.querySelectorAll('.day-tab').forEach(b => {
+    b.addEventListener('click', () => { activeDayIndex = parseInt(b.dataset.day, 10); renderItineraryPreview(); });
+  });
+  const day = activeDestination.days[activeDayIndex];
+  $('itineraryDetails').innerHTML =
+    '<img src="'+esc(activeDestination.image)+'" alt="'+esc(activeDestination.name)+'">'
+    + '<div class="day-info">'
+    + '<h4>'+esc(day.tag)+' – '+esc(day.title)+'</h4>'
+    + '<p>'+esc(day.desc)+'</p>'
+    + '<ul class="day-highlights">'+day.chips.map(c => '<li>'+heartSvg(true)+' '+esc(c)+'</li>').join('')+'</ul>'
+    + '<div class="day-cost"><span>Beste Reisezeit</span><strong>'+esc(activeDestination.season)+'</strong></div>'
+    + '</div>';
+}
+
+/* MOOD */
+function renderMood() {
+  $('moodDestName').textContent = activeDestination.country;
+  $('moodContent').innerHTML =
+    '<div class="mood-line"><div class="mood-icon">'+heartSvg(true)+'</div><div class="mood-text"><strong>Warum '+esc(activeDestination.name)+'</strong><span>'+esc(activeDestination.why)+'</span></div></div>'
+    + '<div class="mood-line"><div class="mood-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div><div class="mood-text"><strong>Was wir machen</strong><span>'+esc(activeDestination.mustDo.join(' · '))+'</span></div></div>'
+    + '<div class="mood-quote">'+esc(activeDestination.quote)+'</div>';
+}
+
+/* EXPERIENCES */
+const experiencesPool = [
+  { name: "Bootstag", place: "Griechenland", img: "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=600&q=80" },
+  { name: "Sunset-Dinner", place: "Paris", img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" },
+  { name: "Hammam", place: "Marokko", img: "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&q=80" },
+  { name: "Schnorcheln", place: "Ägypten", img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" },
+  { name: "Tee-Train", place: "Sri Lanka", img: "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=80" },
+  { name: "Onsen", place: "Japan", img: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=600&q=80" },
+  { name: "Reiten am Strand", place: "Marokko", img: "https://images.unsplash.com/photo-1517840933437-c41356892b35?auto=format&fit=crop&w=600&q=80" },
+  { name: "Levada-Walk", place: "Madeira", img: "https://images.unsplash.com/photo-1590523741831-ab7e8b8334b4?auto=format&fit=crop&w=600&q=80" },
+  { name: "Wüsten-Sterne", place: "Marokko", img: "https://images.unsplash.com/photo-1548883354-7622dd811559?auto=format&fit=crop&w=600&q=80" },
+  { name: "Catamaran-Sunset", place: "Karibik", img: "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=600&q=80" },
+  { name: "Altstadt-Spaziergang", place: "Kreta", img: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80" },
+  { name: "Safari-Tag", place: "Sansibar", img: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=600&q=80" }
+];
+function renderExperiencesPreview() {
+  $('experiencesPreview').innerHTML = experiencesPool.slice(0, 4).map(e =>
+    '<div class="experience-item"><img src="'+esc(e.img)+'" alt="'+esc(e.name)+'" loading="lazy"><div class="exp-info"><h4>'+esc(e.name)+'</h4><span class="exp-place">'+esc(e.place)+'</span></div></div>'
+  ).join('');
+}
+function renderAllExperiences() {
+  $('experiencesAll').innerHTML = experiencesPool.map(e =>
+    '<div class="experience-item"><img src="'+esc(e.img)+'" alt="'+esc(e.name)+'" loading="lazy"><div class="exp-info"><h4>'+esc(e.name)+'</h4><span class="exp-place">'+esc(e.place)+'</span></div></div>'
+  ).join('');
+}
+
+/* SHORTLIST + DRAWER */
 function renderShortlist() {
-  const count = liked.size;
-  shortlistBadge.textContent = count;
-  compareBadge.textContent = count;
-  
+  $('shortlistBadge').textContent = liked.size;
+  $('compareBadge').textContent = liked.size;
   const picks = destinations.filter(d => liked.has(d.name)).slice(0, 4);
-  shortlistCandidates.innerHTML = picks.map(d => `
-    <div class="candidate">
-      <img src="${d.image}" alt="${d.name}">
-      <div class="info">
-        <strong>${d.name}</strong>
-        <span>Our pick</span>
-      </div>
-      <button class="vote-btn voted" onclick="toggleLike('${d.name}')">
-        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 
-        Vote
-      </button>
-    </div>
-  `).join('');
+  $('shortlistCandidates').innerHTML = picks.map(d =>
+    '<div class="candidate"><img src="'+esc(d.image)+'" alt="'+esc(d.name)+'"><div class="info"><strong>'+esc(d.name)+'</strong><span>Unser Pick</span></div><button class="vote-btn voted" data-vote-name="'+esc(d.name)+'">'+heartSvg(true)+' Voten</button></div>'
+  ).join('');
+  $('shortlistCandidates').querySelectorAll('[data-vote-name]').forEach(b => {
+    b.addEventListener('click', (e) => { e.preventDefault(); location.hash = '#abstimmen'; });
+  });
 }
-
-function renderCompare() {
+function renderCompareDrawer() {
   const picks = destinations.filter(d => liked.has(d.name)).slice(0, 3);
-  
-  // Render Thumbs
-  compareThumbs.innerHTML = picks.map(d => `
-    <div class="thumb-card">
-      <button class="remove-btn" onclick="toggleLike('${d.name}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
-      <img src="${d.image}" alt="${d.name}">
-      <span>${d.name}</span>
-    </div>
-  `).join('');
-
+  $('compareThumbs').innerHTML = picks.map(d =>
+    '<div class="thumb-card"><button class="remove-btn" data-remove="'+esc(d.name)+'" aria-label="Entfernen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button><img src="'+esc(d.image)+'" alt="'+esc(d.name)+'"><span>'+esc(d.name)+'</span></div>'
+  ).join('');
+  $('compareThumbs').querySelectorAll('[data-remove]').forEach(b => {
+    b.addEventListener('click', (e) => { e.stopPropagation(); toggleLike(b.dataset.remove); });
+  });
   if (picks.length === 0) {
-    compareTable.innerHTML = `<p style="padding:20px;text-align:center;color:var(--muted)">No destinations selected for comparison.</p>`;
-    budgetBars.innerHTML = '';
+    $('compareTable').innerHTML = '<p style="padding:20px;text-align:center;color:var(--muted);font-style:italic;font-family:Cormorant Garamond,serif;">Noch keine Orte ausgewählt.</p>';
     return;
   }
+  const row = (label, fn) => '<div class="table-row"><span class="row-label">'+label+'</span>'+picks.map(p => '<span>'+fn(p)+'</span>').join('')+'</div>';
+  $('compareTable').innerHTML =
+    row('Region', d => esc(d.country))
+    + row('Beste Zeit', d => esc(d.season))
+    + row('Flugzeit', d => esc(d.flightTime))
+    + '<div class="table-row"><span class="row-label">Vibe-Match</span>' + picks.map(d => {
+      const full = Math.floor(d.vibeScore);
+      const half = d.vibeScore % 1 !== 0;
+      const empty = 5 - full - (half ? 1 : 0);
+      return '<span class="hearts-score">'+'♥'.repeat(full)+(half?'♥':'')+'<span class="empty-heart">'+'♥'.repeat(empty)+'</span></span>';
+    }).join('') + '</div>';
+}
+$('clearCompare').addEventListener('click', () => {
+  liked.clear();
+  renderShortlist(); renderCompareDrawer(); renderCarousel();
+  $('navFavoritesBadge').textContent = 0;
+});
 
-  // Render Table
-  const renderRow = (label, key, isHearts = false) => {
-    return `
-      <div class="table-row">
-        <span class="row-label">${label}</span>
-        ${picks.map(d => {
-          if (isHearts) {
-            const full = Math.floor(d.vibeScore);
-            const half = d.vibeScore % 1 !== 0;
-            const empty = 5 - full - (half ? 1 : 0);
-            return `<span class="hearts-score">${'♥'.repeat(full)}${half ? '♥' : ''}<span class="empty-heart">${'♥'.repeat(empty)}</span></span>`;
-          }
-          if (key === 'total') return `<span>${d.price}</span>`;
-          if (key === 'flightTime') return `<span>${d.flightTime}</span>`;
-          if (key === 'season') return `<span>${d.season}</span>`;
-          return `<span>€${d.costBreakdown[key]}</span>`;
-        }).join('')}
-      </div>
-    `;
-  };
-
-  compareTable.innerHTML = `
-    ${renderRow('Total (for 2)', 'total')}
-    ${renderRow('Flights', 'flights')}
-    ${renderRow('Stay (7 nights)', 'stay')}
-    ${renderRow('Activities', 'activities')}
-    ${renderRow('Food', 'food')}
-    ${renderRow('Best time to go', 'season')}
-    ${renderRow('Flight time', 'flightTime')}
-    ${renderRow('Vibe match', 'vibeScore', true)}
-  `;
-
-  // Render Budget Chart
-  const maxTotal = 5000;
-  budgetBars.innerHTML = picks.map(d => {
-    const c = d.costBreakdown;
-    const pF = (c.flights / maxTotal) * 100;
-    const pS = (c.stay / maxTotal) * 100;
-    const pA = (c.activities / maxTotal) * 100;
-    const pFo = (c.food / maxTotal) * 100;
-    
-    return `
-      <div class="bar-group">
-        <span class="bar-total">${d.price}</span>
-        <div class="stacked-bar">
-          <div class="bar-segment" style="height: ${pF}%; background: var(--chart-1);"></div>
-          <div class="bar-segment" style="height: ${pS}%; background: var(--chart-2);"></div>
-          <div class="bar-segment" style="height: ${pA}%; background: var(--chart-3);"></div>
-          <div class="bar-segment" style="height: ${pFo}%; background: var(--chart-4);"></div>
-        </div>
-        <span class="bar-label">${d.name.replace(' / ', '<br>')}</span>
-      </div>
-    `;
-  }).join('');
+/* PAGE: REISEZIELE */
+function renderDestinationsGrid() {
+  $('destinationsGrid').innerHTML = destinations.map(d =>
+    '<article class="dest-tile"><div class="dest-tile-img"><img src="'+esc(d.image)+'" alt="'+esc(d.name)+'" loading="lazy"><button class="card-heart '+(liked.has(d.name)?'is-liked':'')+'" data-heart="'+esc(d.name)+'">'+heartSvg(liked.has(d.name))+'</button></div>'
+    + '<div class="dest-tile-body"><span class="region">'+esc(d.country)+'</span><h3>'+esc(d.name)+'</h3><p>'+esc(d.pitch)+'</p>'
+    + '<div class="dest-tile-meta">'+d.tags.map(t => '<span class="chip">'+esc(t)+'</span>').join('')+'<span class="chip">'+esc(d.flightTime)+'</span><span class="chip">'+esc(d.season)+'</span></div></div></article>'
+  ).join('');
+  $('destinationsGrid').querySelectorAll('[data-heart]').forEach(b => {
+    b.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const name = b.dataset.heart;
+      if (!liked.has(name)) { const r = b.getBoundingClientRect(); burstHearts(r.left + r.width/2, r.top + r.height/2); }
+      toggleLike(name);
+    });
+  });
 }
 
-// Initialize
+/* PAGE: VERGLEICHEN */
+function renderComparePage() {
+  const picks = destinations.filter(d => liked.has(d.name));
+  if (picks.length === 0) {
+    $('comparePage').innerHTML = '<div class="compare-page-empty">Noch keine Favoriten — geh zurück und tipp ein paar Herzen an, mein Schatz.</div>';
+    return;
+  }
+  let cells = '<div class="corner">Side<br/>by side</div>';
+  picks.forEach(p => { cells += '<div class="compare-img-cell"><img src="'+esc(p.image)+'" alt="'+esc(p.name)+'"><span class="name">'+esc(p.name)+'</span></div>'; });
+  const rows = [
+    ["Region", d => esc(d.country)],
+    ["Beste Reisezeit", d => esc(d.season)],
+    ["Flugzeit", d => esc(d.flightTime)],
+    ["Vibe", d => esc(d.tags.join(' · '))],
+    ["Warum", d => esc(d.why)],
+    ["Stimmung", d => esc(d.quote)],
+    ["Must do", d => esc(d.mustDo.join(' · '))]
+  ];
+  rows.forEach(([label, fn]) => {
+    cells += '<div class="label">'+label+'</div>';
+    picks.forEach(p => { cells += '<div class="value">'+fn(p)+'</div>'; });
+  });
+  $('comparePage').innerHTML = '<div class="compare-grid" style="grid-template-columns: 160px repeat('+picks.length+', minmax(180px, 1fr));">'+cells+'</div>';
+}
+
+/* PAGE: REISEPLAENE */
+function renderPlans() {
+  const picks = destinations.filter(d => liked.has(d.name));
+  const list = picks.length ? picks : destinations.slice(0, 3);
+  if (activePlanIndex >= list.length) activePlanIndex = 0;
+  $('planSwitch').innerHTML = list.map((d, i) =>
+    '<button class="'+(i===activePlanIndex?'is-active':'')+'" data-plan-idx="'+i+'">'+esc(d.name)+'</button>'
+  ).join('');
+  $('planSwitch').querySelectorAll('button').forEach(b => {
+    b.addEventListener('click', () => { activePlanIndex = parseInt(b.dataset.planIdx, 10); renderPlans(); });
+  });
+  const dest = list[activePlanIndex];
+  $('planTimeline').innerHTML = dest.days.map(d =>
+    '<div class="plan-day"><div class="plan-day-tag">'+esc(d.tag)+'<span>'+esc(dest.country)+'</span></div>'
+    + '<div class="plan-day-card"><h3>'+esc(d.title)+'</h3><p>'+esc(d.desc)+'</p>'
+    + '<ul>'+d.chips.map(c => '<li>'+esc(c)+'</li>').join('')+'</ul></div></div>'
+  ).join('');
+}
+
+/* PAGE: FAVORITEN */
+function renderFavorites() {
+  const picks = destinations.filter(d => liked.has(d.name));
+  if (picks.length === 0) {
+    $('favoritesList').innerHTML = '<div class="fav-empty">Noch keine Favoriten — tipp die Herzen an, die dich rufen.</div>';
+    return;
+  }
+  $('favoritesList').innerHTML = picks.map(d =>
+    '<div class="fav-row"><img src="'+esc(d.image)+'" alt="'+esc(d.name)+'"><div class="fav-body"><h3>'+esc(d.name)+'</h3><p>'+esc(d.pitch)+'</p></div>'
+    + '<div class="fav-actions"><button class="vote-btn voted" data-remove="'+esc(d.name)+'">'+heartSvg(true)+' Entfernen</button></div></div>'
+  ).join('');
+  $('favoritesList').querySelectorAll('[data-remove]').forEach(b => {
+    b.addEventListener('click', () => toggleLike(b.dataset.remove));
+  });
+}
+
+/* PAGE: ABSTIMMEN */
+const votes = {};
+function renderVotes() {
+  const picks = destinations.filter(d => liked.has(d.name));
+  if (picks.length === 0) {
+    $('voteArena').innerHTML = '<div class="fav-empty">Wähl zuerst ein paar Favoriten, mein Herz.</div>';
+    return;
+  }
+  const totals = picks.map(p => (votes[p.name]?.mika || 0) + (votes[p.name]?.maryem || 0));
+  const maxTotal = Math.max(...totals);
+  $('voteArena').innerHTML = picks.map((d) => {
+    const v = votes[d.name] || {};
+    const total = (v.mika || 0) + (v.maryem || 0);
+    const pct = Math.round(total / 2 * 100);
+    const leading = total > 0 && total === maxTotal;
+    return '<div class="vote-card '+(leading?'is-leading':'')+'">'
+      + '<div class="vote-card-img"><img src="'+esc(d.image)+'" alt="'+esc(d.name)+'"></div>'
+      + '<div class="vote-card-body"><h3>'+esc(d.name)+'</h3><p class="why">'+esc(d.why)+'</p>'
+      + '<div class="vote-bar"><div class="vote-bar-fill" style="width:'+pct+'%"></div></div>'
+      + '<div class="vote-meta"><span>Mika '+(v.mika?'♥':'')+'</span><span>'+total+' Stimme'+(total===1?'':'n')+'</span><span>'+(v.maryem?'♥':'')+' Maryem</span></div>'
+      + '<div class="vote-btns"><button class="vote-mika '+(v.mika?'is-on':'')+'" data-voter="mika" data-name="'+esc(d.name)+'">Mikas Stimme</button><button class="vote-maryem '+(v.maryem?'is-on':'')+'" data-voter="maryem" data-name="'+esc(d.name)+'">Maryems Stimme</button></div>'
+      + '</div></div>';
+  }).join('');
+  $('voteArena').querySelectorAll('[data-voter]').forEach(b => {
+    b.addEventListener('click', () => {
+      const name = b.dataset.name;
+      const voter = b.dataset.voter;
+      votes[name] = votes[name] || {};
+      votes[name][voter] = votes[name][voter] ? 0 : 1;
+      const r = b.getBoundingClientRect();
+      burstHearts(r.left + r.width/2, r.top + r.height/2);
+      renderVotes();
+    });
+  });
+}
+
+/* PAGE: LIEBESBRIEFE */
+const letters = [
+  { title: "Habibti, Janem", body: "Ich hab dir nie erzählt, wie oft ich nachts wach lag bevor wir uns kannten — und hab gehofft, dass es jemanden gibt, der mein Lachen versteht. Du bist diese Person. Bagdad und Kabul lagen tausend Kilometer auseinander, aber dein Herz hat den Weg zu mir gefunden.", sign: "— Mika" },
+  { title: "Mein Bollywood-Moment", body: "Manchmal denk ich an dich und es spielt ein Shah Rukh Khan-Lied im Kopf. Du bist mein „Tum hi ho\", mein „Suraj hua maddham\". Ich würde durch jeden Regen tanzen, wenn du am Ende stehst.", sign: "— Mika, dein SRK" },
+  { title: "Disney, aber wahr", body: "Du sagst manchmal, du wärst nicht die Prinzessin im Film. Habibti, du bist die Prinzessin UND die Königin. Und ich bin froh, der Mann zu sein, der dir die Krone hochhält wenn keiner schaut.", sign: "— Dein Mika" },
+  { title: "Wenn du müde bist", body: "An den Tagen, an denen alles zu viel ist — denk an diese App. Denk daran, dass irgendwo zwölf Orte warten, an denen niemand was von uns will. Nur das Meer, der Wind, und ich, der dich anschaut.", sign: "— Mika ♥" },
+  { title: "Was ich nie laut sage", body: "Du hast mich verändert. Im Guten. Ich war jemand vor dir, und ich bin jemand mit dir, und der zweite gefällt mir besser. Danke, dass du geblieben bist. Janem, ich bleib auch.", sign: "— Immer dein, Mika" },
+  { title: "Eine kleine Versprechung", body: "Egal welchen Ort du wählst — ich pack die Koffer. Ich buche die Flüge. Ich nehm dich an die Hand und sag dir am Flughafen-Gate, dass du heute schöner aussiehst als gestern. Du sagst nur ja.", sign: "— Dein Husband" }
+];
+function renderLetters() {
+  $('lettersGrid').innerHTML = letters.map(l =>
+    '<article class="letter"><h3>'+esc(l.title)+'</h3><p>'+esc(l.body)+'</p><span class="letter-sign">'+esc(l.sign)+'</span></article>'
+  ).join('');
+}
+
+/* SURPRISE */
+$('surpriseBtn').addEventListener('click', (e) => {
+  const r = e.currentTarget.getBoundingClientRect();
+  burstHearts(r.left + r.width/2, r.top + r.height/2);
+  setActiveDestination(destinations[Math.floor(Math.random() * destinations.length)]);
+});
+
+/* INIT */
+spawnFloatingHearts(14);
+bindFilters();
 renderCarousel();
 setActiveDestination(activeDestination);
 renderShortlist();
-renderCompare();
+renderCompareDrawer();
+renderExperiencesPreview();
+$('navFavoritesBadge').textContent = liked.size;
+navigateTo(readPageFromHash());
