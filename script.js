@@ -24,6 +24,16 @@ let activePlanIndex = 0;
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function emptyState(title, body, href, cta) {
+  return '<div class="empty-love">'
+    + '<div class="empty-ornament" aria-hidden="true">'
+    + '<svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M30 4l5 11 11 0-9 7.5 3 11.5-10-7-10 7 3-11.5-9-7.5 11 0z"/></svg>'
+    + '</div>'
+    + '<h3>'+esc(title)+'</h3>'
+    + '<p>'+esc(body)+'</p>'
+    + '<a class="empty-cta" href="'+esc(href)+'" data-nav>'+esc(cta)+' <span>→</span></a>'
+    + '</div>';
+}
 
 /* ROUTER */
 function navigateTo(page) {
@@ -310,10 +320,10 @@ function renderDestinationsGrid() {
 function renderComparePage() {
   const picks = destinations.filter(d => liked.has(d.name));
   if (picks.length === 0) {
-    $('comparePage').innerHTML = '<div class="compare-page-empty">Noch keine Favoriten — geh zurück und tipp ein paar Herzen an, mein Schatz.</div>';
+    $('comparePage').innerHTML = emptyState('Noch keine Favoriten', 'Geh zurück und tipp ein paar Herzen an, Galbi. Drei Lieblingsorte und ich vergleiche sie für dich Seite an Seite.', '#reiseziele', 'Zu den Reisezielen');
     return;
   }
-  let cells = '<div class="corner">Side<br/>by side</div>';
+  let cells = '<div class="corner"><span>side by side</span><em>für deinen Blick</em></div>';
   picks.forEach(p => { cells += '<div class="compare-img-cell"><img src="'+esc(p.image)+'" alt="'+esc(p.name)+'"><span class="name">'+esc(p.name)+'</span></div>'; });
   const rows = [
     ["Region", d => esc(d.country)],
@@ -375,7 +385,7 @@ function renderPlans() {
 function renderFavorites() {
   const picks = destinations.filter(d => liked.has(d.name));
   if (picks.length === 0) {
-    $('favoritesList').innerHTML = '<div class="fav-empty">Noch keine Favoriten — tipp die Herzen an, die dich rufen.</div>';
+    $('favoritesList').innerHTML = emptyState('Noch keine Favoriten', 'Tipp die Herzen an, die dich rufen, Habibti. Sie sammeln sich hier wie kleine Versprechen.', '#reiseziele', 'Reiseziele entdecken');
     return;
   }
   $('favoritesList').innerHTML = picks.map(d =>
@@ -392,7 +402,7 @@ const votes = {};
 function renderVotes() {
   const picks = destinations.filter(d => liked.has(d.name));
   if (picks.length === 0) {
-    $('voteArena').innerHTML = '<div class="fav-empty">Wähl zuerst ein paar Favoriten, mein Herz.</div>';
+    $('voteArena').innerHTML = emptyState('Noch keine Stimmzettel', 'Wähl zuerst ein paar Favoriten, Mayane. Dann stimmen wir zusammen ab — wie immer Hand in Hand.', '#reiseziele', 'Favoriten wählen');
     return;
   }
   const totals = picks.map(p => (votes[p.name]?.mika || 0) + (votes[p.name]?.maryem || 0));
@@ -463,7 +473,7 @@ const petnames = [
 function renderPetnames() {
   if (!$('petnamesGrid')) return;
   $('petnamesGrid').innerHTML = petnames.map(p =>
-    '<div class="petname"><span class="petname-word">'+esc(p.name)+'</span><span class="petname-tr">'+esc(p.tr)+'</span><span class="petname-lang">'+esc(p.lang)+'</span></div>'
+    '<div class="petname" data-lang="'+esc(p.lang)+'"><span class="petname-word">'+esc(p.name)+'</span><span class="petname-tr">'+esc(p.tr)+'</span><span class="petname-lang">'+esc(p.lang)+'</span></div>'
   ).join('');
 }
 
