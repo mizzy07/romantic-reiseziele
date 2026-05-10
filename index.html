@@ -15,6 +15,24 @@
     <!-- Floating hearts background -->
     <div class="floating-hearts" aria-hidden="true"></div>
 
+    <!-- SRK Quote Ticker -->
+    <div class="srk-ticker" id="srkTicker" aria-live="polite"></div>
+
+    <!-- Music Player -->
+    <button class="music-toggle" id="musicToggle" aria-label="Musik">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span id="musicToggleLabel">Spiel unsere Lieder</span>
+    </button>
+    <div class="music-panel is-hidden" id="musicPanel" role="dialog" aria-label="Unsere Lieder">
+      <h4>Unsere Lieder ♥</h4>
+      <div class="music-tabs">
+        <button class="is-active" data-song="0">Tum Hi Ho</button>
+        <button data-song="1">Indila — Love Story</button>
+      </div>
+      <div class="music-frame" id="musicFrame"></div>
+      <p class="music-note">Mit Liebe via YouTube. Schließ das Fenster, um es leise zu machen.</p>
+    </div>
+
     <div class="app-shell">
       <!-- LEFT SIDEBAR -->
       <aside class="side-rail" aria-label="Navigation">

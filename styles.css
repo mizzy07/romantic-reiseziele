@@ -1140,11 +1140,19 @@ main {
 .plan-day-tag span { display: block; font-size: 10px; font-weight: 500; opacity: 0.85; margin-top: 2px; }
 .plan-day-card {
   background: white;
-  padding: 20px 24px;
   border-radius: 16px;
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+.plan-day-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.plan-day-img { position: relative; overflow: hidden; min-height: 180px; }
+.plan-day-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.plan-day-card:hover .plan-day-img img { transform: scale(1.07); }
+.plan-day-body { padding: 20px 24px; }
 .plan-day-card h3 { margin: 0 0 6px; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px; }
 .plan-day-card p { margin: 0 0 12px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; color: var(--ink-soft); line-height: 1.45; }
 .plan-day-card ul { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -1155,6 +1163,141 @@ main {
   color: var(--rose-deep);
   border-radius: 999px;
   font-weight: 600;
+}
+.plan-hero {
+  position: relative;
+  height: 280px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-lg);
+}
+.plan-hero img { width: 100%; height: 100%; object-fit: cover; animation: kenburns 22s ease-in-out infinite alternate; }
+.plan-hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,15,36,0.2) 0%, rgba(26,15,36,0.85) 100%); }
+.plan-hero-text { position: absolute; left: 32px; bottom: 28px; right: 32px; color: white; }
+.plan-hero-text span { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+.plan-hero-text h2 { margin: 6px 0 8px; font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 500; line-height: 1.05; }
+.plan-hero-text p { margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 19px; opacity: 0.95; max-width: 640px; }
+
+
+/* === MUSIC PLAYER === */
+.music-toggle {
+  position: fixed;
+  bottom: 110px;
+  right: 24px;
+  z-index: 60;
+  background: var(--grad-rose);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow-glow);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+}
+.music-toggle:hover { transform: translateY(-3px) scale(1.04); box-shadow: 0 22px 40px -10px rgba(239,68,68,0.65); }
+.music-toggle svg { width: 18px; height: 18px; animation: pulse 1.6s ease-in-out infinite; }
+.music-toggle.is-playing { background: var(--white); color: var(--rose-deep); }
+.music-toggle.is-playing svg { color: var(--rose); }
+
+.music-panel {
+  position: fixed;
+  bottom: 175px;
+  right: 24px;
+  z-index: 60;
+  width: 340px;
+  background: linear-gradient(160deg, #1a0f24 0%, #2a0a3a 100%);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+  border: 1px solid rgba(236,72,153,0.3);
+  transform-origin: bottom right;
+  animation: musicPop 0.3s ease both;
+}
+@keyframes musicPop { from { opacity: 0; transform: scale(0.85) translateY(10px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+.music-panel.is-hidden { display: none; }
+.music-panel h4 {
+  margin: 0 0 10px;
+  font-family: 'Dancing Script', cursive;
+  color: var(--gold);
+  font-size: 22px;
+  text-align: center;
+}
+.music-tabs { display: flex; gap: 6px; margin-bottom: 10px; }
+.music-tabs button {
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.06);
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.music-tabs button.is-active { background: var(--grad-rose); color: white; box-shadow: var(--shadow-glow); }
+.music-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+}
+.music-frame iframe { width: 100%; height: 100%; border: 0; }
+.music-note {
+  margin-top: 10px;
+  font-size: 11px;
+  font-style: italic;
+  color: rgba(255,255,255,0.55);
+  text-align: center;
+}
+
+
+/* === SRK QUOTE TICKER === */
+.srk-ticker {
+  position: fixed;
+  top: 24px;
+  left: 264px;
+  right: 364px;
+  z-index: 30;
+  text-align: center;
+  pointer-events: none;
+}
+.srk-ticker-bubble {
+  display: inline-block;
+  pointer-events: auto;
+  background: rgba(26,15,36,0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--gold);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 17px;
+  border: 1px solid rgba(212,168,67,0.3);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.3);
+  animation: srkFade 0.5s ease both;
+  cursor: pointer;
+  max-width: 80%;
+}
+.srk-ticker-bubble::before { content: '🎬 '; opacity: 0.7; font-size: 14px; }
+@keyframes srkFade { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 1100px) {
+  .srk-ticker { right: 24px; }
+}
+@media (max-width: 768px) {
+  .srk-ticker { left: 16px; right: 16px; top: auto; bottom: 16px; }
+  .srk-ticker-bubble { font-size: 14px; padding: 6px 14px; }
+  .music-toggle { bottom: 16px; padding: 10px 14px; font-size: 12px; }
+  .music-panel { bottom: 80px; right: 16px; width: calc(100% - 32px); max-width: 340px; }
+  .plan-day-card { grid-template-columns: 1fr; }
+  .plan-day-img { min-height: 200px; }
+  .plan-hero { height: 220px; }
+  .plan-hero-text h2 { font-size: 30px; }
+  .plan-hero-text p { font-size: 16px; }
 }
 
 
