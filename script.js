@@ -332,9 +332,23 @@ function renderComparePage() {
 }
 
 /* PAGE: REISEPLAENE */
+const planDayImages = {
+  "Japan": ["https://images.unsplash.com/photo-1480796927426-f609979314bd?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=900&q=80"],
+  "Thailand": ["https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80"],
+  "Punta Cana": ["https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1559599189-fe84dea4eb79?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1559599189-fe84dea4eb79?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=900&q=80"],
+  "Sansibar": ["https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1535941339077-2dd1c7963098?auto=format&fit=crop&w=900&q=80"],
+  "Paris": ["https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1431274172761-fca41d930114?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"],
+  "Griechenland / Kreta": ["https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1580500550469-7be8d6f1b3a4?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?auto=format&fit=crop&w=900&q=80"],
+  "Marokko": ["https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1539020140153-e479b8c5e26c?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1548883354-7622dd811559?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1517840933437-c41356892b35?auto=format&fit=crop&w=900&q=80"],
+  "Albanische Riviera": ["https://images.unsplash.com/photo-1605649461814-d3d4d3a0c0eb?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1559599189-fe84dea4eb79?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1559599189-fe84dea4eb79?auto=format&fit=crop&w=900&q=80"],
+  "Kap Verde": ["https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?auto=format&fit=crop&w=900&q=80"],
+  "Madeira": ["https://images.unsplash.com/photo-1623854767648-e7bb8009f0db?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1571893544028-06b07af6dade?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1576487248805-cf45f6bcc67f?auto=format&fit=crop&w=900&q=80"],
+  "Sri Lanka": ["https://images.unsplash.com/photo-1583249598754-b7a2f59651fb?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1568632234157-ce7aecd03d0d?auto=format&fit=crop&w=900&q=80"],
+  "Ägypten Rotes Meer": ["https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1548883354-7622dd811559?auto=format&fit=crop&w=900&q=80", "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=900&q=80"]
+};
+
 function renderPlans() {
-  const picks = destinations.filter(d => liked.has(d.name));
-  const list = picks.length ? picks : destinations.slice(0, 3);
+  const list = destinations;
   if (activePlanIndex >= list.length) activePlanIndex = 0;
   $('planSwitch').innerHTML = list.map((d, i) =>
     '<button class="'+(i===activePlanIndex?'is-active':'')+'" data-plan-idx="'+i+'">'+esc(d.name)+'</button>'
@@ -343,11 +357,18 @@ function renderPlans() {
     b.addEventListener('click', () => { activePlanIndex = parseInt(b.dataset.planIdx, 10); renderPlans(); });
   });
   const dest = list[activePlanIndex];
-  $('planTimeline').innerHTML = dest.days.map(d =>
-    '<div class="plan-day"><div class="plan-day-tag">'+esc(d.tag)+'<span>'+esc(dest.country)+'</span></div>'
-    + '<div class="plan-day-card"><h3>'+esc(d.title)+'</h3><p>'+esc(d.desc)+'</p>'
-    + '<ul>'+d.chips.map(c => '<li>'+esc(c)+'</li>').join('')+'</ul></div></div>'
-  ).join('');
+  const imgs = planDayImages[dest.name] || [dest.image, dest.image, dest.image, dest.image];
+  $('planTimeline').innerHTML =
+    '<div class="plan-hero"><img src="'+esc(dest.image)+'" alt="'+esc(dest.name)+'"><div class="plan-hero-overlay"></div><div class="plan-hero-text"><span>'+esc(dest.country)+'</span><h2>'+esc(dest.name)+'</h2><p>'+esc(dest.pitch)+'</p></div></div>'
+    + dest.days.map((d, i) =>
+      '<div class="plan-day">'
+      + '<div class="plan-day-tag">'+esc(d.tag)+'<span>'+esc(dest.country)+'</span></div>'
+      + '<div class="plan-day-card">'
+      + '<div class="plan-day-img"><img src="'+esc(imgs[i] || dest.image)+'" alt="'+esc(d.title)+'" loading="lazy"></div>'
+      + '<div class="plan-day-body"><h3>'+esc(d.title)+'</h3><p>'+esc(d.desc)+'</p>'
+      + '<ul>'+d.chips.map(c => '<li>'+esc(c)+'</li>').join('')+'</ul></div>'
+      + '</div></div>'
+    ).join('');
 }
 
 /* PAGE: FAVORITEN */
@@ -404,6 +425,7 @@ function renderVotes() {
 
 /* PAGE: LIEBESBRIEFE */
 const letters = [
+  { title: "Wie alles begann", body: "Mein erster Satz zu dir war: „Ich kenne dich vom Abbacos.“ Du warst dort Hostess, ein Münchner Steakladen, hast mir eine Cola gebracht und hast keine Ahnung gehabt, dass dieser Moment ein ganzes Leben starten würde. Ein paar Monate später hat uns Samira wieder zusammengebracht — und seitdem bin ich nur noch verliebt. Janem, ich will dir das schönste Leben ermöglichen, das es gibt. Das ist kein Versprechen. Das ist mein einziger Plan.", sign: "— Mika, seit der Cola für immer dein", featured: true },
   { title: "Im Museum, vor allen", body: "Du hast mich gefragt, was das schönste im Museum ist. Es war voll. Alle haben gehört. Ich hab dich angeschaut und gesagt: „Du bist das schönste arabische Gemälde hier.“ Ich werde nie vergessen, wie du gelächelt hast. Manchmal sind die Wahrheiten zu groß, um sie leise zu sagen.", sign: "— Mika, der dich vor allen liebt", featured: true },
   { title: "Habibti, Janem", body: "Ich hab dir nie erzählt, wie oft ich nachts wach lag bevor wir uns kannten — und hab gehofft, dass es jemanden gibt, der mein Lachen versteht. Du bist diese Person. Bagdad und Kandahar lagen tausend Kilometer auseinander, aber dein Herz hat den Weg zu mir gefunden.", sign: "— Mika" },
   { title: "Mein Bollywood-Moment", body: "Manchmal denk ich an dich und es spielt ein Shah Rukh Khan-Lied im Kopf. Du bist mein „Tum hi ho\", mein „Suraj hua maddham\". Ich würde durch jeden Regen tanzen, wenn du am Ende stehst.", sign: "— Mika, dein SRK" },
@@ -427,6 +449,65 @@ $('surpriseBtn').addEventListener('click', (e) => {
   setActiveDestination(destinations[Math.floor(Math.random() * destinations.length)]);
 });
 
+/* MUSIC PLAYER */
+const songs = [
+  { title: "Tum Hi Ho", yt: "Umqb9KENgmk" },     // Aashiqui 2 — Arijit Singh
+  { title: "Indila — Love Story", yt: "ZAUMpz9OGqk" }
+];
+let activeSong = 0;
+let musicOpen = false;
+
+function loadSong(idx, autoplay) {
+  activeSong = idx;
+  const s = songs[idx];
+  $('musicFrame').innerHTML = '<iframe src="https://www.youtube.com/embed/'+s.yt+'?autoplay='+(autoplay?1:0)+'&rel=0&modestbranding=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  document.querySelectorAll('.music-tabs button').forEach((b,i) => b.classList.toggle('is-active', i===idx));
+}
+
+$('musicToggle').addEventListener('click', () => {
+  musicOpen = !musicOpen;
+  $('musicPanel').classList.toggle('is-hidden', !musicOpen);
+  $('musicToggle').classList.toggle('is-playing', musicOpen);
+  $('musicToggleLabel').textContent = musicOpen ? 'Musik läuft ♥' : 'Spiel unsere Lieder';
+  if (musicOpen) loadSong(activeSong, true);
+  else $('musicFrame').innerHTML = '';
+});
+document.querySelectorAll('.music-tabs button').forEach(b => {
+  b.addEventListener('click', () => loadSong(parseInt(b.dataset.song,10), true));
+});
+
+/* SRK QUOTE TICKER */
+const srkQuotes = [
+  "„Don't underestimate the power of a common man.“",
+  "„Bade bade deshon mein, aisi chhoti chhoti baatein hoti rehti hain.“",
+  "„Kabhi kabhi jeetne ke liye kuch haarna padta hai.“",
+  "„Pyaar dosti hai. Wenn du nicht meine beste Freundin bist, kann ich dich nicht lieben.“",
+  "„K-K-K-Kiran… ich werde alle Ozeane überqueren, wenn du mein letzter Hafen bist.“",
+  "„Picture abhi baaki hai, mere dost — und unsere ist die schönste.“",
+  "„Tum hi ho — alles. Wirklich alles.“",
+  "„Wenn du etwas wirklich willst, dann verschwört sich das ganze Universum.“",
+  "„Manchmal sind Wahrheiten leise. Aber meine zu dir nicht.“",
+  "„Hum ek baar jeete hain, ek baar marte hain — und einmal lieben wir. Diesmal du.“"
+];
+let srkIdx = 0;
+function rotateSrk() {
+  $('srkTicker').innerHTML = '<span class="srk-ticker-bubble">'+esc(srkQuotes[srkIdx])+'</span>';
+  srkIdx = (srkIdx + 1) % srkQuotes.length;
+}
+$('srkTicker').addEventListener('click', () => {
+  rotateSrk();
+  if ('speechSynthesis' in window) {
+    try {
+      const u = new SpeechSynthesisUtterance(srkQuotes[srkIdx === 0 ? srkQuotes.length-1 : srkIdx-1].replace(/[„""]/g,''));
+      u.lang = 'de-DE';
+      u.rate = 0.95;
+      u.pitch = 0.95;
+      speechSynthesis.cancel();
+      speechSynthesis.speak(u);
+    } catch (e) { /* TTS optional */ }
+  }
+});
+
 /* INIT */
 spawnFloatingHearts(14);
 bindFilters();
@@ -437,3 +518,5 @@ renderCompareDrawer();
 renderExperiencesPreview();
 $('navFavoritesBadge').textContent = liked.size;
 navigateTo(readPageFromHash());
+rotateSrk();
+setInterval(rotateSrk, 9000);
