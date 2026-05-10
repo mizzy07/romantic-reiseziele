@@ -1403,26 +1403,38 @@
     tick();
   }
 
-  /* === HERO VIDEO FALLBACK === */
+  /* === HERO VIDEO — lazy + responsive (mobile poster only, desktop video after idle) === */
   function setupHeroVideo() {
     const video = $('#heroVideo');
     if (!video) return;
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce) {
-      video.style.display = 'none';
-      const img = document.createElement('img');
-      img.src = video.poster;
-      img.alt = 'Romantischer Sonnenuntergang';
-      $('#heroBg').appendChild(img);
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const slowConn = navigator.connection && (navigator.connection.saveData || /2g|slow/i.test(navigator.connection.effectiveType || ''));
+    if (reduce || isMobile || slowConn) {
+      // Mobile + reduced-motion + save-data: keep poster image only, no video
+      video.remove();
       return;
     }
-    video.addEventListener('error', () => {
-      video.style.display = 'none';
-      const img = document.createElement('img');
-      img.src = video.poster;
-      img.alt = 'Romantisch';
-      $('#heroBg').appendChild(img);
-    });
+    // Desktop: enhance with video after idle (so LCP isn't blocked by video bytes)
+    const enhance = () => {
+      try {
+        const src = document.createElement('source');
+        src.src = 'https://videos.pexels.com/video-files/2169880/2169880-hd_1280_720_30fps.mp4';
+        src.type = 'video/mp4';
+        video.appendChild(src);
+        video.preload = 'metadata';
+        video.autoplay = true;
+        video.load();
+        video.play().catch(() => { video.remove(); });
+        video.addEventListener('loadeddata', () => video.classList.add('is-ready'), { once: true });
+        video.addEventListener('error', () => video.remove());
+      } catch { video.remove(); }
+    };
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(enhance, { timeout: 2500 });
+    } else {
+      setTimeout(enhance, 1500);
+    }
   }
 
   /* === SUMMARY (right side of filters) === */
@@ -2308,17 +2320,20 @@
     ).onfinish = () => t.remove();
   }
 
-  /* === INTRO VEIL (3-second fade greeting) === */
+  /* === INTRO VEIL (3s desktop, 1.6s mobile, skip on save-data) === */
   function runIntroVeil() {
     const veil = document.getElementById('introVeil');
     if (!veil) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const slowConn = navigator.connection && (navigator.connection.saveData || /2g/i.test(navigator.connection.effectiveType || ''));
+    if (reduce || slowConn) {
       veil.remove();
       return;
     }
-    // Build subtle stars
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
     const stars = veil.querySelector('.intro-stars');
-    if (stars) {
+    if (stars && !isMobile) {
+      // Stars only on desktop (mobile skips for perf)
       for (let i = 0; i < 28; i++) {
         const s = document.createElement('span');
         s.style.left = Math.random() * 100 + '%';
@@ -2329,13 +2344,14 @@
       }
     }
     document.body.classList.add('intro-locked');
-    // Reveal sequence
+    const visible = isMobile ? 1100 : 2600;
+    const total = isMobile ? 1900 : 3600;
     requestAnimationFrame(() => veil.classList.add('is-visible'));
-    setTimeout(() => veil.classList.add('is-fading'), 2600);
+    setTimeout(() => veil.classList.add('is-fading'), visible);
     setTimeout(() => {
       veil.remove();
       document.body.classList.remove('intro-locked');
-    }, 3600);
+    }, total);
   }
 
   /* === TINY HEART TRAIL === */
@@ -2609,10 +2625,41 @@
     requestAnimationFrame(frame);
   }
 
+  // Lazy-load Leaflet (CSS + JS) — only when Karte page is opened
+  let leafletPromise = null;
+  function loadLeaflet() {
+    if (window.L) return Promise.resolve(window.L);
+    if (leafletPromise) return leafletPromise;
+    leafletPromise = new Promise((resolve, reject) => {
+      // CSS
+      if (!document.querySelector('link[data-leaflet]')) {
+        const css = document.createElement('link');
+        css.rel = 'stylesheet';
+        css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        css.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
+        css.crossOrigin = '';
+        css.dataset.leaflet = '1';
+        document.head.appendChild(css);
+      }
+      // JS
+      const script = document.createElement('script');
+      script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+      script.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
+      script.crossOrigin = '';
+      script.async = true;
+      script.onload = () => resolve(window.L);
+      script.onerror = reject;
+      document.body.appendChild(script);
+    });
+    return leafletPromise;
+  }
+
   async function renderKarte() {
     await loadMemories();
-    if (!window.L) {
-      $('#ourMap').innerHTML = '<p style="padding:40px;text-align:center;">Karte konnte nicht geladen werden.</p>';
+    const ourMap = $('#ourMap');
+    if (ourMap && !window.L) ourMap.innerHTML = '<p style="padding:40px;text-align:center;color:var(--gold-soft);font-family:Cormorant Garamond,serif;font-style:italic;">Karte wird geladen…</p>';
+    try { await loadLeaflet(); } catch (e) {
+      if (ourMap) ourMap.innerHTML = '<p style="padding:40px;text-align:center;">Karte konnte nicht geladen werden.</p>';
       return;
     }
     if (mapInstance) { mapInstance.remove(); mapInstance = null; }
