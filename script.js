@@ -429,12 +429,46 @@ const letters = [
   { title: "Im Museum, vor allen", body: "Du hast mich gefragt, was das schönste im Museum ist. Es war voll. Alle haben gehört. Ich hab dich angeschaut und gesagt: „Du bist das schönste arabische Gemälde hier.“ Ich werde nie vergessen, wie du gelächelt hast. Manchmal sind die Wahrheiten zu groß, um sie leise zu sagen.", sign: "— Mika, der dich vor allen liebt", featured: true },
   { title: "Habibti, Janem", body: "Ich hab dir nie erzählt, wie oft ich nachts wach lag bevor wir uns kannten — und hab gehofft, dass es jemanden gibt, der mein Lachen versteht. Du bist diese Person. Bagdad und Kandahar lagen tausend Kilometer auseinander, aber dein Herz hat den Weg zu mir gefunden.", sign: "— Mika" },
   { title: "Mein Bollywood-Moment", body: "Manchmal denk ich an dich und es spielt ein Shah Rukh Khan-Lied im Kopf. Du bist mein „Tum hi ho\", mein „Suraj hua maddham\". Ich würde durch jeden Regen tanzen, wenn du am Ende stehst.", sign: "— Mika, dein SRK" },
-  { title: "Disney, aber wahr", body: "Du sagst manchmal, du wärst nicht die Prinzessin im Film. Habibti, du bist die Prinzessin UND die Königin. Und ich bin froh, der Mann zu sein, der dir die Krone hochhält wenn keiner schaut.", sign: "— Dein Mika" },
-  { title: "Wenn du müde bist", body: "An den Tagen, an denen alles zu viel ist — denk an diese App. Denk daran, dass irgendwo zwölf Orte warten, an denen niemand was von uns will. Nur das Meer, der Wind, und ich, der dich anschaut.", sign: "— Mika ♥" },
-  { title: "Was ich nie laut sage", body: "Du hast mich verändert. Im Guten. Ich war jemand vor dir, und ich bin jemand mit dir, und der zweite gefällt mir besser. Danke, dass du geblieben bist. Janem, ich bleib auch.", sign: "— Immer dein, Mika" },
-  { title: "Eine kleine Versprechung", body: "Egal welchen Ort du wählst — ich pack die Koffer. Ich buche die Flüge. Ich nehm dich an die Hand und sag dir am Flughafen-Gate, dass du heute schöner aussiehst als gestern. Du sagst nur ja.", sign: "— Dein Husband" }
+  { title: "Disney, aber wahr", body: "Du sagst manchmal, du wärst nicht die Prinzessin im Film. Malikti, du bist die Prinzessin UND die Königin. Und ich bin froh, der Mann zu sein, der dir die Krone hochhält wenn keiner schaut. Spogmai meine, mein Mond.", sign: "— Dein Mika" },
+  { title: "Wenn du müde bist", body: "An den Tagen, an denen alles zu viel ist — denk an diese App, Roohi. Denk daran, dass irgendwo zwölf Orte warten, an denen niemand was von uns will. Nur das Meer, der Wind, und ich, der dich anschaut. Hayati, du bist mein Leben.", sign: "— Mika ♥" },
+  { title: "Was ich nie laut sage", body: "Du hast mich verändert. Im Guten. Ich war jemand vor dir, und ich bin jemand mit dir, und der zweite gefällt mir besser. Danke, dass du geblieben bist. Zama Zra, mein Herz, ich bleib auch.", sign: "— Immer dein, Mika" },
+  { title: "Eine kleine Versprechung", body: "Egal welchen Ort du wählst — ich pack die Koffer. Ich buche die Flüge. Ich nehm dich an die Hand und sag dir am Flughafen-Gate, dass du heute schöner aussiehst als gestern. Du sagst nur ja, Noor el ayni — Licht meiner Augen.", sign: "— Dein Husband" },
+  { title: "Yumma, kleine Erinnerung", body: "Wenn ich dich Yumma nenne, dann nicht weil ich dich klein mache — sondern weil mein Herz dich so sanft halten will, wie man nur ein einziges Mal im Leben jemanden hält. Inti kulshi. Du bist alles. Auf irakisch, auf paschtu, auf jeder Sprache, die je erfunden wurde.", sign: "— Dein Mika, Zama Dzaan ist deins" }
 ];
+const petnames = [
+  { name: "Habibti",      tr: "meine Liebe",          lang: "arabisch" },
+  { name: "Hayati",       tr: "mein Leben",           lang: "arabisch" },
+  { name: "Galbi",        tr: "mein Herz",            lang: "irakisch" },
+  { name: "Roohi",        tr: "meine Seele",          lang: "arabisch" },
+  { name: "Helwa",        tr: "meine Süße",           lang: "arabisch" },
+  { name: "Amari / Amar", tr: "mein Mond",            lang: "arabisch" },
+  { name: "Noor el ayni", tr: "Licht meiner Augen",   lang: "arabisch" },
+  { name: "Omri",         tr: "mein Leben",           lang: "arabisch" },
+  { name: "Ghaliyati",    tr: "meine Kostbare",       lang: "arabisch" },
+  { name: "Malikti",      tr: "meine Königin",        lang: "arabisch" },
+  { name: "Yumma",        tr: "meine Liebste",        lang: "irakisch" },
+  { name: "Inti kulshi",  tr: "du bist alles",        lang: "irakisch" },
+  { name: "Mayane",       tr: "Geliebte",             lang: "paschtu" },
+  { name: "Zama Zra",     tr: "mein Herz",            lang: "paschtu" },
+  { name: "Zama Dzaan",   tr: "meine Seele",          lang: "paschtu" },
+  { name: "Spogmai",      tr: "Mond",                 lang: "paschtu" },
+  { name: "Zarghoona",    tr: "die Goldene",          lang: "paschtu" },
+  { name: "Khowaga",      tr: "meine Süße",           lang: "paschtu" },
+  { name: "Stergai",      tr: "kleines Auge",         lang: "paschtu" },
+  { name: "Janem",        tr: "meine Seele",          lang: "dari" },
+  { name: "Delbar",       tr: "Herzendiebin",         lang: "dari" },
+  { name: "Nazanin",      tr: "die Zarte",            lang: "dari" }
+];
+
+function renderPetnames() {
+  if (!$('petnamesGrid')) return;
+  $('petnamesGrid').innerHTML = petnames.map(p =>
+    '<div class="petname"><span class="petname-word">'+esc(p.name)+'</span><span class="petname-tr">'+esc(p.tr)+'</span><span class="petname-lang">'+esc(p.lang)+'</span></div>'
+  ).join('');
+}
+
 function renderLetters() {
+  renderPetnames();
   $('lettersGrid').innerHTML = letters.map(l =>
     '<article class="letter '+(l.featured?'is-featured':'')+'">'
     + (l.featured ? '<span class="letter-pin">Unser Moment ♥</span>' : '')
@@ -478,16 +512,20 @@ document.querySelectorAll('.music-tabs button').forEach(b => {
 
 /* SRK QUOTE TICKER */
 const srkQuotes = [
-  "„Don't underestimate the power of a common man.“",
-  "„Bade bade deshon mein, aisi chhoti chhoti baatein hoti rehti hain.“",
-  "„Kabhi kabhi jeetne ke liye kuch haarna padta hai.“",
-  "„Pyaar dosti hai. Wenn du nicht meine beste Freundin bist, kann ich dich nicht lieben.“",
-  "„K-K-K-Kiran… ich werde alle Ozeane überqueren, wenn du mein letzter Hafen bist.“",
-  "„Picture abhi baaki hai, mere dost — und unsere ist die schönste.“",
-  "„Tum hi ho — alles. Wirklich alles.“",
-  "„Wenn du etwas wirklich willst, dann verschwört sich das ganze Universum.“",
-  "„Manchmal sind Wahrheiten leise. Aber meine zu dir nicht.“",
-  "„Hum ek baar jeete hain, ek baar marte hain — und einmal lieben wir. Diesmal du.“"
+  "„Don't underestimate the power of a common man — aber ein common man, der dich Habibti nennen darf, ist der reichste Mann der Welt.“",
+  "„Bade bade deshon mein, aisi chhoti chhoti baatein hoti rehti hain — Galbi.“",
+  "„Pyaar dosti hai. Mayane, wenn du nicht meine beste Freundin bist, kann ich dich nicht lieben.“",
+  "„K-K-K-Kiran… Hayati, ich überquere jeden Ozean, wenn du mein letzter Hafen bist.“",
+  "„Picture abhi baaki hai, mere dost — Spogmai, unsere wird die schönste.“",
+  "„Tum hi ho — Roohi, du bist alles. Wirklich alles.“",
+  "„Wenn du etwas wirklich willst, verschwört sich das ganze Universum. Bei mir bist du es, Janem.“",
+  "„Hum ek baar jeete hain, ek baar marte hain — und einmal lieben wir. Diesmal dich, Noor el ayni.“",
+  "„Manchmal sind Wahrheiten leise. Aber meine zu dir nicht, Malikti.“",
+  "„Stergai meine, du kleines Auge meiner Welt — pyaar mein paagal sirf tum.“",
+  "„Inti kulshi — Zama Zra, du bist alles, was mein Herz braucht.“",
+  "„Don rule the world — du regierst meines, Delbar. Das reicht.“",
+  "„Zama Dzaan, ich tausche keinen Filmmoment gegen einen Tag mit dir.“",
+  "„Zarghoona, du bist die Goldene in einem Film, in dem ich nur Statist sein wollte.“"
 ];
 let srkIdx = 0;
 function rotateSrk() {
