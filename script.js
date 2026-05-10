@@ -2116,33 +2116,91 @@
   }
 
   /* === UNSERE KARTE === */
+  // continent: Naher Osten | Asien | Europa | Afrika | Amerika | Ozeanien
+  // sym: pilgrim | beach | city | mountain | aurora | safari | sakura | desert
   const dreams = [
-    { lat: 25.276987,  lon: 51.520008,   place: 'Doha, Katar',                   why: 'Souks, Skyline, Wochenende im Orient.' },
-    { lat: 21.3099,    lon: -157.8581,   place: 'Honolulu, Hawaii',              why: 'Aloha, Lei, Vulkane &mdash; und du in Weiß am Strand.' },
-    { lat: 18.4655,    lon: -66.1057,    place: 'San Juan, Puerto Rico',         why: 'Karibische Altstadt, Salsa, blauer Atlantik.' },
-    { lat: 13.0827,    lon: -59.5380,    place: 'Barbados, Karibik',             why: 'Türkis. Ich, du, eine Hängematte.' },
-    { lat: 40.7128,    lon: -74.0060,    place: 'New York City, USA',            why: 'Brunch, Skyline, Carrie-Bradshaw-Energy.' },
-    { lat: 34.0522,    lon: -118.2437,   place: 'Los Angeles, USA',              why: 'Hollywood, PCH-Roadtrip, Big Sur.' },
-    { lat: 36.1699,    lon: -115.1398,   place: 'Las Vegas, USA',                why: 'Lichter, Show, vielleicht eine zweite Verlobungsfeier.' },
-    { lat: -22.9068,   lon: -43.1729,    place: 'Rio de Janeiro, Brasilien',     why: 'Christo, Zuckerhut, Strand, Samba.' },
-    { lat: -34.6037,   lon: -58.3816,    place: 'Buenos Aires, Argentinien',     why: 'Tango und das beste Steak der Welt.' },
-    { lat: -13.1631,   lon: -72.5450,    place: 'Machu Picchu, Peru',            why: 'Wolken, Inka-Steine, du in einem Poncho.' },
-    { lat: -33.8688,   lon: 151.2093,    place: 'Sydney, Australien',            why: 'Opera House, Bondi Beach, Outback.' },
-    { lat: -36.8485,   lon: 174.7633,    place: 'Auckland, Neuseeland',          why: 'Mittelerde, Fjorde, Sterne.' },
-    { lat: -1.2921,    lon: 36.8219,     place: 'Nairobi, Kenia',                why: 'Safari Big Five &mdash; Inschallah.' },
-    { lat: -3.3731,    lon: 29.9189,     place: 'Bujumbura / Sansibar',          why: 'Gewürzinsel, Dhow, deine Hand.' },
-    { lat: 64.1466,    lon: -21.9426,    place: 'Reykjavík, Island',             why: 'Polarlichter, blaue Lagune, Stille.' },
-    { lat: 48.8566,    lon: 2.3522,      place: 'Paris, Frankreich',             why: 'Ein zweites Mal, weil einmal nicht reicht.' },
-    { lat: 41.8902,    lon: 12.4922,     place: 'Rom, Italien',                  why: 'Trevi-Brunnen-Wunsch: nochmal du.' },
-    { lat: 35.0116,    lon: 135.7681,    place: 'Kyoto, Japan',                  why: 'Kirschblüten, Tempel, Ryokan.' },
-    { lat: 30.0444,    lon: 31.2357,     place: 'Kairo, Ägypten',                why: 'Pyramiden, Nil, arabisches Frühstück.' },
-    { lat: 31.7683,    lon: 35.2137,     place: 'Jerusalem',                     why: 'Heilige Erde, Du\'a zusammen.' },
-    { lat: 21.4225,    lon: 39.8262,     place: 'Mekka &middot; Umrah',          why: 'Inschallah Hand in Hand vor der Kaaba.' },
-    { lat: 24.4539,    lon: 54.3773,     place: 'Abu Dhabi, VAE',                why: 'Sheikh Zayed Moschee, Wüste, Falknerei.' },
-    { lat: 4.6097,     lon: -74.0817,    place: 'Cartagena, Kolumbien',          why: 'Bunte Mauern, Karibik, du tanzt.' }
+    { lat: 25.276987,  lon: 51.520008,   place: 'Doha, Katar',                   why: 'Souks, Skyline, Wochenende im Orient.',                       continent: 'Naher Osten', sym: 'city' },
+    { lat: 21.4225,    lon: 39.8262,     place: 'Mekka &middot; Umrah',          why: 'Inschallah Hand in Hand vor der Kaaba.',                       continent: 'Naher Osten', sym: 'pilgrim' },
+    { lat: 31.7683,    lon: 35.2137,     place: 'Jerusalem',                     why: 'Heilige Erde, Du\u2019a zusammen.',                            continent: 'Naher Osten', sym: 'pilgrim' },
+    { lat: 24.4539,    lon: 54.3773,     place: 'Abu Dhabi, VAE',                why: 'Sheikh Zayed Moschee, W\u00fcste, Falknerei.',                 continent: 'Naher Osten', sym: 'desert' },
+    { lat: 35.0116,    lon: 135.7681,    place: 'Kyoto, Japan',                  why: 'Kirschbl\u00fcten, Tempel, Ryokan.',                           continent: 'Asien',       sym: 'sakura' },
+    { lat: 64.1466,    lon: -21.9426,    place: 'Reykjav\u00edk, Island',        why: 'Polarlichter, blaue Lagune, Stille.',                          continent: 'Europa',      sym: 'aurora' },
+    { lat: 48.8566,    lon: 2.3522,      place: 'Paris, Frankreich',             why: 'Ein zweites Mal, weil einmal nicht reicht.',                   continent: 'Europa',      sym: 'city' },
+    { lat: 41.8902,    lon: 12.4922,     place: 'Rom, Italien',                  why: 'Trevi-Brunnen-Wunsch: nochmal du.',                            continent: 'Europa',      sym: 'city' },
+    { lat: 30.0444,    lon: 31.2357,     place: 'Kairo, \u00c4gypten',           why: 'Pyramiden, Nil, arabisches Fr\u00fchst\u00fcck.',              continent: 'Afrika',      sym: 'desert' },
+    { lat: -1.2921,    lon: 36.8219,     place: 'Nairobi, Kenia',                why: 'Safari Big Five &mdash; Inschallah.',                          continent: 'Afrika',      sym: 'safari' },
+    { lat: -6.1659,    lon: 39.2026,     place: 'Sansibar',                      why: 'Gew\u00fcrzinsel, Dhow, deine Hand.',                          continent: 'Afrika',      sym: 'beach' },
+    { lat: 21.3099,    lon: -157.8581,   place: 'Honolulu, Hawaii',              why: 'Aloha, Lei, Vulkane \u2014 und du in Wei\u00df am Strand.',    continent: 'Amerika',     sym: 'beach' },
+    { lat: 18.4655,    lon: -66.1057,    place: 'San Juan, Puerto Rico',         why: 'Karibische Altstadt, Salsa, blauer Atlantik.',                 continent: 'Amerika',     sym: 'beach' },
+    { lat: 13.0827,    lon: -59.5380,    place: 'Barbados, Karibik',             why: 'T\u00fcrkis. Ich, du, eine H\u00e4ngematte.',                   continent: 'Amerika',     sym: 'beach' },
+    { lat: 40.7128,    lon: -74.0060,    place: 'New York City, USA',            why: 'Brunch, Skyline, Carrie-Bradshaw-Energy.',                     continent: 'Amerika',     sym: 'city' },
+    { lat: 34.0522,    lon: -118.2437,   place: 'Los Angeles, USA',              why: 'Hollywood, PCH-Roadtrip, Big Sur.',                            continent: 'Amerika',     sym: 'city' },
+    { lat: 36.1699,    lon: -115.1398,   place: 'Las Vegas, USA',                why: 'Lichter, Show, vielleicht eine zweite Verlobungsfeier.',       continent: 'Amerika',     sym: 'city' },
+    { lat: -22.9068,   lon: -43.1729,    place: 'Rio de Janeiro, Brasilien',     why: 'Christo, Zuckerhut, Strand, Samba.',                           continent: 'Amerika',     sym: 'beach' },
+    { lat: -34.6037,   lon: -58.3816,    place: 'Buenos Aires, Argentinien',     why: 'Tango und das beste Steak der Welt.',                          continent: 'Amerika',     sym: 'city' },
+    { lat: -13.1631,   lon: -72.5450,    place: 'Machu Picchu, Peru',            why: 'Wolken, Inka-Steine, du in einem Poncho.',                     continent: 'Amerika',     sym: 'mountain' },
+    { lat: 4.6097,     lon: -74.0817,    place: 'Cartagena, Kolumbien',          why: 'Bunte Mauern, Karibik, du tanzt.',                             continent: 'Amerika',     sym: 'beach' },
+    { lat: -33.8688,   lon: 151.2093,    place: 'Sydney, Australien',            why: 'Opera House, Bondi Beach, Outback.',                           continent: 'Ozeanien',    sym: 'city' },
+    { lat: -36.8485,   lon: 174.7633,    place: 'Auckland, Neuseeland',          why: 'Mittelerde, Fjorde, Sterne.',                                  continent: 'Ozeanien',    sym: 'mountain' }
   ];
 
+  // Continent meta — order, label, and a tiny SVG pictogram for the dream group header
+  const CONTINENT_META = {
+    'Naher Osten': { label: 'Naher Osten',  glyph: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M6 19v-7l3-3 3 3v7"/><path d="M14 19v-9l3-3 3 3v9"/><circle cx="9" cy="6" r="1"/></svg>' },
+    'Asien':       { label: 'Asien',         glyph: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 2 6 0 9-2-3-2-6 0-9z"/><path d="M3 12c3-2 6-2 9 0-3 2-6 2-9 0z"/><path d="M21 12c-3-2-6-2-9 0 3 2 6 2 9 0z"/><path d="M12 21c-2-3-2-6 0-9 2 3 2 6 0 9z"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg>' },
+    'Europa':      { label: 'Europa',        glyph: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>' },
+    'Afrika':      { label: 'Afrika',        glyph: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h4l1 3h3l3 3-1 4-2 2v3l-2 3h-3l-1-2-2-1-1-3-2-2 1-4 2-3z"/></svg>' },
+    'Amerika':     { label: 'Amerika',       glyph: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3l2 4-1 4 2 3-1 4 2 3"/><path d="M14 4l3 5-2 4 1 4-2 3"/></svg>' },
+    'Ozeanien':    { label: 'Ozeanien',      glyph: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M3 18c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><circle cx="17" cy="7" r="2.5"/></svg>' }
+  };
+  const CONTINENT_ORDER = ['Naher Osten', 'Asien', 'Europa', 'Afrika', 'Amerika', 'Ozeanien'];
+
+  // Tiny inline SVG pictograms for dream pin centers (12px box)
+  const SYM_GLYPH = {
+    pilgrim:  '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M3 9V6a3 3 0 0 1 6 0v3"/><path d="M2 9h8"/><circle cx="6" cy="3" r="0.8" fill="currentColor"/></svg>',
+    beach:    '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M2 9h8"/><path d="M6 9V4"/><path d="M3 5l3-2 3 2"/></svg>',
+    city:     '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M2 10h8"/><path d="M3 10V5l2-1v6"/><path d="M7 10V3l2 1v6"/></svg>',
+    mountain: '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 10l3-5 2 3 2-4 3 6z"/></svg>',
+    aurora:   '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M2 8c1-3 2-3 2 0"/><path d="M5 7c1-4 2-4 2 0"/><path d="M8 8c1-3 2-3 2 0"/></svg>',
+    safari:   '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M2 8c1-2 3-3 5-2 1-1 3-1 3 1"/><circle cx="4" cy="4" r="1"/></svg>',
+    sakura:   '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><circle cx="6" cy="6" r="0.8" fill="currentColor"/><path d="M6 3v1.5"/><path d="M6 7.5V9"/><path d="M3 6h1.5"/><path d="M7.5 6H9"/><path d="M4 4l1 1"/><path d="M7 7l1 1"/><path d="M8 4l-1 1"/><path d="M5 7l-1 1"/></svg>',
+    desert:   '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1 9c1-1 2-1 3 0"/><path d="M4 9c1-2 3-2 4 0"/><path d="M8 9c1-1 2-1 3 0"/><circle cx="9" cy="3" r="1.2"/></svg>'
+  };
+
   let mapInstance = null;
+
+  // Bezier curve points between two coords with elevated control point
+  function _bezierPath(a, b, lift) {
+    const mx = (a[0] + b[0]) / 2;
+    const my = (a[1] + b[1]) / 2;
+    const dx = b[1] - a[1];
+    const dy = b[0] - a[0];
+    const dist = Math.sqrt(dx*dx + dy*dy);
+    // Perpendicular offset for the bezier control, scaled by distance
+    const cp = [ mx + (-dx) * (lift / Math.max(dist, 0.001)), my + dy * (lift / Math.max(dist, 0.001)) ];
+    const pts = [];
+    const steps = 40;
+    for (let t = 0; t <= 1.0001; t += 1/steps) {
+      const u = 1 - t;
+      const lat = u*u*a[0] + 2*u*t*cp[0] + t*t*b[0];
+      const lon = u*u*a[1] + 2*u*t*cp[1] + t*t*b[1];
+      pts.push([lat, lon]);
+    }
+    return pts;
+  }
+
+  // Animate a number from 0 → target over `dur` ms
+  function _countUp(el, target, dur) {
+    const start = performance.now();
+    const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+    function frame(now) {
+      const t = Math.min(1, (now - start) / dur);
+      el.textContent = Math.round(easeOut(t) * target);
+      if (t < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+
   async function renderKarte() {
     await loadMemories();
     if (!window.L) {
@@ -2151,70 +2209,181 @@
     }
     if (mapInstance) { mapInstance.remove(); mapInstance = null; }
 
-    mapInstance = L.map('ourMap', { worldCopyJump: true, scrollWheelZoom: false });
-    mapInstance.setView([20, 30], 2);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
-      subdomains: 'abcd', maxZoom: 19
-    }).addTo(mapInstance);
-
-    // Been pins (gold)
-    const beenIcon = L.divIcon({
-      className: 'pin pin-been',
-      html: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>',
-      iconSize: [32, 32], iconAnchor: [16, 32]
+    mapInstance = L.map('ourMap', {
+      worldCopyJump: true,
+      scrollWheelZoom: false,
+      zoomControl: true,
+      preferCanvas: false,
+      attributionControl: true
     });
-    (memoriesData.clusters || []).forEach(c => {
+    mapInstance.setView([22, 25], 2);
+
+    // Stadia Alidade Smooth Dark — registration-free for non-prod use
+    // Falls back to CARTO Dark Matter on tile-load errors
+    const tileLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; OpenStreetMap',
+      maxZoom: 20, minZoom: 2
+    });
+    let fellBack = false;
+    tileLayer.on('tileerror', () => {
+      if (fellBack) return;
+      fellBack = true;
+      mapInstance.removeLayer(tileLayer);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap &copy; CARTO',
+        subdomains: 'abcd', maxZoom: 19
+      }).addTo(mapInstance);
+    });
+    tileLayer.addTo(mapInstance);
+
+    // Visited country glow zones (gold halos behind cluster pins)
+    const clusters = memoriesData.clusters || [];
+    clusters.forEach(c => {
+      L.circle([c.lat, c.lon], {
+        radius: Math.max(60000, Math.min(180000, c.count * 4500)),
+        className: 'love-zone',
+        color: '#f6cf6f', fillColor: '#f6cf6f',
+        opacity: 0.55, fillOpacity: 0.10, weight: 1
+      }).addTo(mapInstance);
+    });
+
+    // Love threads
+    // (a) chronological gold-bezier between visited clusters in array order
+    // (b) pulsing rose lines from a Munich anchor → each dream
+    const munich = [48.137, 11.575];
+    for (let i = 0; i < clusters.length - 1; i++) {
+      const a = [clusters[i].lat, clusters[i].lon];
+      const b = [clusters[i+1].lat, clusters[i+1].lon];
+      L.polyline(_bezierPath(a, b, 6), {
+        className: 'love-thread love-thread-gold',
+        color: '#f6cf6f', weight: 1.6, opacity: 0.75,
+        smoothFactor: 1.2
+      }).addTo(mapInstance);
+    }
+    dreams.forEach((d, i) => {
+      const pts = _bezierPath(munich, [d.lat, d.lon], 12);
+      L.polyline(pts, {
+        className: 'love-thread love-thread-rose love-thread-' + (i % 4),
+        color: '#ffb8d0', weight: 1.4, opacity: 0.55, dashArray: '4 6',
+        smoothFactor: 1.2
+      }).addTo(mapInstance);
+    });
+
+    // Visited pins — gold ring with photo thumbnail clipped inside
+    clusters.forEach((c, idx) => {
       const sample = (c.samples || [])[0];
       const sampleRec = sample ? memoriesData.records.find(r => r.id === sample) : null;
+      const thumbUrl = sampleRec ? (sampleRec.thumb || sampleRec.web) : '';
+      const html = `
+        <div class="pin-been-3d" style="--delay:${idx * 60}ms">
+          <span class="pin-halo"></span>
+          <span class="pin-thumb" ${thumbUrl ? `style="background-image:url('${thumbUrl}')"` : ''}></span>
+          <span class="pin-count">${c.count}</span>
+          <span class="pin-stem"></span>
+        </div>
+      `;
+      const beenIcon = L.divIcon({
+        className: 'pin pin-been', html, iconSize: [44, 56], iconAnchor: [22, 52], popupAnchor: [0, -50]
+      });
       const popup = `
         <div class="map-popup">
-          ${sampleRec ? `<img src="${sampleRec.thumb || sampleRec.web}" alt="" />` : ''}
+          ${thumbUrl ? `<img src="${thumbUrl}" alt="" />` : ''}
           <strong>${c.label || 'Unser Ort'}</strong>
           <span>${c.count} Erinnerung${c.count === 1 ? '' : 'en'}</span>
         </div>
       `;
-      L.marker([c.lat, c.lon], { icon: beenIcon }).addTo(mapInstance).bindPopup(popup);
+      L.marker([c.lat, c.lon], { icon: beenIcon, riseOnHover: true }).addTo(mapInstance).bindPopup(popup);
     });
 
-    // Dream pins (rose)
-    const dreamIcon = L.divIcon({
-      className: 'pin pin-dream',
-      html: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>',
-      iconSize: [30, 30], iconAnchor: [15, 30]
-    });
-    dreams.forEach(d => {
-      const popup = `<div class="map-popup map-popup-dream"><strong>${d.place}</strong><span>${d.why}</span></div>`;
-      L.marker([d.lat, d.lon], { icon: dreamIcon }).addTo(mapInstance).bindPopup(popup);
+    // Dream pins — rose heart with category symbol inside, pulsing glow
+    dreams.forEach((d, idx) => {
+      const glyph = SYM_GLYPH[d.sym] || SYM_GLYPH.city;
+      const html = `
+        <div class="pin-dream-3d" style="--delay:${(clusters.length + idx) * 50}ms">
+          <span class="pin-pulse"></span>
+          <svg class="pin-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          <span class="pin-sym">${glyph}</span>
+        </div>
+      `;
+      const dreamIcon = L.divIcon({
+        className: 'pin pin-dream', html, iconSize: [38, 46], iconAnchor: [19, 42], popupAnchor: [0, -40]
+      });
+      const popup = `<div class="map-popup map-popup-dream"><span class="popup-eyebrow">${d.continent}</span><strong>${d.place}</strong><span>${d.why}</span></div>`;
+      L.marker([d.lat, d.lon], { icon: dreamIcon, riseOnHover: true }).addTo(mapInstance).bindPopup(popup);
     });
 
     setTimeout(() => mapInstance.invalidateSize(), 220);
 
-    // Stats
+    // Stats with animated counters + world-progress bar
     const countries = new Set();
-    (memoriesData.clusters || []).forEach(c => { if (c.country) countries.add(c.country); });
+    clusters.forEach(c => { if (c.country) countries.add(c.country); });
     const totalPhotos = (memoriesData.records || []).filter(r => r.lat).length;
+    const visited = countries.size;
+    const planned = dreams.length;
+    const totalEnd = visited + planned;
+    const pct = Math.round((totalEnd / 195) * 100);
     $('#mapStats').innerHTML = `
       <div class="stat-row">
-        <div class="stat-pill"><strong>${countries.size}</strong><span>Länder zusammen</span></div>
-        <div class="stat-pill"><strong>${totalPhotos}</strong><span>geographische Erinnerungen</span></div>
-        <div class="stat-pill"><strong>${dreams.length}</strong><span>Träume noch offen</span></div>
-        <div class="stat-pill"><strong>${countries.size + dreams.length}</strong><span>Länder am Ende</span></div>
+        <div class="stat-pill stat-pill-anim" data-target="${visited}"><strong>0</strong><span>L\u00e4nder zusammen</span></div>
+        <div class="stat-pill stat-pill-anim" data-target="${totalPhotos}"><strong>0</strong><span>geographische Erinnerungen</span></div>
+        <div class="stat-pill stat-pill-anim" data-target="${planned}"><strong>0</strong><span>Tr\u00e4ume noch offen</span></div>
+        <div class="stat-pill stat-pill-anim" data-target="${totalEnd}"><strong>0</strong><span>L\u00e4nder am Ende</span></div>
+      </div>
+      <div class="map-progress" aria-label="Welt-Fortschritt">
+        <div class="map-progress-track">
+          <div class="map-progress-fill" style="--pct:${pct}%"></div>
+          <div class="map-progress-marker" style="left:${Math.min(pct, 96)}%"><span>${totalEnd} / 195 L\u00e4nder</span></div>
+        </div>
+        <div class="map-progress-meta">
+          <em>${pct}% der Welt</em>
+          <span>Inschallah holen wir den Rest noch.</span>
+        </div>
       </div>
     `;
+    $$('#mapStats .stat-pill-anim').forEach((el) => {
+      const target = parseInt(el.dataset.target, 10) || 0;
+      _countUp(el.querySelector('strong'), target, 1100 + Math.random() * 500);
+    });
 
-    // Dreams list below
+    // Continent-grouped dreams list
+    const grouped = {};
+    CONTINENT_ORDER.forEach(k => grouped[k] = []);
+    dreams.forEach(d => { (grouped[d.continent] || (grouped[d.continent] = [])).push(d); });
+    const groupsHtml = CONTINENT_ORDER
+      .filter(k => (grouped[k] || []).length)
+      .map(k => {
+        const meta = CONTINENT_META[k];
+        const cards = grouped[k].map(d => {
+          const glyph = SYM_GLYPH[d.sym] || SYM_GLYPH.city;
+          return `
+            <div class="dream-card" data-cont="${k}">
+              <span class="dream-glyph">${glyph}</span>
+              <strong>${d.place}</strong>
+              <p>${d.why}</p>
+              <span class="dream-pin">\u2665</span>
+            </div>
+          `;
+        }).join('');
+        return `
+          <section class="dream-group">
+            <header class="dream-group-head">
+              <span class="dream-group-glyph">${meta.glyph}</span>
+              <h3>${meta.label}</h3>
+              <span class="dream-group-count">${grouped[k].length}</span>
+              <span class="dream-group-rule"></span>
+            </header>
+            <div class="dreams-grid">${cards}</div>
+          </section>
+        `;
+      }).join('');
     $('#dreamsList').innerHTML = `
-      <h2>Wohin wir noch gehen, Inschallah</h2>
-      <div class="dreams-grid">
-        ${dreams.map(d => `
-          <div class="dream-card">
-            <span class="dream-pin">♥</span>
-            <strong>${d.place}</strong>
-            <p>${d.why}</p>
-          </div>
-        `).join('')}
-      </div>
+      <header class="dreams-list-head">
+        <h2>Wohin wir noch gehen, Inschallah</h2>
+        <p>Sechs Kontinente. Eine Liebe. Wir hangeln uns durch.</p>
+      </header>
+      ${groupsHtml}
     `;
   }
 
