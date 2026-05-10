@@ -629,21 +629,112 @@
     }
   ];
 
-  /* === EXPERIENCES === */
+  /* === EXPERIENCES (60+ Erlebnisse mit Kategorien & Beschreibungen) === */
+  // Kategorien: must · romantic · fun · adventure · culture · spiritual · food · nature
   const experiences = [
-    { name: 'Sonnenuntergang Oia', place: 'Santorini', img: IMG('1612698093158-e07ac200d44e') },
-    { name: 'Bambuswald Arashiyama', place: 'Kyoto', img: IMG('1503899036084-c55cdd92da26') },
-    { name: 'Wasservilla', place: 'Malediven', img: IMG('1582719508461-905c673771fd') },
-    { name: 'Ubud Reisterrassen', place: 'Bali', img: IMG('1604999333679-b86d54738315') },
-    { name: 'Sahara-Camp', place: 'Marrakesch', img: IMG('1547234935-80c7145ec969') },
-    { name: 'Eiffelturm bei Nacht', place: 'Paris', img: IMG('1431274172761-fca41d930114') },
-    { name: 'Lake Pichola Boot', place: 'Udaipur', img: IMG('1582510003544-4d00b7f74220') },
-    { name: 'Aurora Borealis', place: 'Island', img: IMG('1517457373958-b7bdd4587205') },
-    { name: 'Cenote-Schwimmen', place: 'Tulum', img: IMG('1530541930197-ff16ac917b0e') },
-    { name: 'Hawa Mahal', place: 'Jaipur', img: IMG('1599661046289-e31897846e41') },
-    { name: 'Gondelfahrt', place: 'Venedig', img: IMG('1523906834658-6e24ef2386f9') },
-    { name: 'Wüsten-Safari', place: 'Dubai', img: IMG('1518684079-3c830dcef090') }
+    { name: 'Sonnenuntergang in Oia', place: 'Santorini', cats: ['romantic','must'], img: IMG('1613395877344-13d4a8e0d49e'), desc: 'Der ikonischste Sonnenuntergang der Welt. Wein in der Hand, Caldera unter uns, Wolken in Rosa.' },
+    { name: 'Caldera-Bootstour', place: 'Santorini', cats: ['must','adventure'], img: IMG('1530841377377-3ff06c0ca713'), desc: 'Privates Boot zu Vulkan-Inseln, heißen Quellen, versteckten Buchten. Schwimmen im türkisen Krater.' },
+    { name: 'Cave-Suite-Frühstück', place: 'Santorini', cats: ['romantic'], img: IMG('1480796927426-f609979314bd'), desc: 'Frühstück mit Caldera-Blick, frischer Joghurt, Honig, du in einem weißen Bademantel.' },
+
+    { name: 'Reisterrassen Tegallalang', place: 'Bali', cats: ['must','nature'], img: IMG('1604999333679-b86d54738315'), desc: 'Smaragdgrüne Stufen, Kokosnuss-Wasser frisch, Hängeschaukel über dem Tal.' },
+    { name: 'Tempel Tanah Lot bei Sunset', place: 'Bali', cats: ['romantic','culture'], img: IMG('1518548419970-58e3b4079ab2'), desc: 'Hindu-Tempel auf einem Felsen im Meer. Bei Ebbe gehst du fast hin, bei Flut betest du davor.' },
+    { name: 'Bali-Couple-Spa', place: 'Bali', cats: ['romantic'], img: IMG('1540541338287-41700207dee6'), desc: 'Vier Stunden Massage zu zweit, Blumen-Bad, Frangipani-Duft. Du schläfst halb ein.' },
+
+    { name: 'Bambuswald Arashiyama', place: 'Kyoto', cats: ['must','nature','romantic'], img: IMG('1503899036084-c55cdd92da26'), desc: 'Smaragdgrüne Bambusgasse, Wind raschelt wie Musik. Hand in Hand am frühen Morgen, bevor die Touristen kommen.' },
+    { name: 'Tee-Zeremonie in Gion', place: 'Kyoto', cats: ['culture','romantic'], img: IMG('1493976040374-85c8e12f0c0e'), desc: 'Du in einem Kimono, ich verzaubert. Matcha, perfekte Bewegungen, Stille die spricht.' },
+    { name: 'Privater Onsen-Abend', place: 'Japan', cats: ['romantic','must'], img: IMG('1528360983277-13d401cdc186'), desc: 'Eigene heiße Quelle, nur wir, Dampf steigt, Mond über dem Tal. Sake auf dem Steinrand.' },
+    { name: 'Sushi-Counter Omakase', place: 'Tokio', cats: ['food','culture'], img: IMG('1542051841857-5f90071e7989'), desc: 'Winziges Restaurant, ein Itamae, 17 Gänge, jeder ein kleines Gedicht.' },
+    { name: 'Okinawa-Strandtag', place: 'Japan', cats: ['must','romantic'], img: IMG('1501785888041-af3ef285b470'), desc: 'Türkises Wasser, weißer Sand, Schnorcheln. Japan, das niemand erwartet.' },
+
+    { name: 'Wasservilla mit Glasboden', place: 'Malediven', cats: ['must','romantic'], img: IMG('1582719508461-905c673771fd'), desc: 'Du schaust Fische beim Frühstück. Privater Pool unter Sternen.' },
+    { name: 'Sandbank-Picknick', place: 'Malediven', cats: ['romantic','must'], img: IMG('1514282401047-d79a71a590e8'), desc: 'Privates Boot zu einer winzigen Sandbank mitten im Ozean. Champagner, Sushi, nur ihr beiden.' },
+    { name: 'Schnorcheln mit Schildkröten', place: 'Malediven', cats: ['adventure','nature'], img: IMG('1544551763-46a013bb70d5'), desc: 'Maafushi-Riff, glatter Türkis. Schildkröten kommen ganz nah.' },
+
+    { name: 'Eiffelturm bei Nacht', place: 'Paris', cats: ['must','romantic'], img: IMG('1431274172761-fca41d930114'), desc: 'Champagner auf der 2. Etage, dann das Funkeln zur vollen Stunde — fünf Minuten Magie.' },
+    { name: 'Seine-Boots-Dinner', place: 'Paris', cats: ['romantic','food'], img: IMG('1502602898657-3e91760cbb34'), desc: 'Drei Gänge auf einem privaten Boot, Notre-Dame zieht vorbei. Du im kleinen Schwarzen.' },
+    { name: 'Montmartre-Date', place: 'Paris', cats: ['romantic','culture'], img: IMG('1499856871958-5b9627545d1a'), desc: 'Sacré-Cœur, Künstler malen dich, Wein in einer winzigen Bar. Sterne in deinen Augen.' },
+    { name: 'Patisserie-Tour', place: 'Paris', cats: ['food','fun'], img: IMG('1431274172761-fca41d930114'), desc: 'Ladurée-Macarons, Pierre Hermé, ein Croissant das die Welt verändert.' },
+
+    { name: 'Sahara-Camp unter Sternen', place: 'Marokko', cats: ['must','adventure','romantic'], img: IMG('1547234935-80c7145ec969'), desc: 'Berber-Zelt im Erg Chebbi, Lagerfeuer, Kameltrek bei Sunset. Milliarden Sterne.' },
+    { name: 'Hammam zu zweit', place: 'Marrakesch', cats: ['romantic'], img: IMG('1540541338287-41700207dee6'), desc: 'Schwarze Seife, heißer Dampf, Argan-Öl. Du wirst rausgehen wie aus einem anderen Leben.' },
+    { name: 'Riad-Innenhof Tee', place: 'Marrakesch', cats: ['culture','romantic'], img: IMG('1597211833712-5e41faa202ea'), desc: 'Versteckter Innenhof, Brunnen, Mosaik, Minze-Tee mit zu viel Zucker. Außerhalb tobt die Medina.' },
+    { name: 'Reiten am Atlantik', place: 'Marokko', cats: ['adventure','romantic'], img: IMG('1517840933437-c41356892b35'), desc: 'Strand bei Essaouira, Pferde im flachen Wasser, Sonnenuntergang in Orange.' },
+
+    { name: 'Lake Pichola Boot', place: 'Udaipur', cats: ['must','romantic'], img: IMG('1582510003544-4d00b7f74220'), desc: 'Privates Boot bei Sunset, Lake Palace leuchtet weiß, Stadtpaläste spiegeln sich.' },
+    { name: 'Hawa Mahal & Sari-Shopping', place: 'Jaipur', cats: ['culture','fun'], img: IMG('1599661046289-e31897846e41'), desc: 'Pinker Palast der Winde, dann Bazaar-Tour. Du in einem Sari, ich kann nicht atmen.' },
+    { name: 'Henna-Hände', place: 'Indien', cats: ['romantic','culture'], img: IMG('1599661046289-e31897846e41'), desc: 'Eine alte Frau malt dir Henna-Muster bis zum Ellbogen. Drei Tage halten sie. Du fühlst dich wie eine Braut.' },
+    { name: 'Kerala Hausboot', place: 'Kerala', cats: ['romantic','must'], img: IMG('1506461883276-594a12b11cf3'), desc: 'Privates Hausboot in Alleppey-Backwaters, Koch an Bord, Kerzen am Abend.' },
+    { name: 'Ayurveda zu zweit', place: 'Kerala', cats: ['romantic'], img: IMG('1540541338287-41700207dee6'), desc: 'Synchronisierte Massage von zwei Therapeuten, warmes Öl, Kräuterkompressen.' },
+
+    { name: 'Tea-Train Kandy → Ella', place: 'Sri Lanka', cats: ['must','romantic'], img: IMG('1566296314736-6eaac1ca0cb9'), desc: 'Eine der schönsten Zugfahrten der Welt. Tee-Hügel, offene Türen, Wind im Haar.' },
+    { name: 'Sigiriya Felsenfestung', place: 'Sri Lanka', cats: ['adventure','culture'], img: IMG('1567157802189-aadc856131dc'), desc: 'Steig auf den Lion Rock, sieh die Welt von oben. Alte Wandmalereien.' },
+    { name: 'Safari Yala', place: 'Sri Lanka', cats: ['adventure','nature'], img: IMG('1586500036706-41963de24d8b'), desc: 'Leoparden, Elefanten, Pfauen. Lodge im Busch, Sundowner.' },
+
+    { name: 'Polarlichter', place: 'Island', cats: ['must','romantic','nature'], img: IMG('1517457373958-b7bdd4587205'), desc: 'Glas-Iglu, du in deinem Pulli, der Himmel tanzt grün und pink. Wir sagen nichts.' },
+    { name: 'Blaue Lagune', place: 'Island', cats: ['romantic'], img: IMG('1500382017468-9049fed747ef'), desc: 'Milchblaues Thermalwasser, Schneeflocken auf den Wimpern, Silica-Maske im Gesicht.' },
+    { name: 'Eishöhlen-Tour', place: 'Island', cats: ['adventure'], img: IMG('1500382017468-9049fed747ef'), desc: 'Blaues Licht in einer Gletscherhöhle. Die Erde zeigt dir ihr Inneres.' },
+
+    { name: 'Cenote-Schwimmen', place: 'Tulum', cats: ['must','adventure'], img: IMG('1530541930197-ff16ac917b0e'), desc: 'Süßwasser-Höhle, türkises Licht, Maya-Magie. Wir tauchen, wir schweben.' },
+    { name: 'Saona Island Bootstour', place: 'Punta Cana', cats: ['must','romantic'], img: IMG('1509783561732-390c7d0b1661'), desc: 'Insel die wie ein Bildschirmschoner aussieht. Mittagessen im Wasser.' },
+    { name: 'Catamaran-Sunset', place: 'Karibik', cats: ['romantic','must'], img: IMG('1473186578172-c141e6798cf4'), desc: 'Letzter Tag, Champagner auf dem Wasser, Sterne kommen langsam.' },
+    { name: 'Pitons-Pool', place: 'Saint Lucia', cats: ['romantic','must'], img: IMG('1605288132419-1aa5e25475b2'), desc: 'Klippen-Villa zwischen den zwei Pitons, eigener Pool, du in Bikini im Sonnenaufgang.' },
+
+    { name: 'Christo bei Sonnenaufgang', place: 'Rio', cats: ['must','spiritual'], img: IMG('1513648197777-861864c16509'), desc: 'Vor den Tour-Bussen oben sein. Stadt unter Wolken, Christo über uns, Stille.' },
+    { name: 'Iguazu-Wasserfälle', place: 'Brasilien', cats: ['must','adventure','nature'], img: IMG('1548963670-aaaa8f73a5e3'), desc: 'Die Erde brüllt. 275 Wasserfälle. Du bist nass, du lachst, ich auch.' },
+    { name: 'Tango in San Telmo', place: 'Buenos Aires', cats: ['romantic','culture','fun'], img: IMG('1561577553-674ce32847a4'), desc: 'Milonga in einer alten Bar, du lernst die Schritte, der Lehrer zwinkert.' },
+    { name: 'Machu Picchu Sunrise', place: 'Peru', cats: ['must','spiritual'], img: IMG('1526392060635-9d6019884377'), desc: 'Erste Sonnenstrahlen auf alten Inka-Steinen. Wolken im Tal. Wir sagen kein Wort.' },
+    { name: 'Patagonien Wanderung', place: 'Patagonien', cats: ['adventure','nature'], img: IMG('1510939859912-0e7e5904c400'), desc: 'Mirador Las Torres — drei Granit-Türme, du schaffst es bis ganz oben.' },
+
+    { name: 'Top of the Rock', place: 'New York', cats: ['must','romantic'], img: IMG('1485409088362-2cedbda60383'), desc: 'NYC-Skyline bei Sonnenuntergang. Empire State Building gegenüber. Du in einem Mantel, Wind im Haar.' },
+    { name: 'Brooklyn Bridge Walk', place: 'New York', cats: ['romantic'], img: IMG('1497968978037-599ea9980d60'), desc: 'Sonnenaufgang über dem East River, Brooklyn auf der einen Seite, Manhattan auf der anderen.' },
+    { name: 'Road to Hana', place: 'Hawaii', cats: ['adventure','must','nature'], img: IMG('1542259009477-d625272157b7'), desc: '64 Meilen, 600 Kurven, hundert Wasserfälle. Stopps für Ananas und Schwarz-Sand-Strände.' },
+    { name: 'Haleakala-Sunrise', place: 'Hawaii', cats: ['must','spiritual','nature'], img: IMG('1547537069-537b37a02069'), desc: 'Sonnenaufgang über den Wolken auf 3000m. Die Welt unter uns wacht auf.' },
+    { name: 'Lūʻau Strand-Dinner', place: 'Hawaii', cats: ['fun','culture'], img: IMG('1556206079-747a7a424d3d'), desc: 'Kalua-Schwein aus dem Erdofen, Hula-Tanz, Ukulele, du mit Lei aus Plumeria.' },
+
+    { name: 'Sydney Opera House', place: 'Sydney', cats: ['must','culture'], img: IMG('1494948141550-221698c089c2'), desc: 'Tour durch die ikonischen Segel, dann ein Drink an der Bar mit Harbour-Blick.' },
+    { name: 'Great Barrier Reef Schnorcheln', place: 'Australien', cats: ['must','adventure','nature'], img: IMG('1544551763-46a013bb70d5'), desc: 'Tagestour mit dem Boot, Korallen wie Ölgemälde, Fische in allen Farben.' },
+    { name: 'Bondi-to-Coogee Walk', place: 'Sydney', cats: ['romantic','nature'], img: IMG('1506973035872-a4ec16b8e8d9'), desc: '6 km Küstenpfad mit den schönsten Stränden Sydneys. Wir nehmen 4 Stunden für 90-min-Weg.' },
+
+    { name: 'Cinque Terre Wanderung', place: 'Italien', cats: ['adventure','nature','romantic'], img: IMG('1490650191633-406b47bf6e25'), desc: 'Pfad zwischen Vernazza und Monterosso, bunte Häuser am Felsen, Meer immer rechts.' },
+    { name: 'Toskana-Weingut Lunch', place: 'Italien', cats: ['food','romantic'], img: IMG('1539037116277-4db20889f2d4'), desc: 'San Gimignano, Chianti-Weinprobe mit Pasta, du im weißen Sommerkleid.' },
+    { name: 'Lavendelfelder Valensole', place: 'Provence', cats: ['must','romantic','nature'], img: IMG('1530086540-e7a924de9fa9'), desc: 'Juli, Sonne, du läufst durch Reihen von Lila. Du wirst die schönste Postkarte der Welt.' },
+    { name: 'Gondelfahrt Venedig', place: 'Venedig', cats: ['must','romantic'], img: IMG('1523906834658-6e24ef2386f9'), desc: 'Privater Gondoliere, versteckte Kanäle, Bellini in der Hand. Du zwischen meinen Armen.' },
+    { name: 'Capri Blaue Grotte', place: 'Capri', cats: ['must','adventure'], img: IMG('1512100356356-de1b84283e18'), desc: 'Kleines Boot durch einen winzigen Eingang, dann magisches blaues Licht von unten.' },
+    { name: 'Schweizer Glacier Express', place: 'Schweiz', cats: ['must','romantic'], img: IMG('1556556391-594f26418080'), desc: 'Panoramazug von St. Moritz nach Zermatt, 8 Stunden Berge. Pinot in der Hand.' },
+
+    { name: 'Wüsten-Safari', place: 'Dubai', cats: ['adventure','fun','culture'], img: IMG('1518684079-3c830dcef090'), desc: 'Dünen-Bashing, Falknerei, Beduinen-Camp mit Shisha und Tanz unter Sternen.' },
+    { name: 'Burj Khalifa Lounge', place: 'Dubai', cats: ['must','romantic'], img: IMG('1512453979798-5ea266f8880c'), desc: '124. Stock, Sundowner, du in einem Abend-Outfit, Skyline glitzert wie ein Schmuck.' },
+    { name: 'Tawaf gemeinsam', place: 'Mekka', cats: ['must','spiritual'], img: IMG('1542521148-51306e7ffc1e'), desc: 'Inschallah eines Tages — siebenmal um die Kaaba, Hand in Hand, Tränen in den Augen.' },
+    { name: 'Madinah Sharif Salam', place: 'Medina', cats: ['spiritual'], img: IMG('1692566123227-0f68f1b9dac6'), desc: 'Salam an den Propheten ﷺ in der Rawda — die grünste Stelle auf Erden.' },
+    { name: 'Heißluftballon Kappadokien', place: 'Türkei', cats: ['must','romantic','adventure'], img: IMG('1609932937042-56e6bdd7a41b'), desc: 'Sonnenaufgang über Feenkaminen, hundert Ballons im Himmel, du in einem Korb mit mir.' },
+
+    { name: 'Spice Tour Sansibar', place: 'Sansibar', cats: ['culture','food'], img: IMG('1574622858722-df7d9efe1cce'), desc: 'Gewürzplantage — Zimt, Vanille, Kardamom direkt vom Baum. Düfte, die du nie vergisst.' },
+    { name: 'Dhow im Sunset', place: 'Sansibar', cats: ['romantic','must'], img: IMG('1586861635167-e5223aadc9fe'), desc: 'Alter Holzsegler, Champagner, Wind im Segel, Sonne fällt ins Meer.' },
+    { name: 'Stone Town Sunset', place: 'Sansibar', cats: ['culture','romantic'], img: IMG('1574622858722-df7d9efe1cce'), desc: 'Dachterrasse, Adhan ruft, Boote im Hafen, Cocktail in der Hand.' },
+    { name: 'Safari Sundowner', place: 'Tansania', cats: ['romantic','adventure'], img: IMG('1580060839134-75a5edca2e99'), desc: 'Game-Drive endet auf einem Hügel, Drinks bei Sonnenuntergang, Löwen brüllen in der Ferne.' },
+
+    { name: 'Registan-Platz Sonnenuntergang', place: 'Samarkand', cats: ['must','culture'], img: IMG('1569660927079-11d20952e3fa'), desc: 'Drei blaue Madrasas in goldenem Licht. Stille auf dem Platz, dann Lichter angehen.' },
+    { name: 'Karawanserei-Übernachtung', place: 'Bukhara', cats: ['culture','romantic'], img: IMG('1630245935603-a409cfaa97e4'), desc: 'Boutique-Hotel in einer alten Seidenstraßen-Karawanserei. Innenhof, Brunnen, Sterne.' },
+
+    { name: 'Krabi Longtail-Boot', place: 'Thailand', cats: ['must','adventure'], img: IMG('1591357629414-80dce3b78d2b'), desc: 'Privates Holzboot zu Phi Phi, Ko Poda, Bambusinsel. Schnorcheln in türkisem Wasser.' },
+    { name: 'Thailand Streetfood-Abend', place: 'Thailand', cats: ['food','fun'], img: IMG('1591357629414-80dce3b78d2b'), desc: 'Pad Thai vom Wok, frische Kokosnuss, Mango Sticky Rice. Kleine Plastikstühle, große Liebe.' },
+
+    { name: 'Tigris Sonnenuntergang', place: 'Bagdad', cats: ['romantic','spiritual'], img: IMG('1624140930663-c6075007b7fd'), desc: 'Ufer-Café am Tigris, Lammkebab, Tee mit Kardamom, du erzählst mir von deiner Mama.' },
+    { name: 'Kandahar Granatapfel-Garten', place: 'Kandahar', cats: ['culture','spiritual'], img: IMG('1673701348866-eaa57db8aba6'), desc: 'Mein Land. Du in einem Schal aus Kabul-Seide, Granatapfel-Bäume, Tee bei meiner Familie.' }
   ];
+
+  const expCategories = {
+    must:      { label: 'Must-Do',     icon: '⭐', color: '#d4a843' },
+    romantic:  { label: 'Romantisch',  icon: '♥',  color: '#e85a8c' },
+    fun:       { label: 'Spaß',        icon: '✨', color: '#f59e0b' },
+    adventure: { label: 'Abenteuer',   icon: '⚡', color: '#34d399' },
+    culture:   { label: 'Kultur',      icon: '🏛', color: '#c4b5fd' },
+    spiritual: { label: 'Spirituell',  icon: '🤲', color: '#fde9b9' },
+    food:      { label: 'Essen',       icon: '🍽', color: '#f97316' },
+    nature:    { label: 'Natur',       icon: '🌿', color: '#86efac' }
+  };
+
+  let activeExpCategory = 'all';
 
   /* === LETTERS === */
   const letters = [
@@ -668,7 +759,9 @@
 
     { id: 'l13', pin: 'Brief 13 · Bagdad → München', title: 'Deine Mama, eine Königin', body: 'Janem, deine Mama. Aus Bagdad. Durch alles durchgegangen, allein für dich. Eine Frau, die das Wort „stark" zu klein wirken lässt. Sie hat dich groß gezogen mit der Tiefe des Tigris und der Geduld der Datteln. Wenn ich dich anschaue, sehe ich auch sie. Wenn ich dich liebe, ehre ich auch sie. Inshallah (so Allah will) werde ich Tag für Tag der Mann sein, der dir das gibt, was sie dir verdient hat. Und Inshallah werden wir Eltern, die so warm und treu sind, dass unsere Kinder nie verstehen müssen, was Loslassen heißt. „Al-jannatu taḥta aqdāmi l-ummahāt." — Das Paradies liegt unter den Füßen der Mütter. Bei deiner Mama liegt es schon. Bei dir wird es bald liegen.', sign: '— Mika, der deine Familie ehrt' },
 
-    { id: 'l14', pin: 'Brief 14 · Geographie', title: 'Bagdad ↔ Kandahar ↔ München', body: 'Meine Eltern aus Kandahar. Deine aus Bagdad. Tausende Kilometer zwischen unseren Wurzeln — und doch hat das Schicksal uns in dieselbe deutsche Straße gelegt. Wir sind beide München-Kinder. Wir sind beide Migrationskinder. Wir sind beide das Ergebnis von Eltern, die alles riskiert haben, damit wir es leichter haben. Und unsere Liebe ist die Antwort darauf. Sie ist Bagdad und Kandahar, gemischt mit Münchner Regen. Sie ist Arabisch und Paschtu, gesprochen mit bayerischem Akzent. Habibti, wir sind eine Geschichte, die zwei Großmütter in Tränen erzählen werden. Und ich bin stolz, jeden Tag mit dir an dieser Geschichte zu schreiben.', sign: '— Mika, dein Münchner Pashtune für deine irakische Königin' }
+    { id: 'l14', pin: 'Brief 14 · Geographie', title: 'Bagdad ↔ Kandahar ↔ München', body: 'Meine Eltern aus Kandahar. Deine aus Bagdad. Tausende Kilometer zwischen unseren Wurzeln — und doch hat das Schicksal uns in dieselbe deutsche Straße gelegt. Wir sind beide München-Kinder. Wir sind beide Migrationskinder. Wir sind beide das Ergebnis von Eltern, die alles riskiert haben, damit wir es leichter haben. Und unsere Liebe ist die Antwort darauf. Sie ist Bagdad und Kandahar, gemischt mit Münchner Regen. Sie ist Arabisch und Paschtu, gesprochen mit bayerischem Akzent. Habibti, wir sind eine Geschichte, die zwei Großmütter in Tränen erzählen werden. Und ich bin stolz, jeden Tag mit dir an dieser Geschichte zu schreiben.', sign: '— Mika, dein Münchner Pashtune für deine irakische Königin' },
+
+    { id: 'l15', featured: true, pin: 'Brief 15 · Tiefe Dankbarkeit', title: 'Du hast nie losgelassen', body: 'Habibti, etwas, das ich dir nicht oft genug sage: Danke. Danke, dass du unsere Liebe nie losgelassen hast. Auch wenn ich kämpfen musste mit mir. Auch wenn die Welt grau wurde. Auch wenn ich selbst zweifelte — du hast geglaubt. Immer. Wie ein Anker, der sich nicht bewegt, wenn das Schiff schaukelt. Manche Frauen verlieren den Glauben, wenn der Mann stolpert. Du bist anderer Stoff. Du hast mich gehalten, wenn ich nicht halten konnte. Du hast unsere Geschichte weitergeschrieben, wenn ich vergessen hatte, wie das Buch heißt. „Idhā aḥabba aḥadukum akhāhu fal-yu\'limhu" — wenn du jemanden liebst, sag\'s ihm. Maryem, ich sag\'s dir jetzt: Ich danke dir. Für jede Nacht, in der du an uns geglaubt hast, als ich es nicht konnte. Für jeden Morgen, an dem du mich angeschaut hast, als wäre nichts gewesen. Für jede einzelne Sekunde, in der du gewählt hast, zu bleiben. Allah hat dich mir geschickt — aber DU hast dich entschieden, zu bleiben. Das ist das größere Geschenk.', sign: '— Mika, ewig dankbar dass du mich nie losgelassen hast' }
   ];
 
   /* === PETNAMES (Arabisch · Paschtu · Bollywood — mit deutscher Übersetzung) === */
@@ -1094,18 +1187,79 @@
 
   /* === EXPERIENCES === */
   function renderExperiences() {
-    $('#experiencesPreview').innerHTML = experiences.slice(0, 4).map(e => `
-      <article class="experience-item">
+    // Preview on Entdecken — first 4 must-do romantic
+    const preview = experiences.filter(e => e.cats.includes('must') || e.cats.includes('romantic')).slice(0, 4);
+    $('#experiencesPreview').innerHTML = preview.map((e, i) => `
+      <article class="experience-item" data-exp-idx="${experiences.indexOf(e)}">
         <img src="${e.img}" alt="${e.name}" loading="lazy" />
         <div class="exp-info"><span class="exp-place">${e.place}</span><h4>${e.name}</h4></div>
       </article>
     `).join('');
-    $('#experiencesAll').innerHTML = experiences.map(e => `
-      <article class="experience-item">
-        <img src="${e.img}" alt="${e.name}" loading="lazy" />
-        <div class="exp-info"><span class="exp-place">${e.place}</span><h4>${e.name}</h4></div>
-      </article>
-    `).join('');
+    $$('#experiencesPreview [data-exp-idx]').forEach(el => {
+      el.onclick = () => openExpModal(parseInt(el.dataset.expIdx, 10));
+    });
+
+    // Filter tabs above grid
+    const tabs = ['all', ...Object.keys(expCategories)];
+    const expFilters = $('#expFilters');
+    if (expFilters) {
+      expFilters.innerHTML = tabs.map(t => {
+        const meta = t === 'all' ? { icon: '◉', label: 'Alle' } : expCategories[t];
+        const count = t === 'all' ? experiences.length : experiences.filter(e => e.cats.includes(t)).length;
+        return `<button class="exp-filter-btn ${t === activeExpCategory ? 'is-active' : ''}" data-cat="${t}"><span class="exp-filter-icon">${meta.icon}</span>${meta.label} <em>${count}</em></button>`;
+      }).join('');
+      $$('.exp-filter-btn', expFilters).forEach(b => {
+        b.onclick = () => { activeExpCategory = b.dataset.cat; renderExperiences(); };
+      });
+    }
+
+    // Filtered grid
+    const list = activeExpCategory === 'all' ? experiences : experiences.filter(e => e.cats.includes(activeExpCategory));
+    $('#experiencesAll').innerHTML = list.map(e => {
+      const idx = experiences.indexOf(e);
+      const tagHtml = e.cats.slice(0, 2).map(c => `<span class="exp-cat" style="color:${expCategories[c].color}">${expCategories[c].icon} ${expCategories[c].label}</span>`).join('');
+      return `
+        <article class="experience-item" data-exp-idx="${idx}">
+          <img src="${e.img}" alt="${e.name}" loading="lazy" />
+          <div class="exp-info">
+            <div class="exp-cats">${tagHtml}</div>
+            <h4>${e.name}</h4>
+            <span class="exp-place">${e.place}</span>
+          </div>
+        </article>
+      `;
+    }).join('');
+    $$('#experiencesAll [data-exp-idx]').forEach(el => {
+      el.onclick = () => openExpModal(parseInt(el.dataset.expIdx, 10));
+    });
+  }
+
+  function openExpModal(idx) {
+    const e = experiences[idx];
+    if (!e) return;
+    let modal = $('#expModal');
+    if (!modal) {
+      modal = document.createElement('div');
+      modal.id = 'expModal';
+      modal.className = 'exp-modal-backdrop';
+      document.body.appendChild(modal);
+    }
+    const tagHtml = e.cats.map(c => `<span class="exp-cat-pill" style="background:${expCategories[c].color}22;color:${expCategories[c].color};border-color:${expCategories[c].color}55">${expCategories[c].icon} ${expCategories[c].label}</span>`).join('');
+    modal.innerHTML = `
+      <div class="exp-modal" role="dialog" aria-label="${e.name}">
+        <button class="exp-modal-close" aria-label="Schließen">×</button>
+        <img src="${e.img}" alt="${e.name}">
+        <div class="exp-modal-body">
+          <span class="exp-modal-place">${e.place.toUpperCase()}</span>
+          <h3>${e.name}</h3>
+          <div class="exp-modal-cats">${tagHtml}</div>
+          <p>${e.desc}</p>
+        </div>
+      </div>
+    `;
+    modal.classList.add('is-open');
+    modal.onclick = (ev) => { if (ev.target === modal || ev.target.classList.contains('exp-modal-close')) modal.classList.remove('is-open'); };
+    document.addEventListener('keydown', function esc(ev){ if (ev.key === 'Escape') { modal.classList.remove('is-open'); document.removeEventListener('keydown', esc); } });
   }
 
   /* === DESTINATIONS GRID === */
@@ -1293,33 +1447,71 @@
   }
 
   /* === ABSTIMMEN === */
+  let activeVoteFilter = 'all'; // all | dest | route | favorites
+
   function renderVoteArena() {
     const arena = $('#voteArena');
-    let pool = state.likes.size >= 3 ? Array.from(state.likes) : ['santorini','bali','marrakesh','rajasthan','maldives','capri'];
-    pool = pool.slice(0, 6);
+    const tabs = $('#voteFilters');
+
+    if (tabs) {
+      tabs.innerHTML = `
+        <button class="vote-filter-btn ${activeVoteFilter==='all'?'is-active':''}" data-vfilter="all">◉ Alle <em>${destinations.length + routes.length}</em></button>
+        <button class="vote-filter-btn ${activeVoteFilter==='dest'?'is-active':''}" data-vfilter="dest">📍 Einzelne Orte <em>${destinations.length}</em></button>
+        <button class="vote-filter-btn ${activeVoteFilter==='route'?'is-active':''}" data-vfilter="route">🛤 Kombi-Reisen <em>${routes.length}</em></button>
+        <button class="vote-filter-btn ${activeVoteFilter==='favorites'?'is-active':''}" data-vfilter="favorites">♥ Favoriten <em>${state.likes.size}</em></button>
+      `;
+      $$('.vote-filter-btn', tabs).forEach(b => {
+        b.onclick = () => { activeVoteFilter = b.dataset.vfilter; renderVoteArena(); };
+      });
+    }
+
     const votes = state.votes;
-    const totals = pool.map(id => (votes[id]?.maryem || 0) + (votes[id]?.mika || 0));
-    const max = Math.max(1, ...totals);
-    arena.innerHTML = pool.map((id, i) => {
-      const d = findDest(id); if (!d) return '';
-      const v = votes[id] || { mika: 0, maryem: 0 };
+    let items = [];
+    if (activeVoteFilter === 'dest' || activeVoteFilter === 'all') {
+      items = items.concat(destinations.map(d => ({ kind: 'dest', id: d.id, name: d.name, sub: d.country, img: d.image, why: d.tagline })));
+    }
+    if (activeVoteFilter === 'route' || activeVoteFilter === 'all') {
+      items = items.concat(routes.map(r => ({ kind: 'route', id: r.id, name: r.title, sub: r.subtitle, img: r.image, why: r.blurb })));
+    }
+    if (activeVoteFilter === 'favorites') {
+      items = Array.from(state.likes).map(id => {
+        const d = findDest(id);
+        return d ? { kind: 'dest', id: d.id, name: d.name, sub: d.country, img: d.image, why: d.tagline } : null;
+      }).filter(Boolean);
+    }
+
+    if (!items.length) {
+      arena.innerHTML = `<div class="empty-love"><span class="empty-ornament">${heartSVG}</span><h3>Noch nichts hier</h3><p>Tipp Herzen auf Reisezielen — sie erscheinen dann hier zum Abstimmen.</p><a class="empty-cta" href="#reiseziele" data-nav>Reiseziele entdecken</a></div>`;
+      bindNavLinks();
+      return;
+    }
+
+    const totals = items.map(it => (votes[it.id]?.maryem || 0) + (votes[it.id]?.mika || 0));
+    const maxTotal = Math.max(...totals, 0);
+
+    arena.innerHTML = items.map((it) => {
+      const v = votes[it.id] || { mika: 0, maryem: 0 };
       const total = v.mika + v.maryem;
-      const pct = (total / max) * 100;
-      const isLeading = total === Math.max(...totals) && total > 0;
+      const pct = maxTotal ? (total / maxTotal) * 100 : 0;
+      const isLeading = total === maxTotal && total > 0;
+      const kindLabel = it.kind === 'route' ? '🛤 Kombi-Reise' : '📍 Einzelner Ort';
       return `
         <article class="vote-card ${isLeading ? 'is-leading' : ''}">
-          <div class="vote-card-img"><img src="${d.image}" alt="${d.name}" loading="lazy" /></div>
+          <div class="vote-card-img">
+            <img src="${it.img}" alt="${it.name}" loading="lazy" />
+            <span class="vote-kind-pill">${kindLabel}</span>
+          </div>
           <div class="vote-card-body">
-            <h3>${d.name} <span style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-soft);font-size:14px;">${d.country}</span></h3>
-            <p class="why">${d.tagline}</p>
+            <h3>${it.name} <span style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-soft);font-size:14px;">${it.sub}</span></h3>
+            <p class="why">${it.why}</p>
             <div class="vote-bar"><div class="vote-bar-fill" style="width:${pct}%"></div></div>
             <div class="vote-meta">
               <span>${total} Stimme${total === 1 ? '' : 'n'}</span>
               <span>${v.mika ? '♥ Mika' : ''} ${v.maryem ? '♥ Maryem' : ''}</span>
             </div>
             <div class="vote-btns">
-              <button class="vote-mika ${v.mika ? 'is-on' : ''}" data-vote="mika" data-vote-id="${id}">Mika ♥</button>
-              <button class="vote-maryem ${v.maryem ? 'is-on' : ''}" data-vote="maryem" data-vote-id="${id}">Maryem ♥</button>
+              <button class="vote-mika ${v.mika ? 'is-on' : ''}" data-vote="mika" data-vote-id="${it.id}">Mika ♥</button>
+              <button class="vote-maryem ${v.maryem ? 'is-on' : ''}" data-vote="maryem" data-vote-id="${it.id}">Maryem ♥</button>
             </div>
           </div>
         </article>
