@@ -1,5 +1,16 @@
+# Macos
 .DS_Store
-*.log
+
+# Editor
 .vscode/
 .idea/
-.playwright-mcp/
+
+# Backups (NEVER commit — they contain unencrypted love content)
+*.bak
+*.unprotected.bak
+*.unlocked.html
+.staticrypt-template.html
+encrypted/
+script.js.unprotected.bak
+index.html.unprotected.bak
+index.unlocked.html
